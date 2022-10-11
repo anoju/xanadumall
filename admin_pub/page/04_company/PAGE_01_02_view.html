@@ -1,0 +1,358 @@
+<!DOCTYPE html> 
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>XANADU 시스템</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" href="../../static/css/common.css" media="all" />
+	<link rel="stylesheet" href="../../static/css/contents.css" media="all" />
+	<script src="../../static/js/plugins.js"></script>
+	<script src="../../static/js/ui_script.js"></script>
+	<!--[if lt IE 9]>
+		<script type="text/javascript">
+			document.createElement("header");
+			document.createElement("nav");
+			document.createElement("section");
+			document.createElement("article");
+			document.createElement("footer");
+		</script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- wrap -->
+	<div id="wrap" data-active="[4,1,2]">
+		<!-- header -->
+		<header id="header" data-include="../../include/header.html"></header>
+		<!-- //header -->	
+		
+		<!-- gnb -->
+		<aside class="left_menu"  data-include="../../include/leftMenu.html"></aside>
+		<!-- //left_menu -->
+
+		<!-- container -->
+		<div id="container">
+			<!-- contents -->
+			<section id="contents">
+				<h1 id="page_tit">업체현황상세</h1>	
+				
+				<div class="flex">
+					<p>
+						<strong class="mr10">◎ 업체 등록정보</strong>
+					</p>
+				</div>
+				
+				<table class="table left_tbl view_tbl mt20">
+					<caption>업체현황상세</caption>
+					<colgroup>
+						<col style="width:10%" />
+						<col style="width:40%" />
+						<col style="width:10%" />
+						<col />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">CSP 업체코드(업체명)</th>
+							<td>
+								<input type="text" value="71021546" disabled/>
+								<input type="text" value="우리농산" disabled/>
+							</td>
+							<th scope="row">샵이름</th>
+							<td>
+								<input type="text" value="자연애">
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">서비스 유형</th>
+							<td>
+								<div class="flex align_center">
+									<label>
+										<input name="radio1" type="radio" class="radio" checked="checked" />
+										<span class="lbl">전체</span>
+									</label>
+									<label>
+										<input name="radio1" type="radio" class="radio" />
+										<span class="lbl">온누리</span>
+									</label>
+									<label>
+										<input name="radio1" type="radio" class="radio" />
+										<span class="lbl">MRO</span>
+									</label>
+									<label>
+										<input name="radio1" type="radio" class="radio" />
+										<span class="lbl">특판</span>
+									</label>
+									<label>
+										<input name="radio1" type="radio" class="radio" />
+										<span class="lbl">기념일</span>
+									</label>
+								</div>
+							</td>
+							<th scope="row">시장 구분</th>
+							<td>
+								<input type="text" value="전통 시장" disabled/>
+								<input type="text" value="1002156" disabled/>
+								<button type="button" class="button">찾기</button>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">CS 담당자/연락처</th>
+							<td>
+								<input type="text" value="홍길동" readonly />
+								<input type="text" value="02-1588-1588" readonly />
+							</td>
+							<th scope="row">반품 관리 사용 여부</th>
+							<td>
+								<div class="flex align_center">
+									<label>
+										<input name="radio2" type="radio" class="radio" checked="checked" />
+										<span class="lbl">사용</span>
+									</label>
+									<label>
+										<input name="radio2" type="radio" class="radio" />
+										<span class="lbl">사용안함</span>
+									</label>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">지역코드</th>
+							<td>
+								<select title="옵션선택" class="w200">
+									<option value="" selected="selected">선택해주세요
+								</select>
+							</td>
+							<th scope="row">검진 가능 시간</th>
+							<td>
+								<div class="flex align_center">
+									<label>
+										<input name="radio3" type="radio" class="radio" checked="checked" />
+										<span class="lbl">오전</span>
+									</label>
+									<label>
+										<input name="radio3" type="radio" class="radio" />
+										<span class="lbl">오후</span>
+									</label>
+									<label>
+										<input name="radio3" type="radio" class="radio" />
+										<span class="lbl">종일</span>
+									</label>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">상담시간</th>
+							<td>
+								<div class="flex align_center">
+									<input type="text" class="w100" value="9" readonly />시
+									<input type="text" class="w100" value="50" readonly />분
+									~
+									<input type="text" class="w100" value="10" readonly />시
+									<input type="text" class="w100" value="30" readonly />분
+								</div>
+							</td>
+							<th scope="row">점심시간</th>
+							<td>
+								<div class="flex align_center">
+									<input type="text" class="w100" value="12" readonly />시
+									<input type="text" class="w100" value="00" readonly />분
+									~
+									<input type="text" class="w100" value="13" readonly />시
+									<input type="text" class="w100" value="30" readonly />분
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">등록자</th>
+							<td>온누리담당자</td>
+							<th scope="row">수정자</th>
+							<td>김영호</td>
+						</tr>
+						<tr>
+							<th scope="row">등록일자</th>
+							<td>2020-12-20 11:02:12</td>
+							<th scope="row">수정일자</th>
+							<td>2020-12-23 13:22:33</td>
+						</tr>
+						<tr>
+							<th>관리자 메모</th>
+							<td>CTI</td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<div class="flex mt30">
+					<p>
+						<strong class="mr10">◎ 출고지 정보내역</strong>
+					</p>
+					<button type="button" class="right button mla btn_black" onclick="layerpopup('market_search_popup');">출고지추가</button>
+				</div>
+				
+				<table class="table left_tbl view_tbl mt20">
+					<caption>주문정보</caption>
+					<colgroup>
+						<col style="width:10%" />
+						<col style="width:40%" />
+						<col style="width:10%" />
+						<col />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>출고지1</th>
+							<td colspan="3">
+								<div class="flex align_center">
+									<label>
+										<input name="checkbox1" type="checkbox" class="checkbox" />
+										<span class="lbl">대표 출고지</span>
+									</label>
+									<button type="button" class="button">출고지 삭제</button>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">출고지</th>
+							<td colspan="3">
+								<div class="mb10">
+									<input type="text" value="123456" disabled/>
+									<button type="button" class="button btn_black">우편번호 검색</button> <br/>
+								</div>
+								<div>
+									<input type="text" class="w300" value="서울시 논현동" disabled/>
+									<input type="text" class="w400" value="135-4" disabled/>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">조건부 무료배송</th>
+							<td>
+								<label>
+									<input name="radio4" type="radio" class="radio" checked="checked" />
+									<span class="lbl">사용</span>
+								</label>
+								<label>
+									<input name="radio4" type="radio" class="radio" />
+									<span class="lbl">사용안함</span>
+								</label>
+							</td>
+							<th scope="row">조건</th>
+							<td>
+								<input type="text" />
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<div class="flex mt30">
+					<p>
+						<strong class="mr10">◎ 반품지 정보내역</strong>
+					</p>
+					<button type="button" class="right button mla btn_black">반품지 추가</button>
+				</div>
+				
+				<table class="table left_tbl view_tbl mt20">
+					<caption>주문정보</caption>
+					<colgroup>
+						<col style="width:10%" />
+						<col />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>반품지1</th>
+							<td>
+								<div class="flex align_center">
+									<label>
+										<input name="checkbox2" type="checkbox" class="checkbox">
+										<span class="lbl">대표 반품지</span>
+									</label>
+									<button type="button" class="button">반품지 삭제</button>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">출고지</th>
+							<td>
+								<div class="mb10">
+									<input type="text" value="123456" disabled/>
+									<button type="button" class="button btn_black">우편번호 검색</button> <br/>
+								</div>
+								<div>
+									<input type="text" class="w300" value="서울시 논현동" disabled/>
+									<input type="text" class="w400" value="135-4" disabled/>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<p class="t_center mt30">
+					<a href="#" class="button large w100 btn_black">저장</a>
+				</p>
+				
+			</section>
+			<!-- //contents -->
+		</div>
+		<!-- //container -->
+	</div>
+	<!-- //wrap -->
+	<!-- footer -->
+	<header id="footer" data-include="../../include/footer.html"></header>
+	<!-- //footer -->
+	<article id="market_search_popup" class="pop_layer">
+		<div class="pop_wrap">
+			<h1>시장 검색 팝업</h1>
+			<div class="pl30 pr30 mt30 t_center">
+				<p class="f16">
+					<table class="table left_tbl view_tbl">
+						<tbody>
+							<tr>
+								<th scope="row">시장 검색</th>
+								<td>
+									<input type="text" class="w_70"  placeholder="삼성"/> &nbsp;&nbsp;&nbsp;
+									<button type="button" class="button btn_blue"><i class="icon-search"></i></button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					
+					<table class="table left_tbl view_tbl mt30 ">
+						<tbody >
+							<tr>
+								<th scope="col"><input type="radio"></th>
+								<th scope="col">시장코드</th>
+								<th scope="col">시장구분</th>
+								<th scope="col">시장위치</th>
+								<th scope="col">시장명</th>
+							</tr>
+							<tr>
+							<td><input type="radio"></td>
+							<td>SI00000010</td>
+							<td>전통5일장</td>
+							<td>충청북도</td>
+							<td>삼성(덕정)시장</td>
+							</tr>
+						</tbody>
+					</table>
+				</p>
+				<div class="paging_box mt30">
+						<ul class="pagination mla mra">
+							<li class="disabled"><a href="#"><i class="icon-angle-double-left"></i></a></li>
+							<li class="disabled"><a href="#"><i class="icon-angle-left"></i></a></li>
+							<li class="active"><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li><a href="#"><i class="icon-angle-right"></i></a></li>
+							<li><a href="#"><i class="icon-angle-double-right"></i></a></li>
+						</ul>
+					</div>
+					<div class="mt30">
+					<button type="button" class="button w70 btn_black">적용</button>
+					<button type="button" class="button w70 btn_black">취소</button>
+					</div>
+					
+			</div>
+			
+</body>
+</html>

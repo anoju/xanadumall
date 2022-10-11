@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<title>온누리장터</title>
+<script>window.MSInputMethodContext && document.documentMode && document.write('<script src="../static/js/ie11CustomProperties.js"><\/script>');</script>
+<!-- 반드시 나중에 절대경로로 바꿔주세요 -->
+<link href="../static/css/reset.css" rel="stylesheet" />
+<link href="../static/css/common.css" rel="stylesheet" />
+<link href="../static/css/contents.css" rel="stylesheet" />
+<!-- //반드시 나중에 절대경로로 바꿔주세요 -->
+<script type="text/javascript" src="../static/js/common.js"></script>
+<script type="text/javascript" src="../static/js/ui.js"></script>
+<!--[if lt IE 9]>
+    <script type="text/javascript">
+        document.createElement("header");
+        document.createElement("nav");
+        document.createElement("section");
+        document.createElement("article");
+        document.createElement("footer");
+    </script>
+<![endif]-->
+</head>
+<body>
+
+	<!-- 헤더영역 -->
+	<header id="headerWrap" data-include="../include/header.html"></header>
+	<!-- //헤더영역 -->
+
+	<!-- 컨텐츠 영역 -->          
+	<section id="container" data-title="로그인">
+		<div class="section">
+			<div class="locationBar">
+				<span class="home">홈</span>
+				<span>아이디/비밀번호 찾기</span>
+			</div>
+
+			<div class="loginWrap">
+				<h1>아이디/비밀번호 찾기</h1>
+				<div class="tabList type2 mb0">
+					<a href="#page1" class="on">아이디 찾기</a>
+					<a href="#page2">비밀번호 찾기</a>
+				</div>
+
+				<div class="tabListView" id="page1" style="display:block;">
+					<!-- 아코디언 그룹 -->
+					<div class="accodionWrap">
+						<div class="accodionBox on">
+							<a href="#" class="tit">휴대폰으로 찾기</a>
+							<div class="accodionView" style="display:block;">
+								<div class="formBox">
+									<div class="inputBox"><input type="text" placeholder="이름" /></div>
+								</div>
+								<div class="formBox">
+									<div class="inputBox"><input type="text" placeholder="휴대폰 번호" /></div>
+								</div>
+								<!-- 인증번호 전송 -->
+								<div class="btnGroup mt8">
+									<a href="#" class="button line">인증번호 전송</a>
+								</div>
+								<!-- // 인증번호 전송 -->
+
+								<!-- 인증번호 진행중 -->
+								<div class="btnGroup mt8">
+									<a href="#" class="button line">인증번호 재전송</a>
+								</div>
+								<div class="formBox mt8">
+									<div class="inputBox">
+										<input type="text" placeholder="휴대폰 번호" />
+										<span class="fz12 fcRed bold">03:00</span>
+										<a href="#" class="button line small ml8 mr8 flex00">인증확인</a>
+									</div>
+								</div>
+								<!-- // 인증번호 진행중 -->
+
+								<!-- 인증번호 완료 -->
+								<div class="btnGroup mt8">
+									<span class="certificationSuccess">인증완료</span>
+								</div>
+								<!-- // 인증번호 완료 -->
+								<div class="btnGroup mt8">
+									<button class="button" disabled>아이디 찾기</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="accodionBox">
+							<a href="#" class="tit">이메일로 찾기</a>
+							<div class="accodionView">
+								<div class="formBox">
+									<div class="inputBox"><input type="text" placeholder="이름" /></div>
+								</div>
+								<div class="formBox">
+									<div class="inputBox"><input type="text" placeholder="이메일" /></div>
+								</div>
+								<!-- 인증번호 전송 -->
+								<div class="btnGroup mt8">
+									<a href="#" class="button line">인증번호 받기</a>
+								</div>
+								<!-- // 인증번호 전송 -->
+								<div class="btnGroup mt8">
+									<button class="button" disabled>아이디 찾기</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="accodionBox">
+							<a href="#" class="tit">PASS 본인인증으로 찾기</a>
+							<div class="accodionView">
+								<p class="text">안전한 통신사 본인인증(PASS)에서 인증합니다.<br />(PASS 간편인증 또는 문자인증으로 본인인증 가능)</p>
+								<div class="btnGroup mt8">
+									<button class="button line">본인인증</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- //아코디언 그룹 -->
+				</div>
+
+				<div class="tabListView" id="page2">
+					<div class="accodionWrap">
+						<div class="accodionBox on">
+							<a href="#" class="tit">휴대폰으로 찾기</a>
+							<div class="accodionView" style="display:block;">
+								<div class="formBox">
+									<div class="inputBox"><input type="text" placeholder="이름" /></div>
+								</div>
+								<div class="formBox">
+									<div class="inputBox"><input type="text" placeholder="휴대폰 번호" /></div>
+								</div>
+								<!-- 인증번호 전송 -->
+								<div class="btnGroup mt8">
+									<a href="#" class="button line">인증번호 전송</a>
+								</div>
+								<!-- // 인증번호 전송 -->
+
+								<!-- 인증번호 진행중 -->
+								<div class="btnGroup mt8">
+									<a href="#" class="button line">인증번호 재전송</a>
+								</div>
+								<div class="formBox mt8">
+									<div class="inputBox">
+										<input type="text" placeholder="휴대폰 번호" />
+										<span class="fz12 fcRed bold">03:00</span>
+										<a href="#" class="button line small ml8 mr8 flex00">인증확인</a>
+									</div>
+								</div>
+								<!-- // 인증번호 진행중 -->
+
+								<!-- 인증번호 완료 -->
+								<div class="btnGroup mt8">
+									<span class="certificationSuccess">인증완료</span>
+								</div>
+								<!-- // 인증번호 완료 -->
+								<div class="btnGroup mt8">
+									<button class="button" disabled>비밀번호 재설정</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="accodionBox">
+							<a href="#" class="tit">이메일로 찾기</a>
+							<div class="accodionView">
+								<div class="formBox">
+									<div class="inputBox"><input type="text" placeholder="이름" /></div>
+								</div>
+								<div class="formBox">
+									<div class="inputBox"><input type="text" placeholder="이메일" /></div>
+								</div>
+								<!-- 인증번호 전송 -->
+								<div class="btnGroup mt8">
+									<a href="#" class="button line">인증번호 전송</a>
+								</div>
+								<!-- // 인증번호 전송 -->
+
+								<!-- 인증번호 진행중 -->
+								<div class="btnGroup mt8">
+									<a href="#" class="button line">인증번호 재전송</a>
+								</div>
+								<div class="formBox mt8">
+									<div class="inputBox">
+										<input type="text" placeholder="휴대폰 번호" />
+										<span class="fz12 fcRed bold">03:00</span>
+										<a href="#" class="button line small ml8 mr8 flex00">인증확인</a>
+									</div>
+								</div>
+								<!-- // 인증번호 진행중 -->
+
+								<!-- 인증번호 완료 -->
+								<div class="btnGroup mt8">
+									<span class="certificationSuccess">인증완료</span>
+								</div>
+								<!-- // 인증번호 완료 -->
+								<div class="btnGroup mt8">
+									<button class="button" disabled>비밀번호 재설정</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="accodionBox">
+							<a href="#" class="tit">PASS 본인인증으로 찾기</a>
+							<div class="accodionView">
+								<p class="text">안전한 통신사 본인인증(PASS)에서 인증합니다.<br />(PASS 간편인증 또는 문자인증으로 본인인증 가능)</p>
+								<div class="btnGroup mt8">
+									<button class="button line">본인인증</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+	<!-- //컨텐츠 영역 -->
+
+	<!-- 하단 영역 -->
+	<footer id="footerWrap" data-include="../include/footer.html"></footer>
+	<!-- //하단 영역 -->
+
+	<script>
+	</script>
+</body>
+</html>

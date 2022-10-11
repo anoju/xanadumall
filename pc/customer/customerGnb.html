@@ -1,0 +1,31 @@
+<h1>고객센터</h1>
+<ul>
+	<li><a href="#">공지사항</a></li>
+	<li><a href="#">자주묻는 질문</a></li>
+	<li><a href="#">1:1문의</a></li>
+	<li><a href="#">이용안내</a></li>
+	<li><a href="#">이용약관</a></li>
+	<li><a href="#">개인정보처리방침</a></li>
+	<li><a href="#">제너두페이 이용안내</a></li>
+	<li><a href="#">온누리 전자상품권</a></li>
+	<li><a href="#">온누리 모바일 상품권</a></li>
+	<li><a href="#">온누리 시장 소개</a></li>
+</ul>
+
+<div class="customerInfoText">
+	<p class="tit">고객센터 이용안내</p>
+	<p class="phone">1899-0522</p>
+	<p class="date">월-금 09:00~18:00</p>
+</div>
+
+<script>
+	$(function(){
+		mypageOn();
+	})
+	function mypageOn(){
+		if($('.leftGnb').data('mypage-on')){
+			const on = $('.leftGnb').data('mypage-on');
+			$('.leftGnb ul li').eq(on-1).addClass('on');
+		}
+	}
+</script>

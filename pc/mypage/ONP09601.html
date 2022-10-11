@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<title>온누리장터</title>
+<script>window.MSInputMethodContext && document.documentMode && document.write('<script src="../static/js/ie11CustomProperties.js"><\/script>');</script>
+<!-- 반드시 나중에 절대경로로 바꿔주세요 -->
+<link href="../static/css/reset.css" rel="stylesheet" />
+<link href="../static/css/common.css" rel="stylesheet" />
+<link href="../static/css/contents.css" rel="stylesheet" />
+<!-- //반드시 나중에 절대경로로 바꿔주세요 -->
+<script type="text/javascript" src="../static/js/common.js"></script>
+<script type="text/javascript" src="../static/js/ui.js"></script>
+<!--[if lt IE 9]>
+    <script type="text/javascript">
+        document.createElement("header");
+        document.createElement("nav");
+        document.createElement("section");
+        document.createElement("article");
+        document.createElement("footer");
+    </script>
+<![endif]-->
+</head>
+<body>
+
+	<!-- 헤더영역 -->
+	<header id="headerWrap" data-include="../include/header.html"></header>
+	<!-- //헤더영역 -->
+
+	<!-- 컨텐츠 영역 -->          
+	<section id="container" data-title="마이페이지">
+		<div class="section">
+			<div class="locationBar">
+				<span class="home">홈</span>
+				<span>마이페이지</span>
+			</div>
+
+			<div class="mypageWrap">
+				<!--
+					data-mypage-on="[1,1]" 좌측 메뉴 활성화
+				-->
+				<div class="leftGnb" data-include="./mypageGnb.html" data-mypage-on="[2,1]"></div>
+				<div class="mypageCont">
+					<h3 class="subH2 mt0 tl">적립금</h3>
+
+					<div class="pointInfoBox mt24">
+						<div>
+							<p class="subH3 mt0">총 적립금</p>
+							<p class="text">총 적립금</p>
+							<p class="point"><strong>4,200</strong>원</p>
+						</div>
+						<div>
+							<p class="subH3 mt0">가용예정 적립금</p>
+							<p class="text">가용 적립금으로 전환 예정인 <br />적립금</p>
+							<p class="point"><strong>4,200</strong>원</p>
+						</div>
+						<div>
+							<p class="subH3 mt0">가용 적립금</p>
+							<p class="text">현재 사용 가능한 적립금</p>
+							<p class="point"><strong>4,200</strong>원</p>
+						</div>
+						<div>
+							<p class="subH3 mt0">소멸예정 적립금</p>
+							<p class="text">이번달 소멸 예정 적립금</p>
+							<p class="point"><strong>4,200</strong>원</p>
+						</div>
+					</div>
+
+					<div class="searchWrap">
+						<div class="selectBox">
+							<select title="적립/사용내역">
+								<option value="">적립/사용내역</option>
+							</select>
+						</div>
+						<div class="selectBox ml4">
+							<select title="적립/사용내역">
+								<option value="">적립/사용내역</option>
+							</select>
+						</div>
+						<div class="selectBox ml4">
+							<select title="적립/사용내역">
+								<option value="">적립/사용내역</option>
+							</select>
+						</div>
+					</div>
+					<div class="searchWrap mt12">
+						<div class="toggleRadio type2">
+							<input type="radio" id="toggleRio1" name="toggleRio" /><label for="toggleRio1"><i></i>오늘</label>
+							<input type="radio" id="toggleRio2" name="toggleRio" checked /><label for="toggleRio2"><i></i>10일</label>
+							<input type="radio" id="toggleRio3" name="toggleRio" /><label for="toggleRio3"><i></i>30일</label>
+							<input type="radio" id="toggleRio4" name="toggleRio" /><label for="toggleRio4"><i></i>60일</label>
+							<input type="radio" id="toggleRio5" name="toggleRio" /><label for="toggleRio5"><i></i>90일</label>
+							<input type="radio" id="toggleRio6" name="toggleRio" /><label for="toggleRio6"><i></i>120일</label>
+						</div>
+
+						<div class="formBox datepickerWrap">
+							<div class="flex alignCenter">
+								<div class="inputBox datepicker"><input type="text"><i></i></div>
+								<i>~</i>
+								<div class="inputBox datepicker"><input type="text"><i></i></div>
+							</div>
+						</div>
+
+						<button class="button black">조회</button>
+					</div>
+
+					<div class="tableList mt20">
+						<table>
+							<colgroup>
+								<col style="width:110px;" />
+								<col style="width:160px;" />
+								<col />
+								<col style="width:120px;" />
+								<col style="width:100px;" />
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">날짜</th>
+									<th scope="col">적립/사용내역</th>
+									<th scope="col">내역</th>
+									<th scope="col">유효기간</th>
+									<th scope="col">금액</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>2021-05-20</td>
+									<td>적립(가용)</td>
+									<td class="pl0 tl">[이벤트(보상)] 4월 적립금 이벤트</td>
+									<td>2022-01-01</td>
+									<td>
+										<!--
+											플러스 : fcBlue
+											마이너스 : fcOrange
+										-->
+										<strong class="fz16 bold poppins fcBlue">+1,000</strong>
+										<span class="fz13">원</span>
+									</td>
+								</tr>
+								<tr>
+									<td>2021-05-20</td>
+									<td>적립(가용)</td>
+									<td class="pl0 tl">[이벤트(보상)] 4월 적립금 이벤트</td>
+									<td>2022-01-01</td>
+									<td>
+										<!--
+											플러스 : fcBlue
+											마이너스 : fcOrange
+										-->
+										<strong class="fz16 bold poppins fcOrange">-1,000</strong>
+										<span class="fz13">원</span>
+									</td>
+								</tr>
+								<tr>
+									<td>2021-05-20</td>
+									<td class="fcOrange">소멸예정</td>
+									<td class="pl0 tl">[이벤트(보상)] 4월 적립금 이벤트</td>
+									<td>
+										2022-01-01
+										<br /><span class="fz12 fcOrange">(29일남음)</span>
+									</td>
+									<td>
+										<!--
+											플러스 : fcBlue
+											마이너스 : fcOrange
+										-->
+										<strong class="fz16 bold poppins fcOrange">-1,000</strong>
+										<span class="fz13">원</span>
+									</td>
+								</tr>
+								<tr>
+									<td>2021-05-20</td>
+									<td>적립(가용)</td>
+									<td class="pl0 tl">[이벤트(보상)] 4월 적립금 이벤트</td>
+									<td>2022-01-01</td>
+									<td>
+										<!--
+											플러스 : fcBlue
+											마이너스 : fcOrange
+										-->
+										<strong class="fz16 bold poppins fcBlue">+1,000</strong>
+										<span class="fz13">원</span>
+									</td>
+								</tr>
+								<tr>
+									<td>2021-05-20</td>
+									<td>적립(가용)</td>
+									<td class="pl0 tl">[이벤트(보상)] 4월 적립금 이벤트</td>
+									<td>2022-01-01</td>
+									<td>
+										<!--
+											플러스 : fcBlue
+											마이너스 : fcOrange
+										-->
+										<strong class="fz16 bold poppins fcOrange">-1,000</strong>
+										<span class="fz13">원</span>
+									</td>
+								</tr>
+								<tr>
+									<td>2021-05-20</td>
+									<td class="fcOrange">소멸예정</td>
+									<td class="pl0 tl">[이벤트(보상)] 4월 적립금 이벤트</td>
+									<td>
+										2022-01-01
+										<br /><span class="fz12 fcOrange">(29일남음)</span>
+									</td>
+									<td>
+										<!--
+											플러스 : fcBlue
+											마이너스 : fcOrange
+										-->
+										<strong class="fz16 bold poppins fcOrange">-1,000</strong>
+										<span class="fz13">원</span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="pagingBox mt24">
+						<a href="#" class="btnPrev2">맨처음</a>
+						<a href="#" class="btnPrev1">이전</a>
+						<strong>1</strong>
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<a href="#">5</a>
+						<a href="#">6</a>
+						<a href="#">7</a>
+						<a href="#">8</a>
+						<a href="#">9</a>
+						<a href="#">10</a>
+						<a href="#" class="btnNext1">다음</a>
+						<a href="#" class="btnNext2">맨뒤로</a>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<!-- //컨텐츠 영역 -->
+
+	<!-- 하단 영역 -->
+	<footer id="footerWrap" data-include="../include/footer.html"></footer>
+	<!-- //하단 영역 -->
+	<script>
+	</script>
+</body>
+</html>

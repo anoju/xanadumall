@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<title>온누리장터</title>
+<script>window.MSInputMethodContext && document.documentMode && document.write('<script src="../static/js/ie11CustomProperties.js"><\/script>');</script>
+<!-- 반드시 나중에 절대경로로 바꿔주세요 -->
+<link href="../static/css/reset.css" rel="stylesheet" />
+<link href="../static/css/common.css" rel="stylesheet" />
+<link href="../static/css/contents.css" rel="stylesheet" />
+<!-- //반드시 나중에 절대경로로 바꿔주세요 -->
+<script type="text/javascript" src="../static/js/common.js"></script>
+<script type="text/javascript" src="../static/js/ui.js"></script>
+<!--[if lt IE 9]>
+    <script type="text/javascript">
+        document.createElement("header");
+        document.createElement("nav");
+        document.createElement("section");
+        document.createElement("article");
+        document.createElement("footer");
+    </script>
+<![endif]-->
+</head>
+<body>
+
+	<!-- 헤더영역 -->
+	<header id="headerWrap" data-include="../include/header.html"></header>
+	<!-- //헤더영역 -->
+
+	<!-- 컨텐츠 영역 -->          
+	<section id="container" data-title="마이페이지">
+		<div class="section">
+			<div class="locationBar">
+				<span class="home">홈</span>
+				<span>마이페이지</span>
+			</div>
+
+			<div class="mypageWrap">
+				<!--
+					data-mypage-on="[1,1]" 좌측 메뉴 활성화
+				-->
+				<div class="leftGnb" data-include="./mypageGnb.html" data-mypage-on="[1,2]"></div>
+				<div class="mypageCont">
+					<div class="flex">
+						<h3 class="subH2 mt0 tl flex11">교환/반품 신청</h3>
+						<p class="fz14 fc666">배송완료된 주문상품만 교환/반품 신청이 가능합니다.</p>
+					</div>
+			
+					<ul class="dotList">
+						<li>교환 및 반품 사유를 입력해주시면 고객센터에서 확인 후 교환 및 반품 절차가 진행됩니다.</li>
+					</ul>
+
+					<!-- 최근 주문내역 -->
+					<div class="shoppingWrap mt40">
+						<div class="listWrap myListWrap">
+							<!-- 주문 -->
+							<div class="myListTop">
+								<p class="tit">
+									2021-09-05
+								</p>
+							</div>
+							<div class="myListBox">
+								<div class="list">
+									<p class="img">
+										<span style="background-image: url('../static/images/sample/sample_product1.png');"></span>
+									</p>
+									<div class="textBox">
+										<div class="flex">
+											<p class="tit">[산지직송] 옛고을의 정성담은 영주 신선한 한돈</p>
+										</div>
+										<div class="optionList">
+											<p class="text">불고기 2팩 + 우동사리 1팩 / 2개</p>
+											<p class="money">
+												<strong>20,000</strong>원
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<p class="subH3 mt40">교환 반품 신청</p>
+					<div class="radio mt24">
+						<input type="radio" id="change1" name="changeG1" /><label for="change1"><i></i>교환</label>
+						<input type="radio" id="change2" name="changeG1" /><label for="change2"><i></i>반품</label>
+					</div>
+
+					<p class="subH3 mt40">교환/반품 사유</p>
+
+					<div class="formBox mt24">
+						<div class="flex">
+							<div class="selectBox w50">
+								<select title="날짜 선택">
+									<option value="">날짜 선택</option>
+									<option value="1">1일</option>
+									<option value="2">2일</option>
+									<option value="3">3일</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<div class="formBox mt24">
+						<div class="flex">
+							<label for="TEXT" class="tit">상세 사유 입력 </label>
+							<p class="mla fz12 fc666">(0/300)</p>
+						</div>
+						<div class="textarea" id="TEXT">
+							<textarea placeholder="교환 상세 사유를 입력해주세요. 최소 5자 이상, 최대 300자 이하로 입력해 주세요"></textarea>
+						</div>
+					</div>
+
+					<div class="formBox mt24">
+						<p class="tit">사진등록 (선택)</p>
+						<button class="button line btnPicture">사진 등록하기</button>
+	
+						<div class="pictureList">
+							<div class="img">
+								<span style="background-image:url('../static/images/sample/icon_category_fish.png');"></span>
+								<a href="#" class="btnClose">삭제</a>
+							</div>
+							<div class="img">
+								<span style="background-image:url('../static/images/sample/icon_category_fish.png');"></span>
+								<a href="#" class="btnClose">삭제</a>
+							</div>
+							<div class="img">
+								<span style="background-image:url('../static/images/sample/icon_category_fish.png');"></span>
+								<a href="#" class="btnClose">삭제</a>
+							</div>
+						</div>
+						<ul class="dotList">
+							<li>교환 또는 반품 사유를 확인할 수 있는 사진을 등록하시면 보다 신속하게 처리 가능합니다.</li>
+							<li>사진은 최대 3개 각 10MB 이하로 jpg, jpeg, png, gif 확장자만 등록 가능합니다.</li>
+						</ul>
+					</div>
+
+					<div class="btnGroup type3">
+						<a href="#" class="button large">교환 및 반품 신청하기</a>
+					</div>
+
+					<!-- <hr class="line mt24" />
+					
+					<p class="subH3">수거방법 선택</p>
+					<div class="radio mt24">
+						<input type="radio" id="radio1" name="radioG1" /><label for="radio1"><i></i>방문수거 요청</label>
+						<input type="radio" id="radio2" name="radioG1" checked /><label for="radio2"><i></i>직접발송(또는 이미 발송함)</label>
+					</div>
+					<!- 수거방법 1->
+					<div class="grayBox type2 mt20">
+						<p class="fz15 fw500">방문택배사: CJ대한통운</p>
+						<p class="mt4 fz14">영업일 기준 3일내에 방문 수거가 진행됩니다.</p>
+					</div>
+					<!- //수거방법 1->
+
+					<!- 수거방법 2->
+					<div class="grayBox type2 mt20">
+						<p class="fz15 fcOrange fw500">방문수거 요청이 불가능한 상태입니다.</p>
+						<p class="mt4 fz14 fw500">'직접발송' 선택하여 반품지 주소를 다시 한번 확인하신 후에 교환신청을 진행해주세요.</p>
+						<p class="mt16 fz13">'직접발송' 선택하여 반품지 주소를 다시 한번 확인하신 후에 교환신청을 진행해주세요.</p>
+						<dl class="flex mt16">
+							<dt class="flex00 fz14 fc666" style="width:91px">판매자 연락처</dd>
+							<dt class="fz14 fw500">02-2345-6780</dd>
+						</dl>
+						<dl class="flex">
+							<dt class="flex00 fz14 fc666" style="width:91px">상담센터 </dd>
+							<dt><span class="fz14 fw500">1588-1588</span><span class="ml8 fz14">(평일 09시 ~ 18시)</span></dd>
+						</dl>
+					</div>
+					<!- //수거방법 2->
+
+					<!- 수거방법 3->
+					<div class="grayBox type2 mt20">
+						<p class="fz14 fc666 fw500">반품주소지 확인</p>
+						<p class="mt12 fz14">[133434] 서울특별시 강남구 강남대로 556 16층 (논현동, 논현빌딩) 103동 1305호</p>
+						<p class="mt4 fz14">02-2345-6780</p>
+					</div>
+
+					<div class="mt20 pt20 bt">
+						<p class="subH3 mt0">택배정보 입력</p>
+						<p class="mt20 fz14 fc666">아직 상품을 업체로 발송하지 않은 경우, '송장번호 없이 교환신청' 체크 후 다음단계를 진행해주세요.</p>
+
+						<div class="formBox mt20">
+							<div class="flex alignCenter">
+								<div class="selectBox  flex00 w60">
+									<select title="날짜 선택" disabled>
+										<option value="">날짜 선택</option>
+										<option value="1">1일</option>
+										<option value="2">2일</option>
+										<option value="3">3일</option>
+									</select>
+								</div>
+								<div class="checkbox flex00"><input type="checkbox" id="check11" /><label for="check11"><i></i>송장번호 없이 교환신청</label></div>
+							</div>
+							<div class="flex mt8 alignCenter">
+								<div class="inputBox flex00 w60"><input type="text" placeholder="송장번호" /></div>
+							</div>
+						</div> 
+						<ul class="dotList">
+							<li>택배영수증은 교환상품이 판매자에게 수거 완료되기 전까지 보관해주시기 바랍니다.</li>
+						</ul>
+					</div>
+					<!- //수거방법 3->
+					<hr class="line mt24" />
+					
+					<p class="subH3">주문자 정보</p>
+					<div class="addressWrap mt24">
+						<div class="flex">
+							<p class="tit">홍길순</p>
+							<a href="#" class="button gray small">수거지 변경</a>
+						</div>
+						<p class="fz14 mt4">010-2345-6780</p>
+						<p class="fz14 mt4">[133434] 서울특별시 강남구 강남대로 556 16층 (논현동, 논현빌딩) 103동 1305호</p>
+					</div>
+					<hr class="line mt24" />
+
+					<div class="flex alignCenter mt24">
+						<p class="subH3 mt0">배송지 정보</p>
+						<div class="checkbox mla small"><input type="checkbox" id="check1" /><label for="check1"><i></i>수거지와 동일</label></div>
+					</div>
+					<div class="addressWrap mt24">
+						<div class="flex">
+							<p class="tit">홍길순<span class="defultLabel">기본배송지</span></p>
+							<a href="#pop1" class="popOpen button small gray fwNormal">배송지 변경</a>
+						</div>
+						<p class="fz14">[133434] 서울특별시 강남구 강남대로 556 16층 (논현동, 논현빌딩) 103동 1305호</p>
+						<p class="fz14 mt4">010-2345-6780</p>
+
+						<div class="selectBox mt16">
+							<select title="선택">
+								<option value="">선택</option>
+							</select>
+						</div>
+						<div class="inputBox mt8"><input type="text" placeholder="배송 메모를 입력해주세요"></div>
+						<p class="tr fz12 fc666 mt8">(0/60)</p>
+					</div>
+					<hr class="line mt24" />
+
+					<div class="checkbox mt24"><input type="checkbox" id="check2" /><label for="check2"><i></i>교환 및 반품 불가 안내사항 대해 확인하였으며 이에 동의합니다.</label></div>
+					<ul class="dotList">
+						<li>상품 포장개방/ 설치완료/사용 또는 일부 사용으로 상품의 가치가 훼손된 경우(화장품, 가전제품)</li>
+						<li>시간 경과에 따라 재판매가 어려운 상품, 복제가 가능한 재화 등의 포장이 훼손된 경우</li>
+						<li>주문제작 상품, 구성품 누락, 사은품 누락, 수선 혹은 세탁한 경우</li>
+						<li>상품별 Tag(가격표), 박스, 라벨, 포장 등이 훼손이나 폐기된 경우</li>
+						<li>보다 자세한 내용은 상품 상세페이지에서 확인하시거나 고객센터로 문의해주시기 바랍니다. </li>
+					</ul>
+					<hr class="line mt24" />
+
+					<p class="mt30 fz20 bold">교환 배송비 결제 금액
+						<strong class="ml20 fcOrange bold">5,000</strong><span class="fz16 fw500">원</span>
+					</p>
+					<p class="subH3 bt mt30 pt24">결제방법 선택</p>
+					<div class="radio mt24">
+						<input type="radio" id="radio3" name="radioG2" /><label for="radio3"><i></i>신용카드</label>
+						<input type="radio" id="radio4" name="radioG2" checked /><label for="radio4"><i></i>실시간계좌이체</label>
+						<input type="radio" id="radio5" name="radioG2" /><label for="radio5"><i></i>직접송금 또는 동봉</label>
+					</div>
+					<hr class="line mt24" />
+
+					<p class="subH3">교환신청자 정보</p>
+					<div class="formBox flex mt24">
+						<label for="Name" class="tit">보내시는 분<span class="impo">중요</span></label>
+						<div class="w320">
+							<div class="inputBox"><input type="text" id="Name" value="기본" /></div>
+						</div>
+					</div>
+					<div class="formBox flex mt16">
+						<label for="Name" class="tit">휴대폰<span class="impo">중요</span></label>
+						<div class="w320">
+							<div class="phoneForm">
+								<div class="selectBox">
+									<select title="선택">
+										<option value="">선택
+									</option></select>
+								</div><span class="line">-</span>
+								<div class="inputBox"><input type="text"></div><span class="line">-</span>
+								<div class="inputBox"><input type="text"></div>
+							</div>
+						</div>
+					</div>
+					<div class="formBox flex mt16">
+						<label for="Name" class="tit">이메일<span class="impo">중요</span></label>
+						<div class="emailForm flex11">
+							<div class="inputBox"><input type="text"></div>
+							<span class="line">@</span>
+							<div class="inputBox"><input type="text"></div>
+							<div class="selectBox flex00" style="width:310px;">
+								<select title="선택">
+									<option value="">선택
+								</option></select>
+							</div>
+						</div>
+					</div>
+					<hr class="line mt24" />
+
+					<div class="checkbox mt24">
+						<input type="checkbox" id="check3" />
+						<label for="check3">
+							<i></i>동의함
+							<p class="fz12 fc666">교환하시는 상품, 결제정보 등을 최종 확인 후 결제 동의합니다. (전자상거래 제8조 제2항)</p>
+						</label>
+					</div>
+					<div class="checkbox mt24">
+						<input type="checkbox" id="check3" />
+						<label for="check3">
+							<i></i>동의함
+							<p class="fz12 fc666">개인정보의 제3자 제공에 동의합니다.</p>
+						</label>
+					</div>
+					<div class="checkbox mt24">
+						<input type="checkbox" id="check3" />
+						<label for="check3">
+							<i></i>동의함
+							<p class="fz12 fc666">교환 및 반품 불가 안내사항에 대해 확인하였으며 이에 동의합니다.</p>
+						</label>
+					</div>
+
+					<div class="btnGroup type3">
+						<a href="#" class="button large">결제 및 교환 신청하기</a>
+					</div> -->
+					
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<!-- //컨텐츠 영역 -->
+
+
+	<!-- 팝업 : 교환신청취소 -->
+	<div id="pop1" class="layerPopWrap">
+		<div class="bg"></div>
+		<div class="layerPopCont" tabindex="0">
+			<h1>교환신청 취소</h1>
+			<div class="popCont">
+
+				<p class="fz22 bold tc">교환신청을 <br />취소하시겠습니까?</p>
+				<ul class="dotList mt20">
+					<li>상품을 이미 보내신 경우 취소가 불가능합니다.</li>
+					<li>교환/반품 관련하여 문의사항이 있을 경우, 온라인 상담신청 또는 상담센터 (00-0000-0000)로 문의 바랍니다.</li>
+					<li>결제하신 교환배송비가 있을 경우 결제수단에 따라 영업일 기준 7일 이내에 환불됩니다.</li>
+				</ul>
+
+				<div class="btnGroup mt80">
+					<a href="#" class="button line">취소</a>
+					<a href="#" class="button">교환신청 취소</a>
+				</div>
+			</div>
+			<a href="#" class="btnClose btnPopClose">팝업닫기</a>
+		</div>
+	</div>
+	<!-- //팝업 : 교환신청취소 -->
+
+	<!-- 팝업 : 반품신청 취소 -->
+	<div id="pop2" class="layerPopWrap">
+		<div class="bg"></div>
+		<div class="layerPopCont" tabindex="0">
+			<h1>반품신청 취소</h1>
+			<div class="popCont">
+
+				<p class="fz22 bold tc">반품신청을 <br />취소하시겠습니까?</p>
+				<ul class="dotList mt20">
+					<li>상품을 이미 보내신 경우 취소가 불가능합니다.</li>
+					<li>교환/반품 관련하여 문의사항이 있을 경우, 온라인 상담신청 또는 상담센터 (00-0000-0000)로 문의 바랍니다.</li>
+					<li>결제하신 교환배송비가 있을 경우 결제수단에 따라 영업일 기준 7일 이내에 환불됩니다.</li>
+				</ul>
+
+				<div class="btnGroup mt80">
+					<a href="#" class="button line">취소</a>
+					<a href="#" class="button">반품신청 취소</a>
+				</div>
+			</div>
+			<a href="#" class="btnClose btnPopClose">팝업닫기</a>
+		</div>
+	</div>
+	<!-- //팝업 : 반품신청 취소 -->
+	
+	<!-- 하단 영역 -->
+	<footer id="footerWrap" data-include="../include/footer.html"></footer>
+	<!-- //하단 영역 -->
+	<script>
+	</script>
+</body>
+</html>

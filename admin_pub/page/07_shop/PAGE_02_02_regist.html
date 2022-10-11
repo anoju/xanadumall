@@ -1,0 +1,257 @@
+<!DOCTYPE html> 
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>XANADU 시스템</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" href="../../static/css/common.css" media="all" />
+	<link rel="stylesheet" href="../../static/css/contents.css" media="all" />
+	<script src="../../static/js/plugins.js"></script>
+	<script src="../../static/js/ui_script.js"></script>
+	<!--[if lt IE 9]>
+		<script type="text/javascript">
+			document.createElement("header");
+			document.createElement("nav");
+			document.createElement("section");
+			document.createElement("article");
+			document.createElement("footer");
+		</script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- wrap -->
+	<div id="wrap" data-active="[7,2,2]">
+		<!-- header -->
+		<header id="header" data-include="../../include/header.html"></header>
+		<!-- //header -->	
+		
+		<!-- gnb -->
+		<aside class="left_menu"  data-include="../../include/leftMenu.html"></aside>
+		<!-- //left_menu -->
+
+		<!-- container -->
+		<div id="container">
+			<!-- contents -->
+			<section id="contents">
+				<h1 id="page_tit">팝업관리</h1>	
+				<p>
+					<h2>◎팝업 등록</h2>
+				</p>
+
+				<table class="table left_tbl view_tbl mt20">
+					<caption>팝업등록</caption>
+					<colgroup>
+						<col style="width:10%" />
+						<col style="width:40%" />
+						<col style="width:10%" />
+						<col />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">서비스유형</th>
+							<td>
+								<label>
+									<input name="radio1" class="radio" type="radio" checked="checked" />
+									<span class="lbl">전체</span>
+								</label>
+								<label>
+									<input name="radio1" class="radio" type="radio" />
+									<span class="lbl">온누리</span>
+								</label>
+								<label>
+									<input name="radio1" class="radio" type="radio" />
+									<span class="lbl">기념일</span>
+								</label>
+								<label>
+									<input name="radio1" class="radio" type="radio" />
+									<span class="lbl">특판</span>
+								</label>
+								<label>
+									<input name="radio1" class="radio" type="radio" />
+									<span class="lbl">MRO</span>
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">채널구분</th>
+							<td>
+								<label>
+									<input name="radio2" class="radio" type="radio" checked="checked" />
+									<span class="lbl">전체</span>
+								</label>
+								<label>
+									<input name="radio2" class="radio" type="radio" />
+									<span class="lbl">PC</span>
+								</label>
+								<label>
+									<input name="radio2" class="radio" type="radio" />
+									<span class="lbl">MOBILE</span>
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">팝업유형</th>
+							<td>
+								<label>
+									<input name="radio3" class="radio" type="radio" checked="checked" />
+									<span class="lbl">전체</span>
+								</label>
+								<label>
+									<input name="radio3" class="radio" type="radio" />
+									<span class="lbl">팝업</span>
+								</label>
+								<label>
+									<input name="radio3" class="radio" type="radio" />
+									<span class="lbl">레이어</span>
+								</label>
+
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">사용여부</th>
+							<td>
+								<label>
+									<input name="radio4" class="radio" type="radio" checked="checked" />
+									<span class="lbl">전체</span>
+								</label>
+								<label>
+									<input name="radio4" class="radio" type="radio" />
+									<span class="lbl">사용</span>
+								</label>
+								<label>
+									<input name="radio4" class="radio" type="radio" />
+									<span class="lbl">미사용</span>
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">노출기간</th>
+							<td colspan="3">
+								<input type="text" class="datepicker text w_50" placeholder="YYYY-MM-DD"> ~ <input type="text" class="datepicker text w_50" placeholder="YYYY-MM-DD">
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">오늘만 보기 사용여부</th>
+							<td>
+								<label>
+									<input name="radio5" class="radio" type="radio" />
+									<span class="lbl">사용</span>
+								</label>
+								<label>
+									<input name="radio5" class="radio" type="radio" />
+									<span class="lbl">미사용</span>
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">적용 페이지(URL)</th>
+							<td>
+								<input type="text" colspan="3" placeholder="www.naver.com">
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">팝업위치</th>
+							<td>TOP:<input type="text" placeholder="100">px,  LEFT:<input type="text"placeholder="200">px</td>
+						</tr>
+						<tr>
+							<th scope="row">팝업크기</th>
+							<td>TOP:<input type="text" placeholder="100">px,  LEFT:<input type="text"placeholder="200">px</td>
+						</tr>
+						<tr>
+							<th scope="row">팝업 내용</th>
+							<td>
+								<div>
+								<input name="radio6" class="radio" type="radio" />
+										<span class="lbl">이미지</span>
+								<input name="radio6" class="radio" type="radio" />
+										<span class="lbl">HTML</span>
+								</div>
+								<div>
+								링크 URL <input type="text" placeholder="www.naver.com" class="w_30">
+								</div>
+								<div>
+								<input name="radio7" class="radio" type="radio" />
+										<span class="lbl">새창</span>
+								<input name="radio7" class="radio" type="radio" />
+										<span class="lbl">부모창</span>
+								</div>
+								<div>
+								링크 URL <input type="text" placeholder="100" class="w_30"><input type="file" class="button"><br>
+								*등록된 이미지.asdasdad.jpg
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table">
+				<p>
+					<h2>◎적용 고객사</h2>
+				</p>
+				<div class="mb10 mt10 ml10">
+					<input name="radio8" class="radio" type="radio" />
+						<span class="lbl">전체적용</span>
+					<input name="radio8" class="radio" type="radio" />
+						<span class="lbl">개별적용</span>
+					<input name="radio8" class="radio" type="radio" />
+						<span class="lbl">그룹선택</span>
+				</div>
+					<tbody>
+						<tr>
+							<td><input type="checkbox">고객사명(고객사코드)</td>
+							<td><input type="checkbox">test(123)</td>
+							<td><input type="checkbox">test(1235123)</td>
+							<td><input type="checkbox">test(12315567)</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox">test(12315567)</td>
+							<td><input type="checkbox">test(123)</td>
+							<td><input type="checkbox">test(1235123)</td>
+							<td><input type="checkbox">test(12315567)</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox">test(12315567)</td>
+							<td><input type="checkbox">test(123)</td>
+							<td><input type="checkbox">test(1235123)</td>
+							<td><input type="checkbox">test(12315567)</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox">test(12315567)</td>
+							<td><input type="checkbox">test(123)</td>
+							<td><input type="checkbox">test(1235123)</td>
+							<td><input type="checkbox">test(12315567)</td>
+						</tr>
+					</tbody>
+				</table>	
+				<div class="paging_box mt30">
+								<ul class="pagination mla mra">
+									<li class="disabled"><a href="#"><i class="icon-angle-double-left"></i></a></li>
+									<li class="disabled"><a href="#"><i class="icon-angle-left"></i></a></li>
+									<li class="active"><a href="#">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">4</a></li>
+									<li><a href="#">5</a></li>
+									<li><a href="#"><i class="icon-angle-right"></i></a></li>
+									<li><a href="#"><i class="icon-angle-double-right"></i></a></li>
+								</ul>
+				</div>		
+				<p class="t_center mt30">
+					<a href="#" class="button large w100 btn_black">저장</a>
+				</p>
+			</section>
+			<!-- //contents -->
+		</div>
+		<!-- //container -->
+	</div>
+	<!-- //wrap -->
+	<!-- footer -->
+	<header id="footer" data-include="../../include/footer.html"></header>
+	<!-- //footer -->
+
+
+	<!-- 적용 고객사 팝업 -->
+
+</body>
+</html>

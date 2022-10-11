@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>온누리 쇼핑몰</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.css" />
+<!-- <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosanskr.css" /> -->
+<style type="text/css">	
+	body{font:normal 13px/1.5 'Noto Sans KR',Malgun Gothic,'맑은고딕', sans-serif, Arial, Verdana;color:#666;margin:0;}
+	h1, h2, h3, h4, h5, h6{color:#000;}
+	fieldset,ul, ol, dl, dt, dd, p, button, figure{margin:0;padding:0;}
+	legend, caption{width:0;height:0;visibility:hidden;font-size:0;line-height:0;}
+	em, a , input, textarea, keygen, select, button, isindex, i{font-style:normal;text-decoration:none;color:#666;}
+	fieldset, button{background:none;border:0px;}
+	ul:after,ol:after,dl:after{content:'';display:block;clear:both;}
+	li{list-style:none;}
+	img{vertical-align:middle;}
+	table{width:100%;border-spacing:0px;border-collapse:collapse;table-layout:fixed;}
+	th, td{word-break:break-all;}
+	iframe{width:100%;vertical-align:middle;}
+	hr{border:0 none;height:1px;background:#e3e3e3;}
+	
+	.wrap{padding:10px;max-width:1200px;margin:0 auto;}
+	.table{border-top:1px solid #666;border-bottom:2px solid #999;margin-bottom:20px;}
+	.table table{width:100%;}
+	.table table thead th{padding:5px;background:#e4e4e4;border-left:1px solid #c3c3c3;border-bottom:1px solid #666;color:#333;}
+	.table table tbody td{padding:5px;border-top:1px solid #c3c3c3;border-left:1px solid #c3c3c3;}
+	.table table tbody th{text-align:center;background:#f9f9f9;color:#515151;border-top:1px solid #c3c3c3;}
+	.table table tbody tr:first-child th, .table table tbody tr:first-child td{border-top:0;}
+	.table table th:first-child, .table table tbody tr.line td:first-child{border-left:0;}
+	.table table tbody tr:hover th, 
+	.table table tbody tr:hover td{background:#f5f5f5 !important;}
+	.table table tbody tr:hover td a{color:red;}
+	.table a{text-decoration:underline;}
+	.table .sky th, .table .sky td{background:#d2f6f6;color:#000;}
+	.table .yellow td{background:#ffeeca;color:#000;}
+	.table .yellow td:first-child{background:none;}
+	.table .line th, .table .line td{border-top-color:#666;}
+	
+	.text_box{padding:10px;margin-bottom:10px;color:#666;border:2px solid #ccc;line-height:1.5;}
+	.text_box strong{display:inline-block;}
+	.text_box strong:first-child{padding-left:0;}
+	.text_box span{display:inline-block;width:10px;height:10px;vertical-align:center;}
+	
+	.red{color:red;}
+	.blue{color:blue;}
+
+	.midline{text-decoration:line-through;color: #aaa;}
+
+@media only screen and (max-width:760px ){
+	.table{overflow-y:auto;}
+	.table table{table-layout:auto;}
+	th, td{white-space:nowrap;font-size:11px;}
+}
+</style>
+
+<!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script> -->
+<script src="./static/js/common.js"></script>
+<script>
+	$(function(){
+		var size = 0;
+		$('.line').each(function(idx){
+			$(this).children('th').attr('rowspan',
+				$(this).nextAll('.line').index() < 0 ? size = $(this).nextAll().length  + 1: $(this).nextAll('.line').index() - size
+			);
+			size = $(this).nextAll('.line').index();
+		});
+	});
+</script>
+</head>
+<body>	
+	<section class="wrap">
+		<h1>온누리 쇼핑몰</h1>
+		<div class="text_box">
+			<p>* 문서타입 : HTML5 / CSS3</p>
+		</div>
+		<div class="table">
+			<table>
+			<colgroup>
+				<col width="15%">
+				<col width="15%">
+				<col width="15%">
+				<col width="25%">
+				<col width="*">
+			</colgroup>
+			<thead>
+			<tr>
+				<th>1depth</th>
+				<th>2depth</th>
+				<th>3depth</th>
+				<th>File</th>
+				<th>Description</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr class="line">
+				<th>공통</th>
+				<td></td>
+				<td></td>
+				<td><a target="_blank" href="./guide/guideText.html">guide.html</a></td>
+				<td></td>
+			</tr>
+			<tr class="line">
+				<th>팝업</th>
+				<td>레이어팝업 그룹</td>
+				<td></td>
+				<td><a target="_blank" href="./guide/popupGroup.html">guide.html</a></td>
+				<td></td>
+			</tr>
+			<tr class="line">
+				<th>메인</th>
+				<td></td>
+				<td></td>
+				<td><a target="_blank" href="./main/main.html">/main/main.html</a></td>
+				<td class="red">
+					2021-11-30 뱃지 추가<br />
+					2021-12-13 추가 수정 (헤더 포함)
+				</td>
+			</tr>
+			<tr class="line">
+				<th>로그인/회원가입</th>
+				<td>회원로그인</td>
+				<td></td>
+				<td><a target="_blank" href="./login/ONP02001.html">/login/ONP02001.html</a></td>
+				<td>비회원로그인 포함, 비회원 주문 비밀번호 팝업 포함</td>
+			</tr>
+			<tr>
+				<td>회원주문로그인 팝업</td>
+				<td></td>
+				<td><a target="_blank" href="./login/ONP02004.html">/login/ONP02004.html</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>간편 로그인 미 연결 안내</td>
+				<td></td>
+				<td><a target="_blank" href="./login/ONP02005.html">/login/ONP02005.html</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>아이디 찾기, 비밀번호 찾기</td>
+				<td></td>
+				<td><a target="_blank" href="./login/ONP02101.html">/login/ONP02101.html</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>아이디 찾기</td>
+				<td>결과</td>
+				<td><a target="_blank" href="./login/ONP02102.html">/login/ONP02102.html</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>비밀번호 찾기</td>
+				<td>재설정</td>
+				<td><a target="_blank" href="./login/ONP02103.html">/login/ONP02103.html</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td rowspan="3">회원가입</td>
+				<td>약관동의</td>
+				<td><a target="_blank" href="./login/ONP02201.html">/login/ONP02201.html</a></td>
+				<td>약관팝업 포함</td>
+			</tr>
+			<tr>
+				<td>회원정보 입력</td>
+				<td><a target="_blank" href="./login/ONP02202.html">/login/ONP02202.html</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>회원가입 완료</td>
+				<td><a target="_blank" href="./login/ONP02203.html">/login/ONP02203.html</a></td>
+				<td></td>
+			</tr>
+			<tr class="line">
+				<th>상품</th>
+				<td>목록</td>
+				<td></td>
+				<td><a target="_blank" href="./product/ONP03001.html">/product/ONP03001.html</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>상세</td>
+				<td></td>
+				<td><a target="_blank" href="./product/ONP03101.html">/product/ONP03101.html</a></td>
+				<td class="red">2021-11-30 상태별 뱃지, 타임라인, 목표달성등 내용 추가</td>
+			</tr>
+			<tr class="line">
+				<th>장바구니</th>
+				<td>목록</td>
+				<td></td>
+				<td><a target="_blank" href="./shopping/ONP05101.html">/shopping/ONP05101.html</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>주문결제</td>
+				<td></td>
+				<td><a target="_blank" href="./shopping/ONP05201.html">/shopping/ONP05201.html</a></td>
+				<td class="red">
+					2021-12-13 수정
+				</td>
+			</tr>
+			<tr>
+				<td>주문완료</td>
+				<td></td>
+				<td><a target="_blank" href="./shopping/ONP05301.html">/shopping/ONP05301.html</a></td>
+				<td></td>
+			</tr>
+			<tr class="line">
+				<th>마이페이지</th>
+				<td>메인</td>
+				<td></td>
+				<td><a target="_blank" href="./mypage/ONP09101.html">/mypage/ONP09101.html</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td rowspan="4">주문/배송조회</td>
+				<td></td>
+				<td><a target="_blank" href="./mypage/ONP09201.html">/mypage/ONP09201.html</a></td>
+				<td>
+					구매확정 팝업, 상품평 팝업 포함
+				</td>
+			</tr>
+			<tr>
+				<td>상세정보</td>
+				<td><a target="_blank" href="./mypage/ONP09204.html">/mypage/ONP09204.html</a></td>
+				<td>
+					현금영수증 발행 정보 수정 팝업, 구매영수증 팝업 포함
+				</td>
+			</tr>
+			<tr>
+				<td>주문취소</td>
+				<td><a target="_blank" href="./mypage/ONP09207.html">/mypage/ONP09207.html</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>주문취소 완료</td>
+				<td><a target="_blank" href="./mypage/ONP09208.html">/mypage/ONP09208.html</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td rowspan="3">취소/반품/교환</td>
+				<td></td>
+				<td><a target="_blank" href="./mypage/ONP09301.html">/mypage/ONP09301.html</a></td>
+				<td>
+					교환신청 취소 팝업, 반품 신청 팝업
+				</td>
+			</tr>
+			<tr>
+				<td>교환/반품 신청</td>
+				<td><a target="_blank" href="./mypage/ONP09304.html">/mypage/ONP09304.html</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>교환/반품 신청 완료</td>
+				<td><a target="_blank" href="./mypage/ONP09305.html">/mypage/ONP09305.html</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>배송지관리</td>
+				<td></td>
+				<td><a target="_blank" href="./mypage/ONP09401.html">/mypage/ONP09401.html</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>환불계좌관리</td>
+				<td></td>
+				<td><a target="_blank" href="./mypage/ONP09501.html">/mypage/ONP09501.html</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>적립금</td>
+				<td></td>
+				<td><a target="_blank" href="./mypage/ONP09601.html">/mypage/ONP09601.html</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>상품 QnA</td>
+				<td></td>
+				<td><a target="_blank" href="./mypage/ONP09701.html">/mypage/ONP09701.html</a></td>
+				<td>
+					상품 QnA수정
+				</td>
+			</tr>
+			<tr>
+				<td rowspan="3">1:1문의</td>
+				<td></td>
+				<td><a target="_blank" href="./mypage/ONP09801.html">/mypage/ONP09801.html</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>문의하기</td>
+				<td><a target="_blank" href="./mypage/ONP09802.html">/mypage/ONP09802.html</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>상세</td>
+				<td><a target="_blank" href="./mypage/ONP09803.html">/mypage/ONP09803.html</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td rowspan="2">나의상품평</td>
+				<td>목록</td>
+				<td><a target="_blank" href="./mypage/ONP09901.html">/mypage/ONP09901.html</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>상세</td>
+				<td><a target="_blank" href="./mypage/ONP09902.html">/mypage/ONP09902.html</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td rowspan="2">회원정보변경</td>
+				<td>본인인증</td>
+				<td><a target="_blank" href="./mypage/ONP09111.html">/mypage/ONP09111.html</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>정보변경</td>
+				<td><a target="_blank" href="./mypage/ONP09112.html">/mypage/ONP09112.html</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>비밀번호 변경</td>
+				<td></td>
+				<td><a target="_blank" href="./mypage/ONP09113.html">/mypage/ONP09113.html</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>SNS연결설정</td>
+				<td></td>
+				<td><a target="_blank" href="./mypage/ONP09114.html">/mypage/ONP09114.html</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>회원탈퇴</td>
+				<td></td>
+				<td><a target="_blank" href="./mypage/ONP09115.html">/mypage/ONP09115.html</a></td>
+				<td></td>
+			</tr>
+
+			<tr class="line">
+				<th>고객센터</th>
+				<td>메인</td>
+				<td></td>
+				<td><a target="_blank" href="./customer/ONP07101.html">/customer/ONP07101.html</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td rowspan="2">공지사항</td>
+				<td>리스트</td>
+				<td><a target="_blank" href="./customer/ONP07102.html">/customer/ONP07102.html</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>상세</td>
+				<td><a target="_blank" href="./customer/ONP07103.html">/customer/ONP07103.html</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td rowspan="2">자주묻는질문</td>
+				<td></td>
+				<td><a target="_blank" href="./customer/ONP07201.html">/customer/ONP07201.html</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>검색결과</td>
+				<td><a target="_blank" href="./customer/ONP07202.html">/customer/ONP07202.html</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>1:1문의</td>
+				<td></td>
+				<td><a target="_blank" href="./customer/ONP07301.html">/customer/ONP07301.html</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>이용안내</td>
+				<td></td>
+				<td><a target="_blank" href="./customer/ONP07401.html">/customer/ONP07401.html</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>이용약관</td>
+				<td></td>
+				<td><a target="_blank" href="./customer/ONP07501.html">/customer/ONP07501.html</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>개인정보처리방침</td>
+				<td></td>
+				<td><a target="_blank" href="./customer/ONP07601.html">/customer/ONP07601.html</a></td>
+				<td></td>
+			</tr>
+
+			<tr class="line">
+				<th>기획전 / 이벤트 / 프로모션</th>
+				<td rowspan="2">기획전</td>
+				<td>리스트</td>
+				<td><a target="_blank" href="./event/ONP04001.html">/event/ONP04001.html</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>상세</td>
+				<td><a target="_blank" href="./event/ONP04101.html">/event/ONP04101.html</a></td>
+				<td></td>
+			</tr>
+
+			<tr>
+				<td rowspan="9">이벤트</td>
+				<td>리스트</td>
+				<td><a target="_blank" href="./event/ONP04201.html">/event/ONP04201.html</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>상세 - 기본형</td>
+				<td><a target="_blank" href="./event/ONP04202.html">/event/ONP04202.html</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>상세 - URL등록형</td>
+				<td><a target="_blank" href="./event/ONP04203.html">/event/ONP04203.html</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>상세 - 이미지 댓글형</td>
+				<td><a target="_blank" href="./event/ONP04204.html">/event/ONP04204.html</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>상세 - 퀴즈형</td>
+				<td><a target="_blank" href="./event/ONP04205.html">/event/ONP04205.html</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>상세 - 투표형</td>
+				<td><a target="_blank" href="./event/ONP04206.html">/event/ONP04206.html</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>지난 이벤트</td>
+				<td><a target="_blank" href="./event/ONP04207.html">/event/ONP04207.html</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>당첨자 발표</td>
+				<td><a target="_blank" href="./event/ONP04209.html">/event/ONP04209.html</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>당첨자 발표 - 상세</td>
+				<td><a target="_blank" href="./event/ONP04210.html">/event/ONP04210.html</a></td>
+				<td></td>
+			</tr>
+
+			<tr>
+				<td>마케팅 메뉴</td>
+				<td>리스트</td>
+				<td><a target="_blank" href="./event/ONP04300.html">/event/ONP04300.html</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>타임어택 세일</td>
+				<td>리스트</td>
+				<td><a target="_blank" href="./event/ONP04301.html">/event/ONP04301.html</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>오늘만 특가</td>
+				<td>리스트</td>
+				<td><a target="_blank" href="./event/ONP04302.html">/event/ONP04302.html</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>모여라 공동구매</td>
+				<td>리스트</td>
+				<td><a target="_blank" href="./event/ONP04303.html">/event/ONP04303.html</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td rowspan="3">선물하기 마케팅</td>
+				<td>리스트</td>
+				<td><a target="_blank" href="./event/ONP04401.html">/event/ONP04401.html</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>주문결제</td>
+				<td><a target="_blank" href="./event/ONP04403.html">/event/ONP04403.html</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>주문완료</td>
+				<td><a target="_blank" href="./event/ONP04404.html">/event/ONP04404.html</a></td>
+				<td></td>
+			</tr>
+
+			<tr class="line">
+				<th>검색 결과</th>
+				<td></td>
+				<td></td>
+				<td><a target="_blank" href="./search/search1.html">/search/search1.html</a></td>
+				<td class="red">2021-12-13</td>
+			</tr>
+
+			<tr class="line">
+				<th>에러페이지</th>
+				<td>현재에러페이지</td>
+				<td></td>
+				<td><a target="_blank" href="./error/ONP01201.html">/error/ONP01201.html</a></td>
+				<td class="red">2021-12-13</td>
+			</tr>
+			<tr>
+				<td>상품관련오류</td>
+				<td></td>
+				<td><a target="_blank" href="./error/ONP01202.html">/error/ONP01202.html</a></td>
+				<td class="red">2021-12-13</td>
+			</tr>
+			<tr>
+				<td>404에러</td>
+				<td></td>
+				<td><a target="_blank" href="./error/ONP01203.html">/error/ONP01203.html</a></td>
+				<td class="red">2021-12-13</td>
+			</tr>
+			<tr>
+				<td>회원관련</td>
+				<td></td>
+				<td><a target="_blank" href="./error/ONP01204.html">/error/ONP01204.html</a></td>
+				<td class="red">2021-12-13</td>
+			</tr>
+			
+			</tbody>
+			</table>
+		</div>
+	</section>
+	<!-- //contents -->
+
+</body>
+</html>

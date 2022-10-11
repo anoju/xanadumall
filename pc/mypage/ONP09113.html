@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<title>온누리장터</title>
+<script>window.MSInputMethodContext && document.documentMode && document.write('<script src="../static/js/ie11CustomProperties.js"><\/script>');</script>
+<!-- 반드시 나중에 절대경로로 바꿔주세요 -->
+<link href="../static/css/reset.css" rel="stylesheet" />
+<link href="../static/css/common.css" rel="stylesheet" />
+<link href="../static/css/contents.css" rel="stylesheet" />
+<!-- //반드시 나중에 절대경로로 바꿔주세요 -->
+<script type="text/javascript" src="../static/js/common.js"></script>
+<script type="text/javascript" src="../static/js/ui.js"></script>
+<!--[if lt IE 9]>
+    <script type="text/javascript">
+        document.createElement("header");
+        document.createElement("nav");
+        document.createElement("section");
+        document.createElement("article");
+        document.createElement("footer");
+    </script>
+<![endif]-->
+</head>
+<body>
+
+	<!-- 헤더영역 -->
+	<header id="headerWrap" data-include="../include/header.html"></header>
+	<!-- //헤더영역 -->
+
+	<!-- 컨텐츠 영역 -->          
+	<section id="container" data-title="마이페이지">
+		<div class="section">
+			<div class="locationBar">
+				<span class="home">홈</span>
+				<span>마이페이지</span>
+			</div>
+
+			<div class="mypageWrap">
+				<!--
+					data-mypage-on="[1,1]" 좌측 메뉴 활성화
+				-->
+				<div class="leftGnb" data-include="./mypageGnb.html" data-mypage-on="[4,2]"></div>
+				<div class="mypageCont">
+					<h3 class="subH2 mt0 tl">비밀번호변경</h3>
+
+					<div class="borderLine mt24">
+						<div class="loginWrap type2 pt40 pb40">
+
+							<div class="formBox">
+								<label for="PWD1" class="tit">현재 비밀번호</label>
+								<div class="inputBox password"><input type="password" id="PWD1" placeholder="현재 비밀번호 입력" />
+									<!-- <a href="#" class="btnPwdShow">비밀번호 보기</a> -->
+								</div>
+							</div>
+
+							<div class="formBox mt24">
+								<div class="flex alignCenter mb8">
+									<label for="PWD2" class="tit mb0">새 비밀번호</label>
+									<div class="tooltipWrap mla">
+										<a href="#none" class="tooltip" role="button">자세한 내용 확인</a>
+										<div class="tooltipPop">
+											<p class="tit">툴팁 타이틀</p>
+											툴팁 내용이 들어감툴팁 내용이 들어감툴팁 내용이 들어감툴팁 내용이 들어감
+											<a href="#" class="btnClose">닫기</a>
+										</div>
+									</div>
+								</div>
+								<div class="inputBox password"><input type="password" id="PWD2" placeholder="비밀번호 입력" /><a href="#" class="btnPwdShow">비밀번호 보기</a></div>
+							</div>
+		
+							<div class="formBox mt24">
+								<label for="PWD3" class="tit">새 비밀번호 확인</label>
+								<div class="inputBox password"><input type="password" id="PWD3" placeholder="비밀번호 확인을 위해 한번 더 입력" /><a href="#" class="btnPwdShow">비밀번호 보기</a></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="btnGroup type3">
+						<a href="#" class="button large line">취소</a>
+						<a href="#" class="button large">확인</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<!-- //컨텐츠 영역 -->
+	
+	<!-- 하단 영역 -->
+	<footer id="footerWrap" data-include="../include/footer.html"></footer>
+	<!-- //하단 영역 -->
+	<script>
+	</script>
+</body>
+</html>

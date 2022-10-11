@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<title>온누리장터</title>
+<script>window.MSInputMethodContext && document.documentMode && document.write('<script src="../static/js/ie11CustomProperties.js"><\/script>');</script>
+<!-- 반드시 나중에 절대경로로 바꿔주세요 -->
+<link href="../static/css/reset.css" rel="stylesheet" />
+<link href="../static/css/common.css" rel="stylesheet" />
+<link href="../static/css/contents.css" rel="stylesheet" />
+<!-- //반드시 나중에 절대경로로 바꿔주세요 -->
+<script type="text/javascript" src="../static/js/common.js"></script>
+<script type="text/javascript" src="../static/js/ui.js"></script>
+<!--[if lt IE 9]>
+    <script type="text/javascript">
+        document.createElement("header");
+        document.createElement("nav");
+        document.createElement("section");
+        document.createElement("article");
+        document.createElement("footer");
+    </script>
+<![endif]-->
+</head>
+<body>
+
+	<!-- 헤더영역 -->
+	<header id="headerWrap" data-include="../include/header.html"></header>
+	<!-- //헤더영역 -->
+
+	<!-- 컨텐츠 영역 -->          
+	<section id="container" data-title="선물하기 주문결제">
+		<div class="section">
+			<div class="locationBar">
+				<span class="home">홈</span>
+				<span>선물하기 주문결제</span>
+			</div>
+
+			<div class="shoppingWrap">
+				<div class="top">
+					<h1 class="subH1">선물하기 주문결제</h1>
+				</div>
+
+				<div class="orderInfo">
+					<div class="left">
+						<!-- 일반상품 -->
+						<div class="shoppingList">
+							<p class="mt40 mb20 fz16 fc222 bold">일반 주문 상품 3건</p>
+							<div class="listWrap">
+								<div class="list">
+									<p class="img end"><!-- 품절시 클래스 end 추가-->
+										<span style="background-image: url('../static/images/sample/sample_product1.png');"></span>
+									</p>
+									<div class="textBox">
+										<div class="flex">
+											<p class="tit">[산지직송] 옛고을의 정성담은 영주 신선한 한돈</p>
+										</div>
+										<div class="optionList">
+											<p class="text">불고기 2팩 + 우동사리 1팩 / 2개</p>
+											<p class="money">
+												<strong>20,000</strong>원
+											</p>
+										</div>
+										<div class="optionList">
+											<p class="text">불고기 2팩 + 우동사리 1팩 / 2개</p>
+											<p class="money">
+												<strong>20,000</strong>원
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="list">
+									<p class="img end"><!-- 품절시 클래스 end 추가-->
+										<span style="background-image: url('../static/images/sample/sample_product1.png');"></span>
+									</p>
+									<div class="textBox">
+										<div class="flex">
+											<p class="tit">[산지직송] 옛고을의 정성담은 영주 신선한 한돈</p>
+										</div>
+										<div class="optionList">
+											<p class="text">불고기 2팩 + 우동사리 1팩 / 2개</p>
+											<p class="money">
+												<strong>20,000</strong>원
+											</p>
+										</div>
+										<div class="optionList">
+											<p class="text">불고기 2팩 + 우동사리 1팩 / 2개</p>
+											<p class="money">
+												<strong>20,000</strong>원
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="totalBox mt0">
+									<div class="grayBox justifyCenter">
+										<p class="money ml0">
+											<strong>60,000</strong>원 + 배송비 <strong>3,000</strong>원 = <strong>60,000</strong>원
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //일반상품 -->
+
+						<hr class="line" />
+						<!-- 주문자 정보 -->
+						<p class="subH3">주문자 정보</p>
+						<div class="formBox flex mt24">
+							<label for="Name" class="tit">보내시는 분<span class="impo">중요</span></label>
+							<div class="w320">
+								<div class="inputBox"><input type="text" id="Name" value="기본" /></div>
+							</div>
+							<p class="fz12 fc666 flex00 ml20">보내시는 분의 이름을 변경하여 주문 가능합니다.</p>
+						</div>
+						<div class="formBox flex mt16">
+							<label for="Name" class="tit">휴대폰<span class="impo">중요</span></label>
+							<div class="w320">
+								<div class="phoneForm">
+									<div class="selectBox">
+										<select title="선택">
+											<option value="">선택
+										</option></select>
+									</div><span class="line">-</span>
+									<div class="inputBox"><input type="text"></div><span class="line">-</span>
+									<div class="inputBox"><input type="text"></div>
+								</div>
+							</div>
+							<p class="fz12 fc666 flex00 ml20">해당 번호로 주문 정보가 발송됩니다.</p>
+						</div>
+						<div class="formBox flex mt16">
+							<label for="Name" class="tit">이메일<span class="impo">중요</span></label>
+							<div class="emailForm flex11">
+								<div class="inputBox"><input type="text"></div>
+								<span class="line">@</span>
+								<div class="inputBox"><input type="text"></div>
+								<div class="selectBox">
+									<select title="선택">
+										<option value="">선택
+									</option></select>
+								</div>
+							</div>
+						</div>
+						<!-- //주문자 정보 -->
+
+						<hr class="line mt24" />
+						<!-- 받는분 정보 -->
+						<p class="subH3  mt24 mb20">받는분 정보</p>
+						<div class="formBox flex mt24">
+							<label for="Name" class="tit">받는 분<span class="impo">중요</span></label>
+							<div class="w320">
+								<div class="inputBox"><input type="text" id="Name" value="기본" /></div>
+							</div>
+							<p class="fz12 fc666 flex00 ml20">보내시는 분의 이름을 변경하여 주문 가능합니다.</p>
+						</div>
+						<div class="formBox flex mt16">
+							<label for="Name" class="tit">휴대폰<span class="impo">중요</span></label>
+							<div class="w320">
+								<div class="phoneForm">
+									<div class="selectBox">
+										<select title="선택">
+											<option value="">선택
+										</option></select>
+									</div><span class="line">-</span>
+									<div class="inputBox"><input type="text"></div><span class="line">-</span>
+									<div class="inputBox"><input type="text"></div>
+								</div>
+							</div>
+							<p class="fz12 fc666 flex00 ml20">해당 번호로 주문 정보가 발송됩니다.</p>
+						</div>
+						
+						<!-- //받는분 정보 -->
+
+						<hr class="line mt24" />
+						<!-- 선물메세지 설정 -->
+						<p class="subH3  mt24 mb20">선물메세지 설정</p>
+						<div class="giftCardBox">
+							<div class="cardList">
+								<p class="fz14 fc666">카드선택</p>
+								<div class="cardImg">
+									<a href="#" class="type1 on">생일축하</a>
+									<a href="#" class="type2">감사합니다</a>
+									<a href="#" class="type3">감사합니다, 사랑합니다</a>
+									<a href="#" class="type4">축하</a>
+									<a href="#" class="type5">힘내요</a>
+									<a href="#" class="type6">수고했어요</a>
+									<a href="#" class="type7">카드7</a>
+									<a href="#" class="type8">카드8</a>
+								</div>
+
+								<div class="flex">
+									<p class="fz14 fc666">선물 메시지 입력</p>
+									<p class="fz12 fc666 mla">(<span id="nowByte">0</span>/60)</p>
+								</div>
+								<div class="textarea mt8"><textarea placeholder="선물메세지를 입력해주세요" onkeyup="fn_checkByte(this)"></textarea></div>
+
+								<div class="btnGroup mt20">
+									<a href="#" class="button line small btnGiftReview">미리보기</a>
+								</div>
+							</div>
+
+							<div class="cardView type1">
+								<p class="img"></p>
+								<pre class="text">메시지를 입력해주세요</pre>
+							</div>
+						</div>
+						<script>
+							$(function(){
+								giftCardBox();
+							})
+							const giftCardBox = function(){
+								const target = $('.giftCardBox');
+								const list = target.find('.cardImg > a');
+								const view = target.find('.cardView');
+								const btn = target.find('.btnGiftReview');
+								let idx = 1;
+
+								list.click(function(){
+									idx = $(this).index()+1;
+									$(this).addClass('on').siblings().removeClass('on')
+									return false;
+								});
+
+								btn.click(function(){
+									let text = target.find('textarea').val();
+									if(text == '' || !text){
+										text = '메시지를 입력해주세요'
+									}
+
+									view.attr('class','cardView')
+									view.addClass('type' + idx).find('.text').html(text);
+									return false;
+								});
+							}
+
+							function fn_checkByte(obj){
+								const maxByte = 60; //최대 100바이트
+								const text_val = obj.value; //입력한 문자
+								const text_len = text_val.length; //입력한 문자수
+								
+								let totalByte=0;
+								for(let i=0; i<text_len; i++){
+									const each_char = text_val.charAt(i);
+									const uni_char = escape(each_char) //유니코드 형식으로 변환
+									if(uni_char.length>4){
+										// 한글 : 2Byte
+										totalByte += 2;
+									}else{
+										// 영문,숫자,특수문자 : 1Byte
+										totalByte += 1;
+									}
+								}
+								$('#nowByte').text(totalByte);
+								if(totalByte>maxByte){
+									// 바이트 넘겼을때
+									console.log('글자수 넘김 - 개발에서 추가 개발 해주세요')
+								}
+							}
+						</script>
+						<!-- //선물메세지 설정 -->
+
+						<hr class="line mt24" />
+						<!-- 결제수단 선택 -->
+						<p class="subH3">결제수단 선택</p>
+						<div class="">
+							<div class="info">
+								<p class="tit">주문가능한 결제수단</p>
+								<p class="text">
+									<strong>적립금, 제로페이, 카카오페이, 네이버페이</strong>
+									주문내역 중 동일한 결제 수단으로만 결제가 가능합니다.
+								</p>
+							</div>
+							<dl>
+								<dt>
+									<strong>적립금</strong>
+									1,000,000원 사용가능
+								</dt>
+								<dd>
+									<div class="inputBox right">
+										<input type="text">
+										<p class="util">원</p>
+										<button class="button line small flex00">전체사용</button>
+									</div>
+								</dd>
+							</dl>
+							<dl>
+								<dt>
+									<strong>복지포인트</strong>
+									1,000,000원 사용가능
+								</dt>
+								<dd>
+									<div class="inputBox right">
+										<input type="text">
+										<p class="util">원</p>
+										<button class="button line small flex00">전체사용</button>
+									</div>
+								</dd>
+							</dl>
+							<dl>
+								<dt>
+									<strong>일반/간편결제</strong>
+								</dt>
+								<dd>
+									<div class="inputBox">
+										<input type="text" class="tr" readonly value="500,000원">
+									</div>
+
+									<div class="payChoice">
+										<div>
+											<input type="radio" id="pay1" name="payRadio">
+											<label for="pay1">
+												<i class="icoPay1"></i>
+												신용카드
+											</label>
+										</div>
+										<div>
+											<input type="radio" id="pay2" name="payRadio">
+											<label for="pay2">
+												<i class="icoPay2"></i>
+												계좌이체
+											</label>
+										</div>
+										<div>
+											<input type="radio" id="pay3" name="payRadio">
+											<label for="pay3">
+												<i class="icoPay3"></i>
+												제로페이
+											</label>
+										</div>
+										<div>
+											<input type="radio" id="pay4" name="payRadio">
+											<label for="pay4">
+												<i class="icoPay4"></i>
+												카카오페이
+											</label>
+										</div>
+										<div>
+											<input type="radio" id="pay5" name="payRadio">
+											<label for="pay5">
+												<i class="icoPay5"></i>
+												페이코
+											</label>
+										</div>
+										<div>
+											<input type="radio" id="pay6" name="payRadio">
+											<label for="pay6">
+												<i class="icoPay6"></i>
+												네이버페이
+											</label>
+										</div>
+										<div>
+											<input type="radio" id="pay7" name="payRadio">
+											<label for="pay7">
+												<i class="icoPay7"></i>
+												삼성페이
+											</label>
+										</div>
+										<div>
+											<input type="radio" id="pay8" name="payRadio">
+											<label for="pay8">
+												<i class="icoPay8"></i>
+												엘페이
+											</label>
+										</div>
+									</div>
+								</dd>
+							</dl>
+						</div>
+						<!-- //결제수단 선택 -->
+
+						<hr class="line mt24" />
+						<!-- 현금 영수증 -->
+						<p class="subH3">현금 영수증</p>
+						<div class="formBox cashReceipt">
+							<div class="radio">
+								<input type="radio" id="radio1" name="radioG1" checked /><label for="radio1"><i></i>개인소득공제용</label>
+								<input type="radio" id="radio2" name="radioG1" /><label for="radio2"><i></i>사업자 증빙용</label>
+							</div>
+
+							<div class="cashReceiptBox on">
+								<div class="selectBox choiceSelect">
+									<select title="개인소득공제용">
+										<option value="0">휴대폰번호</option>
+										<option value="1">현금영수증 카드번호</option>
+									</select>
+								</div>
+								<div class="selectView on">
+									<div class="phoneForm">
+										<div class="selectBox">
+											<select title="선택">
+												<option value="">선택
+											</option></select>
+										</div><span class="line">-</span>
+										<div class="inputBox"><input type="text"></div><span class="line">-</span>
+										<div class="inputBox"><input type="text"></div>
+									</div>
+								</div>
+								<div class="selectView">
+									<div class="phoneForm">
+										<div class="inputBox" style="width:68px;"><input type="text"></div><span class="line">-</span>
+										<div class="inputBox" style="width:68px;"><input type="text"></div><span class="line">-</span>
+										<div class="inputBox" style="width:68px;"><input type="text"></div><span class="line">-</span>
+										<div class="inputBox" style="width:68px;"><input type="text"></div>
+									</div>
+								</div>
+								
+							</div>
+							<div class="cashReceiptBox">
+								<div class="flex alignCenter">
+									<p class="fz14 fc666" style="width:130px;">사업자 번호</p>
+									<div class="phoneForm">
+										<div class="inputBox"><input type="text"></div><span class="line">-</span>
+										<div class="inputBox"><input type="text"></div><span class="line">-</span>
+										<div class="inputBox"><input type="text"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<script>
+							$(function(){
+								const cashReceipt = function(){
+									const target = $('.cashReceipt');
+									const radio = target.find('.radio :radio');
+									const box = target.find('.cashReceiptBox');
+									const choiceSelect = target.find('.choiceSelect select');
+									const selectView = target.find('.selectView');
+									let idx = 0;
+
+									radio.change(function(){
+										idx = $(this).index();
+										if(idx != 0){
+											idx = 1;
+										}
+										box.eq(idx).addClass('on').siblings('.cashReceiptBox').removeClass('on');
+									});
+
+									choiceSelect.change(function(){
+										selectView.eq($(this).val()).addClass('on').siblings('.selectView').removeClass('on');
+									})
+
+								}
+								cashReceipt();
+							})
+						</script>
+						<!-- //현금 영수증 -->
+
+					</div>
+					<div class="right asideFixed">
+						<p class="tit">최종 결제 금액</p>
+						<ul>
+							<li class="flex">
+								<p class="label">총 상품금액</p>
+								<p class="money">
+									<strong>20,000</strong>원
+								</p>
+							</li>
+							<li class="flex">
+								<p class="label">배송비(기본)</p>
+								<p class="money">
+									<strong>20,000</strong>원
+								</p>
+							</li>
+						</ul>
+
+						<div class="total">
+							<p class="label">결제금액</p>
+							<p class="money">
+								<strong>20,000</strong>원
+							</p>
+						</div>
+
+						<div class="grayBox">
+							<ul>
+								<li class="flex">
+									<p class="label">적립금</p>
+									<p class="money">
+										<strong>20,000</strong>원
+									</p>
+								</li>
+								<li class="flex">
+									<p class="label">복지포인트</p>
+									<p class="money">
+										<strong>20,000</strong>원
+									</p>
+								</li>
+								<li class="flex">
+									<p class="label">계좌이체</p>
+									<p class="money">
+										<strong>20,000</strong>원
+									</p>
+								</li>
+							</ul>
+						</div>
+
+						<div class="checkbox mb30">
+							<input type="checkbox" id="check1" />
+							<label for="check1"><i></i>
+								주문서 동의
+								<p class="fz12 fc666">주문하시는 상품, 가격, 배송정보, 할인정보등을 최종 확인후 구매 동의 합니다.(전자상거래법 제8조 제2항)</p>
+							</label>
+						</div>
+
+						<div class="checkbox mb25">
+							<input type="checkbox" id="check2" />
+							<label for="check2"><i></i>개인정보의 제3자 제공에 동의</label>
+							<a href="#" class="textButton pl32">개인정보 제 3자 제공 동의란</a>
+						</div>
+
+						<div class="btnGroup">
+							<a href="#" class="button large">결제하기</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!-- //컨텐츠 영역 -->
+
+	<!-- 배송지 주소록 팝업 -->
+	<div id="pop1" class="layerPopWrap addressPopWrap">
+		<div class="bg"></div>
+		<div class="layerPopCont" tabindex="0">
+			<h1>배송지 주소록</h1>
+			<div class="popCont">
+				<div class="addressPopList">
+					<div class="list">
+						<input type="radio" id="addressPop1" name="addressPopG" checked>
+						<label for="addressPop1">
+							<p class="tit">
+								<strong>우리집</strong>
+								<span>홍길동</span>
+							</p>
+							<p class="fz14 fc666">[133434] 서울특별시 강남구 강남대로 556 16층 (논현동, 논현빌딩) 16층</p>
+							<p class="mt4 fz14 fc666">010-2345-6780</p>
+							<span class="defultLabel">기본배송지</span>
+						</label>
+						<a href="#pop2" class="button small gray popOpen">수정</a>
+					</div>
+					<div class="list">
+						<input type="radio" id="addressPop2" name="addressPopG">
+						<label for="addressPop2">
+							<p class="tit">
+								<strong>우리집</strong>
+								<span>홍길동</span>
+							</p>
+							<p class="fz14 fc666">[133434] 서울특별시 강남구 강남대로 556 16층 (논현동, 논현빌딩) 16층</p>
+							<p class="mt4 fz14 fc666">010-2345-6780</p>
+						</label>
+						<a href="#pop2" class="button small gray popOpen">수정</a>
+					</div>
+					<div class="list">
+						<input type="radio" id="addressPop3" name="addressPopG">
+						<label for="addressPop3">
+							<p class="tit">
+								<strong>우리집</strong>
+								<span>홍길동</span>
+							</p>
+							<p class="fz14 fc666">[133434] 서울특별시 강남구 강남대로 556 16층 (논현동, 논현빌딩) 16층</p>
+							<p class="mt4 fz14 fc666">010-2345-6780</p>
+						</label>
+						<a href="#pop2" class="button small gray popOpen">수정</a>
+					</div>
+					<div class="addList">
+						<a href="#">+ 배송지 추가</a>
+					</div>
+				</div>
+			</div>
+			<div class="btnGroup">
+				<a href="#" class="button line btnPopClose">취소</a>
+				<a href="#" class="button">선택완료</a>
+			</div>
+			<a href="#" class="btnClose btnPopClose">팝업닫기</a>
+		</div>
+	</div>
+	<!-- //배송지 주소록 팝업 -->
+
+	<!-- 배송지 등록/수정 팝업 -->
+	<div id="pop2" class="layerPopWrap addressPopWrap">
+		<div class="bg"></div>
+		<div class="layerPopCont" tabindex="0">
+			<h1>배송지 주소록</h1>
+			<div class="popCont">
+				<div class="formBox">
+					<label for="Name" class="tit">배송지 명<span class="impo">중요</span></label>
+					<div class="inputBox"><input type="text" id="Name" value="기본" /></div>
+				</div>
+
+				<div class="formBox">
+					<label for="Name" class="tit">받는 분<span class="impo">중요</span></label>
+					<div class="inputBox"><input type="text" id="Name" value="기본" /></div>
+				</div>
+
+				<div class="formBox mt24">
+					<p class="tit">주소<span class="impo">중요</span></p>
+					<div class="addressForm">
+						<div class="inputBox searchAddress"><input type="text" /><button>우편번호 검색</button></div>
+						<div class="inputBox"><input type="text" /></div>
+					</div>
+					<div class="inputBox"><input type="text" placeholder="상세주소 직접입력" /></div>
+				</div>
+
+				<div class="formBox mt24">
+					<p class="tit">휴대폰<span class="impo">중요</span></p>
+					<div class="phoneForm">
+						<div class="selectBox">
+							<select title="선택">
+								<option value="">선택
+							</select>
+						</div><span class="line">-</span>
+						<div class="inputBox"><input type="text" /></div><span class="line">-</span>
+						<div class="inputBox"><input type="text" /></div>
+					</div>
+				</div>
+
+				<div class="formBox mt24">
+					<p class="tit">전화번호</p>
+					<div class="phoneForm">
+						<div class="selectBox">
+							<select title="선택">
+								<option value="">선택
+							</select>
+						</div><span class="line">-</span>
+						<div class="inputBox"><input type="text" /></div><span class="line">-</span>
+						<div class="inputBox"><input type="text" /></div>
+					</div>
+				</div>
+
+				<div class="checkbox mt20">
+					<input type="checkbox" id="check1" /><label for="check1"><i></i>기본배송지로 설정</label>
+				</div>
+			</div>
+			<div class="btnGroup">
+				<a href="#" class="button">적용하기</a>
+			</div>
+			<a href="#" class="btnClose btnPopClose">팝업닫기</a>
+		</div>
+	</div>
+	<!-- //배송지 등록/수정 팝업 -->
+
+
+	<!-- 하단 영역 -->
+	<footer id="footerWrap" data-include="../include/footer.html"></footer>
+	<!-- //하단 영역 -->
+	<script>
+	</script>
+</body>
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html> 
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>XANADU 시스템</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" href="../../static/css/common.css" media="all" />
+	<link rel="stylesheet" href="../../static/css/contents.css" media="all" />
+	<link rel="stylesheet" href="../../static/js/lib/jstree/themes/default/style.min.css" />
+	<script src="../../static/js/plugins.js"></script>
+	<script src="../../static/js/ui_script.js"></script>
+	<script src="../../static/js/lib/jstree/jstree.min.js"></script>
+	<script type="text/javascript">
+	<!--
+		$(function () { $('#jstree_demo_div').jstree(); });
+	//-->
+	</script>
+	<!--[if lt IE 9]>
+		<script type="text/javascript">
+			document.createElement("header");
+			document.createElement("nav");
+			document.createElement("section");
+			document.createElement("article");
+			document.createElement("footer");
+		</script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- wrap -->
+	<div id="wrap" data-active="[7,2,1]">
+		<!-- header -->
+		<header id="header" data-include="../../include/header.html"></header>
+		<!-- //header -->	
+		
+		<!-- gnb -->
+		<aside class="left_menu"  data-include="../../include/leftMenu.html"></aside>
+		<!-- //left_menu -->
+
+		<!-- container -->
+		<div id="container">
+			<!-- contents -->
+			<section id="contents">
+			
+				<div class="mb20">
+					<strong class="tableTitle">◎ 템플릿 설정 정보</strong>
+					<table class="table left_tbl mt5">
+						<caption>카테고리기본정보</caption>
+						<colgroup>
+							<col style="width:15%" />
+							<col />
+							<col style="width:15%" />
+							<col />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">카테고리 코드</th>
+								<td>10000015</td>
+								<th scope="row">서비스 유형</th>
+								<td>온누리</td>
+							</tr>
+							<tr>
+								<th scope="row">기본여부</th>
+								<td>Y</td>
+								<th scope="row">사용여부</th>
+								<td>Y</td>
+							</tr>
+							<tr>
+								<th scope="row">템플릿 명</th>
+								<td>B2C 템플릿</td>
+								<th scope="row">설명</th>
+								<td>B2C 테스트 템플릿</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				
+				<div>
+					<ul class="layoutBox category">
+						<li class="list" style="width:390px;">
+							<div class="flex">
+								<strong class="tableTitle">◎ 카테고리 목록</strong>
+								<button type="button" class="button btn_black mla w100">적용</button>
+							</div>
+							<div class="categoryListBox" id="jstree_demo_div">
+								<ul>
+									<li data-jstree='{ "opened" : true }'>Root node
+										<ul>
+											<li data-jstree='{ "selected" : true }'>Child node 1</li>
+											<li>Child node 2</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</li>
+						
+						<li class="cont" style="width: calc(100% - 406px);">
+							<div class="flex">
+								<strong class="tableTitle flex10">◎ 템플릿 적용 카테고리 정보</strong>
+								<!-- <div class="flex01">
+									<a href="#nolink" class="button small btn_blue">저장</a>
+								</div> -->
+							</div>
+							<table class="table tbl_hover mt15 tbl_fixed">
+								<caption>테이블 제목</caption>
+								<colgroup>
+									<col style="width:130px;" />
+									<col style="width:60px;" />
+									<col style="width:25%;" />
+									<col style="width:25%;" />
+									<col style="width:150px;" />
+									<col style="width:150px;" />
+									<col />
+									<col />
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col" style="width:120px;">카테고리 코드</th>
+										<th scope="col" style="width:50px;">레벨</th>
+										<th scope="col" style="width:260px;">카테고리 메뉴명</th>
+										<th scope="col" style="width:260px;">사용자 메뉴명</th>
+										<th scope="col" style="width:130px;">정렬순서</th>
+										<th scope="col" style="width:150px;">사용여부</th>
+										<th scope="col">수정</th>
+										<th scope="col">삭제</th>
+									</tr>
+								</thead>
+								<tbody style="height: 620px;">
+									<tr>
+										<td style="width:120px;">100100001</td>
+										<td style="width:50px;">1</td>
+										<td style="width:260px;">농산물</td>
+										<td style="width:260px;"><input type="text" class="w_100" /></td>
+										<td style="width:130px;"><input type="text" class="w_100" /></td>
+										<td style="width:150px;">
+											<div class="t_center">
+												<label>
+													<input name="radio2" class="radio" type="radio" checked="checked">
+													<span class="lbl">Y</span>
+												</label>
+												<label>
+													<input name="radio2" class="radio" type="radio">
+													<span class="lbl">N</span>
+												</label>
+											</div>
+										</td>
+										<td><button type="button" class="button btn_black">수정</button></td>
+										<td><button type="button" class="button btn_black">삭제</button></td>
+									</tr>
+									<tr>
+										<td style="width:120px;">100100002</td>
+										<td style="width:50px;">2</td>
+										<td style="width:260px;">쌀/잡곡</td>
+										<td style="width:260px;"><input type="text" class="w_100" /></td>
+										<td style="width:130px;"><input type="text" class="w_100" /></td>
+										<td style="width:150px;">
+											<div class="t_center">
+												<label>
+													<input name="radio2" class="radio" type="radio" checked="checked">
+													<span class="lbl">Y</span>
+												</label>
+												<label>
+													<input name="radio2" class="radio" type="radio">
+													<span class="lbl">N</span>
+												</label>
+											</div>
+										</td>
+										<td><button type="button" class="button btn_black">수정</button></td>
+										<td><button type="button" class="button btn_black">삭제</button></td>
+									</tr>
+									<tr>
+										<td style="width:120px;">100100002</td>
+										<td style="width:50px;">2</td>
+										<td style="width:260px;">쌀/잡곡</td>
+										<td style="width:260px;"><input type="text" class="w_100" /></td>
+										<td style="width:130px;"><input type="text" class="w_100" /></td>
+										<td style="width:150px;">
+											<div class="t_center">
+												<label>
+													<input name="radio2" class="radio" type="radio" checked="checked">
+													<span class="lbl">Y</span>
+												</label>
+												<label>
+													<input name="radio2" class="radio" type="radio">
+													<span class="lbl">N</span>
+												</label>
+											</div>
+										</td>
+										<td><button type="button" class="button btn_black">수정</button></td>
+										<td><button type="button" class="button btn_black">삭제</button></td>
+									</tr>
+									<tr>
+										<td style="width:120px;">100100002</td>
+										<td style="width:50px;">2</td>
+										<td style="width:260px;">쌀/잡곡</td>
+										<td style="width:260px;"><input type="text" class="w_100" /></td>
+										<td style="width:130px;"><input type="text" class="w_100" /></td>
+										<td style="width:150px;">
+											<div class="t_center">
+												<label>
+													<input name="radio2" class="radio" type="radio" checked="checked">
+													<span class="lbl">Y</span>
+												</label>
+												<label>
+													<input name="radio2" class="radio" type="radio">
+													<span class="lbl">N</span>
+												</label>
+											</div>
+										</td>
+										<td><button type="button" class="button btn_black">수정</button></td>
+										<td><button type="button" class="button btn_black">삭제</button></td>
+									</tr>
+									<tr>
+										<td style="width:120px;">100100002</td>
+										<td style="width:50px;">2</td>
+										<td style="width:260px;">쌀/잡곡</td>
+										<td style="width:260px;"><input type="text" class="w_100" /></td>
+										<td style="width:130px;"><input type="text" class="w_100" /></td>
+										<td style="width:150px;">
+											<div class="t_center">
+												<label>
+													<input name="radio2" class="radio" type="radio" checked="checked">
+													<span class="lbl">Y</span>
+												</label>
+												<label>
+													<input name="radio2" class="radio" type="radio">
+													<span class="lbl">N</span>
+												</label>
+											</div>
+										</td>
+										<td><button type="button" class="button btn_black">수정</button></td>
+										<td><button type="button" class="button btn_black">삭제</button></td>
+									</tr>
+									<tr>
+										<td style="width:120px;">100100002</td>
+										<td style="width:50px;">2</td>
+										<td style="width:260px;">쌀/잡곡</td>
+										<td style="width:260px;"><input type="text" class="w_100" /></td>
+										<td style="width:130px;"><input type="text" class="w_100" /></td>
+										<td style="width:150px;">
+											<div class="t_center">
+												<label>
+													<input name="radio2" class="radio" type="radio" checked="checked">
+													<span class="lbl">Y</span>
+												</label>
+												<label>
+													<input name="radio2" class="radio" type="radio">
+													<span class="lbl">N</span>
+												</label>
+											</div>
+										</td>
+										<td><button type="button" class="button btn_black">수정</button></td>
+										<td><button type="button" class="button btn_black">삭제</button></td>
+									</tr>
+									<tr>
+										<td style="width:120px;">100100002</td>
+										<td style="width:50px;">2</td>
+										<td style="width:260px;">쌀/잡곡</td>
+										<td style="width:260px;"><input type="text" class="w_100" /></td>
+										<td style="width:130px;"><input type="text" class="w_100" /></td>
+										<td style="width:150px;">
+											<div class="t_center">
+												<label>
+													<input name="radio2" class="radio" type="radio" checked="checked">
+													<span class="lbl">Y</span>
+												</label>
+												<label>
+													<input name="radio2" class="radio" type="radio">
+													<span class="lbl">N</span>
+												</label>
+											</div>
+										</td>
+										<td><button type="button" class="button btn_black">수정</button></td>
+										<td><button type="button" class="button btn_black">삭제</button></td>
+									</tr>
+									<tr>
+										<td style="width:120px;">100100002</td>
+										<td style="width:50px;">2</td>
+										<td style="width:260px;">쌀/잡곡</td>
+										<td style="width:260px;"><input type="text" class="w_100" /></td>
+										<td style="width:130px;"><input type="text" class="w_100" /></td>
+										<td style="width:150px;">
+											<div class="t_center">
+												<label>
+													<input name="radio2" class="radio" type="radio" checked="checked">
+													<span class="lbl">Y</span>
+												</label>
+												<label>
+													<input name="radio2" class="radio" type="radio">
+													<span class="lbl">N</span>
+												</label>
+											</div>
+										</td>
+										<td><button type="button" class="button btn_black">수정</button></td>
+										<td><button type="button" class="button btn_black">삭제</button></td>
+									</tr>
+									<tr>
+										<td style="width:120px;">100100002</td>
+										<td style="width:50px;">2</td>
+										<td style="width:260px;">쌀/잡곡</td>
+										<td style="width:260px;"><input type="text" class="w_100" /></td>
+										<td style="width:130px;"><input type="text" class="w_100" /></td>
+										<td style="width:150px;">
+											<div class="t_center">
+												<label>
+													<input name="radio2" class="radio" type="radio" checked="checked">
+													<span class="lbl">Y</span>
+												</label>
+												<label>
+													<input name="radio2" class="radio" type="radio">
+													<span class="lbl">N</span>
+												</label>
+											</div>
+										</td>
+										<td><button type="button" class="button btn_black">수정</button></td>
+										<td><button type="button" class="button btn_black">삭제</button></td>
+									</tr>
+								</tbody>
+							</table>
+						</li>
+					</ul>
+				</div>
+				
+			</section>
+			<!-- //contents -->
+		</div>
+		<!-- //container -->
+	</div>
+	<!-- //wrap -->
+	<!-- footer -->
+	<header id="footer" data-include="../../include/footer.html"></header>
+	<!-- //footer -->
+	
+</body>
+</html>

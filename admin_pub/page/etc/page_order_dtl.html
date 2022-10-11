@@ -1,0 +1,444 @@
+<!DOCTYPE html> 
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>NEXTID 시스템</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" href="../../static/css/common.css" media="all" />
+	<link rel="stylesheet" href="../../static/css/contents.css" media="all" />
+	<script src="../../static/js/plugins.js"></script>
+	<script src="../../static/js/ui_script.js"></script>
+	<!--[if lt IE 9]>
+		<script type="text/javascript">
+			document.createElement("header");
+			document.createElement("nav");
+			document.createElement("section");
+			document.createElement("article");
+			document.createElement("footer");
+		</script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- wrap -->
+	<div id="wrap" data-active="[0]">
+	<!-- div id="wrap" data-active="[0]" class="nonLnb" -->
+		<!-- header -->
+		<script src="../../include/header.js"></script>
+		<!-- //header -->	
+		
+		<!-- gnb -->
+		<script src="../../include/leftMenu.js"></script>
+		<!-- //left_menu -->
+
+		<!-- container -->
+		<div id="container">
+			<!-- contents -->
+			<section id="contents">
+				<h1 id="page_tit">주문정보</h1>
+				<div class="flex">
+					<strong class="tableTitle flex10">◎ 주문기본정보</strong>
+					<div class="flex01">
+						<a href="#nolink" class="button small btn_blue">전산관리자 주문정보 조회</a>
+					</div>
+				</div>
+				<table class="table left_tbl mt5">
+					<caption>주문기본정보</caption>
+					<colgroup>
+						<col style="width:10%" />
+						<col style="width:40%" />
+						<col style="width:10%" />
+						<col />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">복지관주문번호</th>
+							<td>012254111512</td>
+							<th scope="row">주문번호</th>
+							<td>012254111522</td>
+						</tr>
+						<tr>
+							<th scope="row">주문자명/아이디</th>
+							<td>홍길동 [2012554122]</td>
+							<th scope="row">주문완료일</th>
+							<td>2020-02-10 12:13:00</td>
+						</tr>
+						<tr>
+							<th scope="row">고객사</th>
+							<td>[pdkifkdk] 경찰청</td>
+							<th scope="row">서비스유형</th>
+							<td>온누리</td>
+						</tr>
+						<tr>
+							<th scope="row">채널구분</th>
+							<td>PC</td>
+							<th scope="row">고객구분</th>
+							<td>복지관</td>
+						</tr>
+						<tr>
+							<th scope="row">현금영수증 발행 여부</th>
+							<td colspan="3">자동발행 / 휴대전화번호 / 소득공제 / 010-0000-0000</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="flex mt20">
+					<strong class="tableTitle flex10">◎ 주문결제정보</strong>
+					<div class="flex01">
+						<a href="#nolink" class="button small btn_blue">구매영수증</a>
+						<a href="#nolink" class="button small btn_blue">환불계좌관리</a>
+					</div>
+				</div>
+				<table class="table left_tbl mt5">
+					<caption>주문결제정보</caption>
+					<colgroup>
+						<col style="width:10%" />
+						<col style="width:40%" />
+						<col style="width:10%" />
+						<col />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">결제상태</th>
+							<td>결제완료</td>
+							<th scope="row">결제유형</th>
+							<td>결제형</td>
+						</tr>
+						<tr>
+							<th scope="row">총 결제금액</th>
+							<td>33,000</td>
+							<th scope="row">총 할인금액</th>
+							<td>0</td>
+						</tr>
+						<tr>
+							<th scope="row">총 상품금액</th>
+							<td>33,000</td>
+							<th scope="row">총 배송금액</th>
+							<td>0</td>
+						</tr>
+					</tbody>
+				</table>
+				<strong class="tableTitle">◎ 주문 결제 상세</strong>
+				<table class="table view_tbl">
+					<caption>주문 결제 상세</caption>
+					<colgroup>
+						<col style="width:15%" />
+						<col style="width:15%" />
+						<col style="width:15%" />
+						<col />
+						<col style="width:20%" />
+					</colgroup>
+					<thead>
+						<tr>
+							<th>결제휴형</th>
+							<th>구분</th>
+							<th>결제금액</th>
+							<th>유형별 상세 정보</th>
+							<th>비고</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>특별포인트</td>
+							<td>2020년 전통시장 특별포인트</td>
+							<td>22,000</td>
+							<td>2020-02-02 ~ 2020-02-30</td>
+							<td>소멸예정 : 0</td>
+						</tr>
+					</tbody>
+				</table>
+				<strong class="tableTitle">◎ 결제 History</strong>
+				<table class="table view_tbl">
+					<caption>결제 History</caption>
+					<colgroup>
+						<col style="width:20%" />
+						<col style="width:auto" />
+						<col style="width:15%" />
+						<col style="width:15%" />
+						<col style="width:20%" />
+						<col style="width:20%" />
+					</colgroup>
+					<thead>
+						<tr>
+							<th>틀별포인트</th>
+							<th></th>
+							<th></th>
+							<th></th>
+							<th>결제 일자</th>
+							<th>취소 일자</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>22,000</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>2020-02-02 22:12:00</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+				<strong class="tableTitle">◎ 주문 할인 정보</strong>
+				<table class="table view_tbl">
+					<caption>주문 할인 정보</caption>
+					<colgroup>
+						<col style="width:20%" />
+						<col />
+						<col style="width:20%" />
+						<col style="width:30%" />
+					</colgroup>
+					<thead>
+						<tr>
+							<th>쿠폰 번호</th>
+							<th>쿠폰 이름</th>
+							<th>할인 가격</th>
+							<th>유효 기간</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td colspan="4">할인 목록이 존재하지 않습니다.</td>
+						</tr>
+					</tbody>
+				</table>
+				<strong class="tableTitle">◎ 주문 상품 정보</strong>
+				<div class="tabBox btnTab">
+					<ul class="tabmenu leftTab tabMotion mt10">
+						<li><a href="#tabCon1">일반</a></li>
+					</ul>
+					<div class="posBox rm">
+						<button type="button" class="button small btn_blue">운송장번호 입력</button>
+						<button type="button" class="button small btn_blue">배송조회</button>
+						<button type="button" class="button small btn_blue">주문취소 재승인(MD)</button>
+					</div>
+				</div>
+				<!-- 일반탭 -->
+				<div id="tabCon1" class="tab_cont ovfAuto">
+					<table class="table view_tbl">
+						<caption>주문 상품 정보</caption>
+						<colgroup>
+							<col style="" />
+							<col style="" />
+							<col style="" />
+							<col style="" />
+							<col style="" />
+							<col style="" />
+							<col style="" />
+							<col style="" />
+							<col style="" />
+							<col style="" />
+							<col style="" />
+							<col style="" />
+							<col style="" />
+							<col style="" />
+							<col style="" />
+							<col style="" />
+							<col style="" />
+							<col style="" />
+							<col style="" />
+							<col style="" />
+							<col style="" />
+							<col style="" />
+							<col style="" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th>선택</th>
+								<th>No</th>
+								<th>CSP코드/명<br>전화번호</th>
+								<th>상품코드</th>
+								<th>상품명</th>
+								<th>옵션명</th>
+								<th>프로모션</th>
+								<th>매입가</th>
+								<th>판매가</th>
+								<th>상품수량</th>
+								<th>적용쿠폰</th>
+								<th>상품별배송비<br>(배송비조건)</th>
+								<th>묶음배송여부</th>
+								<th>적용배송비<br>(도서산간)</th>
+								<th>결제금액</th>
+								<th>상품유형</th>
+								<th>취소불가</th>
+								<th>주문상태</th>
+								<th>배송상태</th>
+								<th></th>
+								<th></th>
+								<th></th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<input name="checkbox01" type="checkbox" class="checkbox">
+								</td>
+								<td>1</td>
+								<td>
+									<ul>
+										<li>76000032</li>
+										<li>별메마을</li>
+										<li>010-0000-0000</li>
+									</ul>
+								</td>
+								<td>10000000000</td>
+								<td>[대천김] 재래김 10봉 선물용(421)-2세트</td>
+								<td></td>
+								<td></td>
+								<td>19,000</td>
+								<td>22,000</td>
+								<td>1</td>
+								<td></td>
+								<td>
+									<ul>
+										<li>무료</li>
+										<li>-</li>
+									</ul>
+								</td>
+								<td>Y</td>
+								<td>
+									<ul>
+										<li>0</li>
+										<li>-</li>
+									</ul>
+								</td>
+								<td>22,000</td>
+								<td>일반상품</td>
+								<td></td>
+								<td>주문완료</td>
+								<td>배송준비중</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="flex mt20">
+					<strong class="tableTitle flex10">◎ 주문 배송 정보</strong>
+					<div class="flex01">
+						<a href="#nolink" class="button small btn_blue">배송지 변경</a>
+					</div>
+				</div>
+				<table class="table view_tbl mt5">
+					<caption>주문 배송 정보</caption>
+					<colgroup>
+						<col style="" />
+						<col style="" />
+						<col style="" />
+						<col style="" />
+						<col style="" />
+						<col style="" />
+						<col style="" />
+						<col style="" />
+						<col style="" />
+						<col style="" />
+						<col style="" />
+						<col style="" />
+					</colgroup>
+					<thead>
+						<tr>
+							<th>선택</th>
+							<th>No</th>
+							<th>주문상태</th>
+							<th>배송수량</th>
+							<th>배송상태</th>
+							<th>배송업체<br>송장번호</th>
+							<th>받는분명</th>
+							<th>받는분 연락처</th>
+							<th>받는분 휴대폰</th>
+							<th>받는분 주소</th>
+							<th>배송시요청사항</th>
+							<th>발송정책</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<input name="checkbox01" type="checkbox" class="checkbox">
+							</td>
+							<td>1</td>
+							<td>주문완료</td>
+							<td>0</td>
+							<td>배송준비중</td>
+							<td>
+								<ul>
+									<li>-</li>
+									<li>-</li>
+								</ul>
+							</td>
+							<td>홍길동</td>
+							<td>-</td>
+							<td>010-0000-0000</td>
+							<td>
+								<ul>
+									<li>[00000]</li>
+									<li>경상북도 안동군 안동면 안동마을길 11</li>
+								</ul>
+							</td>
+							<td></td>
+							<td><a href="#nolink" class="link t_blue" title="">추가정보</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+			<!-- //contents -->
+		</div>
+		<!-- //container -->
+	</div>
+	<!-- //wrap -->
+	<!-- footer -->
+	<header id="footer" data-include="../../include/footer.html"></header>
+	<!-- //footer -->
+
+	<!-- pop_layer -->
+	<!-- layerPopOpen 클래스 적용 후 링크값은 id값으로 -->
+	<!-- 카테고리 -->
+	<article id="popup1" class="pop_layer">
+		<div class="pop_wrap">
+			<h1>카테고리 설정</h1>
+			<div class="pop_cont">
+				<table class="table view_tbl">
+					<colgroup>
+						<col />
+					</colgroup>
+					<thead>
+						<tr>
+							<th>카테고리 선택</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<div class="categoryBox">
+									<dl class="category">
+										<dt>대분류 카테고리</dt>
+										<dd></dd>
+									</dl>
+									<dl class="category">
+										<dt>중분류 카테고리</dt>
+										<dd></dd>
+									</dl>
+									<dl class="category">
+										<dt>소분류 카테고리</dt>
+										<dd></dd>
+									</dl>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="t_center mt30">
+					<a href="#" class="button large btn_blue">카테고리 선택/추가</a>
+				</div>
+			</div>
+			<!-- pop_close 닫는 클래스 -->
+			<a href="#" class="btn_close pop_close">닫기</a>
+		</div>
+	</article>
+	<!-- //pop_layer -->
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<title>온누리장터</title>
+<script>window.MSInputMethodContext && document.documentMode && document.write('<script src="../static/js/ie11CustomProperties.js"><\/script>');</script>
+<!-- 반드시 나중에 절대경로로 바꿔주세요 -->
+<link href="../static/css/reset.css" rel="stylesheet" />
+<link href="../static/css/common.css" rel="stylesheet" />
+<link href="../static/css/contents.css" rel="stylesheet" />
+<!-- //반드시 나중에 절대경로로 바꿔주세요 -->
+<script type="text/javascript" src="../static/js/common.js"></script>
+<script type="text/javascript" src="../static/js/ui.js"></script>
+<!--[if lt IE 9]>
+    <script type="text/javascript">
+        document.createElement("header");
+        document.createElement("nav");
+        document.createElement("section");
+        document.createElement("article");
+        document.createElement("footer");
+    </script>
+<![endif]-->
+</head>
+<body>
+
+	<!-- 헤더영역 -->
+	<header id="headerWrap" data-include="../include/header.html"></header>
+	<!-- //헤더영역 -->
+
+	<!-- 컨텐츠 영역 -->          
+	<section id="container" data-title="마이페이지">
+		<div class="section">
+			<div class="locationBar">
+				<span class="home">홈</span>
+				<span>마이페이지</span>
+			</div>
+
+			<div class="mypageWrap">
+				<!--
+					data-mypage-on="[1,1]" 좌측 메뉴 활성화
+				-->
+				<div class="leftGnb" data-include="./mypageGnb.html" data-mypage-on="[1,2]"></div>
+				<div class="mypageCont">
+					<div class="flex">
+						<h3 class="subH2 mt0 tl flex11">반품신청</h3>
+						<p class="fz14 fc666">수취완료된 주문상품만 교환/반품 신청이 가능합니다.</p>
+					</div>
+
+					<!-- 방문수거 -->
+					<div class="successBox">
+						<p class="tit">반품신청이 완료되었습니다.</p>
+						<p class="text">CJ대한통운에서 영업일 기준 1~3일 내로 방문하여 <br />상품을 수거할 예정입니다.</p>
+					</div>
+
+					<!-- 직접발송 -->
+					<div class="successBox">
+						<p class="tit">반품신청이 완료되었습니다.</p>
+						<ul class="dotList tl">
+							<li>상품을 받으신 배송 택배사를 통해 반송처리를 진행해 주세요. 이외 업체를 통한 배송 시, 추가 택배비가 청구될 수 있습니다.</li>
+							<li>택배영수증은 교환상품이 판매자에게 수거 완료되기 전까지 보관해주시기 바랍니다.</li>
+							<li><span class="fcOrange">교환신청일로부터 10영업일 이상 경과</span> 되었으나 업체로 상품이 수거되지 않은 경우, <span class="fcOrange">교환신청이 자동으로 취소처리 됩니다.</span></li>
+						</ul>
+					</div>
+
+					<!-- 미회수 -->
+					<div class="successBox">
+						<p class="tit">반품신청이 완료되었습니다.</p>
+						<p class="text">판매자가 직접 연락하여 교환 및 반품처리를 진행 할 예정입니다. <br />판매자 연락 후 안내에 따라 교환/반품 처리를 진행해 주세요.</p>
+					</div>
+
+					<div class="tc">
+						<a href="#" class="button large line">교환신청 취소</a>
+						<a href="#" class="button large line">교환/반품신청 목록</a>
+						<a href="#" class="button large line">계속쇼핑하기</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<!-- //컨텐츠 영역 -->
+	
+	<!-- 하단 영역 -->
+	<footer id="footerWrap" data-include="../include/footer.html"></footer>
+	<!-- //하단 영역 -->
+	<script>
+	</script>
+</body>
+</html>

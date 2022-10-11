@@ -1,0 +1,71 @@
+<!-- 헤더영역 -->
+<h1 id="logo"><a href="../00_main/main.html">XANADU</a></h1>
+<a href="#" class="btn_gnb">
+	<i></i>
+	<i></i>
+	<i></i>
+	<span class="blind">메뉴</span>
+</a>
+<div class="headerGnb">
+	<div class="gnb_menu">
+		<a href="../00_main/main.html">홈</a>
+		<a href="../01_goods/PAGE_01_01.html">상품관리</a>
+		<a href="../02_order/PAGE_01_01.html">주문관리</a>
+		<a href="../03_member/PAGE_01_01.html">회원관리</a>
+		<a href="../04_company/PAGE_01_01.html">업체관리</a>
+		<a href="../05_cp/PAGE_01_01.html">고객센터&정산관리</a>
+		<a href="../06_customer/PAGE_01_01.html">고객사관리</a>
+		<a href="../07_shop/PAGE_01_01.html">쇼핑몰관리</a>
+		<a href="../08_service/PAGE_01_01.html">고객센터</a>
+		<a href="../09_system/PAGE_01_01.html">시스템관리</a>
+	</div>
+	<div class="head_info">
+		<span><strong>관리자</strong>님 안녕하세요.</span>
+		<a href="#" class="button small">로그아웃</a>
+	</div>
+</div>
+
+<!-- 즐겨찾기 영역 -->
+<div class="bookmark_menu hide">
+	<a class="arrow_btn pointer"><i class="icon-left-big"></i></a>
+	<div class="bookmark_list">
+		<nav class="gnb">
+			<ul>
+				<li><p class="tit">즐겨찾기</p>
+					<div>
+						<ul>
+							<li><a href="PAGE_01_01.html">등록상품관리</a></li>
+							<li><a href="PAGE_01_02.html">대기상품관리</a></li>
+							<li><a href="PAGE_01_03.html">상품재고관리</a></li>
+							<li><a href="PAGE_01_04.html">고객사 전시카테고리 설정</a></li>
+							<li><a href="PAGE_01_05.html">상품등록</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</div>
+
+<script>
+	$(function(){
+		const active = $('#wrap').data('active');
+		$('.gnb_menu > a').eq(active[0]).addClass('active');
+	});
+
+	$(document).ready(function(){
+		$(".bookmark_menu .arrow_btn").on("click", function(){
+			var status = $(".bookmark_menu").hasClass("hide");
+			
+			if(status) {
+				$(".bookmark_menu").removeClass("hide");
+				$(this).find("i").attr("class", "icon-right-big");
+			} else {
+				$(".bookmark_menu").addClass("hide");
+				$(this).find("i").attr("class", "icon-left-big");
+			}			
+		});
+	});
+</script>
+<!-- //헤더영역 -->
+

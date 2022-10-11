@@ -1,0 +1,317 @@
+<!DOCTYPE html> 
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>XANADU 시스템</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" href="../../static/css/common.css" media="all" />
+	<link rel="stylesheet" href="../../static/css/contents.css" media="all" />
+	<script src="../../static/js/plugins.js"></script>
+	<script src="../../static/js/ui_script.js"></script>
+	<!--[if lt IE 9]>
+		<script type="text/javascript">
+			document.createElement("header");
+			document.createElement("nav");
+			document.createElement("section");
+			document.createElement("article");
+			document.createElement("footer");
+		</script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- wrap -->
+	<div id="wrap" data-active="[7,3,1]">
+		<!-- header -->
+		<header id="header" data-include="../../include/header.html"></header>
+		<!-- //header -->	
+		
+		<!-- gnb -->
+		<aside class="left_menu"  data-include="../../include/leftMenu.html"></aside>
+		<!-- //left_menu -->
+
+		<!-- container -->
+		<div id="container">
+			<!-- contents -->
+			<section id="contents">
+				<h1 id="page_tit">기획전관리현황</h1>	
+				
+				<table class="table left_tbl view_tbl mt20">
+					<caption>기획전관리현황</caption>
+					<colgroup>
+						<col style="width:10%" />
+						<col style="width:40%" />
+						<col style="width:10%" />
+						<col />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">서비스유형</th>
+							<td>
+								<label>
+									<input name="radio1" class="radio" type="radio" checked="checked" />
+									<span class="lbl">전체</span>
+								</label>
+								<label>
+									<input name="radio1" class="radio" type="radio" />
+									<span class="lbl">온누리</span>
+								</label>
+								<label>
+									<input name="radio1" class="radio" type="radio" />
+									<span class="lbl">기념일</span>
+								</label>
+								<label>
+									<input name="radio1" class="radio" type="radio" />
+									<span class="lbl">특판</span>
+								</label>
+								<label>
+									<input name="radio1" class="radio" type="radio" />
+									<span class="lbl">MRO</span>
+								</label>
+							</td>
+
+							<th scope="row">채널</th>
+							<td>
+								<label>
+									<input name="radio2" class="radio" type="radio" checked="checked" />
+									<span class="lbl">전체</span>
+								</label>
+								<label>
+									<input name="radio2" class="radio" type="radio" />
+									<span class="lbl">PC</span>
+								</label>
+								<label>
+									<input name="radio2" class="radio" type="radio" />
+									<span class="lbl">MOBILE</span>
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">기획전 유형</th>
+							<td>
+								<label>
+									<input name="radio3" class="radio" type="radio" checked="checked" />
+									<span class="lbl">전체</span>
+								</label>
+								<label>
+									<input name="radio3" class="radio" type="radio" />
+									<span class="lbl">일반형</span>
+								</label>
+								<label>
+									<input name="radio3" class="radio" type="radio" />
+									<span class="lbl">통합형</span>
+								</label>
+							</td>
+							
+							<th scope="row">기획전 검색</th>
+							<td>
+								<select title="옵션선택">
+									<option value="">선택</option>
+									<option value="">기획전명</option>
+									<option value="">기획전코드</option>
+								</select>
+
+								<input type="text" class="text w_70" />
+							</td>
+						</tr>
+
+						<tr>
+							<th scope="row">진행상태</th>
+							<td>
+								<label>
+									<input name="radio4" class="radio" type="radio" checked="checked" />
+									<span class="lbl">전체</span>
+								</label>
+								<label>
+									<input name="radio4" class="radio" type="radio" />
+									<span class="lbl">대기</span>
+								</label>
+								<label>
+									<input name="radio4" class="radio" type="radio" />
+									<span class="lbl">진행</span>
+								</label>
+								<label>
+									<input name="radio4" class="radio" type="radio" />
+									<span class="lbl">종료</span>
+								</label>
+							</td>
+
+							<th scope="row">사용여부</th>
+							<td>
+								<label>
+									<input name="radio5" class="radio" type="radio" checked="checked" />
+									<span class="lbl">전체</span>
+								</label>
+								<label>
+									<input name="radio5" class="radio" type="radio" />
+									<span class="lbl">사용</span>
+								</label>
+								<label>
+									<input name="radio5" class="radio" type="radio" />
+									<span class="lbl">사용중지</span>
+								</label>
+							</td>
+						</tr>
+
+						<tr>
+							<th>적용 고객사</th>
+							<td>
+								<div class="flex">
+									<input name="checkbox1" type="text" style="width: 235px; background-color:#d3d3d3" readonly >
+									<input name="checkbox1" type="text" style="width: 200px; background-color:white">
+									<button class="button" onclick="layerpopup('client_search_popup');">검색</button>
+									<button class="button btn_gray">취소</button>
+								</div>
+							</td>
+
+							<th scope="row">베스트여부</th>
+							<td>
+								<label>
+									<input name="radio6" class="radio" type="radio" checked="checked" />
+									<span class="lbl">전체</span>
+								</label>
+								<label>
+									<input name="radio6" class="radio" type="radio" />
+									<span class="lbl">Y</span>
+								</label>
+								<label>
+									<input name="radio6" class="radio" type="radio" />
+									<span class="lbl">N</span>
+								</label>
+							</td>
+						</tr>
+
+						<tr>
+							<th>등록일</th>
+							<td colspan="3">
+								<div class="flex align_center">
+									<input class="datepicker" type="text" /> ~ <input class="datepicker" type="text" />
+									<span class="btn_sort">
+										<a href="#">오늘</a>
+										<a href="#" class="on">1주</a>
+										<a href="#">3개월</a>
+										<a href="#">1년</a>
+									</span>
+								</div>
+							</td> 
+						</tr>
+
+					</tbody>
+				</table>
+
+				<p class="t_right mt30">
+					<a href="#" class="button large w100"><i class="icon-cw"></i> 초기화</a>
+					<a href="#" class="button large w100 btn_blue"><i class="icon-search"></i> 조회</a>
+				</p>
+
+				<div class="flex mt30 align_center">
+					<p>
+						<strong class="mr10">◎ 기획전 목록</strong>
+					</p>
+					<button type="button" class="button mla">등록</button>
+				</div>
+
+				<table class="table tbl_hover mt15">
+					<caption>테이블 제목</caption>
+					<colgroup>
+						<col style="width:50px" />
+						<col />
+						<col />
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col" rowspan="2">선택</th>
+							<th scope="col" rowspan="2">번호</th>
+							<th scope="col" rowspan="2">서비스유형</th>
+							<th scope="col" rowspan="2">채널</th>
+							<th scope="col" rowspan="2">기획전유형</th>
+							<th scope="col" rowspan="2">기획전코드</th>
+							<th scope="col" rowspan="2">기획전명</th>
+							<th scope="col" rowspan="2">등록업체</th>
+							<th scope="col" rowspan="2">시작일</th>
+							<th scope="col" rowspan="2">종료일</th>
+							<th scope="col" rowspan="2">상태</th>
+							<th scope="col" rowspan="2">사용여부</th>
+							<th scope="col" rowspan="2">베스트여부</th>
+							<th scope="col" rowspan="2">적용고객사</th>
+							<th scope="col" rowspan="2">복사</th>
+						</tr>
+
+					</thead>
+					<tbody>
+						<!-- 항목 -->
+						<tr class="pointer" onclick="javascript:location.href='PAGE_03_01_view.html'">
+							<th scope="row"><input type="checkbox" /></th>
+							<td>1</td>
+							<td>온누리</td>
+							<td>PC+MOBILE</td>
+							<td>일반형</td>
+							<td>534</td>
+							<td>테스트</td>
+							<td>노주하</td>
+							<td>2021-09-01</td>
+							<td>2021-09-30</td>
+							<td>대기</td>
+							<td>N</td>
+							<td></td>
+							<td>
+								<input type="button" value="보기">
+							</td>
+							<td>
+								<input type="button" value="복사">
+							</td>
+						</tr>
+						<!-- //항목 -->
+						<!-- 항목 -->
+						<tr class="pointer" onclick="javascript:location.href='PAGE_03_01_view.html'">
+							<th scope="row"><input type="checkbox" /></th>
+							<td>2</td>
+							<td>온누리</td>
+							<td>PC+MOBILE</td>
+							<td>일반형</td>
+							<td>533</td>
+							<td>오동통</td>
+							<td>강다미</td>
+							<td>2021-09-06</td>
+							<td>2021-09-30</td>
+							<td>대기</td>
+							<td>Y</td>
+							<td></td>
+							<td>전체</td>
+							<td>
+								<input type="button" value="복사">
+							</td>
+						</tr>
+						<!-- //항목 -->
+					</tbody>
+				</table>
+
+				<div class="paging_box mt30">
+					<ul class="pagination mla mra">
+						<li class="disabled"><a href="#"><i class="icon-angle-double-left"></i></a></li>
+						<li class="disabled"><a href="#"><i class="icon-angle-left"></i></a></li>
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#"><i class="icon-angle-right"></i></a></li>
+						<li><a href="#"><i class="icon-angle-double-right"></i></a></li>
+					</ul>
+				</div>
+			</section>
+			<!-- //contents -->
+		</div>
+		<!-- //container -->
+	</div>
+	<!-- //wrap -->
+	<!-- footer -->
+	<header id="footer" data-include="../../include/footer.html"></header>
+	<!-- //footer -->
+
+	<!-- 고객사 검색 팝업 -->
+	<article id="client_search_popup" class="pop_layer" data-include="../../include/popup/clientSearchPop.html"></article>
+
+</body>
+</html>

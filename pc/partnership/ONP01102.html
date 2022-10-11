@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<title>온누리장터</title>
+<script>window.MSInputMethodContext && document.documentMode && document.write('<script src="../static/js/ie11CustomProperties.js"><\/script>');</script>
+<!-- 반드시 나중에 절대경로로 바꿔주세요 -->
+<link href="../static/css/reset.css" rel="stylesheet" />
+<link href="../static/css/common.css" rel="stylesheet" />
+<link href="../static/css/contents.css" rel="stylesheet" />
+<!-- //반드시 나중에 절대경로로 바꿔주세요 -->
+<script type="text/javascript" src="../static/js/common.js"></script>
+<script type="text/javascript" src="../static/js/ui.js"></script>
+<!--[if lt IE 9]>
+    <script type="text/javascript">
+        document.createElement("header");
+        document.createElement("nav");
+        document.createElement("section");
+        document.createElement("article");
+        document.createElement("footer");
+    </script>
+<![endif]-->
+</head>
+<body>
+
+	<!-- 헤더영역 -->
+	<header id="headerWrap" data-include="../include/header.html"></header>
+	<!-- //헤더영역 -->
+
+	<!-- 컨텐츠 영역 -->          
+	<section id="container" data-title="입점신청서 작성">
+		<div class="section">
+			<div class="locationBar">
+				<span class="home">홈</span>
+				<span>입점신청서 작성</span>
+			</div>
+
+			<div class="loginWrap type2">
+				<h1>입점신청서 작성</h1>
+
+				<p class="fz20 bold">기본정보</p>
+				<div class="formBox mt24">
+					<label for="Name" class="tit">업체명<span class="impo">중요</span></label>
+					<div class="inputBox"><input type="text" id="Name" placeholder="사업자 등록증의 업체명으로 작성하세요" /></div>
+				</div>
+
+				<div class="formBox mt24">
+					<label for="Number" class="tit">사업자번호<span class="impo">중요</span></label>
+					<div class="inputBox"><input type="text" id="Number" placeholder="- 없이 숫자만 입력하세요" /></div>
+				</div>
+
+				<div class="formBox mt24">
+					<label for="kind1" class="tit">업태/업종</label>
+					<div class="flex">
+						<div class="inputBox"><input type="text" id="kind1" placeholder="업태" /></div>
+						<div class="inputBox"><input type="text" placeholder="업종" /></div>
+					</div>
+				</div>
+
+				<div class="formBox mt24">
+					<label for="Ipt1" class="tit">종업원 수 / 매출액(년)</label>
+					<div class="flex">
+						<div class="inputBox"><input type="text" id="Ipt1" placeholder="종업원 수" />
+							<p class="util">명</p>
+						</div>
+						<div class="inputBox"><input type="text" placeholder="매출액(년)" />
+							<p class="util">원</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="formBox mt24">
+					<label for="bank" class="tit">은행 계좌<span class="impo">중요</span></label>
+					<div class="flex">
+						<div class="selectBox w50">
+							<select title="금융권선택">
+								<option value="">선택하세요</option>
+							</select>
+						</div>
+						<div class="inputBox"><input type="text" placeholder="계좌번호 - 없이 숫자만 입력하세요" /></div>
+						<div class="inputBox w50"><input type="text" placeholder="계좌 명의자" /></div>
+					</div>
+				</div>
+
+				<div class="formBox mt24">
+					<label for="Text" class="tit">대표자<span class="impo">중요</span></label>
+					<div class="inputBox"><input type="text" id="Text" placeholder="사업자 등록증의 업체명으로 작성하세요" /></div>
+				</div>
+
+				<div class="formBox mt24">
+					<p class="tit">연락처<span class="impo">중요</span></p>
+					<div class="phoneForm">
+						<div class="selectBox flex11">
+							<select title="선택">
+								<option value="">선택</option>
+							</select>
+						</div><span class="line">-</span>
+						<div class="inputBox flex11"><input type="text" /></div><span class="line">-</span>
+						<div class="inputBox flex11"><input type="text" /></div>
+					</div>
+				</div>
+
+				<div class="formBox mt24">
+					<p class="tit">팩스<span class="impo">중요</span></p>
+					<div class="phoneForm">
+						<div class="selectBox flex11">
+							<select title="선택">
+								<option value="">선택</option>
+							</select>
+						</div><span class="line">-</span>
+						<div class="inputBox flex11"><input type="text" /></div><span class="line">-</span>
+						<div class="inputBox flex11"><input type="text" /></div>
+					</div>
+				</div>
+
+				<div class="formBox mt24">
+					<label for="Text2" class="tit">담당자<span class="impo">중요</span></label>
+					<div class="inputBox"><input type="text" id="Text2" placeholder="사업자 등록증의 업체명으로 작성하세요" /></div>
+				</div>
+
+				<div class="formBox mt24">
+					<p class="tit">휴대폰<span class="impo">중요</span></p>
+					<div class="phoneForm">
+						<div class="selectBox flex11">
+							<select title="선택">
+								<option value="">선택</option>
+							</select>
+						</div><span class="line">-</span>
+						<div class="inputBox flex11"><input type="text" /></div><span class="line">-</span>
+						<div class="inputBox flex11"><input type="text" /></div>
+					</div>
+				</div>
+
+				<div class="formBox mt24">
+					<p class="tit">이메일<span class="impo">중요</span></p>
+					<div class="emailForm">
+						<div class="inputBox"><input type="text" /></div>
+						<span class="line">@</span>
+						<div class="inputBox"><input type="text" /></div>
+						<div class="selectBox">
+							<select title="선택">
+								<option value="">선택
+							</select>
+						</div>
+					</div>
+				</div>
+
+				<p class="fz20 bold mt40">판매 관련 정보</p>
+				<div class="formBox mt24">
+					<label for="pageLink" class="tit">홈페이지 주소</label>
+					<div class="inputBox"><input type="text" id="pageLink" placeholder="사업자 등록증의 업체명으로 작성하세요" /></div>
+				</div>
+
+				<div class="formBox mt24">
+					<p class="tit">업체주소<span class="impo">중요</span></p>
+					<div class="addressForm">
+						<div class="inputBox searchAddress"><input type="text" /><button>우편번호 검색</button></div>
+						<div class="inputBox"><input type="text" /></div>
+					</div>
+					<div class="inputBox"><input type="text" placeholder="상세주소 직접입력" /></div>
+				</div>
+
+				<div class="formBox mt24">
+					<label for="Text3" class="tit mt15">비고사항</label>
+					<div class="textarea"><textarea id="Text3"></textarea></div>
+				</div>
+
+				<div class="formBox mt24">
+					<label for="Select1" class="tit">배송업체<span class="impo">중요</span></label>
+					<div class="flex">
+						<div class="selectBox w50">
+							<select title="배송업체" id="Select1">
+								<option value="">선택하세요</option>
+							</select>
+						</div>
+						<div class="selectBox w50">
+							<select title="배송업체">
+								<option value="">선택하세요</option>
+							</select>
+						</div>
+						<div class="selectBox w50">
+							<select title="배송업체">
+								<option value="">선택하세요</option>
+							</select>
+						</div>
+					</div>
+					<p class="text">자주 사용하는 업체 1~3개까지 입력해주세요</p>
+				</div>
+
+				<div class="formBox mt24">
+					<label for="Select2" class="tit">묶음배송 사용 여부<span class="impo">중요</span></label>
+					<div class="flex">
+						<div class="selectBox w50">
+							<select title="묶음배송 사용 여부" id="Select2">
+								<option value="">선택하세요</option>
+							</select>
+						</div>
+						<div class="inputBox"><input type="text" />
+							<p class="util">원 이상 무료배송</p>
+						</div>
+					</div>
+					<p class="text">해당 업체의 유료상품도 묶음 배송 사용시 해당 금액 이상 무료배송</p>
+				</div>
+				
+				<div class="formBox mt24">
+					<label for="File" class="tit">문서첨부</label>
+					<div class="inputBox"><input type="file" id="File" placeholder="최대 5MB까지 첨부 가능합니다." /></div>
+					<p class="text">통합신청서, 사업자등록증, 통장사본</p>
+				</div>
+				
+				<div class="formBox mt24">
+					<p class="tit">개인정보 수집 및 이용안내</p>
+					<div class="scrollBox">
+						개인정보의 수집/이용에 대해 이용자가 쉽게 인지할 수 있도록 이제너두 개인정보 처리방침 중 일부 항목만을 명시합니다.<br /><br />
+
+						수집하는 개인정보 항목<br />
+						- 이용자의 식별을 위한 내용 : 이름, 아이디(ID), 비밀번호, 가상식별번호(DI.CI)<br />
+						- 상품판매 정산을 위한 내용 : 입금통장정보 , 사업자 등록정보<br />
+						- 계약이행의 연락 및 안내 등의 고지를 위한 내용
+					</div>
+				</div>
+
+				<p class="mt20 fz15 bold fc222">수집하는 개인정보 항목, 수집 및 이용 목적, 보유 및 이용 기간에 동의하십니까 ?</p>
+				<div class="textCheckbox mt12"><input type="checkbox" id="check1" /><label for="check1"><i></i>동의합니다</label></div>
+
+
+				<div class="btnGroup mt24">
+					<button class="button line large">취소</button>
+					<button class="button large">등록</button>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<!-- //컨텐츠 영역 -->
+	
+	<!-- 하단 영역 -->
+	<footer id="footerWrap" data-include="../include/footer.html"></footer>
+	<!-- //하단 영역 -->
+	<script>
+	</script>
+</body>
+</html>

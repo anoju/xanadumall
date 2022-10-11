@@ -1,0 +1,303 @@
+<!DOCTYPE html> 
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>XANADU 시스템</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" href="../../static/css/common.css" media="all" />
+	<link rel="stylesheet" href="../../static/css/contents.css" media="all" />
+	<script src="../../static/js/plugins.js"></script>
+	<script src="../../static/js/ui_script.js"></script>
+	<!--[if lt IE 9]>
+		<script type="text/javascript">
+			document.createElement("header");
+			document.createElement("nav");
+			document.createElement("section");
+			document.createElement("article");
+			document.createElement("footer");
+		</script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- wrap -->
+	<div id="wrap" data-active="[7,3,4]">
+		<!-- header -->
+		<header id="header" data-include="../../include/header.html"></header>
+		<!-- //header -->	
+		
+		<!-- gnb -->
+		<aside class="left_menu"  data-include="../../include/leftMenu.html"></aside>
+		<!-- //left_menu -->
+
+		<!-- container -->
+		<div id="container">
+			<!-- contents -->
+			<section id="contents">
+				<h1 id="page_tit">프로모션관리</h1>	
+				
+				<table class="table left_tbl view_tbl mt20">
+					<caption>프로모션관리</caption>
+					<colgroup>
+						<col style="width:10%" />
+						<col style="width:40%" />
+						<col style="width:10%" />
+						<col />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">서비스 유형</th>
+							<td>
+								<label>
+									<input name="radio1" class="radio" type="radio" checked="checked" />
+									<span class="lbl">전체</span>
+								</label>
+								<label>
+									<input name="radio1" class="radio" type="radio" />
+									<span class="lbl">온누리</span>
+								</label>
+								<label>
+									<input name="radio1" class="radio" type="radio" />
+									<span class="lbl">기념일</span>
+								</label>
+								<label>
+									<input name="radio1" class="radio" type="radio" />
+									<span class="lbl">특판</span>
+								</label>
+								<label>
+									<input name="radio1" class="radio" type="radio" />
+									<span class="lbl">MRO</span>
+								</label>
+							</td>
+
+							<th scope="row">채널</th>
+							<td>
+								<label>
+									<input name="radio2" class="radio" type="radio" checked="checked" />
+									<span class="lbl">PC + MOBILE</span>
+								</label>
+								<label>
+									<input name="radio2" class="radio" type="radio" />
+									<span class="lbl">PC</span>
+								</label>
+								<label>
+									<input name="radio2" class="radio" type="radio" />
+									<span class="lbl">Moblie</span>
+								</label>
+							</td>
+
+						</tr>
+						<tr>
+							<th scope="row">프로모션 유형</th>
+							<td colspan="3">
+								<label>
+									<input name="radio3" class="radio" type="radio" checked="checked" />
+									<span class="lbl">전체</span>
+								</label>
+								<label>
+									<input name="radio3" class="radio" type="radio" />
+									<span class="lbl">하루만 에누리</span>
+								</label>
+								<label>
+									<input name="radio3" class="radio" type="radio" />
+									<span class="lbl">시간한정 에누리</span>
+								</label>
+								<label>
+									<input name="radio3" class="radio" type="radio" />
+									<span class="lbl">베스트</span>
+								</label>
+								<label>
+									<input name="radio3" class="radio" type="radio" />
+									<span class="lbl">공동구매</span>
+								</label>
+								<label>
+									<input name="radio3" class="radio" type="radio" />
+									<span class="lbl">단독특가</span>
+								</label>
+								<label>
+									<input name="radio3" class="radio" type="radio" />
+									<span class="lbl">으뜸장터</span>
+								</label>
+							</td>
+						</tr>
+
+						<tr>
+							<th scope="row">프로모션 코드</th>
+							<td>
+								<input type="text" />
+							</td>
+
+							<th scope="row">프로모션 명(관리/노출)</th>
+							<td>
+								<input type="text" class="w_70" />
+							</td>
+						</tr>
+
+						<tr>
+							<th>사용여부</th>
+							<td>
+								<label>
+									<input name="radio4" class="radio" type="radio" checked="checked" />
+									<span class="lbl">전체</span>
+								</label>
+								<label>
+									<input name="radio4" class="radio" type="radio" />
+									<span class="lbl">사용</span>
+								</label>
+								<label>
+									<input name="radio4" class="radio" type="radio" />
+									<span class="lbl">미사용</span>
+								</label>
+							</td>
+							
+							<th scope="row">진행상태</th>
+							<td>
+								<label>
+									<input name="radio5" class="radio" type="radio" checked="checked" />
+									<span class="lbl">전체</span>
+								</label>
+								<label>
+									<input name="radio5" class="radio" type="radio" />
+									<span class="lbl">대기</span>
+								</label>
+								<label>
+									<input name="radio5" class="radio" type="radio" />
+									<span class="lbl">진행</span>
+								</label>
+								<label>
+									<input name="radio5" class="radio" type="radio" />
+									<span class="lbl">종료</span>
+								</label>
+							</td>
+						</tr>
+
+						<tr>
+							<th>적용고객사</th>
+							<td colspan="3">
+								<div class="flex">
+									<input type="text" />
+									<input type="text" disabled />
+									<button class="button" onclick="layerpopup('client_search_popup');">고객사 검색</button>
+									<button class="button btn_gray">취소</button>
+								</div>
+							</td> 
+						</tr>
+					</tbody>
+				</table>
+
+				<p class="t_right mt30">
+					<a href="#" class="button large w100"><i class="icon-cw"></i> 초기화</a>
+					<a href="#" class="button large w100 btn_blue"><i class="icon-search"></i> 조회</a>
+				</p>
+
+				<div class="flex mt30">
+					<p>
+						<strong class="mr10">◎ 프로모션 목록</strong>
+					</p>
+					<button type="button" class="button mla">등록</button>
+				</div>
+
+				<table class="table tbl_hover mt15">
+					<caption>테이블 제목</caption>
+					<colgroup>
+						<col style="width:50px" />
+						<col />
+						<col />
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col" rowspan="2">번호</th>
+							<th scope="col" rowspan="2">서비스 유형</th>
+							<th scope="col" rowspan="2">채널</th>
+							<th scope="col" rowspan="2">프로모션 유형</th>
+							<th scope="col" rowspan="2">프로모션 코드</th>
+							<th scope="col" rowspan="2">프로모션 관리명</th>
+							<th scope="col" rowspan="2">프로모션 노출명</th>
+							<th scope="col" rowspan="2">시작일</th>
+							<th scope="col" rowspan="2">종료일</th>
+							<th scope="col" rowspan="2">상태</th>
+							<th scope="col" rowspan="2">사용여부</th>
+							<th scope="col" rowspan="2">적용고객사</th>
+							<th scope="col" rowspan="2">상세 <br/> 정보</th>
+						</tr>
+
+					</thead>
+					<tbody>
+						<!-- 항목 -->
+						<tr class="pointer" onclick="javascript:location.href='PAGE_03_04_view.html'">
+							<td>1</td>
+							<td>온누리</td>
+							<td>PC + MOBILE</td>
+							<td>시간한정 에누리</td>
+							<td>8</td>
+							<td><a>테스트 프로모션</a></td>
+							<td>테스트 프로모션</td>
+							<td>2020-10-07</td>
+							<td>2020-11-07</td>
+							<td>종료</td>
+							<td>Y</td>
+							<td>
+								<button type="button" class="button" onclick="layerpopup('apply_client_popup')">보기</button>
+							</td>
+							<td>
+								<button type="button" class="button" onclick="layerpopup('promotion_Detail_popup')">보기</button>
+							</td>
+						</tr>
+						<!-- //항목 -->
+						<!-- 항목 -->
+						<tr class="pointer" onclick="javascript:location.href='PAGE_03_04_view.html'">
+							<td>2</td>
+							<td>온누리</td>
+							<td>PC + MOBILE</td>
+							<td>공동구매</a></td>
+							<td>8</td>
+							<td><a>테스트 프로모션</td>
+							<td>테스트 프로모션</td>
+							<td>2020-10-07</td>
+							<td>2020-11-07</td>
+							<td>종료</td>
+							<td>Y</td>
+							<td>
+								<button type="button" class="button" onclick="layerpopup('apply_client_popup')">보기</button>
+							</td>
+							<td>
+								<button type="button" class="button" onclick="layerpopup('promotion_Detail_popup')">보기</button>
+							</td>
+						</tr>
+						<!-- //항목 -->
+					</tbody>
+				</table>
+
+				<div class="paging_box mt30">
+					<ul class="pagination mla mra">
+						<li class="disabled"><a href="#"><i class="icon-angle-double-left"></i></a></li>
+						<li class="disabled"><a href="#"><i class="icon-angle-left"></i></a></li>
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#"><i class="icon-angle-right"></i></a></li>
+						<li><a href="#"><i class="icon-angle-double-right"></i></a></li>
+					</ul>
+				</div>
+			</section>
+			<!-- //contents -->
+		</div>
+		<!-- //container -->
+	</div>
+	<!-- //wrap -->
+	<!-- footer -->
+	<header id="footer" data-include="../../include/footer.html"></header>
+	<!-- //footer -->
+
+	<!-- 고객사 검색 팝업 -->
+	<article id="client_search_popup" class="pop_layer" data-include="../../include/popup/clientSearchPop.html"></article>
+	<article id="promotion_Detail_popup" class="pop_layer" data-include="../../include/popup/promotionDetailPop.html"></article>
+
+	<!-- 적용 고객사 팝업 -->
+	<article id="apply_client_popup" class="pop_layer" data-include="../../include/popup/applyClientPop.html"></article>
+
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>XANADU 시스템</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+<link rel="stylesheet" href="../../static/css/common.css" media="all" />
+<link rel="stylesheet" href="../../static/css/contents.css" media="all" />
+<script src="../../static/js/plugins.js"></script>
+<script src="../../static/js/ui_script.js"></script>
+<!--[if lt IE 9]>
+		<script type="text/javascript">
+			document.createElement("header");
+			document.createElement("nav");
+			document.createElement("section");
+			document.createElement("article");
+			document.createElement("footer");
+		</script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- wrap -->
+	<div id="wrap" data-active="[7,3,1]">
+		<!-- header -->
+		<header id="header" data-include="../../include/header.html"></header>
+		<!-- //header -->
+
+		<!-- gnb -->
+		<aside class="left_menu" data-include="../../include/leftMenu.html"></aside>
+		<!-- //left_menu -->
+
+		<!-- container -->
+		<div id="container">
+			<!-- contents -->
+			<section id="contents">
+				<h1 id="page_tit">기획전관리현황</h1>
+
+				<p>
+					<strong class="mr10">◎ 기획전 상품관리</strong>
+				</p>
+
+				<table class="table left_tbl view_tbl mt20">
+					<caption>기획전등록</caption>
+					<colgroup>
+						<col style="width: 10%" />
+						<col style="width: 40%" />
+						<col style="width: 10%" />
+						<col />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">서비스 유형</th>
+							<td>온누리</td>
+							<th scope="row">채널</th>
+							<td>PC</td>
+						</tr>
+						<tr>
+							<th scope="row">기획전 유형</th>
+							<td>일반형</td>
+							<th scope="row">프로모션 코드</th>
+							<td>120002222</td>
+						</tr>
+
+						<tr>
+							<th>기획전명(상세 메인)</th>
+							<td colspan="3">제철과일이 역시 최고지~</td>
+						</tr>
+
+						<tr>
+							<th>기획전명(상세 서브)</th>
+							<td colspan="3">제철과일 사가세요</td>
+						</tr>
+
+						<tr>
+							<th>노출기간</th>
+							<td>
+								2020.05.14~2020.05.30
+							</td>
+							
+							<th>진행상태</th>
+							<td>
+								대기중
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="mt30">
+					<div class="t_right">
+						<button type="button" class="button btn_black">탭 추가</button>
+					</div>
+	
+					<div class="mt20">
+						<table class="table tbl_hover">
+							<colgroup>
+								<col />
+								<col style="width:200px;" />
+								<col />
+								<col style="width:150px;" />
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col" rowspan="2">탭 이름*</th>
+									<th scope="col" rowspan="2">우선순위</th>
+									<th scope="col" rowspan="2">사용여부</th>
+									<th scope="col" rowspan="2">상품관리</th>
+									<th scope="col" rowspan="2">등록 상품수</th>
+									<th scope="col" rowspan="2">품절 상품수</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<div class="flex align_center">
+											<input type="text" class="w_100" maxlength="20" value="제철과일" />
+										</div>
+									</td>
+									<td><input type="text" class="w_100" maxlength="4" /></td>
+									<td>
+										<label>
+											<input name="radio1" class="radio" type="radio" checked="checked" />
+											<span class="lbl">Y</span>
+										</label>
+										<label>
+											<input name="radio1" class="radio" type="radio" />
+											<span class="lbl">N</span>
+										</label>
+									</td>
+									<td><button type="button" class="button">상품관리</button></td>
+									<td>12</td>
+									<td>4</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+				<div class="mt30">
+					<div class="flex align_center">
+						<strong class="mr10">■ 탭 이름 : 제철과일</strong>
+						<button type="button" class="button btn_black mla">상품 추가</button>
+					</div>
+	
+					<table class="table tbl_hover mt15">
+						<caption>상품목록</caption>
+						<colgroup>
+							<col style="width:50px" />
+							<col />
+							<col style="width:30%" />
+							<col />
+							<col style="width:130px" />
+							<col style="width:130px" />
+							<col style="width:200px" />
+							<col style="width:200px" />
+							<col />
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col" rowspan="2">선택</th>
+								<th scope="col" rowspan="2">상품코드</th>
+								<th scope="col" rowspan="2">상품명</th>
+								<th scope="col" rowspan="2">판매상태</th>
+								<th scope="col" colspan="2">판매가격</th>
+								<th scope="col" colspan="2">노출가격</th>
+								<th scope="col" rowspan="2">우선순위</th>
+							</tr>
+							<tr>
+								<th scope="col" class="line">B2C</th>
+								<th scope="col" class="line">복지관</th>
+								<th scope="col" class="line">B2C</th>
+								<th scope="col" class="line">복지관</th>
+							</tr>
+						</thead>
+						<tbody>
+							<!-- 항목 -->
+							<tr>
+								<th scope="row"><input type="checkbox" /></th>
+								<td>100485829</td>
+								<td>테스트 상품1</td>
+								<td>판매중</td>
+								<td>13,100</td>
+								<td>10,000</td>
+								<td><input type="text" /></td>
+								<td><input type="text" /></td>
+								<td><input type="text" class="w70" /></td>
+							</tr>
+							<!-- //항목 -->
+							<!-- 항목 -->
+							<tr>
+								<th scope="row"><input type="checkbox" /></th>
+								<td>100485823</td>
+								<td>테스트 상품2</td>
+								<td>판매중</td>
+								<td>13,100</td>
+								<td>10,000</td>
+								<td><input type="text" /></td>
+								<td><input type="text" /></td>
+								<td><input type="text" class="w70" /></td>
+							</tr>
+							<!-- //항목 -->
+						</tbody>
+					</table>
+
+					<div class="mt10">
+						<button type="button" class="button">선택삭제</button>
+					</div>
+				</div>
+
+				<p class="t_center mt30">
+					<a href="#" class="button large w100 btn_black">저장</a>
+				</p>
+				
+			</section>				
+			<!-- //contents -->
+		</div>
+		<!-- //container -->
+	</div>
+	<!-- //wrap -->
+	<!-- footer -->
+	<header id="footer" data-include="../../include/footer.html"></header>
+	<!-- //footer -->
+
+	<!-- 고객사 검색 팝업 -->
+	<article id="client_search_popup" class="pop_layer"
+		data-include="../../include/popup/clientSearchPop.html"></article>
+
+</body>
+</html>

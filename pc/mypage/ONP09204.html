@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<title>온누리장터</title>
+<script>window.MSInputMethodContext && document.documentMode && document.write('<script src="../static/js/ie11CustomProperties.js"><\/script>');</script>
+<!-- 반드시 나중에 절대경로로 바꿔주세요 -->
+<link href="../static/css/reset.css" rel="stylesheet" />
+<link href="../static/css/common.css" rel="stylesheet" />
+<link href="../static/css/contents.css" rel="stylesheet" />
+<!-- //반드시 나중에 절대경로로 바꿔주세요 -->
+<script type="text/javascript" src="../static/js/common.js"></script>
+<script type="text/javascript" src="../static/js/ui.js"></script>
+<!--[if lt IE 9]>
+    <script type="text/javascript">
+        document.createElement("header");
+        document.createElement("nav");
+        document.createElement("section");
+        document.createElement("article");
+        document.createElement("footer");
+    </script>
+<![endif]-->
+</head>
+<body>
+
+	<!-- 헤더영역 -->
+	<header id="headerWrap" data-include="../include/header.html"></header>
+	<!-- //헤더영역 -->
+
+	<!-- 컨텐츠 영역 -->          
+	<section id="container" data-title="마이페이지">
+		<div class="section">
+			<div class="locationBar">
+				<span class="home">홈</span>
+				<span>마이페이지</span>
+			</div>
+
+			<div class="mypageWrap">
+				<!--
+					data-mypage-on="[1,1]" 좌측 메뉴 활성화
+				-->
+				<div class="leftGnb" data-include="./mypageGnb.html" data-mypage-on="[1,1]"></div>
+				<div class="mypageCont">
+					<div class="flex">
+						<h3 class="subH2 mt0 tl flex11">주문 상세조회</h3>
+						<a href="#" class="button small gray">인쇄하기</a>
+					</div>
+
+					<div class="orderDetailBox">
+						<div class="myListTop bt0 pl0 pr0">
+							<p class="tit">
+								2021-09-05
+								<a href="#" class="textButton">주문번호 B1008066895(1055397545)</a>
+							</p>
+							<div class="btnGroup">
+								<a href="#" class="button small line">반품신청</a>
+								<a href="#" class="button small line">주문취소</a>
+							</div>
+						</div>
+
+						<div class="whiteBox mt7">
+							<div class="flex mb24">
+								<p class="flex11 fz18 bold">주문자 정보</p>
+								<a href="#" class="textButton">현금연수증 정보변경</a>
+							</div>
+							<div class="addressWrap mb0">
+								<p class="tit">홍길순</p>
+								<p class="fz14 mt4">010-2345-6780</p>
+								<p class="fz14 mt4">grammar86@naver.com</p>
+							</div>
+						</div>
+
+						<div class="whiteBox mt7">
+							<div class="flex mb24">
+								<p class="fz18 bold">배송지 정보</p>
+							</div>
+							<div class="addressWrap mb0">
+								<div class="flex">
+									<p class="tit">홍길순<span class="defultLabel">기본배송지</span></p>
+									<a href="#" class="button small gray fwNormal">배송지 변경</a>
+									<!-- 신규 추가시 삭제버튼 노출
+									<a href="#" class="button small gray fwNormal">삭제</a>
+									-->
+								</div>
+								<p class="fz14">[133434] 서울특별시 강남구 강남대로 556 16층 (논현동, 논현빌딩) 103동 1305호</p>
+								<p class="fz14 mt4">010-2345-6780</p>
+								<p class="fz14 mt4">010-2345-6780</p>
+							</div>
+						</div>
+
+						<p class="fz18 bold ml20 mt24">주문상품 내역</p>
+						<div class="whiteBox mt12 shoppingWrap pt0 pb0">
+							<div class="listWrap myListWrap bb0 mt0">
+								<div class="myListBox">
+									<div class="list">
+										<p class="img">
+											<span style="background-image: url('../static/images/sample/sample_product1.png');"></span>
+										</p>
+										<div class="textBox">
+											<div class="flex">
+												<p class="tit">[산지직송] 옛고을의 정성담은 영주 신선한 한돈</p>
+											</div>
+											<div class="optionList">
+												<p class="text">불고기 2팩 + 우동사리 1팩 / 2개</p>
+												<p class="money">
+													<strong>20,000</strong>원
+												</p>
+											</div>
+										</div>
+									</div>
+									<!-- 2021-12-17 배송비쪽과 버튼 그룹 위치 변경-->
+									<div class="stateBtn">
+										<strong>배송완료</strong>
+										<div class="tc">
+											<a href="#" class="button gray small">주문취소</a>
+											<a href="#pop1" class="button small gray popOpen">현금영수증</a>
+										</div>
+									</div>
+									<div class="delivery">
+										무료배송
+									</div>
+								</div>
+								<div class="myListBox">
+									<div class="list">
+										<p class="img">
+											<span style="background-image: url('../static/images/sample/sample_product1.png');"></span>
+										</p>
+										<div class="textBox">
+											<div class="flex">
+												<p class="tit">[산지직송] 옛고을의 정성담은 영주 신선한 한돈</p>
+											</div>
+											<div class="optionList">
+												<p class="text">불고기 2팩 + 우동사리 1팩 / 2개</p>
+												<p class="money">
+													<strong>20,000</strong>원
+												</p>
+											</div>
+											<div class="optionList">
+												<p class="text">불고기 2팩 + 우동사리 1팩 / 2개</p>
+												<p class="money">
+													<strong>20,000</strong>원
+												</p>
+											</div>
+										</div>
+									</div>
+									<!-- 배송비쪽과 버튼 그룹 위치 변경-->
+									<div class="stateBtn">
+										<strong>배송완료</strong>
+										<div class="tc">
+											<a href="#" class="button gray small">주문취소</a>
+											<a href="#pop1" class="button small gray popOpen">현금영수증</a>
+										</div>
+									</div>
+									<div class="delivery">
+										무료배송
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<p class="fz18 bold ml20 mt24">결제 정보</p>
+						<div class="whiteBox mt12 pt0 pb0 ">
+							<div class="paymentInfo">
+								<div>
+									<dl class="flex alignCenter">
+										<dt class="fz14 fw500">결제금액</dt>
+										<dd class="flex11 tr">
+											<p class="fz16 fw500"><strong class="fontP bold fz22">93,000</strong>원</p>
+										</dd>
+									</dl>
+									<ul class="dotList mt24">
+										<li>구매영수증이 필요하신 경우 인쇄하실 수 있습니다.</li>
+										<li>특별포인트, 실시간 계좌이체로 결제한 경우에만 현금영수증이 발행됩니다.</li>
+									</ul>
+
+									<div class="mt20">
+										<a href="#pop2" class="button small line popOpen">구매영수증</a>
+										<a href="#" class="button small line">신용카드 매출전표</a>
+									</div>
+
+								</div>
+								<div>
+									<dl class="flex alignCenter">
+										<dt class="fz14 fc666">적립금</dt>
+										<dd class="flex11 tr">
+											<p class="fz13 fw500"><strong class="fontP bold fz16">93,000</strong>원</p>
+										</dd>
+									</dl>
+									<dl class="flex alignCenter mt9">
+										<dt class="fz14 fc666">복지포인트</dt>
+										<dd class="flex11 tr">
+											<p class="fz13 fw500"><strong class="fontP bold fz16">93,000</strong>원</p>
+										</dd>
+									</dl>
+									<dl class="flex alignCenter mt9">
+										<dt class="fz14 fc666">신용/체크카드</dt>
+										<dd class="flex11 tr">
+											<p class="fz13 fw500"><strong class="fontP bold fz16">93,000</strong>원</p>
+										</dd>
+									</dl>
+									<p class="mt8 fz12 fw500">국민(1234_****_****_****) 일시불</p>
+									<p class="mt4 fz12 fw500">2020.02.17 17:00:06</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<hr class="line"/>
+						<h4 class="fz18 bold mt24">교환/반품/취소 상태 정보</h4>
+						<dl class="dlInfoText mt24 pb20">
+							<dt class="">교환/반품 사유</dt>
+							<dd class="">색상 및 사이즈 변경</dd>
+
+							<dt class="">상세사유</dt>
+							<dd class="">사이즈가 안맞아서 변경합니다.</dd>
+
+							<dt>변경할 옵션</dt>
+							<dd>7종 택1:05. 버블바 클렌징 수제비누 RED 2+1</dd>
+
+							<dt>첨부파일</dt>
+							<dd>
+								<a href="#" class="mr12 fz14 fc222">Abcd.jpg<i class="icoFile"></i></a>
+								<a href="#" class="mr12 fz14 fc222">Abcd.jpg<i class="icoFile"></i></a>
+								<a href="#" class="mr12 fz14 fc222">Abcd.jpg<i class="icoFile"></i></a>
+								<a href="#" class="mr12 fz14 fc222">Abcd.jpg<i class="icoFile"></i></a>
+							</dd>
+						</dl>
+
+						<p class="bt fz16 bold pt20">교환 결제정보</p>
+						<dl class="dlInfoText mt24 pb20">
+							<dt class="">교환/반품 배송비</dt>
+							<dd class="">5,000원 (입금확인중)</dd>
+
+							<dt class="">결제정보</dt>
+							<dd class="">직접송금 [업체명] / 00은행 1002-000-00000</dd>
+						</dl>
+
+						<p class="bt fz16 bold pt20">교환 수거 정보</p>
+						<dl class="dlInfoText mt24 pb20">
+							<dt class="">수거방법</dt>
+							<dd class="">방문수거 요청</dd>
+
+							<dt class="">이름/연락처</dt>
+							<dd class="">홍길동/010-0000-0000</dd>
+
+							<dt class="">수거지 주소</dt>
+							<dd class="">[22187] 서울특별시 구로구 디지털로 34길 43(구로동) 코오롱싸이언스밸리 1차 14층</dd>
+						</dl>
+
+						<p class="bt fz16 bold pt20">교환 배송비 환불정보</p>
+						<dl class="dlInfoText mt24 pb20">
+							<dt class="">환불방식</dt>
+							<dd class="">고객에게 직접 환불</dd>
+						</dl>
+
+						<p class="bt fz16 bold pt20">교환신청취소 사유</p>
+						<dl class="dlInfoText mt24 pb20">
+							<dt class="">교환/반품신청 취소사유</dt>
+							<dd class="">교환상품 품절</dd>
+
+							<dt class="">상세사유</dt>
+							<dd class="">교환 신청하신 000상품의 100사이즈가 품절되었습니다. 다른 교환요청상품은 교환진행이 가능하나, 교환신청상태에서는 부분취소가 불가하여 현재 요청주신 교환신청은 취소 후 교환 가능한 다른 상품은 교환 재신청 부탁드립니다.</dd>
+						</dl>
+
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<!-- //컨텐츠 영역 -->
+
+	<!-- 팝업 : 현금영수증 방행 정보 수정 -->
+	<div id="pop1" class="layerPopWrap">
+		<div class="bg"></div>
+		<div class="layerPopCont" tabindex="0">
+			<h1>현금영수증 방행 정보 수정</h1>
+			<div class="popCont">
+				<div class="tableView">
+					<table>
+						<colgroup>
+							<col style="width:120px;" />
+							<col />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">상품명</th>
+								<td>[2021년산] 진도 찰홍미 800g 외(3건)</td>
+							</tr>
+							<tr>
+								<th scope="row">결제금액</th>
+								<td>53,800원</td>
+							</tr>
+							<tr>
+								<th scope="row">공급가액</th>
+								<td>53,800원</td>
+							</tr>
+							<tr>
+								<th scope="row">부가세</th>
+								<td>53,800원</td>
+							</tr>
+							<tr>
+								<th scope="row">봉사료</th>
+								<td>0원</td>
+							</tr>
+							<tr>
+								<th scope="row">구매자명</th>
+								<td>
+									<div class="inputBox small"><input type="text" /></div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">이메일</th>
+								<td><div class="inputBox small"><input type="text" /></div></td>
+							</tr>
+							<tr>
+								<th scope="row">현금영수증 구분</th>
+								<td>
+									<div class="radio">
+										<input type="radio" id="radio1" name="radioG1" checked /><label for="radio1"><i></i>소득공제용</label>
+										<input type="radio" id="radio2" name="radioG1" /><label for="radio2"><i></i>지출증빙용</label>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">현금영수증 발행 선택</th>
+								<td>
+									<div class="radio choiceSelect">
+										<input type="radio" id="radio3" name="radioG2" checked /><label for="radio3"><i></i>휴대폰</label>
+										<input type="radio" id="radio4" name="radioG2" /><label for="radio4"><i></i>카드번호</label>
+									</div>
+
+									<div class="selectView mt16 on">
+										<div class="phoneForm">
+											<div class="selectBox">
+												<select title="선택">
+													<option value="">선택
+												</option></select>
+											</div><span class="line">-</span>
+											<div class="inputBox"><input type="text"></div><span class="line">-</span>
+											<div class="inputBox"><input type="text"></div>
+										</div>
+									</div>
+									<div class="selectView mt16">
+										<div class="phoneForm">
+											<div class="inputBox" style="width:68px;"><input type="text"></div><span class="line">-</span>
+											<div class="inputBox" style="width:68px;"><input type="text"></div><span class="line">-</span>
+											<div class="inputBox" style="width:68px;"><input type="text"></div><span class="line">-</span>
+											<div class="inputBox" style="width:68px;"><input type="text"></div>
+										</div>
+									</div>
+
+									<p class="mt8 fz12 fcOrange">국세청에 현금영수증 발행용 휴대폰번호 및 카드번호를 사전 등록하시고 이용바랍니다.</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="btnGroup mt32">
+					<a href="#" class="button line">취소</a>
+					<a href="#" class="button">발행하기</a>
+				</div>
+			</div>
+			<a href="#" class="btnClose btnPopClose">팝업닫기</a>
+		</div>
+	</div>
+	<script>
+		$(function(){
+			choice();
+		})
+		const choice = function(){
+			const choiceSelect = $('.popCont .choiceSelect input');
+			const selectView = $('.popCont .selectView');
+			choiceSelect.change(function(){
+				selectView.eq($(this).index() == 0 ? 0 : 1).addClass('on').siblings('.selectView').removeClass('on');
+			})
+		}
+	</script>
+	<!-- //팝업 : 현금영수증 방행 정보 수정 -->
+
+	<!-- 팝업 : 구매영수증 -->
+	<div id="pop1" class="layerPopWrap">
+		<div class="bg"></div>
+		<div class="layerPopCont" tabindex="0">
+			<h1>구매영수증</h1>
+			<div class="popCont">
+				<ul class="dotList mt0">
+					<li>구매영수증은 소득공제용 영수증 및 매입 세금계산서로 활용할 수 없으며, 결제가 완료되었음을 증명하는 용도로만 활용 가능합니다.</li>
+					<li>구매영수증은 세무상의 지출증빙 효력이 없습니다.</li>
+					<li>구매영수증은 배송비를 포함하여 실제 결제금액에 대하여 발급됩니다.</li>
+				</ul>
+				<div class="tableView">
+					<table>
+						<colgroup>
+							<col style="width:120px;" />
+							<col />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">주문자</th>
+								<td>이제너두 쇼핑몰</td>
+							</tr>
+							<tr>
+								<th scope="row">주문일시</th>
+								<td>2021.02.25 13:22</td>
+							</tr>
+							<tr>
+								<th scope="row">주문번호</th>
+								<td>B1008066893 (105397546)</td>
+							</tr>
+							<tr>
+								<th scope="row">상품명</th>
+								<td>[2021년산] 진도 찰홍미 800g 외(3건)</td>
+							</tr>
+							<tr>
+								<th scope="row">결제금액</th>
+								<td>133,000원</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="btnGroup mt32">
+					<a href="#" class="button line">취소</a>
+					<a href="#" class="button">인쇄하기</a>
+				</div>
+			</div>
+			<a href="#" class="btnClose btnPopClose">팝업닫기</a>
+		</div>
+	</div>
+	<!-- //팝업 : 구매영수증 -->
+
+	
+	<!-- 하단 영역 -->
+	<footer id="footerWrap" data-include="../include/footer.html"></footer>
+	<!-- //하단 영역 -->
+	<script>
+	</script>
+</body>
+</html>

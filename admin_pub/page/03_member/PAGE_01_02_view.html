@@ -1,0 +1,238 @@
+<!DOCTYPE html> 
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>XANADU 시스템</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" href="../../static/css/common.css" media="all" />
+	<link rel="stylesheet" href="../../static/css/contents.css" media="all" />
+	<script src="../../static/js/plugins.js"></script>
+	<script src="../../static/js/ui_script.js"></script>
+	<!--[if lt IE 9]>
+		<script type="text/javascript">
+			document.createElement("header");
+			document.createElement("nav");
+			document.createElement("section");
+			document.createElement("article");
+			document.createElement("footer");
+		</script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- wrap -->
+	<div id="wrap" data-active="[3,1,2]">
+		<!-- header -->
+		<header id="header" data-include="../../include/header.html"></header>
+		<!-- //header -->	
+		
+		<!-- gnb -->
+		<aside class="left_menu"  data-include="../../include/leftMenu.html"></aside>
+		<!-- //left_menu -->
+
+		<!-- container -->
+		<div id="container">
+			<!-- contents -->
+			<section id="contents">
+				<h1 id="page_tit">B2C회원관리</h1>	
+				
+				<div class="flex mt30">
+					<p>
+						<strong class="mr10">◎ 복지관 회원 상세 정보</strong>
+					</p>
+					<button type="button" class="button btn_black w70 mla">저장</button>
+				</div>
+				
+				<table class="table left_tbl view_tbl mt15">
+					<caption>복지관 회원 상세정보</caption>
+					<colgroup>
+						<col style="width:10%" />
+						<col style="width:40%" />
+						<col style="width:10%" />
+						<col />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">아이디</th>
+							<td colspan="3">1006423453</td>
+						</tr>
+						<tr>
+							<th scope="row">성명</th>
+							<td>김*행</td>
+							<th scope="row">주민등록번호</th>
+							<td>780128-1******</td>
+						</tr>
+						<tr>
+							<th scope="row">고객사명</th>
+							<td>이지웰페어 [withus]</td>
+							<th scope="row">성별</th>
+							<td>
+								<label>
+									<input name="radio1" type="radio" class="radio" checked="checked" />
+									<span class="lbl">남자</span>
+								</label>
+								<label>
+									<input name="radio1" type="radio" class="radio" />
+									<span class="lbl">여자</span>
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">회원등급</th>
+							<td>VIP</td>
+							<th scope="row">복지관ID</th>
+							<td>e****d</td>
+						</tr>
+						<tr>
+							<th scope="row">소속1(지점)</th>
+							<td>대표이사</td>
+							<th scope="row">소속2(부서)</th>
+							<td>대표이사</td>
+						</tr>
+						<tr>
+							<th scope="row">소속3(팀)</th>
+							<td>대표이사</td>
+							<th scope="row">소속4(파트)</th>
+							<td>대표이사</td>
+						</tr>
+						<tr>
+							<th scope="row">E-Mail</th>
+							<td>
+								<div class="flex align_center">
+									<input type="text" value="a*****@naver.com" class="mr30" readonly>  
+									<label>
+										<input name="checkbox1" type="checkbox" class="checkbox" checked="checked">
+										<span class="lbl">수신설정</span>
+									</label>
+								</div>
+							</td>
+							<th scope="row">생년월일</th> 
+							<td>
+								<div class="flex align_center">
+									<input class="datepicker" type="text" value="1978-01-28" />
+									<label class="ml30">
+										<input name="radio2" type="radio" class="radio" checked="checked" />
+										<span class="lbl">양력</span>
+									</label>
+									<label>
+										<input name="radio2" type="radio" class="radio" />
+										<span class="lbl">음력</span>
+									</label>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">핸드폰</th>
+							<td>
+								<div class="flex align_center">
+									<input type="text" value="010-****-1234" class="mr30" readonly> 
+									<label>
+										<input name="checkbox2" type="checkbox" class="checkbox" />
+										<span class="lbl">수신설정</span>
+									</label>
+								</div>
+							</td>
+							<th scope="row">전화번호</th>
+							<td><input type="text" disabled /></td>
+						</tr>
+						<tr>
+							<th scope="row">주소</th>
+							<td colspan="3">
+								<div class="mb10">
+									<input type="text" value="123456" disabled="">
+									<button type="button" class="button btn_black" onClick="layerpopup('address_search_popup')">우편번호 검색</button> <br>
+								</div>
+								<div>
+									<input type="text" class="w300" value="서울시 논현동" disabled="">
+									<input type="text" class="w400" value="135-4" disabled="">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">최근접속일</th>
+							<td>2020-12-07 ( 10:54:34 )</td>
+							<th scope="row">회원 가입일</th>
+							<td>2019-12-07</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="flex mt40">
+					<p>
+						<strong class="mr10">◎ 복지관 회원 구매내역</strong>
+					</p>
+				</div>
+
+				<div>
+					<table class="table tbl_hover mt15">
+						<caption>복지관 회원 구매내역</caption>
+						<colgroup>
+							<col style="width:50px" />
+							<col />
+							<col />
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col" rowspan="2">번호</th>
+								<th scope="col" rowspan="2">일자</th>
+								<th scope="col" rowspan="2">쿠폰번호</th>
+								<th scope="col" rowspan="2">쿠폰내역</th>
+								<th scope="col" rowspan="2">금액</th>
+								<th scope="col" rowspan="2">결제수단</th>
+							</tr>
+						</thead>
+						
+						<tbody onclick="layerpopup('B2C_Member_popup')">
+							<!-- 항목 -->
+							<tr>
+								<td>2</td>
+								<td>2021.05.27</td>
+								<td>P100000001</td>
+								<td>[하담푸드] 하담 육포 1000g</td>
+								<td>49,100</td>
+								<td>복지포인트</td>
+							</tr>
+							<!-- //항목 -->
+							<!-- 항목 -->
+							<tr>
+								<td>1</td>
+								<td>2021.05.27</td>
+								<td>P100000002</td>
+								<td>[하담푸드] 하담 육포 1000g</td>
+								<td>49,100</td>
+								<td>복지포인트</td>
+							</tr>
+							<!-- //항목 -->
+						</tbody>
+					</table>
+	
+					<div class="paging_box mt30">
+						<ul class="pagination mla mra">
+							<li class="disabled"><a href="#"><i class="icon-angle-double-left"></i></a></li>
+							<li class="disabled"><a href="#"><i class="icon-angle-left"></i></a></li>
+							<li class="active"><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li><a href="#"><i class="icon-angle-right"></i></a></li>
+							<li><a href="#"><i class="icon-angle-double-right"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<!-- //contents -->
+		</div>
+		<!-- //container -->
+	</div>
+	<!-- //wrap -->
+	<!-- footer -->
+	<header id="footer" data-include="../../include/footer.html"></header>
+	<!-- //footer -->
+	
+	<article id="address_search_popup" class="pop_layer" data-include="../../include/popup/adressSearchPop.html"></article>
+	<article id="B2C_Member_popup" class="pop_layer" data-include="../../include/popup/b2cMemberPop.html"></article>
+		
+</body>
+</html>

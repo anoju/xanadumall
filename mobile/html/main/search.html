@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover" />
+<title>온누리전통시장 모바일</title>
+<link href="../../static/css/front.min.css" rel="stylesheet" />
+<script type="text/javascript" src="../../static/js/ui-common.js"></script>
+<script type="text/javascript" src="../../static/js/ui-front.js"></script>
+</head>
+<body>
+<article id="wrap">
+  <header id="header">
+    <div class="search-input">
+      <div class="input">
+        <input id="searchInput" type="text" title="검색어 입력" placeholder="검색어를 입력해주세요." autocomplete="off">
+        <button type="button" class="button small search" aria-label="검색"><i class="i-ico-search" aria-hidden="true"></i></button>
+      </div>
+      <button type="button" class="button">취소</button>
+    </div>
+  </header>
+  
+	<!-- 컨테이너 -->
+	<main id="container">
+		<!-- 컨텐츠 -->
+		<section id="contents">
+      <div class="section">
+        <div class="search-contents not__keyword">
+          <div class="mb-32">
+            <div class="title-bar mt-0">
+              <div>
+                <h2 class="tit-h3">최근검색어</h2>
+              </div>
+              <div class="right">
+                <button class="btn-txt fz-14 fc-666">전체삭제</button>
+              </div>
+            </div>
+            <ul class="keyword-list recent-keyword mt-8">
+              <li>
+                <button type="button" class="button keyword">수산</button>
+                <button type="button" class="button delete" aria-label="검색어삭제"></button>
+              </li>
+              <li>
+                <button type="button" class="button keyword">수산물 보양음식</button>
+                <button type="button" class="button delete" aria-label="검색어삭제"></button>
+              </li>
+              <li>
+                <button type="button" class="button keyword">말바우 시장</button>
+                <button type="button" class="button delete" aria-label="검색어삭제"></button>
+              </li>
+              <li>
+                <button type="button" class="button keyword">전남 시장</button>
+                <button type="button" class="button delete" aria-label="검색어삭제"></button>
+              </li>
+              <li>
+                <button type="button" class="button keyword">밀키트</button>
+                <button type="button" class="button delete" aria-label="검색어삭제"></button>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="title-bar mt-0">
+              <div>
+                <h2 class="tit-h3">인기검색어</h2>
+              </div>
+            </div>
+            <div class="btn-inline-wrap search-ty mt-17">
+              <a href="#" class="button line round">#경동시장</a>
+              <a href="#" class="button line round">#말복</a>
+              <a href="#" class="button line round">#제수용품</a>
+              <a href="#" class="button line round">#과일모음전</a>
+              <a href="#" class="button line round">#반값</a>
+              <a href="#" class="button line round">#한우</a>
+            </div>
+          </div>
+        </div>
+        <div class="search-contents is__keyword" style="display:none;">
+          <ul class="keyword-list relate-keyword mt-8">
+            <li>
+              <button type="button" class="button keyword"><strong>수산</strong> 대전</button>
+            </li>
+            <li>
+              <button type="button" class="button keyword"><strong>수산</strong> 산지직송</button>
+            </li>
+            <li>
+              <button type="button" class="button keyword"><strong>수산</strong> 전문시장</button>
+            </li>
+            <li>
+              <button type="button" class="button keyword"><strong>수산</strong>물 보양식</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+		</section>
+		<!-- //컨텐츠 -->
+	</main>
+	<!-- 컨테이너 -->
+
+  <!-- 푸터없음 -->
+</article>
+<script>
+$('#searchInput').keyup(function(){
+  const $val = $(this).val();
+  if($val === ''){
+    $('.not__keyword').show();
+    $('.is__keyword').hide();
+  }else{
+    $('.not__keyword').hide();
+    $('.is__keyword').show();
+  }
+});
+</script>
+</body>
+</html>

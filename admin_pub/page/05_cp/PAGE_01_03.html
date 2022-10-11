@@ -1,0 +1,259 @@
+<!DOCTYPE html> 
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>XANADU 시스템</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" href="../../static/css/common.css" media="all" />
+	<link rel="stylesheet" href="../../static/css/contents.css" media="all" />
+	<script src="../../static/js/plugins.js"></script>
+	<script src="../../static/js/ui_script.js"></script>
+	<!--[if lt IE 9]>
+		<script type="text/javascript">
+			document.createElement("header");
+			document.createElement("nav");
+			document.createElement("section");
+			document.createElement("article");
+			document.createElement("footer");
+		</script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- wrap -->
+	<div id="wrap" data-active="[5,1,3]">
+		<!-- header -->
+		<header id="header" data-include="../../include/header.html"></header>
+		<!-- //header -->	
+		
+		<!-- gnb -->
+		<aside class="left_menu"  data-include="../../include/leftMenu.html"></aside>
+		<!-- //left_menu -->
+
+		<!-- container -->
+		<div id="container">
+			<!-- contents -->
+			<section id="contents">
+				<h1 id="page_tit">CP상품QNA</h1>	
+				
+				<table class="table left_tbl view_tbl mt20">
+					<caption>CP상품QNA</caption>
+					<colgroup>
+						<col style="width:10%" />
+						<col style="width:40%" />
+						<col style="width:10%" />
+						<col />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">서비스유형</th>
+							<td>
+								<select title="옵션선택" class="w100">
+									<option value="" selected="selected">온누리</option>
+									<option value="">기념일</option>
+									<option value="">특판</option>
+									<option value="">MRO</option>
+								</select>
+							</td>
+							<th scope="row">CSP 업체명</th>
+							<td>
+								<input type="text" disabled="disabled" />
+							</td>
+						</tr>
+
+						<tr>
+							<th scope="row">상품검색</th>
+							<td>
+								<div class="flex">
+									<select title="옵션선택" class="w100">
+										<option value="" selected="selected">선택</option>
+										<option value="">상품코드</option>
+										<option value="">상품명</option>
+									</select>
+									<input type="text" class="w_50" />
+								</div>
+							</td>
+							<th scope="row">담당MD</th>
+							<td>
+								<select title="옵션선택" class="w100">
+									<option value="" selected="selected">선택</option>
+									<option value="">mb관리자</option>
+									<option value="">지역화폐본부</option>
+									<option value="">지역화폐관리자</option>
+								</select>
+							</td>
+						</tr>
+						
+						<tr>
+							<th scope="row">답변여부</th>
+							<td>
+								<label>
+									<input name="radio1" type="radio" class="radio" checked="checked" />
+									<span class="lbl">전체</span>
+								</label>
+								<label>
+									<input name="radio1" type="radio" class="radio" />
+									<span class="lbl">YES</span>
+								</label>
+								<label>
+									<input name="radio1" type="radio" class="radio" />
+									<span class="lbl">NO</span>
+								</label>
+							</td>
+							<th scope="row">공개여부</th>
+							<td>
+								<label>
+									<input name="radio2" type="radio" class="radio" checked="checked" />
+									<span class="lbl">전체</span>
+								</label>
+								<label>
+									<input name="radio2" type="radio" class="radio" />
+									<span class="lbl">공개</span>
+								</label>
+								<label>
+									<input name="radio2" type="radio" class="radio" />
+									<span class="lbl">비공개</span>
+								</label>
+							</td>
+						</tr>
+						
+						<tr>
+							<th scope="row">미노출처리<br/>(삭제처리)</th>
+							<td>
+								<label>
+									<input name="radio3" type="radio" class="radio" checked="checked" />
+									<span class="lbl">전체</span>
+								</label>
+								<label>
+									<input name="radio3" type="radio" class="radio" />
+									<span class="lbl">YES</span>
+								</label>
+								<label>
+									<input name="radio3" type="radio" class="radio" />
+									<span class="lbl">NO</span>
+								</label>
+							</td>
+							<th scope="row">24시간 내 답변여부</th>
+							<td>
+								<label>
+									<input name="radio4" type="radio" class="radio" checked="checked" />
+									<span class="lbl">전체</span>
+								</label>
+								<label>
+									<input name="radio4" type="radio" class="radio" />
+									<span class="lbl">YES</span>
+								</label>
+								<label>
+									<input name="radio4" type="radio" class="radio" />
+									<span class="lbl">NO</span>
+								</label>
+							</td>
+						</tr>
+						
+						<tr>
+							<th scope="row">작성자</th>
+							<td>
+								<div class="flex">
+									<select title="옵션선택" class="w100">
+										<option value="" selected="selected">선택</option>
+										<option value="">작성자</option>
+										<option value="">질문</option>
+									</select>
+									<input type="text" class="w140" />
+								</div>
+							</td>
+							<th scope="row">작성일</th>
+							<td>
+								<input class="datepicker" type="text" /> ~ <input class="datepicker" type="text" />
+								<span class="btn_sort">
+									<a href="#">오늘</a>
+									<a href="#" class="on">1주</a>
+									<a href="#">3개월</a>
+									<a href="#">1년</a>
+								</span>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<p class="t_right mt30">
+					<a href="#" class="button large w100"><i class="icon-cw"></i> 초기화</a>
+					<a href="#" class="button large w100 btn_blue"><i class="icon-search"></i> 조회</a>
+				</p>
+
+				<div class="flex mt30 align_center">
+					<p>
+						<strong class="mr10">전체 건수 : 1355 건</strong>
+					</p>
+					<a href="#" class="right button mla"><i class="icon-file-excel"></i> 엑셀 다운로드</a>
+				</div>
+
+				<table class="table tbl_hover mt15">
+					<caption>테이블 제목</caption>
+					<colgroup>
+						<col style="width:50px" />
+						<col />
+						<col />
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">번호</th>
+							<th scope="col">업체명</th>
+							<th scope="col">노출여부</th>
+							<th scope="col">상태</th>
+							<th scope="col">MD명</th>
+							<th scope="col">상품명</th>
+							<th scope="col">질문</th>
+							<th scope="col">작성자</th>
+							<th scope="col">작성일</th>
+							<th scope="col">24시간내답변여부</th>
+							<th scope="col">답변자</th>
+							<th scope="col">답변일</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- 항목 -->
+						<tr class="pointer" onclick="javascript:location.href='PAGE_01_03_view.html'">
+							<td>1</td>
+							<td>할매 순대국</td>
+							<td>Y</td>
+							<td></td>
+							<td>김용호</td>
+							<td>테스트 상품</td>
+							<td>질문입니다.</td>
+							<td>질문자</td>
+							<td>2021-06-10 10:34:21</td>
+							<td>N</td>
+							<td>관리자</td>
+							<td>2021-06-10 10:34:21</td>
+						</tr>
+						<!-- //항목 -->
+					</tbody>
+				</table>
+
+				<div class="paging_box mt30">
+					<ul class="pagination mla mra">
+						<li class="disabled"><a href="#"><i class="icon-angle-double-left"></i></a></li>
+						<li class="disabled"><a href="#"><i class="icon-angle-left"></i></a></li>
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#"><i class="icon-angle-right"></i></a></li>
+						<li><a href="#"><i class="icon-angle-double-right"></i></a></li>
+					</ul>
+				</div>
+			</section>
+			<!-- //contents -->
+		</div>
+		<!-- //container -->
+	</div>
+	<!-- //wrap -->
+	<!-- footer -->
+	<header id="footer" data-include="../../include/footer.html"></header>
+	<!-- //footer -->
+
+</body>
+</html>

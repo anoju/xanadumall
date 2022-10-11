@@ -1,0 +1,233 @@
+<!DOCTYPE html> 
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>XANADU 시스템</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" href="../../static/css/common.css" media="all" />
+	<link rel="stylesheet" href="../../static/css/contents.css" media="all" />
+	<script src="../../static/js/plugins.js"></script>
+	<script src="../../static/js/ui_script.js"></script>
+	<!--[if lt IE 9]>
+		<script type="text/javascript">
+			document.createElement("header");
+			document.createElement("nav");
+			document.createElement("section");
+			document.createElement("article");
+			document.createElement("footer");
+		</script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- wrap -->
+	<div id="wrap" data-active="[4,1,2]">
+		<!-- header -->
+		<header id="header" data-include="../../include/header.html"></header>
+		<!-- //header -->	
+		
+		<!-- gnb -->
+		<aside class="left_menu"  data-include="../../include/leftMenu.html"></aside>
+		<!-- //left_menu -->
+
+		<!-- container -->
+		<div id="container">
+			<!-- contents -->
+			<section id="contents">
+				<h1 id="page_tit">업체현황조회</h1>	
+				
+				<table class="table left_tbl view_tbl mt20">
+					<caption>업체현황조회</caption>
+					<colgroup>
+						<col style="width:10%" />
+						<col style="width:40%" />
+						<col style="width:10%" />
+						<col />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">서비스 유형</th>
+							<td>
+								<label>
+									<input name="radio1" type="radio" class="radio" checked="checked" />
+									<span class="lbl">전체</span>
+								</label>
+								<label>
+									<input name="radio1" type="radio" class="radio" />
+									<span class="lbl">온누리</span>
+								</label>
+								<label>
+									<input name="radio1" type="radio" class="radio" />
+									<span class="lbl">기념일</span>
+								</label>
+								<label>
+									<input name="radio1" type="radio" class="radio" />
+									<span class="lbl">특판</span>
+								</label>
+								<label>
+									<input name="radio1" type="radio" class="radio" />
+									<span class="lbl">MRO</span>
+								</label>
+							</td>
+							<th scope="row">검진 가능 시간</th>
+							<td>
+								<label>
+									<input name="radio2" type="radio" class="radio" checked="checked" />
+									<span class="lbl">전체</span>
+								</label>
+								<label>
+									<input name="radio2" type="radio" class="radio" />
+									<span class="lbl">오전</span>
+								</label>
+								<label>
+									<input name="radio2" type="radio" class="radio" />
+									<span class="lbl">오후</span>
+								</label>
+								<label>
+									<input name="radio2" type="radio" class="radio" />
+									<span class="lbl">종일</span>
+								</label>
+							</td>
+						</tr>
+
+						<tr>
+							<th scope="row">지역</th>
+							<td>
+								<select title="옵션선택" class="w100">
+									<option value="" selected="selected">전체</option>
+									<option value="">대전</option>
+									<option value="">경기도</option>
+									<option value="">경상남도</option>
+									<option value="">경상북도</option>
+									<option value="">광주</option>
+									<option value="">대구</option>
+									<option value="">부산</option>
+									<option value="">서울</option>
+									<option value="">울산</option>
+									<option value="">인천</option>
+									<option value="">제주도</option>
+									<option value="">전라남도</option>
+									<option value="">전라북도</option>
+									<option value="">충청남도</option>
+									<option value="">충청북도</option>
+									<option value="">강원도</option>
+								</select>
+							</td>
+							<th scope="row">반품관리 유무</th>
+							<td>
+								<label>
+									<input name="radio3" type="radio" class="radio" checked="checked" />
+									<span class="lbl">전체</span>
+								</label>
+								<label>
+									<input name="radio3" type="radio" class="radio" />
+									<span class="lbl">사용</span>
+								</label>
+								<label>
+									<input name="radio3" type="radio" class="radio" />
+									<span class="lbl">사용안함</span>
+								</label>
+							</td>
+						</tr>
+						
+						<tr>
+							<th scope="row">CSP 업체</th>
+							<td colspan="3">
+								<div class="flex">
+									<select title="옵션선택" class="w100">
+										<option value="" selected="selected">전체</option>
+										<option value="">CSP 업체 코드</option>
+										<option value="">CSP 업체 명</option>
+									</select>
+									<input type="text" class="wid1" />
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<p class="t_right mt30">
+					<a href="#" class="button large w100"><i class="icon-cw"></i> 초기화</a>
+					<a href="#" class="button large w100 btn_blue"><i class="icon-search"></i> 조회</a>
+				</p>
+
+				<div class="flex mt30 align_center">
+					<p>
+						<strong class="mr10">전체 건수 : 1355 건</strong>
+					</p>
+					<a href="#" class="right button mla"><i class="icon-file-excel"></i> 엑셀 다운로드</a>
+				</div>
+
+				<table class="table tbl_hover mt15">
+					<caption>테이블 제목</caption>
+					<colgroup>
+						<col style="width:50px" />
+						<col />
+						<col />
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">번호</th>
+							<th scope="col">업체코드</th>
+							<th scope="col">업체명</th>
+							<th scope="col">지역명</th>
+							<th scope="col">소속시장</th>
+							<th scope="col">서비스 유형</th>
+							<th scope="col">CS담당자</th>
+							<th scope="col">CS연락처</th>
+							<th scope="col">이메일</th>
+							<th scope="col">업무시간</th>
+							<th scope="col">점심시간</th>
+							<th scope="col">반품관리 유무</th>
+							<th scope="col">검진 가능 시간</th>
+							<th scope="col">정보수정</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- 항목 -->
+						<tr class="pointer" onclick="javascript:location.href='PAGE_01_02_view.html'">
+							<td>1</td>
+							<td>79000482</td>
+							<td>할매 순대국</td>
+							<td>서울</td>
+							<td>서울광장시장</td>
+							<td>온누리</td>
+							<td>테스트</td>
+							<td>010-1234-5678</td>
+							<td>tester@naver.com</td>
+							<td>00:00 ~ 00:00</td>
+							<td>00:00 ~ 00:00</td>
+							<td>Y</td>
+							<td>오전</td>
+							<td><a class="button">수정</a></td>
+						</tr>
+						<!-- //항목 -->
+					</tbody>
+				</table>
+
+				<div class="paging_box mt30">
+					<ul class="pagination mla mra">
+						<li class="disabled"><a href="#"><i class="icon-angle-double-left"></i></a></li>
+						<li class="disabled"><a href="#"><i class="icon-angle-left"></i></a></li>
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#"><i class="icon-angle-right"></i></a></li>
+						<li><a href="#"><i class="icon-angle-double-right"></i></a></li>
+					</ul>
+				</div>
+			</section>
+			<!-- //contents -->
+		</div>
+		<!-- //container -->
+	</div>
+	<!-- //wrap -->
+	<!-- footer -->
+	<header id="footer" data-include="../../include/footer.html"></header>
+	<!-- //footer -->
+
+</body>
+</html>

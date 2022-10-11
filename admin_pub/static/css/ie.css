@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+/* ==========================================================================
+   form
+   ========================================================================== */
+input[type=checkbox].checkbox, input[type=radio].radio {position:static;width:auto;height:auto;z-index:auto}
+input[type=checkbox].checkbox +.lbl, input[type=radio].radio +.lbl {min-height:auto;min-width:auto}
+label.long{position:relative;padding-left:20px;}
+label.long input[type=checkbox].checkbox, label.long input[type=radio].radio{position:absolute;left:0;top:3px}
+label.long .lbl{padding-left:0}
+.input_file{right:-20px;}

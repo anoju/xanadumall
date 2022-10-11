@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>퍼블리싱(PC)</title>
+<link href="../static/css/reset.css" rel="stylesheet" />
+<link href="../static/css/common.css" rel="stylesheet" />
+<link href="../static/css/contents.css" rel="stylesheet" />
+<script type="text/javascript" src="../static/js/common.js"></script>
+<script type="text/javascript" src="../static/js/ui.js"></script>
+
+<!-- 가이드 전용 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/atom-one-dark.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+<!-- //가이드 전용 -->
+</head>
+<body>
+	<!-- 헤더영역 -->
+	<header id="headerWrap" data-include="../include/header.html"></header>
+	<!-- //헤더영역 -->
+
+	<!-- 컨텐츠 영역 -->          
+	<section id="container" data-title="리스트">
+		<div class="section">
+			<div class="tabList">
+				<a href="./guideText.html">텍스트</a>
+				<a href="./guideBtn.html">버튼</a>
+				<a href="./guideForm.html">폼요소</a>
+				<a href="./guideList.html" class="on">리스트</a>
+				<a href="./guideTable.html">테이블</a>
+				<a href="./guidePop.html">팝업</a>
+				<a href="./guideEtc.html">기타</a>
+			</div>
+		</div>
+
+		<div class="section gdWrap">
+			<h1 class="gdH1">리스트</h1>
+
+			<h2 class="gdH2">아코디언</h2>
+			<div class="accodionWrap">
+				<div class="accodionBox on">
+					<a href="#" class="tit">휴대폰으로 찾기</a>
+					<div class="accodionView" style="display:block;">
+						<div class="formBox">
+							<div class="inputBox"><input type="text" placeholder="이름" /></div>
+						</div>
+						<div class="btnGroup mt8">
+							<button class="button" disabled>비밀번호 재설정</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="accodionBox">
+					<a href="#" class="tit">이메일로 찾기</a>
+					<div class="accodionView">
+						<div class="formBox">
+							<div class="inputBox"><input type="text" placeholder="이름" /></div>
+						</div>
+						<div class="btnGroup mt8">
+							<button class="button" disabled>비밀번호 재설정</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="accodionBox">
+					<a href="#" class="tit">PASS 본인인증으로 찾기</a>
+					<div class="accodionView">
+						<div class="formBox">
+							<div class="inputBox"><input type="text" placeholder="이름" /></div>
+						</div>
+						<div class="btnGroup mt8">
+							<button class="button line">본인인증</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<!-- //컨텐츠 영역 -->
+
+	<!-- 하단 영역 -->
+	<footer id="footerWrap" data-include="../include/footer.html"></footer>
+	<!-- //하단 영역 -->
+
+	<script>hljs.highlightAll();</script>
+</body>
+</html>

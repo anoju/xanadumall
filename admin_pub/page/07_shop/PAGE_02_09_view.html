@@ -1,0 +1,740 @@
+<!DOCTYPE html> 
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>XANADU 시스템</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" href="../../static/css/common.css" media="all" />
+	<link rel="stylesheet" href="../../static/css/contents.css" media="all" />
+	<script src="../../static/js/plugins.js"></script>
+	<script src="../../static/js/ui_script.js"></script>
+	<!--[if lt IE 9]>
+		<script type="text/javascript">
+			document.createElement("header");
+			document.createElement("nav");
+			document.createElement("section");
+			document.createElement("article");
+			document.createElement("footer");
+		</script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- wrap -->
+	<div id="wrap" data-active="[7,2,9]">
+		<!-- header -->
+		<header id="header" data-include="../../include/header.html"></header>
+		<!-- //header -->	
+		
+		<!-- gnb -->
+		<aside class="left_menu"  data-include="../../include/leftMenu.html"></aside>
+		<!-- //left_menu -->
+
+		<!-- container -->
+		<div id="container">
+			<!-- contents -->
+			<section id="contents">
+				<h1 id="page_tit">메인템플릿 관리</h1>
+
+				<div class="flex">
+					<p>
+						<strong class="mr10">◎ 메인템플릿 관리</strong>
+					</p>
+				</div>
+
+				<div class="mt30">
+					<p>
+						<strong class="mr10">■ 기본 설정</strong>
+					</p>
+					<table class="table left_tbl view_tbl mt10">
+						<caption>메인템플릿 관리</caption>
+						<colgroup>
+							<col style="width:10%" />
+							<col />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">서비스유형</th>
+								<td>
+									<label>
+										<input name="radio1" class="radio" type="radio" checked="checked" />
+										<span class="lbl">전체</span>
+									</label>
+									<label>
+										<input name="radio1" class="radio" type="radio" />
+										<span class="lbl">온누리</span>
+									</label>
+									<label>
+										<input name="radio1" class="radio" type="radio" />
+										<span class="lbl">기념일</span>
+									</label>
+									<label>
+										<input name="radio1" class="radio" type="radio" />
+										<span class="lbl">특판</span>
+									</label>
+									<label>
+										<input name="radio1" class="radio" type="radio" />
+										<span class="lbl">MRO</span>
+									</label>
+								</td>
+	
+							</tr>
+							
+							<tr>
+								<th scope="row">채널 구분</th>
+								<td>
+									<label>
+										<input name="radio2" class="radio" type="radio" checked="checked" />
+										<span class="lbl">전체</span>
+									</label>
+									<label>
+										<input name="radio2" class="radio" type="radio" />
+										<span class="lbl">PC</span>
+									</label>
+									<label>
+										<input name="radio2" class="radio" type="radio" />
+										<span class="lbl">MOBILE</span>
+									</label>
+								</td>
+							</tr>
+	
+							<tr>
+								<th scope="row">템플릿명</th>
+								<td colspan="3">
+									<input type="text" class="text w_70" />
+								</td>
+							</tr>
+							
+							<tr>
+								<th>수정일</th>
+								<td>2020-01-01 22:11</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				
+				<!-- ########### 상단 설정 ########### -->
+				<div class="mt40">
+					<p>
+						<strong class="mr10">■ 상단 설정</strong>
+					</p>
+					<table class="table left_tbl view_tbl mt10">
+						<caption>테이블 제목</caption>
+						<colgroup>
+							<col style="width:10%" />
+							<col style="width:15%" />
+							<col />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>Top 배너</th>
+								<td>
+									<label>
+										<input name="radio3" class="radio" type="radio" checked="checked" />
+										<span class="lbl">사용</span>
+									</label>
+									<label>
+										<input name="radio3" class="radio" type="radio" />
+										<span class="lbl">미사용</span>
+									</label>
+								</td>
+							</tr>
+							
+							<tr>
+								<th>Header 배너</th>
+								<td colspan="4">
+									<label>
+										<input name="radio4" class="radio" type="radio" checked="checked" />
+										<span class="lbl">사용</span>
+									</label>
+									<label>
+										<input name="radio4" class="radio" type="radio" />
+										<span class="lbl">미사용</span>
+									</label>
+								</td>
+							</tr>
+
+							<tr>
+								<th rowspan="3">GNB(일반)</th>
+								<td rowspan="2">카테고리</td>
+								<td>카테고리</td>
+								<td colspan="2">
+									<label>
+										<input name="radio5" class="radio" type="radio" checked="checked" />
+										<span class="lbl">사용</span>
+									</label>
+									<label>
+										<input name="radio5" class="radio" type="radio" />
+										<span class="lbl">미사용</span>
+									</label>
+								</td>
+							</tr>
+
+							<tr>
+								<td>하단메뉴</td>
+								<td colspan="4">
+									<label>
+										<input name="radio6" class="radio" type="radio" checked="checked" />
+										<span class="lbl">사용</span>
+										<button type="button" class="button mr10" onclick="layerpopup('maketing_menu_popup')">상세설정</button>
+									</label>
+									<label>
+										<input name="radio6" class="radio" type="radio" />
+										<span class="lbl">미사용</span>
+									</label>
+								</td>
+							</tr>
+							
+							<tr>
+								<td>마케팅 영역</td>
+								<td colspan="4">
+									<label>
+										<input name="radio7" class="radio" type="radio" checked="checked" />
+										<span class="lbl">사용</span>
+										<button type="button" class="button mr10" onclick="layerpopup('maketing_menu_popup')">상세설정</button>
+									</label>
+									<label>
+										<input name="radio7" class="radio" type="radio" />
+										<span class="lbl">미사용</span>
+									</label>
+								</td>
+							</tr>
+
+							<tr>
+								<th>윙 배너</th>
+								<td colspan="4">
+									<label>
+										<input name="radio8" class="radio" type="radio" checked="checked" />
+										<span class="lbl">사용</span>
+									</label>
+									<label>
+										<input name="radio8" class="radio" type="radio" />
+										<span class="lbl">미사용</span>
+									</label>
+								</td>
+							</tr>
+
+							<tr>
+								<th rowspan="7">비주얼</th>
+								<th colspan="4" class="t_center">롤링 그룹 구조</th>
+							</tr>
+							
+							<tr>
+								<th style="border-left: 1px solid #e3e3e3;">구분</th>
+								<th>관리</th>
+								<th>비주얼 그룹명</th>
+								<th>삭제 여부</th>
+							</tr>
+							
+							<tr>
+								<td>그룹 1</td>
+								<td>
+									<button class="button" type="button" onclick="layerpopup('visual_select_popup')">그룹선택</button>
+								</td>
+								<td>추석선물전 OPEN</td>
+								<td>
+									<input type="checkbox">
+								</td>
+							</tr>
+							<tr>
+								<td>그룹 2</td>
+								<td>
+									<button class="button" type="button" onclick="layerpopup('visual_select_popup')">그룹선택</button>
+								</td>
+								<td></td>
+								<td>
+									<input type="checkbox">
+								</td>
+							</tr>
+							<tr>
+								<td>그룹 3</td>
+								<td>
+									<button class="button" type="button" onclick="layerpopup('visual_select_popup')">그룹선택</button>
+								</td>
+								<td></td>
+								<td>
+									<input type="checkbox">
+								</td>
+							</tr>
+							<tr>
+								<td>그룹 4</td>
+								<td>
+									<button class="button" type="button" onclick="layerpopup('visual_select_popup')">그룹선택</button>
+								</td>
+								<td></td>
+								<td>
+									<input type="checkbox">
+								</td>
+							</tr>
+							<tr>
+								<td>그룹 5</td>
+								<td>
+									<button class="button" type="button" onclick="layerpopup('visual_select_popup')">그룹선택</button>
+								</td>
+								<td></td>
+								<td>
+									<input type="checkbox">
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<!-- ########### 컨텐츠 설정 ########### -->
+				<div class="mt40">
+					<p>
+						<strong class="mr10">■ 컨텐츠 설정</strong>
+					</p>
+					<table class="table left_tbl view_tbl mt10">
+						<caption>테이블 제목</caption>
+						<colgroup>
+							<col style="width:5%" />
+							<col style="width:20%" />
+							<col />
+							<col style="width:10%" />
+							<col style="width:8%" />
+						</colgroup>
+						<tbody>
+							<tr class="t_center">
+								<th>구분</th>
+								<th>컨텐츠 구역</th>
+								<th>컨텐츠명</th>
+								<th>순서</th>
+								<th>삭제 여부</th>
+							</tr>
+							
+							<tr class="t_center">
+								<td>1</td>
+								<td>
+									<select class="w180">
+										<option value="">선택하세요</option>
+									</select>
+									<button type="button" class="button" onclick="layerpopup('contents_search_popup')">컨텐츠검색</button>
+								</td>
+								<td>맞춤 추천상품</td>
+								<td>
+									<input type="text" />
+								</td>
+								<td>
+									<input type="checkbox" />
+								</td>
+							</tr>
+
+							<tr class="t_center">
+								<td>2</td>
+								<td>
+									<select class="w180">
+										<option value="">선택하세요</option>
+									</select>
+									<button type="button" class="button" onclick="layerpopup('contents_search_popup')">컨텐츠검색</button>
+								</td>
+								<td></td>
+								<td>
+									<input type="text" />
+								</td>
+								<td>
+									<input type="checkbox" />
+								</td>
+							</tr>
+
+							<tr class="t_center">
+								<td>3</td>
+								<td>
+									<select class="w180">
+										<option value="">선택하세요</option>
+									</select>
+									<button type="button" class="button" onclick="layerpopup('contents_search_popup')">컨텐츠검색</button>
+								</td>
+								<td></td>
+								<td>
+									<input type="text" />
+								</td>
+								<td>
+									<input type="checkbox" />
+								</td>
+							</tr>
+
+							<tr class="t_center">
+								<td>4</td>
+								<td>
+									<select class="w180">
+										<option value="">선택하세요</option>
+									</select>
+									<button type="button" class="button" onclick="layerpopup('contents_search_popup')">컨텐츠검색</button>
+								</td>
+								<td></td>
+								<td>
+									<input type="text" />
+								</td>
+								<td>
+									<input type="checkbox" />
+								</td>
+							</tr>
+
+							<tr class="t_center">
+								<td>5</td>
+								<td>
+									<select class="w180">
+										<option value="">선택하세요</option>
+									</select>
+									<button type="button" class="button" onclick="layerpopup('contents_search_popup')">컨텐츠검색</button>
+								</td>
+								<td></td>
+								<td>
+									<input type="text" />
+								</td>
+								<td>
+									<input type="checkbox" />
+								</td>
+							</tr>
+
+							<tr class="t_center">
+								<td>6</td>
+								<td>
+									<select class="w180">
+										<option value="">선택하세요</option>
+									</select>
+									<button type="button" class="button" onclick="layerpopup('contents_search_popup')">컨텐츠검색</button>
+								</td>
+								<td></td>
+								<td>
+									<input type="text" />
+								</td>
+								<td>
+									<input type="checkbox" />
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="t_right mt10">
+						<button type="button" class="button btn_black">컨텐츠 추가</button>
+					</div>
+				</div>
+
+				<!-- ########### 하단 설정 ########### -->
+				<div class="mt40">
+					<p>
+						<strong class="mr10">■ 하단 설정</strong>
+					</p>
+					<table class="table left_tbl view_tbl mt10">
+						<caption>테이블 제목</caption>
+						<colgroup>
+							<col style="width:10%" />
+							<col />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>하단 배너</th>
+								<td>
+									<label>
+										<input name="radio9" class="radio" type="radio" checked="checked" />
+										<span class="lbl">사용</span>
+									</label>
+									<label>
+										<input name="radio9" class="radio" type="radio" />
+										<span class="lbl">미사용</span>
+									</label>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+
+				<!-- ####### 적용 고객사 ####### -->
+				<div class="mt70">
+					<div class="flex">
+						<p>
+							<strong class="mr10">■ 적용 고객사 설정</strong>
+						</p>
+					</div>
+	
+					<div class="mt30">
+						<label>
+							<input name="radio8" class="radio" type="radio" checked="checked" />
+							<span class="lbl">전체적용</span>
+						</label>
+						<label>
+							<input name="radio8" class="radio" type="radio" />
+							<span class="lbl">개별적용</span>
+						</label>
+						<label>
+							<input name="radio8" class="radio" type="radio" />
+							<span class="lbl">그룹선택</span>
+						</label>
+					</div>
+	
+					<div class="mt20">
+						<div class="ul_list">
+							<ul class="col_5">
+								<li>
+									<label class="pointer">
+										<input class="checkbox" type="checkbox" />
+										<span class="lbl">test(1234)</span>
+									</label>
+								</li>
+								<li>
+									<label class="pointer">
+										<input class="checkbox" type="checkbox" />
+										<span class="lbl">test(1234)</span>
+									</label>
+								</li>
+								<li>
+									<label class="pointer">
+										<input class="checkbox" type="checkbox" />
+										<span class="lbl">test(1234)</span>
+									</label>
+								</li>
+								<li>
+									<label class="pointer">
+										<input class="checkbox" type="checkbox" />
+										<span class="lbl">test(1234)</span>
+									</label>
+								</li>
+								<li>
+									<label class="pointer">
+										<input class="checkbox" type="checkbox" />
+										<span class="lbl">test(1234)</span>
+									</label>
+								</li>
+								<li>
+									<label class="pointer">
+										<input class="checkbox" type="checkbox" />
+										<span class="lbl">test(1234)</span>
+									</label>
+								</li>
+								<li>
+									<label class="pointer">
+										<input class="checkbox" type="checkbox" />
+										<span class="lbl">test(1234)</span>
+									</label>
+								</li>
+								<li>
+									<label class="pointer">
+										<input class="checkbox" type="checkbox" />
+										<span class="lbl">test(1234)</span>
+									</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<p class="t_center mt30">
+					<a href="#" class="button large w100 btn_black">저장</a>
+				</p>
+
+			</section>
+			<!-- //contents -->
+		</div>
+		<!-- //container -->
+	</div>
+	<!-- //wrap -->
+	<!-- footer -->
+	<header id="footer" data-include="../../include/footer.html"></header>
+	<!-- //footer -->
+
+
+	<!-- 마케팅 메뉴 상세 설정 팝업 -->
+	<article id="maketing_menu_popup" class="pop_layer">
+		<div class="pop_wrap w1000">
+			<h1>마케팅 메뉴 상세 설정</h1>
+			<div class="pop_cont">
+				<p class="pr30">
+					<strong>◎ 마케팅 메뉴 상세 설정</strong>
+				</p>
+
+				<div class="flex mt20">
+					<select>
+						<option value="">마케팅메뉴명</option>
+						<option value="">서비스 유형</option>
+						<option value="">채널</option>
+					</select>
+					<input type="text">
+					<button class="button" type="button">검색</button>
+				</div>
+
+				<div class="flex mt15">
+
+					<div class="w_45 scroll h400">
+						<table class="table tbl_hover">
+							<colgroup>
+								<col />
+								<col />
+								<col />
+								<col style="width:45%;" />
+							</colgroup>
+							<thead>
+								<tr>
+									<th>선택</th>
+									<th>서비스 유형</th>
+									<th>채널</th>
+									<th>마케팅 메뉴명</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<input type="checkbox">
+									</td>
+									<td>온누리</td>
+									<td>PC</td>
+									<td>공동구매</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="checkbox">
+									</td>
+									<td>온누리</td>
+									<td>PC</td>
+									<td>공동구매</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="checkbox">
+									</td>
+									<td>온누리</td>
+									<td>PC</td>
+									<td>공동구매</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<button type="button" class="button ml25"><i class="demo-icon icon-angle-double-right" style="font-size:36px;"></i></button>
+
+					<div class="w_45 mla scroll h400">
+						<table class="table tbl_hover">
+							<colgroup>
+								<col />
+								<col style="width:55%;" />
+								<col />
+							</colgroup>
+							<thead>
+								<tr>
+									<th>우선순위</th>
+									<th>마케팅 메뉴명</th>
+									<th>삭제</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<input type="text" class="w80" value="0">
+									</td>
+									<td>공동구매</td>
+									<th><button type="button" class="button">삭제</button></th>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+				<div class="mt40 t_center">
+					<button type="button" class="button btn_black w120">적용</button>
+				</div>
+			</div>
+
+			<!-- pop_close 닫는 클래스 -->
+			<a href="#" class="btn_close pop_close">닫기</a>
+		</div>
+	</article>
+	
+	<!-- 비주얼 그룹 선택 팝업 -->
+	<article id="visual_select_popup" class="pop_layer">
+		<div class="pop_wrap w800">
+			<h1>비주얼 그룹 선택</h1>
+			<div class="pop_cont">
+				<p class="pr30">
+					<strong>◎ 비주얼 그룹 선택</strong>
+				</p>
+				<div class="t_right">
+					<select title="옵션선택">
+						<option value="">그룹명</option>
+						<option value="">그룹코드</option>
+					</select>
+					<input type="text">
+					<button class="button" type="button">검색</button>
+				</div>
+
+				<div class="scroll h300 mt10">
+					<table class="table tbl_hover">
+						<thead>
+							<tr>
+								<th>그룹코드</th>
+								<th>그룹명</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="pointer">
+								<td>9999999</td>
+								<td>추석 선물전 OPEN</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<!-- pop_close 닫는 클래스 -->
+			<a href="#" class="btn_close pop_close">닫기</a>
+		</div>
+	</article>
+	
+	<!-- 컨텐츠 검색 팝업 -->
+	<article id="contents_search_popup" class="pop_layer">
+		<div class="pop_wrap w800">
+			<h1>컨텐츠 검색</h1>
+		
+			<div class="pop_cont">
+				<p class="pr30">
+					<strong>◎ 컨텐츠 검색</strong>
+				</p>
+				<div class="t_right">
+					<select title="옵션선택">
+						<option value="">컨텐츠명</option>
+					</select>
+					<input type="text">
+					<button class="button" type="button">검색</button>
+				</div>
+				<div class="scroll h300 mt10">
+					<table class="table view_tbl">
+						<colgroup>
+							<col />
+							<col />
+							<col />
+							<col style="width:25%;" />
+							<col style="width:25%;" />
+							<col />
+						</colgroup>
+						<thead>
+							<tr>
+								<th>서비스 유형</th>
+								<th>채널</th>
+								<th>컨텐츠 속성</th>
+								<th>컨텐츠 구역 유형명</th>
+								<th>컨텐츠명</th>
+								<th>수정일</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="pointer">
+								<td>온누리</td>
+								<td>PC</td>
+								<td>상품</td>
+								<td>맞춤 추천상품</td>
+								<td>맞춤 추천상품1</td>
+								<td>2020-07-05</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<!-- pop_close 닫는 클래스 -->
+			<a href="#" class="btn_close pop_close">닫기</a>
+		</div>
+	</article>
+
+</body>
+</html>

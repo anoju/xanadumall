@@ -1,0 +1,65 @@
+<!DOCTYPE html> 
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>XANADU 시스템</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" href="./static/css/common.css" media="all" />
+	<link rel="stylesheet" href="./static/css/contents.css" media="all" />
+	<script src="./static/js/plugins.js"></script>
+	<script src="./static/js/ui_script.js"></script>
+	<!--[if lt IE 9]>
+		<script type="text/javascript">
+			document.createElement("header");
+			document.createElement("nav");
+			document.createElement("section");
+			document.createElement("article");
+			document.createElement("footer");
+		</script>
+	<![endif]-->
+</head>
+
+<body class="main">
+	<!-- wrap -->
+	<div id="wrap">
+		<h1>XANADU 시스템</h1>
+		<div class="login_box">
+			<h2>XANADU Administration</h2>
+			<ul>
+				<li><input type="text" title="아이디입력" placeholder="ID" /></li>
+				<li><input type="password" title="비밀번호입력" placeholder="PASSWORD" /></li>
+				<li class="btn">
+					<a href="./page/00_main/main.html" class="button btn_blue">LOGIN</a>
+					<!-- <a href="#imporPop" class="button btn_blue layerPopOpen">LOGIN (에러)</a> -->
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- //wrap -->
+	<!-- footer -->
+	<footer id="footer">
+		<p>COPYRIGHT &copy;  2021 CNTT. ALL RIGHTS RESERVED</p>
+	</footer>
+	<!-- //footer -->
+
+
+	<!-- pop_layer -->
+	<article id="imporPop" class="pop_layer">
+		<div class="pop_wrap">
+			<h1>중요 알림</h1>
+			<p class="importantPopCont">
+				User ID 또는 Password를 <br />
+				잘못 입력하셨습니다. <br />
+				다시 입력해 주세요.
+			</p>
+			<p class="t_center mt20 mb20">
+				<a href="#" class="button large w70 btn_gray pop_close">닫기</a>
+			</p>
+			<!-- pop_close 닫는 클래스 -->
+			<a href="#" class="btn_close pop_close">닫기</a>
+		</div>
+	</article>
+	<!-- //pop_layer -->
+</body>
+</html>

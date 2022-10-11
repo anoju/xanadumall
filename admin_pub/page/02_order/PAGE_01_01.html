@@ -1,0 +1,524 @@
+<!DOCTYPE html> 
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>XANADU 시스템</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" href="../../static/css/common.css" media="all" />
+	<link rel="stylesheet" href="../../static/css/contents.css" media="all" />
+	<script src="../../static/js/plugins.js"></script>
+	<script src="../../static/js/ui_script.js"></script>
+	<!--[if lt IE 9]>
+		<script type="text/javascript">
+			document.createElement("header");
+			document.createElement("nav");
+			document.createElement("section");
+			document.createElement("article");
+			document.createElement("footer");
+		</script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- wrap -->
+	<div id="wrap" data-active="[2,1,1]">
+		<!-- header -->
+		<header id="header" data-include="../../include/header.html"></header>
+		<!-- //header -->	
+		
+		<!-- gnb -->
+		<aside class="left_menu"  data-include="../../include/leftMenu.html"></aside>
+		<!-- //left_menu -->
+
+		<!-- container -->
+		<div id="container">
+			<!-- contents -->
+			<section id="contents">
+				<h1 id="page_tit">주문현황조회</h1>	
+				
+				<table class="table left_tbl view_tbl mt20">
+					<caption>주문현황조회</caption>
+					<colgroup>
+						<col style="width:10%" />
+						<col style="width:40%"  />
+						<col style="width:10%" />
+						<col />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">서비스 유형</th>
+							<td>
+								<div class="flex">
+									<select title="옵션선택">
+										<option value="">온누리</option>
+										<option value="">기념일</option>
+										<option value="">특판</option>
+										<option value="">MRO</option>
+									</select>
+								</div>
+							</td>
+							<th scope="row">고객 구분</th>
+							<td>
+								<div class="flex">
+									<select title="옵션선택">
+										<option value="">전체</option>
+										<option value="">복지관</option>
+										<option value="">지자체</option>
+										<option value="">B2C</option>
+									</select>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">조회 기간</th>
+							<td>
+								<select title="옵션선택">
+									<option value="">상품등록일</option>
+									<option value="">상품수정일</option>
+									<option value="">판매시작일</option>
+									<option value="">판매종료일</option>
+								</select>
+								<input class="datepicker" type="text" /> ~ <input class="datepicker" type="text" />
+								<span class="btn_sort">
+									<a href="#">오늘</a>
+									<a href="#" class="on">1주</a>
+									<a href="#">3개월</a>
+									<a href="#">1년</a>
+								</span>
+							</td>
+							<th scope="row">검색어</th>
+							<td>
+								<div class="flex">
+									<select title="옵션선택">
+										<option>주문번호</option> 
+										<option>복지관주문번호</option> 
+										<option>ASP주문번호</option> 
+										<option>마켓아이디</option> 
+										<option>마켓 USER-KEY</option>
+										<option>복지관 USER-KEY</option> 
+										<option>사원번호</option> 
+										<option>주문자명</option> 
+										<option>수취자명</option>
+										<option>상품코드</option> 
+										<option>상품명</option> 
+										<option>송장번호</option> 
+										<option>선물하기(수령인/배송인 명)</option> 
+										<option>선물하기(수령인/배송인 HP)</option> 
+										<option>쿠폰 CODE</option> 
+										<option>쿠폰명</option>
+									</select>
+									<input type="text" class="wid1" />
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							<th scope="row">관리카테고리</th>
+							<td>
+								<div class="flex">
+									<select title="옵션선택">
+										<option value="">대분류</option>
+										<option value="">축산</option>
+										<option value="">농산</option>
+										<option value="">수산</option>
+									</select>
+									<select title="옵션선택">
+										<option value="">중분류</option>
+									</select>
+									<select title="옵션선택">
+										<option value="">소분류</option>
+									</select>
+								</div>
+							</td>
+							<th scope="row">전시카테고리</th>
+							<td colspan="3">
+								<div class="flex">
+									<select title="옵션선택">
+										<option value="">대분류</option>
+										<option value="">축산</option>
+										<option value="">농산</option>
+										<option value="">수산</option>
+									</select>
+									<select title="옵션선택">
+										<option value="">중분류</option>
+									</select>
+									<select title="옵션선택">
+										<option value="">소분류</option>
+									</select>
+								</div>
+							</td>
+						</tr>
+						
+						<tr>
+							<th scope="row">고객사선택</th>
+							<td>
+								<div class="flex">
+									<input type="text" disabled="disabled"/>
+									<button class="button" onclick="layerpopup('client_search_popup');">고객사 검색</button>
+									<button class="button">취소</button>
+								</div>
+							</td>
+							<th scope="row">CSP선택</th>
+							<td>
+								<div class="flex">
+									<input type="text" disabled="disabled"/>
+									<button class="button" onclick="layerpopup('company_search_popup');">CSP 검색</button>
+									<button class="button">취소</button>
+								</div>
+							</td>
+						</tr>
+						
+						<tr>
+							<th scope="row">주문상태</th>
+							<td colspan="3">
+								<label>
+									<input name="radio1" type="checkbox" class="checkbox" checked="checked" />
+									<span class="lbl">주문완료</span>
+								</label>
+								<label>
+									<input name="radio1" type="checkbox" class="checkbox" />
+									<span class="lbl">출고준비중</span>
+								</label>
+								<label>
+									<input name="radio1" type="checkbox" class="checkbox" />
+									<span class="lbl">배송중</span>
+								</label>
+								<label>
+									<input name="radio1" type="checkbox" class="checkbox" />
+									<span class="lbl">수취완료</span>
+								</label>
+								<label>
+									<input name="radio1" type="checkbox" class="checkbox" />
+									<span class="lbl">구매확정</span>
+								</label>
+								<label>
+									<input name="radio1" type="checkbox" class="checkbox" />
+									<span class="lbl">(품절)주문취소</span>
+								</label>
+								<label>
+									<input name="radio1" type="checkbox" class="checkbox" />
+									<span class="lbl">반품요청</span>
+								</label>
+								<label>
+									<input name="radio1" type="checkbox" class="checkbox" />
+									<span class="lbl">반품후주문취소</span>
+								</label>
+								<label>
+									<input name="radio1" type="checkbox" class="checkbox" />
+									<span class="lbl">교환요청</span>
+								</label>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<p class="t_right mt30">
+					<a href="#" class="button large w100"><i class="icon-cw"></i> 초기화</a>
+					<a href="#" class="button large w100 btn_blue"><i class="icon-search"></i> 조회</a>
+				</p>
+
+				<div class="flex mt30 align_center">
+					<p>
+						<strong class="mr10">전체 건수 : 1355 건</strong>
+					</p>
+					
+					<div>
+						<select>
+							<option>출고준비중</option>
+							<option>배송중</option>
+							<option>구매확정</option>
+						</select>
+						<button type="button" class="button">주문상태 일괄변경</button>
+					</div>
+					
+					<button type="button" class="button mla" onClick="layerpopup('waybill_all_input_popup')">운송장번호 일괄입력</button>
+					<button type="button" class="button">운송장번호 일괄입력용 엑셀다운로드</button>
+					<a href="#" class="button"><i class="icon-file-excel"></i> 엑셀 다운로드</a>
+				</div>
+				
+				<table class="table tbl_hover mt15">
+					<caption>테이블 제목</caption>
+					<colgroup>
+						<col style="width:50px" />
+						<col />
+						<col />
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">선택</th>
+							<th scope="col">번호</th>
+							<th scope="col">주문번호/주문자명/주문일시</th>
+							<th scope="col">복지관<br/>주문번호</th>
+							<th scope="col">고객사 코드/명</th>
+							<th scope="col">서비스유형/고객구분</th>
+							<th scope="col">채널<br/>구분</th>
+							<th scope="col">주문서<br/>구분</th>
+							<th scope="col">주문상태</th>
+							<th scope="col">1차승인</th>
+							<th scope="col">2차승인</th>
+							<th scope="col">상품코드</th>
+							<th scope="col">상품명/옵션명</th>
+							<th scope="col">프로모션</th>
+							<th scope="col">CSP코드/명</th>
+							<th scope="col">매입가</th>
+							<th scope="col">판매가</th>
+							<th scope="col">수량</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- 항목 -->
+						<tr class="pointer" >
+							<th scope="row"><input type="checkbox" /></th>
+							<td>2</td>
+							<td>
+								<ul>
+									<li onclick="javascript:location.href='PAGE_01_01_view.html'">1002354874</li>
+									<li onclick="javascript:layerpopup('mbrB2C_info_popup');">홍길동</li>
+									<li>2021-10-21 13:59</li>
+								</ul>
+							
+							</td>
+							<td>1074454874</td>
+							<td>onnuri<br/>온누리</td>
+							<td>온누리<br/>복지관</td>
+							<td>PC</td>
+							<td>온라인</td>
+							<td>주문완료</td>
+							<td>-</td>
+							<td>-</td>
+							<td>100154789</td>
+							<td>테스트 상품1 / MDKF3040</td>
+							<td>5일장</td>
+							<td onclick="layerpopup('patr_info_popup');">71001454<br/>온수상회</td>
+							<td>134,500</td>
+							<td>154,500</td>
+							<td>1</td>
+						</tr>
+						<!-- //항목 -->
+
+						<!-- 항목 -->
+						<tr class="pointer" >
+							<th scope="row"><input type="checkbox" /></th>
+							<td>1</td>
+							<td onclick="javascript:location.href='PAGE_01_01_view.html'">1002354874</td>
+							<td>1074454874</td>
+							<td>onnuri<br/>온누리</td>
+							<td>온누리<br/>복지관</td>
+							<td>PC</td>
+							<td>온라인</td>
+							<td>주문완료</td>
+							<td>-</td>
+							<td>-</td>
+							<td>100154789</td>
+							<td>테스트 상품1 / MDKF3040</td>
+							<td>5일장</td>
+							<td>71001454<br/>온수상회</td>
+							<td>134,500</td>
+							<td>154,500</td>
+							<td>1</td>
+						</tr>
+						<!-- //항목 -->
+					</tbody>
+				</table>
+
+				<div class="paging_box mt30">
+					<ul class="pagination mla mra">
+						<li class="disabled"><a href="#"><i class="icon-angle-double-left"></i></a></li>
+						<li class="disabled"><a href="#"><i class="icon-angle-left"></i></a></li>
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#"><i class="icon-angle-right"></i></a></li>
+						<li><a href="#"><i class="icon-angle-double-right"></i></a></li>
+					</ul>
+				</div>
+			</section>
+			<!-- //contents -->
+		</div>
+		<!-- //container -->
+	</div>
+	<!-- //wrap -->
+	<!-- footer -->
+	<header id="footer" data-include="../../include/footer.html"></header>
+	<!-- //footer -->
+	
+	<!-- 고객사 검색 팝업 -->
+	<article id="client_search_popup" class="pop_layer" data-include="../../include/popup/clientSearchPop.html"></article>
+	
+	<!-- 업체 검색 팝업 -->
+	<article id="company_search_popup" class="pop_layer" data-include="../../include/popup/companySearchPop.html"></article>
+
+	<!-- 주문자 상세정보 팝업 -->
+	<article id="mbrB2C_info_popup" class="pop_layer">
+		<div class="pop_wrap">
+			<h1>주문자 상세정보</h1>
+			<div class="pop_cont mb10 w800">
+				<p class="mb10">
+					<strong class="mr10">◎ 주문자 상세정보</strong>
+				</p>
+				<table class="table left_tbl">
+					<colgroup>
+						<col style="width:20%;" />
+						<col style="width:30%;" />
+						<col style="width:20%;" />
+						<col />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">이름</th>	
+							<td>홍길동</td>
+							<th scope="row">고객구분</th>
+							<td>B2C</td>
+						</tr>
+						<tr>
+							<th scope="row">ID</th>
+							<td>abcccc</td>
+							<th scope="row">생년월일</th>
+							<td>2010-10-10</td>
+						</tr>
+						<tr>
+							<th scope="row">회원등급</th>
+							<td>실버</td>
+							<th scope="row">이메일</th>
+							<td>hong@naver.com</td>
+						</tr>
+						<tr>
+							<th scope="row">휴대폰</th>
+							<td>010-****-5678</td>
+							<th scope="row">전화번호</th>
+							<td>02-****-5678</td>
+						</tr>
+						<tr>
+							<th scope="row" rowspan="2">주소</th>
+							<td colspan="3">16135</td>
+						</tr>
+						<tr>
+							<td colspan="3">서울특별시 구로구 디지털로 34길 ** (구로동) 코오롱싸이언스밸리 *차 **층</td>
+						</tr>
+						<tr>
+					</tbody>
+				</table>
+			</div>
+		
+			<!-- pop_close 닫는 클래스 -->
+			<a href="#" class="btn_close pop_close">닫기</a>
+		</div>
+	</article>
+
+	<!-- CSP업체 상세정보 팝업 -->
+	<article id="patr_info_popup" class="pop_layer">
+		<div class="pop_wrap">
+			<h1>CSP업체</h1>
+			<div class="pop_cont mb10 w800">
+				<p class="mb10">
+					<strong class="mr10">◎ CSP업체 상세정보</strong>
+				</p>
+				<table class="table left_tbl">
+					<colgroup>
+						<col style="width:20%;" />
+						<col style="width:30%;" />
+						<col style="width:20%;" />
+						<col />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">업체명</th>	
+							<td>㈜티에스컴퍼니</td>
+							<th scope="row">업체코드</th>
+							<td>76000076</td>
+						</tr>
+						<tr>
+							<th scope="row">승인일자</th>
+							<td>2019-05-06</td>
+							<th scope="row">입점상태</th>
+							<td>도소매</td>
+						</tr>
+						<tr>
+							<th scope="row">정산주기</th>
+							<td>1~15일분 당월말</td>
+							<th scope="row">등록상품수</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">판매상품수</th>
+							<td></td>
+							<th scope="row">담당MD</th>
+							<td>김이슬</td>
+						</tr>
+						<tr>
+							<th scope="row">사업자번호</th>
+							<td>○○○○○○○○○○</td>
+							<th scope="row">대표자명</th>
+							<td>정민수</td>
+						</tr>
+						<tr>
+							<th scope="row">종업원수(명)</th>
+							<td>5</td>
+							<th scope="row">매출액(원)</th>
+							<td>100,000,000</td>
+						</tr>
+						<tr>
+							<th scope="row">업체담당자</th>
+							<td>이아라</td>
+							<th scope="row">전화번호</th>
+							<td>02-1234-5678</td>
+						</tr>
+						<tr>
+							<th scope="row">휴대폰번호</th>
+							<td>010-1234-5678</td>
+							<th scope="row">이메일</th>
+							<td>jung@ts.com</td>
+						</tr>
+						<tr>
+							<th scope="row" rowspan="2">주소</th>
+							<td colspan="3">5806</td>
+						</tr>
+						<tr>
+							<td colspan="3">서울특별시 송파구 동남로4길 22 (문정동)</td>
+						</tr>
+						<tr>
+							<th scope="row">은행명</th>
+							<td>국민은행</td>
+							<th scope="row">계좌번호</th>
+							<td>○○○○○○○○○○○○</td>
+						</tr>
+						<tr>
+					</tbody>
+				</table>
+			</div>
+		
+			<!-- pop_close 닫는 클래스 -->
+			<a href="#" class="btn_close pop_close">닫기</a>
+		</div>
+	</article>
+	
+	<!-- 운송장번호 일괄입력 팝업 -->
+	<article id="waybill_all_input_popup" class="pop_layer">
+		<div class="pop_wrap">
+			<h1>운송장번호 일괄입력</h1>
+			<div class="pop_cont mb10 w600">
+			
+				<div class="fileBox">
+					<input type="text" class="w300" readonly="readonly"> 
+					<label for="uploadBtn1" class="button">찾아보기</label> 
+					<input type="file" id="uploadBtn1" class="uploadBtn" style="display: none;">
+				</div>
+			
+				<div class="mt20">
+					<p class="mr10">■ 엑셀파일을 이용하여 배송정보를 일괄등록할 수 있습니다.</p>
+					<p class="mr10">■ 엑셀파일을 업로드하시면 배송정보가 일괄등록됩니다.</p>
+					<p class="mr10">■ 엑셀파일을 업로드하실 때는 확장자 .xls, .xlsx파일만 업로드 가능합니다.</p>
+					<p class="mr10 t_red">■ 주문상태가 '출고준비중'에 한해 등록됩니다.</p>
+				</div>
+			</div>
+		
+			<!-- pop_close 닫는 클래스 -->
+			<a href="#" class="btn_close pop_close">닫기</a>
+		</div>
+	</article>
+	
+</body>
+</html>

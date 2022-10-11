@@ -1,0 +1,438 @@
+<!DOCTYPE html> 
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>NEXTID 시스템</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" href="../../static/css/common.css" media="all" />
+	<link rel="stylesheet" href="../../static/css/contents.css" media="all" />
+	<link rel="stylesheet" href="../../static/js/lib/jstree/themes/default/style.min.css" />
+	<script src="../../static/js/plugins.js"></script>
+	<script src="../../static/js/ui_script.js"></script>
+	<script type="text/javascript">
+	<!--
+		$(document).ready(function() {
+			jQuery('.categoryTree i').on('click',function(){
+				var _this = jQuery(this);
+				if(_this.hasClass('dn')){
+					_this.next().next().slideUp();
+					_this.removeClass('dn').addClass('up')
+				}else{
+					_this.next().next().slideDown();
+					_this.removeClass('up').addClass('dn')
+				};
+			});
+		});
+	//-->
+	</script>
+	<!--[if lt IE 9]>
+		<script type="text/javascript">
+			document.createElement("header");
+			document.createElement("nav");
+			document.createElement("section");
+			document.createElement("article");
+			document.createElement("footer");
+		</script>
+	<![endif]-->
+</head>
+<body>
+	<!-- wrap -->
+	<div id="wrap" data-active="[0]">
+	<!-- div id="wrap" data-active="[0]" class="nonLnb" -->
+		<!-- header -->
+		<script src="../../include/header.js"></script>
+		<!-- //header -->	
+		
+		<!-- gnb -->
+		<script src="../../include/leftMenu.js"></script>
+		<!-- //left_menu -->
+
+		<!-- container -->
+		<div id="container">
+			<!-- contents -->
+			<section id="contents">
+				<h1 id="page_tit">카테고리관리</h1>
+				<ul class="layoutBox category">
+					<li class="list">
+						<strong class="tableTitle">◎ 마스터 카테고리명</strong>
+						<div class="categoryListBox">
+							<ul class="categoryTree">
+								<li><i class="root treeLast dn"></i>
+									<a href="#nolink">Root node</a>
+									<ul class="depth2">
+										<li><i class="treeMidd"></i><a href="#nolink">Child node 1</a></li>
+										<li><i class="treeLast dn"></i>
+											<a href="#nolink">Child node 2</a>
+											<ul class="depth3">
+												<li><i class="treeMidd"></i><a href="#nolink">Child node 1</a></li>
+												<li><i class="treeLast"></i><a href="#nolink">Child node 2</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="cont">
+						<div class="flex">
+							<strong class="tableTitle flex10">◎ 마스터 카테고리 기본정보 상세</strong>
+							<div class="flex01">
+								<a href="#nolink" class="button small btn_blue">저장</a>
+							</div>
+						</div>
+						<table class="table left_tbl mt5">
+							<caption>카테고리기본정보</caption>
+							<colgroup>
+								<col style="width:15%" />
+								<col style="width:35%" />
+								<col style="width:15%" />
+								<col />
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row">상위카테고리번호</th>
+									<td>0</td>
+									<th scope="row">상위커테고리명</th>
+									<td></td>
+								</tr>
+								<tr>
+									<th scope="row">카테고리번호</th>
+									<td></td>
+									<th scope="row">카테고리길이</th>
+									<td></td>
+								</tr>
+								<tr>
+									<th scope="row">카테고리명</th>
+									<td>
+										<div class="flex">
+											<input type="text" class="flex11" />
+										</div>
+									</td>
+									<th scope="row">PC 서브타이틀</th>
+									<td>
+										<div class="flex">
+											<input type="text" class="flex11" />
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">검색카테고리유형</th>
+									<td>
+										<div class="flex">
+											<select title="옵션선택">
+												<option value="">복지쇼핑몰</option>
+											</select>
+										</div>
+									</td>
+									<th scope="row">GNB메뉴배너유형</th>
+									<td>
+										<div class="flex">
+											<select title="옵션선택">
+												<option value="">쇼핑</option>
+											</select>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">출력유형</th>
+									<td>
+										<div class="flex">
+											<select title="옵션선택">
+												<option value="">URL이동</option>
+											</select>
+											<span>하위카테고리 노출여부</span>
+											<select title="옵션선택">
+												<option value="">노출</option>
+											</select>
+										</div>
+									</td>
+									<th scope="row">카테고리명 기본 색상</th>
+									<td>
+										<div class="flex">
+											<input type="text" class="" />
+											<a href="#nolink" class="button small">색상표</a>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th colspan="4" class="cateTit">PC URL</th>
+								</tr>
+								<tr>
+									<th scope="row">Target</th>
+									<td>
+										<div class="flex">
+											<select title="옵션선택">
+												<option value="">하단프레임</option>
+											</select>
+										</div>
+									</td>
+									<th scope="row">URL</th>
+									<td>
+										<div class="flex">
+											<input type="text" class="flex11" />
+										</div>
+										<span class="t_blue f12">※ '/'만 입력 시 url 이동을 하지 않습니다.</span>
+									</td>
+								</tr>
+								<tr>
+									<th colspan="4" class="cateTit">Mobile URL</th>
+								</tr>
+								<tr>
+									<th scope="row">Target</th>
+									<td>
+										<div class="flex">
+											<select title="옵션선택">
+												<option value="">하단프레임</option>
+											</select>
+										</div>
+									</td>
+									<th scope="row">URL</th>
+									<td>
+										<div class="flex">
+											<input type="text" class="flex11" />
+										</div>
+										<span class="t_blue f12">※ '/'만 입력 시 url 이동을 하지 않습니다.</span>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">Leal카테고리여부</th>
+									<td>
+										<label>
+											<input name="radio1" type="radio" class="radio" />
+											<span class="lbl">예</span>
+										</label>
+										<label>
+											<input name="radio1" type="radio" class="radio" />
+											<span class="lbl">아니오</span>
+										</label>
+									</td>
+									<th scope="row">전시우선순위</th>
+									<td>
+										<div class="flex">
+											<input type="text" class="" />
+											<span class="f12">1~999 범위 입력</span>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">PC 아이콘 이미지</th>
+									<td>
+										<div class="flex">
+											<input type="text" class="flex11" />
+											<a href="#nolink" class="button small">파일첨부</a>
+										</div>
+									</td>
+									<th scope="row">모바일 아이콘 이미지</th>
+									<td>
+										<div class="flex">
+											<input type="text" class="flex11" />
+											<a href="#nolink" class="button small">파일첨부</a>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">사용 여부</th>
+									<td>
+										<label>
+											<input name="radio2" type="radio" class="radio" />
+											<span class="lbl">사용함</span>
+										</label>
+										<label>
+											<input name="radio2" type="radio" class="radio" />
+											<span class="lbl">사용안함</span>
+										</label>
+										<span class="t_blue f12">* 개발자 권한, 준마스터 권한만 변경 가능</span>
+									</td>
+									<th scope="row">전시여부</th>
+									<td>
+										<label>
+											<input name="radio3" type="radio" class="radio" />
+											<span class="lbl">전시</span>
+										</label>
+										<label>
+											<input name="radio3" type="radio" class="radio" />
+											<span class="lbl">전시안함</span>
+										</label>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">디바이스 구분</th>
+									<td colspan="3">
+										<label>
+											<input name="radio4" type="radio" class="radio" />
+											<span class="lbl">PC+모바일</span>
+										</label>
+										<label>
+											<input name="radio4" type="radio" class="radio" />
+											<span class="lbl">PC</span>
+										</label>
+										<label>
+											<input name="radio4" type="radio" class="radio" />
+											<span class="lbl">모바일</span>
+										</label>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">리스트 정렬기준</th>
+									<td>
+										<div class="flex">
+											<select title="옵션선택">
+												<option value=""></option>
+											</select>
+										</div>
+									</td>
+									<th scope="row">카테고리 수정 가능 여부</th>
+									<td>
+										<label>
+											<input name="radio5" type="radio" class="radio" />
+											<span class="lbl">예</span>
+										</label>
+										<label>
+											<input name="radio5" type="radio" class="radio" />
+											<span class="lbl">아니오</span>
+										</label>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">카테고리 키워드</th>
+									<td colspan="3">
+										<div class="flex">
+											<input type="text" class="flex11" />
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">수정자</th>
+									<td></td>
+									<th scope="row">최종수정일시</th>
+									<td></td>
+								</tr>
+								<tr>
+									<th scope="row">적용고객사</th>
+									<td colspan="3">
+										<label>
+											<input name="radio6" type="radio" class="radio" />
+											<span class="lbl">전체</span>
+										</label>
+										<label>
+											<input name="radio6" type="radio" class="radio" />
+											<span class="lbl">적용</span>
+										</label>
+										<label>
+											<input name="radio7" type="radio" class="radio" />
+											<span class="lbl">제외 (대상 : 총 0 건)</span>
+										</label>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="flex mt20">
+							<strong class="tableTitle flex10">◎ 하위 마스터 카테고리 목록</strong>
+							<div class="flex01">
+								<a href="#nolink" class="button small">하위 마스터카테고리 등록</a>
+								<a href="#nolink" class="button small btn_blue">저장</a>
+								<a href="#nolink" class="button small">삭제</a>
+							</div>
+						</div>
+						<table class="table sin_tbl mt5">
+							<caption>마스터 카테고리 기본정보 상세</caption>
+							<colgroup>
+								<col style="" />
+								<col style="" />
+								<col style="" />
+								<col style="" />
+								<col style="" />
+								<col style="" />
+								<col style="" />
+								<col style="" />
+								<col style="" />
+							</colgroup>
+							<thead>
+								<tr>
+									<th>선택</th>
+									<th>마스터카테고리 번호</th>
+									<th>마스터카테고리 명</th>
+									<th>Leaf 여부</th>
+									<th>우선순위</th>
+									<th>전시여부</th>
+									<th>사용여부</th>
+									<th>BEST상품노출여부</th>
+									<th>길이</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><input name="checkbox01" type="checkbox" class="checkbox"></td>
+									<td>A09A005</td>
+									<td>건강식품</td>
+									<td>N</td>
+									<td>30</td>
+									<td>전시</td>
+									<td>사용</td>
+									<td>Y</td>
+									<td>2</td>
+								</tr>
+							</tbody>
+						</table>
+					</li>
+				</ul>
+			</section>
+			<!-- //contents -->
+		</div>
+		<!-- //container -->
+	</div>
+	<!-- //wrap -->
+	<!-- footer -->
+	<header id="footer" data-include="../../include/footer.html"></header>
+	<!-- //footer -->
+
+	<!-- pop_layer -->
+	<!-- layerPopOpen 클래스 적용 후 링크값은 id값으로 -->
+	<!-- 카테고리 -->
+	<article id="popup1" class="pop_layer">
+		<div class="pop_wrap">
+			<h1>카테고리 설정</h1>
+			<div class="pop_cont">
+				<table class="table view_tbl">
+					<colgroup>
+						<col />
+					</colgroup>
+					<thead>
+						<tr>
+							<th>카테고리 선택</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<div class="categoryBox">
+									<dl class="category">
+										<dt>대분류 카테고리</dt>
+										<dd></dd>
+									</dl>
+									<dl class="category">
+										<dt>중분류 카테고리</dt>
+										<dd></dd>
+									</dl>
+									<dl class="category">
+										<dt>소분류 카테고리</dt>
+										<dd></dd>
+									</dl>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="t_center mt30">
+					<a href="#" class="button large btn_blue">카테고리 선택/추가</a>
+				</div>
+			</div>
+			<!-- pop_close 닫는 클래스 -->
+			<a href="#" class="btn_close pop_close">닫기</a>
+		</div>
+	</article>
+	<!-- //pop_layer -->
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>퍼블리싱(PC)</title>
+<link href="../static/css/reset.css" rel="stylesheet" />
+<link href="../static/css/common.css" rel="stylesheet" />
+<link href="../static/css/contents.css" rel="stylesheet" />
+<script type="text/javascript" src="../static/js/common.js"></script>
+<script type="text/javascript" src="../static/js/ui.js"></script>
+
+<!-- 가이드 전용 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/atom-one-dark.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+<!-- //가이드 전용 -->
+</head>
+<body>
+	<!-- 헤더영역 -->
+	<header id="headerWrap" data-include="../include/header.html"></header>
+	<!-- //헤더영역 -->
+
+	<!-- 컨텐츠 영역 -->          
+	<section id="container" data-title="팝업">
+		<div class="section">
+			<div class="tabList">
+				<a href="./guideText.html">텍스트</a>
+				<a href="./guideBtn.html">버튼</a>
+				<a href="./guideForm.html">폼요소</a>
+				<a href="./guideList.html">리스트</a>
+				<a href="./guideTable.html">테이블</a>
+				<a href="./guidePop.html" class="on">팝업</a>
+				<a href="./guideEtc.html">기타</a>
+			</div>
+		</div>
+
+		<div class="section gdWrap">
+			<h1 class="gdH1">팝업</h1>
+
+			<h2 class="gdH2">레이어팝업</h2>
+			<p><a href="#pop1" class="button line2 popOpen">레이어팝업호출(a태그형태)</a></p>
+			<p><button data-href="#pop1" class="button line2 popOpen">레이어팝업호출(button태그형태)</button></p>
+
+			<h2 class="gdH2">메시지팝업</h2>
+			<p><a href="#pop2" class="pop2 button line2">팝업타이틀, 내용 메시지</a></p>
+			<p><a href="#pop3" class="pop3 button line2">내용 메시지</a></p>
+
+			<script>
+				$(document).on('click','.pop2',function(){
+					const $this = $(this);
+					let text = '';
+					text += '<p class="tit">팝업 타이틀</p>';
+					text += '<p class="subText">원활한 서비스 제공을 위해 최선을 다하고<br /> 있습니다.  잠시 후 이용해주세요.</p>';
+					/*  
+						alert() : 옵션들
+						buttons : 버튼 수 (최대2개)
+						buttonText : [] 버튼 텍스트
+						buttonClose : 자동 닫는 버튼 위치
+						text : '내용 (html 사용가능)',
+						textAlign : '텍스트 정렬',
+						submit : function(){ 확인 전송 시 (닫기 버튼제외)},
+						close : function(){ 닫기 전송 시 (닫기 버튼제외)}
+
+						btnSubmit 클래스
+						btnPopClose 클래스 적용시에도 동작
+					*/
+					
+					$(this).alert({
+						text : text,
+						textAlign : 'center',
+						buttons : 2,
+						buttonText : ['취소', '확인'],
+						buttonClose : 1,
+						submit : function(){ $this.text('팝업타이틀, 내용 메시지 - 전송했지롱')},
+						close : function(){ $this.text('팝업타이틀, 내용 메시지 - 닫았지롱')}
+					});
+					
+				});
+				$(document).on('click','.pop3',function(){
+					const $this = $(this);
+					let text = '';
+
+					text += '<p class="subText">원활한 서비스 제공을 위해 최선을 다하고<br /> 있습니다.  잠시 후 이용해주세요.</p>';
+
+					$(this).alert({
+						text : text,
+						textAlign : 'center',
+						buttons : 1,
+						buttonText : ['확인'],
+						buttonClose : 1,
+						close : function(){ $this.text('내용 메시지 - 닫았지롱')}
+					});
+					
+				});
+			</script>
+
+
+			<h2 class="gdH2">로딩팝업</h2>
+			<p><a href="#loading" class="loadingPop button line2">로딩팝업(텍스트 x)</a></p>
+			<p><a href="#loading2" class="loadingPop2 button line2">로딩팝업(텍스트 O)</a></p>
+			<script>
+				/* 로딩 팝업 */
+			$(document).on('click','.loadingPop',function(){
+				/* 로딩 노출 */
+				loading.open();
+				
+				setTimeout(function(){
+					/* 로딩 삭제 */
+					loading.close();
+				},3000);
+
+				return false;
+			});
+			$(document).on('click','.loadingPop2',function(){
+				/* 로딩 노출 */
+				loading.open('로딩과 관련된 문구가 <br />출력됩니다.');
+				
+				setTimeout(function(){
+					/* 로딩 삭제 */
+					loading.close();
+				},3000);
+
+				return false;
+			});
+			</script>
+		</div>
+	</section>
+	<!-- //컨텐츠 영역 -->
+
+	<!-- 팝업 -->
+	<div id="pop1" class="layerPopWrap">
+		<div class="bg"></div>
+		<div class="layerPopCont" tabindex="0">
+			<h1>비회원 주문 비밀번호 찾기</h1>
+			<div class="popCont">
+				팝업내용
+			</div>
+			<a href="#" class="btnClose btnPopClose">팝업닫기</a>
+		</div>
+	</div>
+	<!-- //팝업 -->
+
+	<!-- 팝업 -->
+	<div id="pop2" class="layerPopWrap">
+		<div class="bg"></div>
+		<div class="layerPopCont" tabindex="0">
+			<div class="contBox">
+				<p class="title">나의 NEXTID</p>
+				<div class="textBox">
+					<!-- 팝업내용 -->
+					팝업 형태를 모두 만들어서 여는 팝업내용입니다
+					<!-- //팝업내용 -->
+				</div>
+			</div>
+			<a href="#" class="btnClose btnPopClose">팝업닫기</a>
+		</div>
+	</div>
+	<!-- //팝업 -->
+
+	<!-- 하단 영역 -->
+	<footer id="footerWrap" data-include="../include/footer.html"></footer>
+	<!-- //하단 영역 -->
+
+	<script>hljs.highlightAll();</script>
+</body>
+</html>

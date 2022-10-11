@@ -1,0 +1,1622 @@
+<!DOCTYPE html> 
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>NEXTID 시스템</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" href="../../static/css/common.css" media="all" />
+	<link rel="stylesheet" href="../../static/css/contents.css" media="all" />
+	<script src="../../static/js/plugins.js"></script>
+	<script src="../../static/js/ui_script.js"></script>
+	<!--[if lt IE 9]>
+		<script type="text/javascript">
+			document.createElement("header");
+			document.createElement("nav");
+			document.createElement("section");
+			document.createElement("article");
+			document.createElement("footer");
+		</script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- wrap -->
+	<div id="wrap" data-active="[1,1,1]">
+		<!-- header -->
+		<header id="header" data-include="../../include/header.html"></header>
+		<!-- //header -->	
+		
+		<!-- gnb -->
+		<aside class="left_menu"  data-include="../../include/leftMenu.html"></aside>
+		<!-- //left_menu -->
+
+		<!-- container -->
+		<div id="container">
+			<!-- contents -->
+			<section id="contents">
+				<h1 id="page_tit">TAB페이지</h1>
+
+				<div class="tabBox">
+					<ul class="tabmenu leftTab tabMotion">
+						<li><a href="#tabCon1">상품 기본정보</a></li>
+						<li><a href="#tabCon2">상품 옵션 및 가격설정</a></li>
+						<li><a href="#tabCon3">상품 이미지 설정</a></li>
+						<li><a href="#tabCon4">배송 설정</a></li>
+					</ul>
+					<div class="posBox rt">
+						<button type="button" class="button large btn_blue">신규 등록</button>
+					</div>
+				</div>
+				<!-- 상품 기본정보 -->
+				<div id="tabCon1" class="tab_cont">
+					<div class="flex mt20">
+						<strong class="tableTitle flex10">◎ 상품 기본정보</strong>
+						<div class="flex01 mb5">
+							<span class="t_blue">상품번호 : 100131832</span>
+							<a href="#nolink" class="button small btn_blue">미리보기</a>
+						</div>
+					</div>
+					<table class="table left_tbl">
+						<caption>상품 기본정보</caption>
+						<colgroup>
+							<col style="width:10%" />
+							<col style="width:40%" />
+							<col style="width:10%" />
+							<col />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">서비스 유형</th>
+								<td colspan="3">
+									<div class="">
+										<select title="옵션선택">
+											<option value="">온누리</option>
+										</select>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th colspan="4" class="cateTit">판매상태</th>
+							</tr>
+							<tr>
+								<th scope="row">판매채널</th>
+								<td colspan="3">
+									<div class="flex">
+										<select title="옵션선택">
+											<option value="">PC</option>
+											<option value="">MOBILE</option>
+											<option value="">전체</option>
+										</select>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">판매상태</th>
+								<td>
+									<div class="flex">
+										<select title="옵션선택">
+											<option value="">등록대기</option>
+										</select>
+									</div>
+								</td>
+								<th scope="row">전시여부</th>
+								<td>
+									<label>
+										<input name="radio5" type="radio" class="radio" />
+										<span class="lbl">Yes</span>
+									</label>
+									<label>
+										<input name="radio5" type="radio" class="radio" />
+										<span class="lbl">No</span>
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">판매기간</th>
+								<td>
+									<label>
+										<input name="radio11" type="radio" class="radio" />
+										<span class="lbl">상시판매</span>
+									</label>
+									<label>
+										<input name="radio11" type="radio" class="radio" />
+										<span class="lbl">기간설정</span>
+									</label>
+									<input class="datepicker" type="text" disabled /> ~ <input class="datepicker" type="text" disabled />
+								</td>
+								<th scope="row">장바구니 노출여부</th>
+								<td>
+									<label>
+										<input name="radio12" type="radio" class="radio" />
+										<span class="lbl">노출</span>
+									</label>
+									<label>
+										<input name="radio12" type="radio" class="radio" />
+										<span class="lbl">노출안함</span>
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<th>카테고리</th>
+								<td colspan="3" class="line">
+									<div class="flex">
+										<a href="#popup1" class="button small layerPopOpen">대표 카테고리</a>
+										<span>생활가전 &gt; 계절가전 &gt; 히터/온풍기</span>
+									</div>
+									<div class="flex mt10">
+										<a href="#popup1" class="button small layerPopOpen">전시 카테고리</a>
+										<span>생활가전 &gt; 계절가전 &gt; 히터/온풍기</span>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th colspan="4" class="cateTit">상품정보</th>
+							</tr>
+							<tr>
+								<th scope="row">상품명</th>
+								<td colspan="3">
+									<div class="flex">
+										<input type="text" class="flex11" />
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">강조문구<br>(상품명앞)</th>
+								<td colspan="3">
+									<div class="flex">
+										<input type="text" class="flex11" />
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">강조문구<br>(상품명뒤)</th>
+								<td colspan="3">
+									<div class="flex">
+										<input type="text" class="flex11" />
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">검색 키워드</th>
+								<td colspan="3">
+									<input type="text" class="flex11" />
+									<input type="text" class="flex11" />
+									<input type="text" class="flex11" />
+									<input type="text" class="flex11" />
+									<input type="text" class="flex11" />
+									<input type="text" class="flex11" />
+									<!-- <a href="#nolink" class="button small">키워드 추가</a> -->
+									<button type="button" class="button">키워드 추가</button>
+									<div class="textDecoBox mt10">
+										<p>* 등록된 검색 키워드는 상품 검색 시 활용되니, 상품에 적합한 키워드로 등록해주세요.</p>
+										<p>* 입력불가 특수문자:!@#$%^&*-='"?,.<>|{}</p>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th colspan="4" class="cateTit">판매정보</th>
+							</tr>
+							<tr>
+								<th scope="row">협력업체</th>
+								<td colspan="3">
+									<input type="text" class="w_30" disabled />
+									<button type="button" class="button">CSP검색</button>
+									<input type="text" class="ml10" disabled />
+									<button type="button" class="button">취소</button>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">브랜드</th>
+								<td colspan="3">
+									<div class="flex align_center">
+										<input type="text" class="w_30" disabled />
+										<button type="button" class="button">브랜드검색</button>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">제조사</th>
+								<td colspan="3">
+									<div class="flex align_center">
+										<input type="text" class="w_30" disabled />
+										<button type="button" class="button">제조사검색</button>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">모델명</th>
+								<td colspan="3">
+									<div class="flex">
+										<input type="text" class="w_50" />
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">원산지</th>
+								<td colspan="3">
+									<div class="flex">
+										<textarea name="" id="" cols="30" rows="10" class="flex11"></textarea>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">인증마크</th>
+								<td colspan="3">
+									<div class="flex">
+										<input type="text" class="w_50" disabled />
+										<a href="#nolink" class="button small">인증마크검색</a>
+										<a href="#nolink" class="button small btn_gray">초기화</a>
+										<a href="#nolink" class="button small">추가</a>
+										<a href="#nolink" class="button small">인증마크관리</a>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">관세 유형</th>
+								<td>
+									<label>
+										<input name="radio1" type="radio" class="radio" />
+										<span class="lbl">과세</span>
+									</label>
+									<label>
+										<input name="radio1" type="radio" class="radio" />
+										<span class="lbl">면세</span>
+									</label>
+									<label>
+										<input name="radio1" type="radio" class="radio" />
+										<span class="lbl">영세</span>
+									</label>
+									<label>
+										<input name="radio1" type="radio" class="radio" />
+										<span class="lbl">영수증(상품권/이용권)</span>
+									</label>
+								</td>
+								<th scope="row">현금영수증 발행 여부</th>
+								<td>
+									<label>
+										<input name="radio2" type="radio" class="radio" />
+										<span class="lbl">미사용</span>
+									</label>
+									<label>
+										<input name="radio2" type="radio" class="radio" />
+										<span class="lbl">사용</span>
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row" rowspan="2">본인인증 여부</th>
+								<td>
+									<label>
+										<input name="radio3" type="radio" class="radio" />
+										<span class="lbl">인증안함</span>
+									</label>
+									<label>
+										<input name="radio3" type="radio" class="radio" />
+										<span class="lbl">본인인증</span>
+									</label>
+									<label>
+										<input name="radio3" type="radio" class="radio" />
+										<span class="lbl">성인인증(19세이상)</span>
+									</label>
+								</td>
+								<th scope="row">핫딜 여부</th>
+								<td>
+									<label>
+										<input name="radio4" type="radio" class="radio" />
+										<span class="lbl">예</span>
+									</label>
+									<label>
+										<input name="radio4" type="radio" class="radio" />
+										<span class="lbl">아니오</span>
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="3" class="line">
+									<div class="textDecoBox">
+										<p>* [주류의 통신판매에 관한 명령 위임의 고지사항] 국세청 관계법령에 따라 19세 이상 본인인증을 받은 사용자 대상으로 판매가 가능합니다.</p>
+										<p>* 주류 상품 등록 시에는 꼬 성인인증(19세이상) 선택 후 등록해 주세요.</p>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">적립금 적립여부</th>
+								<td colspan="3">
+									<label>
+										<input name="radio22" type="radio" class="radio" />
+										<span class="lbl">적립금 적립안함</span>
+									</label>
+									<label>
+										<input name="radio22" type="radio" class="radio" />
+										<span class="lbl">적립금 적립함</span>
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<th colspan="4" class="cateTit">기타</th>
+							</tr>
+							<tr>
+								<th scope="row">담당자MD</th>
+								<td colspan="3">
+									<div class="flex">
+										<select title="옵션선택">
+											<option value="">홍길동</option>
+										</select>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">상품 특이사항</th>
+								<td colspan="3">
+									<div class="flex">
+										<textarea name="" id="" cols="30" rows="10" class="flex11"></textarea>
+									</div>
+								</td>
+							</tr>
+							<!-- <tr>
+								<th scope="row">액면가 정산여부</th>
+								<td colspan="3">
+									<label>
+										<input name="radio23" type="radio" class="radio" />
+										<span class="lbl">미사용</span>
+									</label>
+									<label>
+										<input name="radio23" type="radio" class="radio" />
+										<span class="lbl">사용</span>
+									</label>
+									<a href="#nolink" class="button small">재계산</a>
+								</td>
+							</tr> -->
+						</tbody>
+					</table>
+					<strong class="tableTitle">◎ 판매 아이콘 설정</strong>
+					<table class="table left_tbl">
+						<caption>판매 아이콘 설정</caption>
+						<colgroup>
+							<col style="width:10%" />
+							<col />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">아이콘유형(좌측)</th>
+								<td>
+									<label>
+										<input name="radio_i1" type="radio" class="radio" checked />
+										<span class="lbl">선택안함</span>
+									</label>
+									<label>
+										<input name="radio_i1" type="radio" class="radio" />
+										<span class="lbl">HOT</span>
+									</label>
+									<label>
+										<input name="radio_i1" type="radio" class="radio" />
+										<span class="lbl">무료배송</span>
+									</label>
+									<label>
+										<input name="radio_i1" type="radio" class="radio" />
+										<span class="lbl">초특가</span>
+									</label>
+									<label>
+										<input name="radio_i1" type="radio" class="radio" />
+										<span class="lbl">사은품</span>
+									</label>
+									<label>
+										<input name="radio_i1" type="radio" class="radio" />
+										<span class="lbl">한정상품</span>
+									</label>
+									<label>
+										<input name="radio_i1" type="radio" class="radio" />
+										<span class="lbl">깜짝할인</span>
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">아이콘유형(우측)</th>
+								<td>
+									<label>
+										<input name="radio_i2" type="radio" class="radio" checked />
+										<span class="lbl">선택안함</span>
+									</label>
+									<label>
+										<input name="radio_i2" type="radio" class="radio" />
+										<span class="lbl">HOT</span>
+									</label>
+									<label>
+										<input name="radio_i2" type="radio" class="radio" />
+										<span class="lbl">무료배송</span>
+									</label>
+									<label>
+										<input name="radio_i2" type="radio" class="radio" />
+										<span class="lbl">초특가</span>
+									</label>
+									<label>
+										<input name="radio_i2" type="radio" class="radio" />
+										<span class="lbl">사은품</span>
+									</label>
+									<label>
+										<input name="radio_i2" type="radio" class="radio" />
+										<span class="lbl">한정상품</span>
+									</label>
+									<label>
+										<input name="radio_i2" type="radio" class="radio" />
+										<span class="lbl">깜짝할인</span>
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">아이콘유형</th>
+								<td>
+									<label>
+										<input name="checkbox1" type="checkbox" class="checkbox" />
+										<span class="lbl">HOT</span>
+									</label>
+									<label>
+										<input name="checkbox1" type="checkbox" class="checkbox" />
+										<span class="lbl">무료배송</span>
+									</label>
+									<label>
+										<input name="checkbox1" type="checkbox" class="checkbox" />
+										<span class="lbl">초특가</span>
+									</label>
+									<label>
+										<input name="checkbox1" type="checkbox" class="checkbox" />
+										<span class="lbl">사은품</span>
+									</label>
+									<label>
+										<input name="checkbox1" type="checkbox" class="checkbox" />
+										<span class="lbl">한정상품</span>
+									</label>
+									<label>
+										<input name="checkbox1" type="checkbox" class="checkbox" />
+										<span class="lbl">깜짝할인</span>
+									</label>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<!-- <strong class="tableTitle">◎ 어린이제품 인증정보 설정</strong>
+					<table class="table left_tbl">
+						<caption>어린이제품 인증정보 설정</caption>
+						<colgroup>
+							<col style="width:10%" />
+							<col />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th colspan="4" class="cateTit">인증정보 설정</th>
+							</tr>
+							<tr>
+								<th scope="row">인증대상 유무</th>
+								<td>
+									<label>
+										<input name="radio24" type="radio" class="radio" />
+										<span class="lbl">비인증대상</span>
+									</label>
+									<label>
+										<input name="radio24" type="radio" class="radio" />
+										<span class="lbl">안전인증</span>
+									</label>
+									<label>
+										<input name="radio24" type="radio" class="radio" />
+										<span class="lbl">안전확인</span>
+									</label>
+									<label>
+										<input name="radio24" type="radio" class="radio" />
+										<span class="lbl">공급자적합성확인</span>
+									</label>
+									<a href="#nolink" class="button small">어린이 특별법 대상 상품확인</a>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">인증번호 확인</th>
+								<td>
+									<div class="flex">
+										<input type="text" class="flex11" />
+										<a href="#nolink" class="button small btn_blue">검색</a>
+										<a href="#nolink" class="button small btn_gray">초기화</a>
+									</div>
+									<div class="textDecoBox mt10">
+										<p>* 안전인증에 대한 일체의 책임은 판매자에게 있으며, 허위정보 기재 시 법률 제 12733호에 의거 징역 또는 벌금에 처할 수 있습니다.</p>
+									</div>
+									<div class="flex mt10">
+										<label class="w_10">인증일자</label><input type="text" class="w_10" disabled />
+									</div>
+									<div class="flex mt10">
+										<label class="w_10">안전인증항목</label><input type="text" class="flex11" disabled />
+										<label class="w_10">안전인증기관</label><input type="text" class="flex11" disabled />
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table> -->
+					<strong class="tableTitle">◎ 공정거래 고시정보(상품사양)</strong>
+					<div class="textDecoBox mt10">
+						<span class="button small btn_blue">고시정보 분류항목</span>
+						<p>상품정보 입력 기본원칙</p>
+						<p>1. 판매하려는 상품이 고시의 품목 분류에 부합하지 않는다면, 가장 유사한 항목의 정보나 기타 항목의 정보를 입력.</p>
+						<p>2. 상품의 정보는 상품정보, 라벨의 표시정보를 기준으로 입력함.</p>
+						<p>3. 상품의 텍, 라벨 표시나 제조사등을 통해 확인되지 않는 상품 정보는 확인불가 사유와 함께 가장 가까운 정보 혹은 대신 참고할 수 있는 정보를 입력. EX)"해당정보없음."</p>
+					</div>
+					<table class="table left_tbl">
+						<caption>공정거래 고시정보</caption>
+						<colgroup>
+							<col style="width:10%" />
+							<col />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th colspan="4" class="cateTit">상품정보 고시<a href="#nolink" class="button small ml10">고시추가</a></th>
+							</tr>
+							<tr>
+								<th scope="row">분류선택</th>
+								<td>
+									<div class="flex">
+										<select title="옵션선택" class="flex11">
+											<option value="">(38) 기타</option>
+										</select>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">품명 및 모델명</th>
+								<td>
+									<div class="flex">
+										<textarea name="" id="" cols="30" rows="10" class="flex11 h100"></textarea>
+									</div>
+									<div class="flex">
+										<span class="comt flex10">예시) 기타상품1</span>
+										<span class="comt txtCnt flex01"><i>0</i> / 1000</span>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">인증, 허가 관련 정보</th>
+								<td>
+									<div class="flex">
+										<textarea name="" id="" cols="30" rows="10" class="flex11 h100"></textarea>
+									</div>
+									<div class="flex">
+										<span class="comt flex10">예시) 01 B362K175-7006A</span>
+										<span class="comt txtCnt flex01"><i>0</i> / 1000</span>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">제조국</th>
+								<td>
+									<div class="flex">
+										<textarea name="" id="" cols="30" rows="10" class="flex11 h100"></textarea>
+									</div>
+									<div class="flex">
+										<span class="comt flex10">예시) 국산</span>
+										<span class="comt txtCnt flex01"><i>0</i> / 1000</span>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">제조자 도는 수입자</th>
+								<td>
+									<div class="flex">
+										<textarea name="" id="" cols="30" rows="10" class="flex11 h100"></textarea>
+									</div>
+									<div class="flex">
+										<span class="comt flex10">예시) (주)자명어패럴</span>
+										<span class="comt txtCnt flex01"><i>0</i> / 1000</span>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">A/S 책임자와 전화번호</th>
+								<td>
+									<div class="flex">
+										<textarea name="" id="" cols="30" rows="10" class="flex11 h100"></textarea>
+									</div>
+									<div class="flex">
+										<span class="comt flex10">예시) 홍길동 / 02-1234-5678</span>
+										<span class="comt txtCnt flex01"><i>0</i> / 1000</span>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="flex mt10 justify_end">
+						<button type="button" class="button large btn_blue">저장</button>
+					</div>
+				</div>
+				<!-- 상품 옵션 및 가격설정 -->
+				<div id="tabCon2" class="tab_cont">
+					<div class="flex mt20">
+						<strong class="tableTitle flex10">◎ 상품 옵션설정</strong>
+						<div class="flex01">
+							<span class="t_blue">상품번호 : 100131832</span>
+							<a href="#nolink" class="button small btn_blue">미리보기</a>
+						</div>
+					</div>
+					<table class="table left_tbl mt5">
+						<caption>상품 옵션설정</caption>
+						<colgroup>
+							<col style="width:15%" />
+							<col />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">상품(필수) 옵션 사용 여부</th>
+								<td>
+									<label>
+										<input name="radio25" type="radio" class="radio" />
+										<span class="lbl">옵션 사용안함</span>
+									</label>
+									<label>
+										<input name="radio25" type="radio" class="radio" />
+										<span class="lbl">옵션 사용함</span>
+									</label>
+									<span class="f12 t_blue">(*상품 욥션 사용 여부는 등록 후 수정이 불가함, 옵션 사용 여부 변경 원할 시 신규 상품등록하여 진행)</span>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">시중가격 표시 여부</th>
+								<td>
+									<label>
+										<input name="radio26" type="radio" class="radio" />
+										<span class="lbl">표시안함</span>
+									</label>
+									<label>
+										<input name="radio26" type="radio" class="radio" />
+										<span class="lbl">표시</span>
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">상품옵션 유형</th>
+								<td>
+									<label>
+										<input name="radio27" type="radio" class="radio" />
+										<span class="lbl">단일옵션</span>
+									</label>
+									<label>
+										<input name="radio27" type="radio" class="radio" />
+										<span class="lbl">계층</span>
+									</label>
+									<label>
+										<input name="radio27" type="radio" class="radio" />
+										<span class="lbl">계층이미지</span>
+									</label>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="flex mt20">
+						<strong class="tableTitle flex10">◎ 상품 가격 및 수량 정보 입력<span class="f12 t_blue">*부가세포함 기준</span></strong>
+						<div class="flex01 mb5">
+							<a href="#nolink" class="button small">가격 히스토리</a>
+							<a href="#nolink" class="button small">재고 히스토리</a>
+						</div>
+					</div>
+					<table class="table tbl_hover view_tbl pdLType">
+						<caption>상품 가격 및 수량 정보 입력</caption>
+						<colgroup>
+							<col style="width:40px" />
+							<col style="width:120px" />
+							<col style="width:100px" />
+							<col />
+							<col />
+							<col />
+							<col />
+							<col />
+							<col />
+							<col />
+							<col />
+							<col />
+							<col />
+							<col />
+							<col />
+							<col />
+							<col />
+						</colgroup>
+						<thead>
+							<tr>
+								<th rowspan="3">본품<br>선택</th>
+								<th rowspan="3" colspan="2">
+									<div class="flex">
+										<span class="w70 t_left">옵션명</span>
+										<input type="text" class="w90" placeholder="선택" />
+									</div>
+									<div class="flex mt10">
+										<span class="w70 t_left">옵션항목명</span>
+										<input type="text" class="w90" />
+										<a href="#nolink" class="button small btn_white">추가</a>
+									</div>
+								</th>
+								<th rowspan="3">입고<br>수량</th>
+								<th rowspan="3">구매수량제한<br>적용/수량</th>
+								<th rowspan="3">안전재고<br>적용/수량</th>
+								<th rowspan="3">정상가격(원)</th>
+								<th rowspan="3">매입가격(원)</th>
+								<th colspan="4" class="bline">온누리전통시장 / 지역몰 판매가격(원)</th>
+								<th rowspan="3">판매가격(원)</th>
+								<th rowspan="3">액면가격(원)</th>
+								<th rowspan="3">노출가격(원)</th>
+								<th rowspan="3">노출여부</th>
+								<th rowspan="3">삭제여부</th>
+							</tr>
+							<tr>
+								<th colspan="2" class="bline line">모바일</th>
+								<th colspan="2" class="bline">PC</th>
+							</tr>
+							<tr>
+								<th class="line">B2C</th>
+								<th>복지관</th>
+								<th>B2C</th>
+								<th>복지관</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<input name="tblRadio01" type="radio" class="radio" />
+								</td>
+								<td>선택</td>
+								<td><input type="text" class="w90" value="브라운" /></td>
+								<td><input type="text" class="w50 t_right" value="9,999" disabled /></td>
+								<td>
+									<div class="">
+										<select title="옵션선택" class="w90">
+											<option value="">제한없음</option>
+										</select>
+									</div>
+									<div class="mt5">
+										<input type="text" class="w50 t_right" value="0" disabled />
+										<input type="text" class="w50 t_right" value="0" disabled />
+									</div>
+								</td>
+								<td>
+									<div class="">
+										<select title="옵션선택" class="w50">
+											<option value="">N</option>
+										</select>
+									</div>
+									<div class="mt5">
+										<input type="text" class="w50 t_right" value="5" disabled />
+									</div>
+								</td>
+								<td><input type="text" class="w90 t_right" value="80,000" /></td>
+								<td><input type="text" class="w90 t_right" value="31,590" /></td>
+								<td>
+									<input type="text" class="w90 t_right" value="35,100" /><br>
+									<input type="text" class="w70 t_right mt5" value="10" disabled /> %&nbsp;
+								</td>
+								<td>
+									<input type="text" class="w90 t_right" value="35,100" /><br>
+									<input type="text" class="w70 t_right mt5" value="10" disabled /> %&nbsp;
+								</td>
+								<td>
+									<input type="text" class="w90 t_right" value="35,100" /><br>
+									<input type="text" class="w70 t_right mt5" value="10" disabled /> %&nbsp;
+								<td>
+									<input type="text" class="w90 t_right" value="35,100" /><br>
+									<input type="text" class="w70 t_right mt5" value="10" disabled /> %&nbsp;
+								</td>
+								<td>
+									<input type="text" class="w90 t_right" value="35,100" /><br>
+									<input type="text" class="w70 t_right mt5" value="10" disabled /> %&nbsp;
+								</td>
+								<td><input type="text" class="w90 t_right" value="0" /></td>
+								<td><input type="text" class="w50" value="35,10" /></td>
+								<td>
+									<div class="">
+										<select title="옵션선택" class="w50">
+											<option value="">N</option>
+										</select>
+									</div>
+								</td>
+								<td>
+									<div class="">
+										<select title="옵션선택" class="w50">
+											<option value="">N</option>
+										</select>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input name="tblRadio01" type="radio" class="radio" />
+								</td>
+								<td>선택</td>
+								<td><input type="text" class="w90" value="블루" /></td>
+								<td><input type="text" class="w50 t_right" value="9,999" disabled /></td>
+								<td>
+									<div class="">
+										<select title="옵션선택" class="w90">
+											<option value="">제한없음</option>
+										</select>
+									</div>
+									<div class="mt5">
+										<input type="text" class="w50 t_right" value="0" disabled />
+										<input type="text" class="w50 t_right" value="0" disabled />
+									</div>
+								</td>
+								<td>
+									<div class="">
+										<select title="옵션선택" class="w50">
+											<option value="">N</option>
+										</select>
+									</div>
+									<div class="mt5">
+										<input type="text" class="w50 t_right" value="5" disabled />
+									</div>
+								</td>
+								<td><input type="text" class="w90 t_right" value="80,000" /></td>
+								<td><input type="text" class="w90 t_right" value="31,590" /></td>
+								<td>
+									<input type="text" class="w90 t_right" value="35,100" /><br>
+									<input type="text" class="w70 t_right mt5" value="10" disabled /> %&nbsp;
+								</td>
+								<td>
+									<input type="text" class="w90 t_right" value="35,100" /><br>
+									<input type="text" class="w70 t_right mt5" value="10" disabled /> %&nbsp;
+								</td>
+								<td>
+									<input type="text" class="w90 t_right" value="35,100" /><br>
+									<input type="text" class="w70 t_right mt5" value="10" disabled /> %&nbsp;
+								</td>
+								<td>
+									<input type="text" class="w90 t_right" value="35,100" /><br>
+									<input type="text" class="w70 t_right mt5" value="10" disabled /> %&nbsp;
+								</td>
+								<td>
+									<input type="text" class="w90 t_right" value="35,100" /><br>
+									<input type="text" class="w70 t_right mt5" value="10" disabled /> %&nbsp;
+								</td>
+								<td><input type="text" class="w90 t_right" value="0" /></td>
+								<td><input type="text" class="w50" value="35,10" /></td>
+								<td>
+									<div class="">
+										<select title="옵션선택" class="w50">
+											<option value="">N</option>
+										</select>
+									</div>
+								</td>
+								<td>
+									<div class="">
+										<select title="옵션선택" class="w50">
+											<option value="">N</option>
+										</select>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<strong class="tableTitle flex10">◎ 상품 추가 옵션설정</strong>
+					<table class="table left_tbl mt5">
+						<caption>상품 옵션설정</caption>
+						<colgroup>
+							<col style="width:15%" />
+							<col />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">추가옵션 사용 여부</th>
+								<td>
+									<label>
+										<input name="radio28" type="radio" class="radio" />
+										<span class="lbl">옵션 사용안함</span>
+									</label>
+									<label>
+										<input name="radio28" type="radio" class="radio" />
+										<span class="lbl">옵션 사용함</span>
+									</label>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="flex mt10 justify_end">
+						<button type="button" class="button large btn_blue">저장</button>
+					</div>
+				</div>
+				<!-- 상품 이미지 설정 -->
+				<div id="tabCon3" class="tab_cont">
+					<div class="flex mt20">
+						<strong class="tableTitle flex10">◎ 상품이미지 등록(사이즈 자동조절)</strong>
+						<div class="flex01">
+							<span class="t_blue">상품번호 : 100131832</span>
+							<a href="#nolink" class="button small btn_blue">미리보기</a>
+						</div>
+					</div>
+					<table class="table left_tbl imgTbl mt5">
+						<caption>상품 이미지 등록</caption>
+						<colgroup>
+							<col style="width:200px;" />
+							<col style="width:400px;" />
+							<col />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th class="cateTit"><span class="f12 t_gray">대표이미지</span></th>
+								<th class="cateTit"><span class="f12 t_gray">대표이미지(와이드)</span></th>
+								<th class="cateTit"></th>
+							</tr>
+							<tr>
+								<td class="imgBox">
+									<img src="../../static/images/etc/52454650.jpg" alt="">
+									<a href="#nolink" class="button btn_blue">찾아보기</a>
+								</td>
+								<td class="imgBox">
+									<img src="../../static/images/etc/1086.jpg" alt="">
+									<a href="#nolink" class="button btn_blue">찾아보기</a>
+								</td>
+								<td rowspan="2" class="imgBox tNoline">
+									<div class="textDecoBox">
+										<p>이미지 등록 가이드</p>
+										<ul>
+											<li>■ 사이즈</li>
+											<li>- 대표 이미지 : 500 * 500 (최소 200 * 200)</li>
+											<li>- 와이드 이미지 : 640 * 320 (최소 200 * 100)</li>
+											<li>■ 용량 : 2MB 이하</li>
+											<li>■ 파일형식 : JPG, JPEG, PNG, GIF</li>
+											<li>■ 파일명 : 45자 이내</li>
+										</ul>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>52454650.jpg</td>
+								<td>1086.jpg</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="table left_tbl imgTbl mt20">
+						<caption>추가 이미지 등록</caption>
+						<colgroup>
+							<col style="width:20%;" />
+							<col style="width:20%;" />
+							<col style="width:20%;" />
+							<col style="width:20%;" />
+							<col style="width:20%;" />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th colspan="5" class="cateTit"><span class="f12 t_gray">추가이미지(PC, 모바일 공통 적용)</span></th>
+							</tr>
+							<tr>
+								<td class="imgBox cbg">
+									<span class="f10 t_gray">500 * 500 이미지를 등록해 주세요.</span>
+									<img src="" alt="">
+									<a href="#nolink" class="button btn_blue">찾아보기</a>
+								</td>
+								<td class="imgBox cbg">
+									<span class="f10 t_gray">500 * 500 이미지를 등록해 주세요.</span>
+									<img src="" alt="">
+									<a href="#nolink" class="button btn_blue">찾아보기</a>
+								</td>
+								<td class="imgBox cbg">
+									<span class="f10 t_gray">500 * 500 이미지를 등록해 주세요.</span>
+									<img src="" alt="">
+									<a href="#nolink" class="button btn_blue">찾아보기</a>
+								</td>
+								<td class="imgBox cbg">
+									<span class="f10 t_gray">500 * 500 이미지를 등록해 주세요.</span>
+									<img src="" alt="">
+									<a href="#nolink" class="button btn_blue">찾아보기</a>
+								</td>
+								<td class="imgBox cbg">
+									<span class="f10 t_gray">500 * 500 이미지를 등록해 주세요.</span>
+									<img src="" alt="">
+									<a href="#nolink" class="button btn_blue">찾아보기</a>
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td class="imgBox cbg">
+									<span class="f10 t_gray">500 * 500 이미지를 등록해 주세요.</span>
+									<img src="" alt="">
+									<a href="#nolink" class="button btn_blue">찾아보기</a>
+								</td>
+								<td class="imgBox cbg">
+									<span class="f10 t_gray">500 * 500 이미지를 등록해 주세요.</span>
+									<img src="" alt="">
+									<a href="#nolink" class="button btn_blue">찾아보기</a>
+								</td>
+								<td class="imgBox cbg">
+									<span class="f10 t_gray">500 * 500 이미지를 등록해 주세요.</span>
+									<img src="" alt="">
+									<a href="#nolink" class="button btn_blue">찾아보기</a>
+								</td>
+								<td class="imgBox cbg">
+									<span class="f10 t_gray">500 * 500 이미지를 등록해 주세요.</span>
+									<img src="" alt="">
+									<a href="#nolink" class="button btn_blue">찾아보기</a>
+								</td>
+								<td class="imgBox cbg">
+									<span class="f10 t_gray">500 * 500 이미지를 등록해 주세요.</span>
+									<img src="" alt="">
+									<a href="#nolink" class="button btn_blue">찾아보기</a>
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+					<strong class="tableTitle">◎ 상품설명(필수)</strong>
+					<table class="table left_tbl mt5">
+						<caption>상품설명</caption>
+						<colgroup>
+							<col style="width:15%" />
+							<col />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">상품설명 등록 방법</th>
+								<td>
+									<label>
+										<input name="radio29" type="radio" class="radio" />
+										<span class="lbl">이미지</span>
+									</label>
+									<label>
+										<input name="radio29" type="radio" class="radio" />
+										<span class="lbl">에디터</span>
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<div class="flex">
+										<textarea name="" id="" cols="30" rows="10" class="flex11"></textarea>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<div class="textDecoBox">
+										<p>이미지 등록 가이드</p>
+										<ul>
+											<li>■ 사이즈 : 758 * 3000 (최대)</li>
+											<li>■ 용량 : 2MB 이하</li>
+											<li>■ 파일형식 : JPG, JPEG, PNG, GIF</li>
+											<li>■ 파일명 : 45자 이내</li>
+											<li>■ 최대 개수 : 50개</li>
+										</ul>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="flex mt10 justify_end">
+						<button type="button" class="button large btn_blue">저장</button>
+					</div>
+				</div>
+				<!-- 배송 설정 -->
+				<div id="tabCon4" class="tab_cont">
+					<div class="flex mt20">
+						<strong class="tableTitle flex10">◎ 발송정책</strong>
+						<div class="flex01">
+							<span class="t_blue">상품번호 : 100131832</span>
+							<a href="#nolink" class="button small btn_blue">미리보기</a>
+						</div>
+					</div>
+					<table class="table left_tbl mt5">
+						<caption>발송정책</caption>
+						<colgroup>
+							<col style="width:15%" />
+							<col style="width:35%" />
+							<col style="width:15%" />
+							<col />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">상품유형</th>
+								<td colspan="3">
+									<div class="flex">
+										<select title="옵션선택">
+											<option value="">일반상품</option>
+										</select>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">시중가격 표시 여부</th>
+								<td colspan="3">
+									<div class="flex">
+										<select title="옵션선택" class="flex10">
+											<option value="">== 선택 ==</option>
+										</select>
+										<a href="#nolink" class="button small btn_blue">발송정책 템플릿 관리</a>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th colspan="4" class="cateTit">기본 발송정책</th>
+							</tr>
+							<tr>
+								<th>발송정책유형</th>
+								<td>
+									<div class="flex">
+										<select title="옵션선택">
+											<option value="">익일발송</option>
+										</select>
+									</div>
+								</td>
+								<th>주문가능 시간</th>
+								<td>
+									<select class="w80">
+										<option value="">00</option>
+									</select>시
+									~
+									<select class="w80">
+										<option value="">00</option>
+									</select>시
+								</td>
+							</tr>
+							<tr>
+								<th>출고주문마감 시간</th>
+								<td>
+									<select class="w80">
+										<option value="">00</option>
+									</select>시
+									~
+									<select class="w80">
+										<option value="">00</option>
+									</select>분
+								</td>
+								<th>출고 준비기간</th>
+								<td>
+									<div class="flex">
+										<select title="옵션선택">
+											<option value="">출고제한없음</option>
+										</select>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th>출고 제한 시 휴무일 적용</th>
+								<td colspan="3">
+									<label>
+										<input name="radio30" type="radio" class="radio" />
+										<span class="lbl">휴무일 적용함</span>
+									</label>
+									<label>
+										<input name="radio30" type="radio" class="radio" />
+										<span class="lbl">휴무일 적용안함</span>
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<th>희망배송시간 설정</th>
+								<td>
+									<div class="flex">
+										<select title="옵션선택">
+											<option value="">설정안함</option>
+										</select>
+									</div>
+								</td>
+								<th>묶음배송</th>
+								<th>
+									<label>
+										<input name="radio32" type="radio" class="radio" />
+										<span class="lbl">묶음배송 가능</span>
+									</label>
+									<label>
+										<input name="radio32" type="radio" class="radio" />
+										<span class="lbl">묶음배송 불가</span>
+									</label>
+									<span class="f12 t_blue">(*합포장 여부를 의미하며 배송비와 무관함)</span>
+								</td>
+							</tr>
+							<tr>
+								<th>희망배송일 사용여부 적용</th>
+								<td colspan="3">
+									<label>
+										<input name="radio33" type="radio" class="radio" />
+										<span class="lbl">적용함</span>
+									</label>
+									<label>
+										<input name="radio33" type="radio" class="radio" />
+										<span class="lbl">적용안함</span>
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<th>출고지 주소</th>
+								<td colspan="3">
+									<div class="flex">
+										<select title="옵션선택" class="flex11">
+											<option value=""></option>
+										</select>
+									</div>
+									<span class="f12 t_blue">주의!!! 배송비 관련 정보를 확인바랍니다.</span>
+								</td>
+							</tr>
+							<tr>
+								<th>반품/교환지 주소</th>
+								<td colspan="3">
+									<div class="flex">
+										<select title="옵션선택" class="flex11">
+											<option value=""></option>
+										</select>
+									</div>
+									<span class="f12 t_blue">(*출고지, 반품/교환지 주소는 업체현황조회에서 선등록)</span>
+								</td>
+							</tr>
+							<tr>
+								<th colspan="4" class="cateTit">발송정책 부가정보</th>
+							</tr>
+							<tr>
+								<th>주문자 정보 설정</th>
+								<td>
+									<label>
+										<input name="checkbox03" type="checkbox" class="checkbox">
+										<span class="lbl">성명</span>
+									</label>
+									<label>
+										<input name="checkbox03" type="checkbox" class="checkbox">
+										<span class="lbl">연락처</span>
+									</label>
+									<label>
+										<input name="checkbox03" type="checkbox" class="checkbox">
+										<span class="lbl">이메일</span>
+									</label>
+								</td>
+								<th>수취자 정보 설정</th>
+								<td>
+									<label>
+										<input name="checkbox03" type="checkbox" class="checkbox">
+										<span class="lbl">성명</span>
+									</label>
+									<label>
+										<input name="checkbox03" type="checkbox" class="checkbox">
+										<span class="lbl">연락처</span>
+									</label>
+									<label>
+										<input name="checkbox03" type="checkbox" class="checkbox">
+										<span class="lbl">배송지주소</span>
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<th>특이사항</th>
+								<td>
+									<label>
+										<input name="radio38" type="radio" class="radio" />
+										<span class="lbl">사용안함</span>
+									</label>
+									<label>
+										<input name="radio38" type="radio" class="radio" />
+										<span class="lbl">사용함</span>
+									</label>
+									<label>
+										<input name="checkbox07" type="checkbox" class="checkbox" disabled>
+										<span class="lbl">필수여부</span>
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<th>추가 항목명</th>
+								<td>
+									<div class="flex mt5">
+										<label>
+											<input name="radio40" type="radio" class="radio" />
+											<span class="lbl">사용안함</span>
+										</label>
+										<label>
+											<input name="radio40" type="radio" class="radio" />
+											<span class="lbl">사용함</span>
+										</label>
+										<input type="text" disabled>
+										<label>
+											<input name="checkbox10" type="checkbox" class="checkbox" disabled>
+											<span class="lbl">필수여부</span>
+										</label>
+									</div>
+									<div class="flex mt5">
+										<label>
+											<input name="radio41" type="radio" class="radio" />
+											<span class="lbl">사용안함</span>
+										</label>
+										<label>
+											<input name="radio41" type="radio" class="radio" />
+											<span class="lbl">사용함</span>
+										</label>
+										<input type="text" disabled>
+										<label>
+											<input name="checkbox11" type="checkbox" class="checkbox" disabled>
+											<span class="lbl">필수여부</span>
+										</label>
+									</div>
+									<div class="flex mt5">
+										<label>
+											<input name="radio42" type="radio" class="radio" />
+											<span class="lbl">사용안함</span>
+										</label>
+										<label>
+											<input name="radio42" type="radio" class="radio" />
+											<span class="lbl">사용함</span>
+										</label>
+										<input type="text" disabled>
+										<label>
+											<input name="checkbox12" type="checkbox" class="checkbox" disabled>
+											<span class="lbl">필수여부</span>
+										</label>
+									</div>
+									<div class="flex mt5">
+										<label>
+											<input name="radio43" type="radio" class="radio" />
+											<span class="lbl">사용안함</span>
+										</label>
+										<label>
+											<input name="radio43" type="radio" class="radio" />
+											<span class="lbl">사용함</span>
+										</label>
+										<input type="text" disabled>
+										<label>
+											<input name="checkbox13" type="checkbox" class="checkbox" disabled>
+											<span class="lbl">필수여부</span>
+										</label>
+									</div>
+									<div class="flex mt5">
+										<label>
+											<input name="radio44" type="radio" class="radio" />
+											<span class="lbl">사용안함</span>
+										</label>
+										<label>
+											<input name="radio44" type="radio" class="radio" />
+											<span class="lbl">사용함</span>
+										</label>
+										<input type="text" disabled>
+										<label>
+											<input name="checkbox14" type="checkbox" class="checkbox" disabled>
+											<span class="lbl">필수여부</span>
+										</label>
+									</div>
+								</td>
+								<th>필수확인사항</th>
+								<td>
+									<label>
+										<input name="radio45" type="radio" class="radio" />
+										<span class="lbl">사용안함</span>
+									</label>
+									<label>
+										<input name="radio45" type="radio" class="radio" />
+										<span class="lbl">사용함</span>
+									</label>
+									<div class="flex mt5">
+										<textarea name="" id="" cols="30" rows="10" class="flex11" disabled></textarea>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<strong class="tableTitle flex10">◎ 배송정보</strong>
+					<table class="table left_tbl">
+						<caption>발송정책</caption>
+						<colgroup>
+							<col style="width:15%" />
+							<col style="width:35%" />
+							<col style="width:15%" />
+							<col />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th colspan="4" class="cateTit">배송비</th>
+							</tr>
+							<tr>
+								<th scope="row">배송비 템플릿 선택</th>
+								<td colspan="3">
+									<div class="flex">
+										<select title="옵션선택" class="flex10">
+											<option value="">== 선택 ==</option>
+										</select>
+										<a href="#nolink" class="button small btn_blue">배송비 템플릿 관리</a>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th>배송비 설정</th>
+								<td>
+									<label>
+										<input name="radio46" type="radio" class="radio" />
+										<span class="lbl">사용안함</span>
+									</label>
+									<label>
+										<input name="radio46" type="radio" class="radio" />
+										<span class="lbl">사용함</span>
+									</label>
+									<input type="text" value="0" class="t_right" disabled>원
+								</td>
+								<th>결제방식</th>
+								<td>
+									<label>
+										<input name="radio47" type="radio" class="radio" />
+										<span class="lbl">선결제</span>
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">조건부 무료배송 적용여부</th>
+								<td colspan="3">
+									<label>
+										<input name="radio48" type="radio" class="radio" />
+										<span class="lbl">조건부 무료배송 적용</span>
+									</label>
+									<label>
+										<input name="radio48" type="radio" class="radio" />
+										<span class="lbl">조건부 무료배송 적용안함</span>
+									</label>
+									<span class="f12 t_blue">(동일 출고지 기준으로 적용됨)</span>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">1개당 배송비 적용여부</th>
+								<td colspan="3">
+									<label>
+										<input name="radio49" type="radio" class="radio" />
+										<span class="lbl">개당 배송배 적용</span>
+									</label>
+									<label>
+										<input name="radio49" type="radio" class="radio" />
+										<span class="lbl">수량 관계없이 배송비 적용</span>
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<th>제주/도서산간지역 배송비</th>
+								<td colspan="3">
+									<label>
+										<input name="checkbox15" type="checkbox" class="checkbox">
+										<span class="lbl">설정</span>
+									</label>
+									<a href="#nolink" class="button small">제주/도서/산간 지역조회</a>
+									<div class="sTbl ml25">
+										<label>
+											<span class="lbl">제주지역</span>
+											<input type="text" value="4,000" class="t_right w80"> 원
+										</label>
+										<label class="ml10">
+											<span class="lbl">도서산간지역</span>
+											<input type="text" value="6,000" class="t_right w80"> 원
+										</label>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th>교환가능여부</th>
+								<td>
+									<label>
+										<input name="radio51" type="radio" class="radio" />
+										<span class="lbl">교환가능</span>
+									</label>
+									<label>
+										<input name="radio51" type="radio" class="radio" />
+										<span class="lbl">교환불가</span>
+									</label>
+								</td>
+								<th>반품환불여부</th>
+								<td>
+									<label>
+										<input name="radio52" type="radio" class="radio" />
+										<span class="lbl">반품교환가능</span>
+									</label>
+									<label>
+										<input name="radio52" type="radio" class="radio" />
+										<span class="lbl">반품교환불가</span>
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">반품상품 회수여부</th>
+								<td colspan="3">
+									<div class="flex">
+										<label>
+											<input name="radio50" type="radio" class="radio" />
+											<span class="lbl">반품상품 회수함</span>
+										</label>
+										<label>
+											<input name="radio50" type="radio" class="radio" />
+											<span class="lbl">반품상품 회수안함</span>
+										</label>
+										<div class="textDecoBox wAuto">
+											고객사유로 인한 반품 시, 구매자에게 배송비를 부과합니다.<br>
+											초기배송비가 무료인 경우, 구매자에게 왕복 배송비를 부과합니다.
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th>교환 배송비</th>
+								<td>편도
+									<input type="text" value="3,000" class="t_right">
+									원 (왕복 : 6.000 원)
+								</td>
+								<th>반품 배송비</th>
+								<td>편도
+									<input type="text" value="3,000" class="t_right">
+									원 (왕복 : 6.000 원)
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">배송 특이사항</th>
+								<td colspan="3">
+									<div class="flex">
+										<textarea name="" id="" cols="30" rows="10" class="flex11"></textarea>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="flex mt10 justify_end">
+						<button type="button" class="button large btn_blue">저장</button>
+						<button type="button" class="button large">취소</button>
+					</div>
+				</div>
+				<div class="flex justify_center mt20">
+					<button type="button" class="button large btn_black">초기화</button>
+				</div>
+			</section>
+			<!-- //contents -->
+		</div>
+		<!-- //container -->
+	</div>
+	<!-- //wrap -->
+	<!-- footer -->
+	<header id="footer" data-include="../../include/footer.html"></header>
+	<!-- //footer -->
+	
+	<!-- pop_layer -->
+	<!-- layerPopOpen 클래스 적용 후 링크값은 id값으로 -->
+	<!-- 카테고리 -->
+	<article id="popup1" class="pop_layer">
+		<div class="pop_wrap">
+			<h1>카테고리 설정</h1>
+			<div class="pop_cont">
+				<table class="table view_tbl">
+					<colgroup>
+						<col />
+					</colgroup>
+					<thead>
+						<tr>
+							<th>카테고리 선택</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<div class="categoryBox">
+									<dl class="category">
+										<dt>대분류 카테고리</dt>
+										<dd></dd>
+									</dl>
+									<dl class="category">
+										<dt>중분류 카테고리</dt>
+										<dd></dd>
+									</dl>
+									<dl class="category">
+										<dt>소분류 카테고리</dt>
+										<dd></dd>
+									</dl>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="t_center mt30">
+					<a href="#nolink" class="button large btn_blue">카테고리 선택/추가</a>
+				</div>
+			</div>
+			<!-- pop_close 닫는 클래스 -->
+			<a href="#" class="btn_close pop_close">닫기</a>
+		</div>
+	</article>
+	<!-- //pop_layer -->
+</body>
+</html>

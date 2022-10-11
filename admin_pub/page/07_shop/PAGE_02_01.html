@@ -1,0 +1,262 @@
+<!DOCTYPE html> 
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>XANADU 시스템</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" href="../../static/css/common.css" media="all" />
+	<link rel="stylesheet" href="../../static/css/contents.css" media="all" />
+	<script src="../../static/js/plugins.js"></script>
+	<script src="../../static/js/ui_script.js"></script>
+	<!--[if lt IE 9]>
+		<script type="text/javascript">
+			document.createElement("header");
+			document.createElement("nav");
+			document.createElement("section");
+			document.createElement("article");
+			document.createElement("footer");
+		</script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- wrap -->
+	<div id="wrap" data-active="[7,2,1]">
+		<!-- header -->
+		<header id="header" data-include="../../include/header.html"></header>
+		<!-- //header -->	
+		
+		<!-- gnb -->
+		<aside class="left_menu"  data-include="../../include/leftMenu.html"></aside>
+		<!-- //left_menu -->
+
+		<!-- container -->
+		<div id="container">
+			<!-- contents -->
+			<section id="contents">
+				<h1 id="page_tit">배너관리</h1>	
+				
+				<table class="table left_tbl view_tbl mt20">
+					<caption>배너관리</caption>
+					<colgroup>
+						<col style="width:10%" />
+						<col style="width:40%" />
+						<col style="width:10%" />
+						<col />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">배너구분</th>
+							<td>
+								<div class="flex">
+									<select title="옵션선택">
+										<option value="">전체</option>
+										<option value="">Header(P/M)</option>
+										<option value="">Top 배너(P/M)</option>
+										<option value="">하단배너(P)</option>
+										<option value="">메인 비쥬얼 배너(P/M)</option>
+										<option value="">모바일 전체메뉴 배너(M)</option>
+									</select>
+								</div>
+							</td>
+
+							<th scope="row">적용 고객사 선택</th>
+							<td>
+								<div class="flex">
+									<input type="text" disabled="disabled"/>
+									<input type="text" />
+									<button class="button" onclick="layerpopup('client_search_popup');">고객사 검색</button>
+									<button class="button btn_gray">취소</button>
+								</div>
+							</td>
+
+						</tr>
+						<tr>
+							<th scope="row">링크타입</th>
+							<td>
+								<div class="flex">
+									<select title="옵션선택">
+										<option value="">프로모션</option>
+										<option value="">기획전</option>
+										<option value="">상품</option>
+										<option value="">전시카테고리</option>
+									</select>
+								</div>
+							</td>
+
+							<th scope="row">배너명칭</th>
+							<td>
+								<div class="flex">
+									<input type="text" class="text w_100" />
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							<th scope="row">채널선택</th>
+							<td>
+								<label>
+									<input class="radio" type="radio" checked="checked" />
+									<span class="lbl">전체</span>
+								</label>
+								<label>
+									<input class="radio" type="radio" />
+									<span class="lbl">PC</span>
+								</label>
+								<label>
+									<input class="radio" type="radio" />
+									<span class="lbl">MOBILE</span>
+								</label>
+							</td>
+
+							<th scope="row">서비스유형</th>
+							<td>
+								<label>
+									<input class="radio" type="radio" checked="checked" />
+									<span class="lbl">전체</span>
+								</label>
+								<label>
+									<input class="radio" type="radio" />
+									<span class="lbl">온누리</span>
+								</label>
+								<label>
+									<input class="radio" type="radio" />
+									<span class="lbl">기념일</span>
+								</label>
+								<label>
+									<input class="radio" type="radio" />
+									<span class="lbl">특판</span>
+								</label>
+								<label>
+									<input class="radio" type="radio" />
+									<span class="lbl">MRO</span>
+								</label>
+							</td>
+						</tr>
+						
+						<tr>
+							<th scope="row">사용여부</th>
+							<td colspan="3">
+								<label>
+									<input class="radio" type="radio" checked="checked" />
+									<span class="lbl">전체</span>
+								</label>
+								<label>
+									<input class="radio" type="radio" />
+									<span class="lbl">사용</span>
+								</label>
+								<label>
+									<input class="radio" type="radio" />
+									<span class="lbl">미사용</span>
+								</label>
+							</td>
+						</tr>
+
+					</tbody>
+				</table>
+
+				<p class="t_right mt30">
+					<a href="#" class="button large w100"><i class="icon-cw"></i> 초기화</a>
+					<a href="#" class="button large w100 btn_blue"><i class="icon-search"></i> 조회</a>
+				</p>
+
+				<div class="flex mt30 align_center">
+					<p>
+						<strong class="mr10">◎ 배너목록</strong>
+					</p>
+					<button type="button" class="button mla">등록</button>
+				</div>
+
+				<table class="table tbl_hover mt15">
+					<caption>테이블 제목</caption>
+					<colgroup>
+						<col style="width:50px" />
+						<col />
+						<col />
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col" rowspan="2">선택</th>
+							<th scope="col" rowspan="2">서비스 유형</th>
+							<th scope="col" rowspan="2">채널</th>
+							<th scope="col" rowspan="2">배너 구분</th>
+							<th scope="col" rowspan="2">사용기간</th>
+							<th scope="col" rowspan="2">링크 타입</th>
+							<th scope="col" rowspan="2">배너 명칭</th>
+							<th scope="col" rowspan="2">이미지</th>
+							<th scope="col" rowspan="2">정렬순서</th>
+							<th scope="col" rowspan="2">사용여부</th>
+							<th scope="col" rowspan="2">적용<br/> 고객사</th>
+						</tr>
+
+					</thead>
+					<tbody>
+						<!-- 항목 -->
+						<tr class="pointer" onclick="javascript:location.href='PAGE_02_01_view.html'">
+							<th scope="row"><input type="checkbox" /></th>
+							<td>온누리</td>
+							<td>PC</td>
+							<td>메인 비쥬얼 배너 <br/> (P/M) </td>
+							<td>20210901~20210912</td>
+							<td>기획전</td>
+							<td>오일/장류/반찬류 선물전</td>
+							<td></td>
+							<td></td>
+							<td>Y</td>
+							<td>
+								<a href="#apply_client_popup" class="button layerPopOpen">보기</a>
+							</td>
+						</tr>
+						<!-- //항목 -->
+						<!-- 항목 -->
+						<tr class="pointer" onclick="javascript:location.href='PAGE_02_01_view.html'">
+							<th scope="row"><input type="checkbox" /></th>
+							<td>온누리</td>
+							<td>MOBILE</td>
+							<td>메인 비쥬얼 배너 <br/> (P/M) </td>
+							<td>20210901~20210912</td>
+							<td>기획전</td>
+							<td>오일/장류/반찬류 선물전</td>
+							<td></td>
+							<td></td>
+							<td>Y</td>
+							<td>
+								<a href="#apply_client_popup" class="button layerPopOpen">보기</a>
+							</td>
+						</tr>
+						<!-- //항목 -->
+					</tbody>
+				</table>
+
+				<div class="paging_box mt30">
+					<ul class="pagination mla mra">
+						<li class="disabled"><a href="#"><i class="icon-angle-double-left"></i></a></li>
+						<li class="disabled"><a href="#"><i class="icon-angle-left"></i></a></li>
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#"><i class="icon-angle-right"></i></a></li>
+						<li><a href="#"><i class="icon-angle-double-right"></i></a></li>
+					</ul>
+				</div>
+			</section>
+			<!-- //contents -->
+		</div>
+		<!-- //container -->
+	</div>
+	<!-- //wrap -->
+	<!-- footer -->
+	<header id="footer" data-include="../../include/footer.html"></header>
+	<!-- //footer -->
+	
+	<!-- 고객사 검색 팝업 -->
+	<article id="client_search_popup" class="pop_layer" data-include="../../include/popup/clientSearchPop.html"></article>
+
+	<!-- 적용 고객사 팝업 -->
+	<article id="apply_client_popup" class="pop_layer" data-include="../../include/popup/applyClientPop.html"></article>
+	
+</body>
+</html>

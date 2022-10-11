@@ -1,0 +1,282 @@
+<!DOCTYPE html> 
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>XANADU 시스템</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" href="../../static/css/common.css" media="all" />
+	<link rel="stylesheet" href="../../static/css/contents.css" media="all" />
+	<script src="../../static/js/plugins.js"></script>
+	<script src="../../static/js/ui_script.js"></script>
+	<!--[if lt IE 9]>
+		<script type="text/javascript">
+			document.createElement("header");
+			document.createElement("nav");
+			document.createElement("section");
+			document.createElement("article");
+			document.createElement("footer");
+		</script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- wrap -->
+	<div id="wrap" data-active="[7,2,11]">
+		<!-- header -->
+		<header id="header" data-include="../../include/header.html"></header>
+		<!-- //header -->	
+		
+		<!-- gnb -->
+		<aside class="left_menu"  data-include="../../include/leftMenu.html"></aside>
+		<!-- //left_menu -->
+
+		<!-- container -->
+		<div id="container">
+			<!-- contents -->
+			<section id="contents">
+				<h1 id="page_tit">고객사별 메인 템플릿 설정</h1>	
+				
+				<table class="table left_tbl view_tbl mt20">
+					<caption>고객사별 메인 템플릿 설정</caption>
+					<colgroup>
+						<col style="width:10%" />
+						<col style="width:40%" />
+						<col style="width:10%" />
+						<col />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">서비스유형</th>
+							<td>
+								<label>
+									<input name="radio1" class="radio" type="radio" checked="checked" />
+									<span class="lbl">전체</span>
+								</label>
+								<label>
+									<input name="radio1" class="radio" type="radio" />
+									<span class="lbl">온누리</span>
+								</label>
+								<label>
+									<input name="radio1" class="radio" type="radio" />
+									<span class="lbl">기념일</span>
+								</label>
+								<label>
+									<input name="radio1" class="radio" type="radio" />
+									<span class="lbl">특판</span>
+								</label>
+								<label>
+									<input name="radio1" class="radio" type="radio" />
+									<span class="lbl">MRO</span>
+								</label>
+							</td>
+
+							<th scope="row">적용 고객사</th>
+							<td>
+								<div class="flex">
+									<input type="text" class="text" />
+									<input type="text" class="text" disabled />
+									<button class="button" onclick="layerpopup('client_search_popup');">고객사 검색</button>
+									<button class="button btn_gray">취소</button>
+								</div>
+							</td>
+
+						</tr>
+						<tr>
+							<th scope="row">템플릿 명</th>
+							<td>
+								<input type="text" class="text w_100" />
+							</td>
+							
+							<th scope="row">사용여부</th>
+							<td>
+								<label>
+									<input name="radio2" class="radio" type="radio" checked="checked" />
+									<span class="lbl">전체</span>
+								</label>
+								<label>
+									<input name="radio2" class="radio" type="radio" />
+									<span class="lbl">사용</span>
+								</label>
+								<label>
+									<input name="radio2" class="radio" type="radio" />
+									<span class="lbl">미사용</span>
+								</label>
+							</td>
+						</tr>
+
+					</tbody>
+				</table>
+
+				<p class="t_right mt30">
+					<a href="#" class="button large w100"><i class="icon-cw"></i> 초기화</a>
+					<a href="#" class="button large w100 btn_blue"><i class="icon-search"></i> 조회</a>
+				</p>
+
+				<div class="flex mt30 align_center">
+					<p>
+						<strong class="mr10">◎ 고객사별 메인템플릿 목록</strong>
+					</p>
+				</div>
+
+				<table class="table tbl_hover mt15">
+					<caption>테이블 제목</caption>
+					<colgroup>
+						<col style="width:50px" />
+						<col />
+						<col />
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col" rowspan="2">번호</th>
+							<th scope="col" rowspan="2">고객사 코드</th>
+							<th scope="col" rowspan="2">고객사 명</th>
+							<th scope="col" rowspan="2">서비스 유형</th>
+							<th scope="col" rowspan="2">PC Main적용 템플릿 명</th>
+							<th scope="col" rowspan="2">Mobile Maine적용 템플릿 명</th>
+						</tr>
+
+					</thead>
+					<tbody>
+						<!-- 항목 -->
+						<tr class="pointer" >
+							<td>200</td>
+							<td>1st</td>
+							<td>좋은일컴퍼니</td>
+							<td>온누리</td>
+							<td>B2C / PC 기본 템플릿<button type="button" class="button ml30" onclick="layerpopup('template_change_popup')">템플릿 변경</button></td>
+							<td>B2E / 모바일 기본 템플릿<button type="button" class="button ml30" onclick="layerpopup('template_change_popup')">템플릿 변경</button></td>
+						</tr>
+						<!-- //항목 -->
+						<!-- 항목 -->
+						<tr class="pointer" >
+							<td>199</td>
+							<td>120</td>
+							<td>신안군청</td>
+							<td>온누리</td>
+							<td>B2C / PC 기본 템플릿<button type="button" class="button ml30" onclick="layerpopup('template_change_popup')">템플릿 변경</button></td>
+							<td>B2E / 모바일 기본 템플릿<button type="button" class="button ml30" onclick="layerpopup('template_change_popup')">템플릿 변경</button></td>
+						<!-- //항목 -->
+					</tbody>
+					
+				</table>
+
+				<div class="paging_box mt30">
+					<ul class="pagination mla mra">
+						<li class="disabled"><a href="#"><i class="icon-angle-double-left"></i></a></li>
+						<li class="disabled"><a href="#"><i class="icon-angle-left"></i></a></li>
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#"><i class="icon-angle-right"></i></a></li>
+						<li><a href="#"><i class="icon-angle-double-right"></i></a></li>
+					</ul>
+				</div>
+			</section>
+			<!-- //contents -->
+		</div>
+		<!-- //container -->
+	</div>
+	<!-- //wrap -->
+	<!-- footer -->
+	<header id="footer" data-include="../../include/footer.html"></header>
+	<!-- //footer -->
+
+	<!-- 고객사 검색 팝업 -->
+	<article id="client_search_popup" class="pop_layer" data-include="../../include/popup/clientSearchPop.html"></article>
+	
+	<!-- 템플릿 변경 팝업 -->
+	<article id="template_change_popup" class="pop_layer">
+		<div class="pop_wrap">
+			<h1>템플릿 선택</h1>
+			<div class="pop_cont">
+				<p class="pr30">
+					<strong>◎ 템플릿 선택</strong>
+				</p>
+				<div class="mt10">
+					<table class="table left_tbl view_tbl">
+						<tbody>
+							<tr>
+								<th>서비스 유형</th>
+								<td>
+									<label>
+										<input name="radio1" class="radio" type="radio" checked="checked" />
+										<span class="lbl">전체</span>
+									</label>
+									<label>
+										<input name="radio1" class="radio" type="radio" />
+										<span class="lbl">온누리</span>
+									</label>
+									<label>
+										<input name="radio1" class="radio" type="radio" />
+										<span class="lbl">기념일</span>
+									</label>
+									<label>
+										<input name="radio1" class="radio" type="radio" />
+										<span class="lbl">특판</span>
+									</label>
+									<label>
+										<input name="radio1" class="radio" type="radio" />
+										<span class="lbl">MRO</span>
+									</label>
+								</td>
+							</tr>
+						
+							<tr>
+								<th>채널</th>
+								<td>
+									<label>
+										<input name="radio2" class="radio" type="radio" checked="checked" />
+										<span class="lbl">PC</span>
+									</label>
+									<label>
+										<input name="radio2" class="radio" type="radio" />
+										<span class="lbl">MOBILE</span>
+									</label>
+								</td>
+							</tr>
+						
+							<tr>
+								<th>템플릿명</th>
+								<td>
+									<input type="text">
+									<button class="button" type="button">검색</button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="mt30">
+					<p class="pr30 mb10">
+						<strong>◎ 현재 적용 템플릿 : 현재 사용중인 템플릿 이름 표시</strong>
+					</p>
+					
+					<div class="scroll h300">
+						<table class="table view_tbl">
+							<thead>
+								<tr>
+									<th>서비스 유형</th>
+									<th>채널</th>
+									<th>템플릿명</th>
+								</tr>
+								
+								<tr>
+									<td>온누리</td>
+									<td>PC</td>
+									<td>기본 템플릿 1</td>
+								</tr>
+							</thead>
+						</table>
+					</div>
+				</div>
+			</div>
+
+			<!-- pop_close 닫는 클래스 -->
+			<a href="#" class="btn_close pop_close">닫기</a>
+		</div>
+	</article>
+	
+</body>
+</html>

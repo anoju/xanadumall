@@ -1,0 +1,180 @@
+<!DOCTYPE html> 
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>XANADU 시스템</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" href="../../static/css/common.css" media="all" />
+	<link rel="stylesheet" href="../../static/css/contents.css" media="all" />
+	<script src="../../static/js/plugins.js"></script>
+	<script src="../../static/js/ui_script.js"></script>
+	<!--[if lt IE 9]>
+		<script type="text/javascript">
+			document.createElement("header");
+			document.createElement("nav");
+			document.createElement("section");
+			document.createElement("article");
+			document.createElement("footer");
+		</script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- wrap -->
+	<div id="wrap" data-active="[7,4,2]">
+		<!-- header -->
+		<header id="header" data-include="../../include/header.html"></header>
+		<!-- //header -->	
+		
+		<!-- gnb -->
+		<aside class="left_menu"  data-include="../../include/leftMenu.html"></aside>
+		<!-- //left_menu -->
+
+		<!-- container -->
+		<div id="container">
+			<!-- contents -->
+			<section id="contents">
+				<h1 id="page_tit">등록상품관리</h1>	
+				
+				<table class="table left_tbl view_tbl mt20">
+					<caption>등록상품관리</caption>
+					<colgroup>
+						<col style="width:10%" />
+						<col style="width:40%" />
+						<col style="width:10%" />
+						<col />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">조회기간</th>
+							<td colspan="3">
+								<div class="flex align_center">
+									<input class="datepicker" type="text" /> ~ <input class="datepicker" type="text" />
+									<span class="btn_sort">
+										<a href="#">오늘</a>
+										<a href="#" class="on">1주</a>
+										<a href="#">3개월</a>
+										<a href="#">1년</a>
+									</span>
+								</div>
+							</td>
+						</tr>
+						
+						<tr>
+							<th>회원검색</th>
+							<td>
+								<div class="flex">
+									<input type="text" class="w_70" />
+								</div>
+							</td>
+							
+							<th>회원등급</th>
+							<td>
+								<label>
+									<input name="radio1" class="radio" type="radio" checked="checked" />
+									<span class="lbl">전체</span>
+								</label>
+								<label>
+									<input name="radio1" class="radio" type="radio" />
+									<span class="lbl">다이아몬드</span>
+								</label>
+								<label>
+									<input name="radio1" class="radio" type="radio" />
+									<span class="lbl">골드</span>
+								</label>
+								<label>
+									<input name="radio1" class="radio" type="radio" />
+									<span class="lbl">실버</span>
+								</label>
+								<label>
+									<input name="radio1" class="radio" type="radio" />
+									<span class="lbl">브론즈</span>
+								</label>
+							</td>
+						</tr>
+
+					</tbody>
+				</table>
+
+				<p class="t_right mt30">
+					<a href="#" class="button large w100"><i class="icon-cw"></i> 초기화</a>
+					<a href="#" class="button large w100 btn_blue"><i class="icon-search"></i> 조회</a>
+				</p>
+
+				<div class="flex mt30">
+					<p>
+						<strong class="mr10">◎ 회원별 적립금 목록</strong>
+					</p>
+
+				</div>
+
+				<table class="table tbl_hover mt15">
+					<caption>테이블 제목</caption>
+					<colgroup>
+						<col style="width:50px" />
+						<col />
+						<col />
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col" rowspan="2">번호</th>
+							<th scope="col" rowspan="2">회원명</th>
+							<th scope="col" rowspan="2">회원ID</th>
+							<th scope="col" rowspan="2">회원등급</th>
+							<th scope="col" rowspan="2">최종구매일</th>
+							<th scope="col" rowspan="2">적립금 지급총액</th>
+							<th scope="col" rowspan="2">미사용 적립금액</th>
+							<th scope="col" rowspan="2">사용 적립금액</th>
+							<th scope="col" rowspan="2">가용예정 적립금액</th>
+							<th scope="col" rowspan="2">회수금액</th>
+							<th scope="col" rowspan="2">소멸금액</th>
+							<th scope="col" rowspan="2">당월 소멸예정금액</th>
+						</tr>
+
+					</thead>
+					
+					<tbody>
+						<tr class="pointer" onclick="javascript:location.href='PAGE_04_02_view.html'">
+							<td>1</td>
+							<td>박*재</td>
+							<td>ebs321</td>
+							<td>브론즈</td>
+							<td>2020-08-01</td>
+							<td>120,000</td>
+							<td>40,000</td>
+							<td>50,000</td>
+							<td>20,000</td>
+							<td>0</td>
+							<td>10,000</td>
+							<td>0</td>
+						</tr>
+					</tbody>
+					
+				</table>
+
+				<div class="paging_box mt30">
+					<ul class="pagination mla mra">
+						<li class="disabled"><a href="#"><i class="icon-angle-double-left"></i></a></li>
+						<li class="disabled"><a href="#"><i class="icon-angle-left"></i></a></li>
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#"><i class="icon-angle-right"></i></a></li>
+						<li><a href="#"><i class="icon-angle-double-right"></i></a></li>
+					</ul>
+				</div>
+			</section>
+			<!-- //contents -->
+		</div>
+		<!-- //container -->
+	</div>
+	<!-- //wrap -->
+	<!-- footer -->
+	<header id="footer" data-include="../../include/footer.html"></header>
+	<!-- //footer -->
+
+</body>
+</html>

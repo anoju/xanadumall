@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<title>온누리장터</title>
+<script>window.MSInputMethodContext && document.documentMode && document.write('<script src="../static/js/ie11CustomProperties.js"><\/script>');</script>
+<!-- 반드시 나중에 절대경로로 바꿔주세요 -->
+<link href="../static/css/reset.css" rel="stylesheet" />
+<link href="../static/css/common.css" rel="stylesheet" />
+<link href="../static/css/contents.css" rel="stylesheet" />
+<!-- //반드시 나중에 절대경로로 바꿔주세요 -->
+<script type="text/javascript" src="../static/js/common.js"></script>
+<script type="text/javascript" src="../static/js/ui.js"></script>
+<!--[if lt IE 9]>
+    <script type="text/javascript">
+        document.createElement("header");
+        document.createElement("nav");
+        document.createElement("section");
+        document.createElement("article");
+        document.createElement("footer");
+    </script>
+<![endif]-->
+</head>
+<body>
+
+	<!-- 헤더영역 -->
+	<header id="headerWrap" data-include="../include/header.html"></header>
+	<!-- //헤더영역 -->
+
+	<!-- 컨텐츠 영역 -->          
+	<section id="container" data-title="마이페이지">
+		<div class="section">
+			<div class="locationBar">
+				<span class="home">홈</span>
+				<span>마이페이지</span>
+			</div>
+
+			<div class="mypageWrap">
+				<!--
+					data-mypage-on="[1,1]" 좌측 메뉴 활성화
+				-->
+				<div class="leftGnb" data-include="./mypageGnb.html" data-mypage-on="[1,4]"></div>
+				<div class="mypageCont">
+					<h3 class="subH2 mt0 tl">환불계좌관리</h3>
+
+					<ul class="dotList">
+						<li>고객님께서 현금 결제한 주문을 취소하실 경우 수령하실 계좌입니다. 가입된 계좌로 혀금결제 취소금액이 환불되오니 정확이 입력하시기 바랍니다.</li>
+						<li>환불을 위해 고객님의 은행명, 계좌번호, 예금주 명을 수집하고 있으며, 해당정보는 환불 이외에 사용되지 않습니다.</li>
+						<li>해당 정보는 동의 철회(삭제)시 또는 <span class="fcOrange">수집일로부터 1년 후 자동 파기 됩니다.</span></li>
+						<li>환불계좌는 <span class="fcOrange">한국에서 개설한 은행 및 본인명의 계좌만 등록/변경</span>가능합니다. 예금주 명과 회원정보의 성명이 다른 경우는 등록/변경되지 않습니다. </li>
+					</ul>
+
+					<div class="formBox flex mt60">
+						<label for="Name" class="tit">예금주</label>
+						<div class="w320">
+							<div class="inputBox"><input type="text" id="Name" /></div>
+						</div>
+					</div>
+
+					<div class="formBox flex mt16">
+						<label for="Bank" class="tit">은행명</label>
+						<div class="w320">
+							<div class="selectBox">
+								<select title="선택" id="Bank">
+									<option value="">선택
+								</option></select>
+							</div>
+						</div>
+					</div>
+					<div class="formBox flex mt16">
+						<label for="Number" class="tit">계좌번호</label>
+						<div class="w320">
+							<div class="inputBox"><input type="text" id="Number" /></div>
+						</div>
+						<p class="fz12 fc666 flex00 ml20">계좌번호는 ‘-’ 없이 입력해주세요.</p>
+					</div>
+
+					<div class="btnGroup type3 bt mt24 pt40">
+						<a href="#" class="button large line">삭제</a>
+						<a href="#" class="button large">확인</a>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<!-- //컨텐츠 영역 -->
+
+	<!-- 하단 영역 -->
+	<footer id="footerWrap" data-include="../include/footer.html"></footer>
+	<!-- //하단 영역 -->
+	<script>
+	</script>
+</body>
+</html>

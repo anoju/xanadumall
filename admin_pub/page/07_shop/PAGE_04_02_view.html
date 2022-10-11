@@ -1,0 +1,238 @@
+<!DOCTYPE html> 
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>XANADU 시스템</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" href="../../static/css/common.css" media="all" />
+	<link rel="stylesheet" href="../../static/css/contents.css" media="all" />
+	<script src="../../static/js/plugins.js"></script>
+	<script src="../../static/js/ui_script.js"></script>
+	<!--[if lt IE 9]>
+		<script type="text/javascript">
+			document.createElement("header");
+			document.createElement("nav");
+			document.createElement("section");
+			document.createElement("article");
+			document.createElement("footer");
+		</script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- wrap -->
+	<div id="wrap" data-active="[7,4,2]">
+		<!-- header -->
+		<header id="header" data-include="../../include/header.html"></header>
+		<!-- //header -->	
+		
+		<!-- gnb -->
+		<aside class="left_menu"  data-include="../../include/leftMenu.html"></aside>
+		<!-- //left_menu -->
+
+		<!-- container -->
+		<div id="container">
+			<!-- contents -->
+			<section id="contents">
+				<h1 id="page_tit">등록상품관리</h1>	
+				
+				<table class="table left_tbl view_tbl mt20">
+					<caption>등록상품관리</caption>
+					<colgroup>
+						<col style="width:10%" />
+						<col style="width:40%" />
+						<col style="width:10%" />
+						<col />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">조회기간</th>
+							<td>
+								<div class="flex align_center">
+									<input class="datepicker" type="text" /> ~ <input class="datepicker" type="text" />
+									<span class="btn_sort">
+										<a href="#">오늘</a>
+										<a href="#" class="on">1주</a>
+										<a href="#">3개월</a>
+										<a href="#">1년</a>
+									</span>
+								</div>
+							</td>
+							<th>소멸예정일</th>
+							<td>
+								<input class="datepicker" type="text" disabled="disabled" value="2020-12-31"/>
+							</td>
+						</tr>
+						
+						<tr>
+							<th>회원명</th>
+							<td>
+								<input type="text" disabled="disabled" value="박*재">
+								<input type="text" disabled="disabled" value="ebs321">
+								<input type="text" disabled="disabled" value="브론즈">
+							</td>
+							<th>가용여부</th>
+							<td>
+								<select title="옵션선택" class="w_30">
+									<option value="">전체</option>
+									<option value="">가용</option>
+									<option value="">가용예정</option>
+								</select>
+							</td>							
+						</tr>
+						
+						<tr>
+							<th>사용구분</th>
+							<td>
+								<select title="옵션선택" class="w_30">
+									<option value="">전체</option>
+									<option value="">적립</option>
+									<option value="">사용</option>
+									<option value="">회수</option>
+									<option value="">소멸</option>
+								</select>
+							</td>
+							<th>지급유형</th>
+							<td>
+								<select title="옵션선택" class="w_30">
+									<option value="">전체</option>
+								</select>
+							</td>
+						</tr>
+
+					</tbody>
+				</table>
+
+				<p class="t_right mt30">
+					<a href="#" class="button large w100 btn_blue"><i class="icon-search"></i> 조회</a>
+				</p>
+				
+				<table class="table left_tbl view_tbl mt20">
+					<caption>등록상품관리</caption>
+					<colgroup>
+						<col style="width:10%" />
+						<col style="width:40%" />
+						<col style="width:10%" />
+						<col />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>적립금 지급총액</th>
+							<td>
+								<input type="text" disabled="disabled" value="999,999원">
+							</td>
+							
+							<th>미사용 적립금액</th>
+							<td>
+								<input type="text" disabled="disabled" value="333,333원">
+							</td>
+						</tr>
+						
+						<tr>
+							<th>가용 적립금액</th>
+							<td>
+								<input type="text" disabled="disabled" value="222,222원">
+							</td>
+							
+							<th>가용예정 적립금액</th>
+							<td>
+								<input type="text" disabled="disabled" value="444,444원">
+							</td>
+						</tr>
+						
+						<tr>
+							<th>소멸 적립금액</th>
+							<td>
+								<input type="text" disabled="disabled" value="0원">
+							</td>
+							
+							<th>소멸예정 적립금액</th>
+							<td>
+								<input type="text" disabled="disabled" value="0원">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="flex mt30">
+					<p>
+						<strong class="mr10">◎ 회원적립금 부여/사용 목록</strong>
+					</p>
+					<a href="#" class="right button mla"><i class="icon-file-excel"></i> 엑셀 다운로드</a>
+					<button class="button">적립금 부여</button>
+					<button class="button">회수</button>
+				</div>
+
+				<table class="table tbl_hover mt15">
+					<caption>테이블 제목</caption>
+					<colgroup>
+						<col style="width:50px" />
+						<col />
+						<col />
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col" rowspan="2">선택</th>
+							<th scope="col" rowspan="2">상세내역</th>
+							<th scope="col" rowspan="2">회수사유</th>
+							<th scope="col" rowspan="2">적립금</th>
+							<th scope="col" rowspan="2">잔여 <br> 적립금 </th>
+							<th scope="col" rowspan="2">가용여부</th>
+							<th scope="col" rowspan="2">구매내역</th>
+							<th scope="col" rowspan="1" colspan="2">가용기간</th>
+							<th scope="col" rowspan="2">처리자 구분</th>
+							<th scope="col" rowspan="2">처리자 ID</th>
+							
+						</tr>
+						
+						<tr>
+							<th scope="col" class="line">시작일</th>
+							<th scope="col" class="line">종료일</th>
+						</tr>
+
+					</thead>
+					
+					<tbody>
+						<tr>
+							<td><input type="checkbox"></td>
+							<td>6월 적립금 이벤트</td>
+							<td></td>
+							<td>2,000</td>
+							<td>2,000</td>
+							<td>가용</td>
+							<td>10001567</td>
+							<td>2021-06-01</td>
+							<td>2021-06-30</td>
+							<td>관리자</td>
+							<td></td>
+						</tr>
+					</tbody>
+					
+				</table>
+
+				<div class="paging_box mt30">
+					<ul class="pagination mla mra">
+						<li class="disabled"><a href="#"><i class="icon-angle-double-left"></i></a></li>
+						<li class="disabled"><a href="#"><i class="icon-angle-left"></i></a></li>
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#"><i class="icon-angle-right"></i></a></li>
+						<li><a href="#"><i class="icon-angle-double-right"></i></a></li>
+					</ul>
+				</div>
+			</section>
+			<!-- //contents -->
+		</div>
+		<!-- //container -->
+	</div>
+	<!-- //wrap -->
+	<!-- footer -->
+	<header id="footer" data-include="../../include/footer.html"></header>
+	<!-- //footer -->
+
+</body>
+</html>

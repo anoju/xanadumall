@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>퍼블리싱(PC)</title>
+<link href="../static/css/reset.css" rel="stylesheet" />
+<link href="../static/css/common.css" rel="stylesheet" />
+<link href="../static/css/contents.css" rel="stylesheet" />
+<script type="text/javascript" src="../static/js/common.js"></script>
+<script type="text/javascript" src="../static/js/ui.js"></script>
+
+<!-- 가이드 전용 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/atom-one-dark.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+<!-- //가이드 전용 -->
+</head>
+<body>
+	<!-- 헤더영역 -->
+	<header id="headerWrap" data-include="../include/header.html"></header>
+	<!-- //헤더영역 -->
+
+	<!-- 컨텐츠 영역 -->          
+	<section id="container" data-title="텍스트">
+		<div class="section">
+			<div class="tabList">
+				<a href="./guideText.html" class="on">텍스트</a>
+				<a href="./guideBtn.html">버튼</a>
+				<a href="./guideForm.html">폼요소</a>
+				<a href="./guideList.html">리스트</a>
+				<a href="./guideTable.html">테이블</a>
+				<a href="./guidePop.html">팝업</a>
+				<a href="./guideEtc.html">기타</a>
+			</div>
+		</div>
+
+		<div class="section gdWrap">
+			<h1 class="gdH1">텍스트</h1>
+
+			<h2 class="gdH2">폰트 종류</h2>
+			<p class="fz15">기본 : 노토산스</p>
+			<p class="poppins fz15">poppins 폰트 적용 (숫자에 사용 : 1 2 3 4 5 6 7 8 9 0)</p>
+
+<pre><code class="language-xml">class="poppins" : 숫자 폰트로 변경</code></pre>
+
+			<h2 class="gdH2">사이즈</h2>
+			<p class="fz10">폰트사이즈 : 10픽셀</p>
+			<p class="fz11">폰트사이즈 : 11픽셀</p>
+			<p class="fz12">폰트사이즈 : 12픽셀</p>
+			<p class="fz13">폰트사이즈 : 13픽셀</p>
+			<p class="fz14">폰트사이즈 : 14픽셀</p>
+			<p class="fz15">폰트사이즈 : 15픽셀</p>
+			<p class="fz16">폰트사이즈 : 16픽셀</p>
+			<p class="fz17">폰트사이즈 : 17픽셀</p>
+			<p class="fz18">폰트사이즈 : 18픽셀</p>
+			<p class="fz19">폰트사이즈 : 19픽셀</p>
+			<p class="fz20">폰트사이즈 : 20픽셀</p>
+			<p class="fz21">폰트사이즈 : 21픽셀</p>
+			<p class="fz22">폰트사이즈 : 22픽셀</p>
+			<p class="fz23">폰트사이즈 : 23픽셀</p>
+			<p class="fz24">폰트사이즈 : 24픽셀</p>
+			<p class="fz25">폰트사이즈 : 25픽셀</p>
+
+<pre><code class="language-xml">class="fz10 ~ fz25" : fz 숫자만큼 사이즈변경</code></pre>
+
+			<h2 class="gdH2">굵기</h2>
+			<p class="fwNormal">글자 (기본)</p>
+			<p class="bold">글자 굵게</p>
+			<p class="fw200">글자 얇게(200)</p>
+			<p class="fw300">글자 얇게(300)</p>
+
+<pre><code class="language-xml">class="fwNormal" : 글자 기본(400)
+class="bold" : 글자 굵게
+class="fw200" : 글자 얇게(200)
+class="fw300" : 글자 얇게(300)
+</code></pre>
+
+			<h2 class="gdH2">정렬</h2>
+			<p class="tl">글자 좌측</p>
+			<p class="tc">글자 가운데</p>
+			<p class="tr">글자 우측</p>
+
+<pre><code class="language-xml">class="tl" : 글자 좌측
+class="tc" : 글자 가운데
+class="tr" : 글자 우측
+</code></pre>
+			
+			<h2 class="gdH2">컬러</h2>
+			<p class="fc000">컬러 : #000000</p>
+			<p class="fc222">컬러 : #222222</p>
+			<p class="fc333">컬러 : #333333</p>
+			<p class="fc444">컬러 : #444444</p>
+			<p class="fc666">컬러 : #666666</p>
+			<p class="fc999">컬러 : #999999</p>
+			<p class="fcfff">컬러 : #ffffff</p>
+			<p class="fcBlue">컬러 : #181d62</p>
+			<p class="fcBlue2">컬러 : #0498c4</p>
+			<p class="fcBlue3">컬러 : #3d88f8</p>
+			<p class="fcRed">컬러 : #f0431a</p>
+
+<pre><code class="language-xml">class="fc000" : 컬러 (#000000)
+class="fc222" : 컬러 (#222222)
+class="fc333" : 컬러 (#333333)
+class="fc444" : 컬러 (#444444)
+class="fc666" : 컬러 (#666666)
+class="fc999" : 컬러 (#999999)
+class="fcfff" : 컬러 (#ffffff)
+class="fcBlue" : 컬러 (#181d62)
+class="fcBlue2" : 컬러 (#0498c4)
+class="fcBlue3" : 컬러 (#3d88f8)
+class="fcRed" : 컬러 (#f0431a)
+</code></pre>
+
+			<h2 class="gdH2">말줄임</h2>
+			<div style="width:150px; border:1px solid #ddd">
+				<p class="ellipsis">글자 1줄말줄임 입니다</p>
+			</div>
+			<div style="width:150px; border:1px solid #ddd">
+				<p class="ellipsis2">글자 2줄말줄임 입니다. 글자 2줄말줄임 입니다. 글자 2줄말줄임 입니다. 글자 2줄말줄임 입니다.</p>
+			</div>
+			<div style="width:150px; border:1px solid #ddd  ">
+				<p class="ellipsis3">글자 3줄말줄임 입니다. 글자 3줄말줄임 입니다. 글자 3줄말줄임 입니다. 글자 3줄말줄임 입니다.</p>
+			</div>
+<pre><code class="language-xml">class="ellipsis" : 글자 1줄말줄임 입니다
+class="ellipsis2" : 글자 2줄말줄임 입니다.
+class="ellipsis3" : 글자 3줄말줄임 입니다.
+</code></pre>
+			
+			<h2 class="gdH2">FLEX (퍼블전용)</h2>
+			<p>.flex { display:flex;}</p>
+			<p>.inlineFlex { display:inline-flex;}</p>
+			<p>.alignStart { align-items: flex-start;}</p>
+			<p>.alignCenter { align-items: center;}</p>
+			<p>.alignEnd { align-items: flex-end;}</p>
+			<p>.justifyStart { justify-content:flex-start;}</p>
+			<p>.justifyCenter { justify-content: center;}</p>
+			<p>.justifyEnd { justify-content:flex-end;}</p>
+			<p>.spaceEvenly { justify-content:space-evenly;}</p>
+			<p>.spaceBetween { justify-content:space-between;}</p>
+			<p>.spaceAround { justify-content:space-around;}</p>
+			<p>.flex11 { flex:1 1 auto;}</p>
+			<p>.flex10 { flex:1 0 auto;}</p>
+			<p>.flex01 { flex:0 1 auto;}</p>
+			<p>.flex00 { flex:0 0 auto;}</p>
+			<p>.flexWrap { flex-flow: wrap;}</p>
+		</div>
+	</section>
+	<!-- //컨텐츠 영역 -->
+
+	<!-- 하단 영역 -->
+	<footer id="footerWrap" data-include="../include/footer.html"></footer>
+	<!-- //하단 영역 -->
+
+	<script>hljs.highlightAll();</script>
+</body>
+</html>

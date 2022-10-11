@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<title>온누리장터</title>
+<script>window.MSInputMethodContext && document.documentMode && document.write('<script src="../static/js/ie11CustomProperties.js"><\/script>');</script>
+<!-- 반드시 나중에 절대경로로 바꿔주세요 -->
+<link href="../static/css/reset.css" rel="stylesheet" />
+<link href="../static/css/common.css" rel="stylesheet" />
+<link href="../static/css/contents.css" rel="stylesheet" />
+<!-- //반드시 나중에 절대경로로 바꿔주세요 -->
+<script type="text/javascript" src="../static/js/common.js"></script>
+<script type="text/javascript" src="../static/js/ui.js"></script>
+<!--[if lt IE 9]>
+    <script type="text/javascript">
+        document.createElement("header");
+        document.createElement("nav");
+        document.createElement("section");
+        document.createElement("article");
+        document.createElement("footer");
+    </script>
+<![endif]-->
+</head>
+<body>
+
+	<!-- 헤더영역 -->
+	<header id="headerWrap" data-include="../include/header.html"></header>
+	<!-- //헤더영역 -->
+
+	<!-- 컨텐츠 영역 -->          
+	<section id="container" data-title="마이페이지">
+		<div class="section">
+			<div class="locationBar">
+				<span class="home">홈</span>
+				<span>마이페이지</span>
+			</div>
+
+			<div class="mypageWrap">
+				<!--
+					data-mypage-on="[1,1]" 좌측 메뉴 활성화
+				-->
+				<div class="leftGnb" data-include="./mypageGnb.html" data-mypage-on="[1,1]"></div>
+				<div class="mypageCont">
+					<h3 class="subH2 mt0 tl">주문/배송조회</h3>
+					<p class="tr fz13 fc666">최근 30일 동안의 주문 건 기준입니다.</p>
+					<div class="myInfoBox">
+						<div>
+							<div class="userInfo">
+								<p class="name">홍길동님</p>
+								<p class="text">10월 등급
+									<span class="label">브론즈</span>
+								</p>
+							</div>
+							<div class="orderCount">
+								<p><strong>6</strong>주문완료</p>
+								<p><strong>2</strong>출고준비중</p>
+								<p><strong>1</strong>배송중</p>
+								<p><strong>20</strong>수취완료</p>
+								<p><strong>0</strong>주문취소</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="searchWrap">
+						<div class="selectBox">
+							<select title="상태선택">
+								<option value="">전체 상태</option>
+							</select>
+						</div>
+						<div class="toggleRadio type2">
+							<input type="radio" id="toggleRio1" name="toggleRio" /><label for="toggleRio1"><i></i>오늘</label>
+							<input type="radio" id="toggleRio2" name="toggleRio" checked /><label for="toggleRio2"><i></i>10일</label>
+							<input type="radio" id="toggleRio3" name="toggleRio" /><label for="toggleRio3"><i></i>30일</label>
+							<input type="radio" id="toggleRio4" name="toggleRio" /><label for="toggleRio4"><i></i>60일</label>
+							<input type="radio" id="toggleRio5" name="toggleRio" /><label for="toggleRio5"><i></i>90일</label>
+							<input type="radio" id="toggleRio6" name="toggleRio" /><label for="toggleRio6"><i></i>120일</label>
+						</div>
+
+						<div class="formBox datepickerWrap">
+							<div class="flex alignCenter">
+								<div class="inputBox datepicker"><input type="text"><i></i></div>
+								<i>~</i>
+								<div class="inputBox datepicker"><input type="text"><i></i></div>
+							</div>
+						</div>
+
+						<button class="button black">조회</button>
+
+					</div>
+
+					<!-- 최근 주문내역 -->
+					<div class="shoppingWrap">
+						<!-- 데이터 없음 -->
+						<div class="dataNone borderT mt20">
+							<i></i>
+							<p>최근 주문내역이 없습니다.</p>
+						</div>
+						<!-- //데이터 없음 -->
+
+						<div class="listWrap myListWrap">
+							<!-- 주문 -->
+							<!-- 2021-12-16 -->
+							<div class="myListTop">
+								<p class="tit">
+									2021-09-05
+									<a href="#" class="textButton">주문번호 B1008066895(1055397545)</a>
+								</p>
+								<div class="btnGroup">
+									<a href="#" class="button small line">반품신청</a>
+									<a href="#" class="button small line">주문취소</a>
+								</div>
+							</div>
+							<div class="myListBox">
+								<div class="list">
+									<p class="img"><!-- 품절시 클래스 end 추가-->
+										<span style="background-image: url('../static/images/sample/sample_product1.png');"></span>
+									</p>
+									<div class="textBox">
+										<div class="flex">
+											<p class="tit">[산지직송] 옛고을의 정성담은 영주 신선한 한돈</p>
+										</div>
+										<div class="optionList">
+											<p class="text">불고기 2팩 + 우동사리 1팩 / 2개</p>
+											<p class="money">
+												<strong>20,000</strong>원
+											</p>
+										</div>
+									</div>
+								</div>
+								<!-- 배송비쪽과 버튼 그룹 위치 변경-->
+								<div class="stateBtn">
+									<strong>주문완료</strong>
+									<div class="tc">
+										<a href="#" class="button line small">주문취소</a>
+									</div>
+								</div>
+								<div class="delivery">
+									무료배송
+									<a href="#" class="button gray small">배송조회</a>
+								</div>
+							</div>
+							<div class="myListBox">
+								<div class="list">
+									<p class="img"><!-- 품절시 클래스 end 추가-->
+										<span style="background-image: url('../static/images/sample/sample_product1.png');"></span>
+									</p>
+									<div class="textBox">
+										<div class="flex">
+											<p class="tit">[산지직송] 옛고을의 정성담은 영주 신선한 한돈</p>
+										</div>
+										<div class="optionList">
+											<p class="text">불고기 2팩 + 우동사리 1팩 / 2개</p>
+											<p class="money">
+												<strong>20,000</strong>원
+											</p>
+										</div>
+									</div>
+								</div>
+								<!-- 배송비쪽과 버튼 그룹 위치 변경-->
+								<div class="stateBtn">
+									<strong>주문완료</strong>
+									<div class="tc">
+										<a href="#" class="button line small">주문취소</a>
+									</div>
+								</div>
+								<div class="delivery">
+									무료배송
+								</div>
+							</div>
+							<!-- //주문 -->
+
+							<!-- 주문 -->
+							<div class="myListTop">
+								<p class="tit">
+									2021-09-05
+									<a href="#" class="textButton">주문번호 B1008066895(1055397545)</a>
+								</p>
+								<div class="btnGroup">
+									<a href="#" class="button small line">반품신청</a>
+									<a href="#" class="button small line">주문취소</a>
+								</div>
+							</div>
+							<div class="myListBox">
+								<div class="list">
+									<p class="img"><!-- 품절시 클래스 end 추가-->
+										<span style="background-image: url('../static/images/sample/sample_product1.png');"></span>
+									</p>
+									<div class="textBox">
+										<div class="flex">
+											<p class="tit">[산지직송] 옛고을의 정성담은 영주 신선한 한돈</p>
+										</div>
+										<div class="optionList">
+											<p class="text">불고기 2팩 + 우동사리 1팩 / 2개</p>
+											<p class="money">
+												<strong>20,000</strong>원
+											</p>
+										</div>
+									</div>
+								</div>
+								<!-- 배송비쪽과 버튼 그룹 위치 변경-->
+								<div class="stateBtn">
+									<strong>배송완료</strong>
+									<div class="tc">
+										<a href="#" class="button gray small">구매확정</a>
+										<a href="#" class="button line small">교환/반품 신청</a>
+									</div>
+								</div>
+								<div class="delivery">
+									무료배송
+								</div>
+							</div>
+							<!-- //주문 -->
+
+							<!-- 주문 -->
+							<div class="myListTop">
+								<p class="tit">
+									2021-09-05
+									<a href="#" class="textButton">주문번호 B1008066895(1055397545)</a>
+								</p>
+								<div class="btnGroup">
+									<a href="#" class="button small line">반품신청</a>
+									<a href="#" class="button small line">주문취소</a>
+								</div>
+							</div>
+							<div class="myListBox">
+								<div class="list">
+									<p class="img"><!-- 품절시 클래스 end 추가-->
+										<span style="background-image: url('../static/images/sample/sample_product1.png');"></span>
+									</p>
+									<div class="textBox">
+										<div class="flex">
+											<p class="tit">[산지직송] 옛고을의 정성담은 영주 신선한 한돈</p>
+										</div>
+										<div class="optionList">
+											<p class="text">불고기 2팩 + 우동사리 1팩 / 2개</p>
+											<p class="money">
+												<strong>20,000</strong>원
+											</p>
+										</div>
+									</div>
+								</div>
+								<!-- 배송비쪽과 버튼 그룹 위치 변경-->
+								<div class="stateBtn">
+									<strong>교환진행중</strong>
+									<div class="tc">
+										<a href="#" class="button gray small">교환 신청 취소</a>
+									</div>
+								</div>
+								<div class="delivery">
+									무료배송
+								</div>
+							</div>
+							<!-- //주문 -->
+
+							<!-- 주문 -->
+							<div class="myListTop">
+								<p class="tit">
+									2021-09-05
+									<a href="#" class="textButton">주문번호 B1008066895(1055397545)</a>
+								</p>
+								<div class="btnGroup">
+									<a href="#" class="button small line">반품신청</a>
+									<a href="#" class="button small line">주문취소</a>
+								</div>
+							</div>
+							<div class="myListBox">
+								<div class="list">
+									<p class="img"><!-- 품절시 클래스 end 추가-->
+										<span style="background-image: url('../static/images/sample/sample_product1.png');"></span>
+									</p>
+									<div class="textBox">
+										<div class="flex">
+											<p class="tit">[산지직송] 옛고을의 정성담은 영주 신선한 한돈</p>
+										</div>
+										<div class="optionList">
+											<p class="text">불고기 2팩 + 우동사리 1팩 / 2개</p>
+											<p class="money">
+												<strong>20,000</strong>원
+											</p>
+										</div>
+									</div>
+								</div>
+								<!-- 배송비쪽과 버튼 그룹 위치 변경-->
+								<div class="stateBtn">
+									<strong>구매확정</strong>
+									<span>21-09-02(화)</span>
+									<div class="tc">
+										<a href="#" class="button line2 small">상품평</a>
+									</div>
+								</div>
+								<div class="delivery">
+									배송비 3,000원
+								</div>
+							</div>
+							<!-- //주문 -->
+
+							<!-- 주문 -->
+							<div class="myListTop">
+								<p class="tit">
+									2021-09-05
+									<a href="#" class="textButton">주문번호 B1008066895(1055397545)</a>
+								</p>
+								<div class="btnGroup">
+									<a href="#" class="button small line">주문내역 삭제</a>
+								</div>
+							</div>
+							<div class="myListBox">
+								<div class="list">
+									<p class="img"><!-- 품절시 클래스 end 추가-->
+										<span style="background-image: url('../static/images/sample/sample_product1.png');"></span>
+									</p>
+									<div class="textBox">
+										<div class="flex">
+											<p class="tit">[산지직송] 옛고을의 정성담은 영주 신선한 한돈</p>
+										</div>
+										<div class="optionList">
+											<p class="text">불고기 2팩 + 우동사리 1팩 / 2개</p>
+											<p class="money">
+												<strong>20,000</strong>원
+											</p>
+										</div>
+									</div>
+								</div>
+								<!-- 배송비쪽과 버튼 그룹 위치 변경-->
+								<div class="stateBtn fc999">
+									<strong>주문취소</strong>
+									<span>21-09-02(화)</span>
+								</div>
+								<div class="delivery">
+									무료배송
+								</div>
+							</div>
+							<div class="myListBox">
+								<div class="list">
+									<p class="img"><!-- 품절시 클래스 end 추가-->
+										<span style="background-image: url('../static/images/sample/sample_product1.png');"></span>
+									</p>
+									<div class="textBox">
+										<div class="flex">
+											<p class="tit">[산지직송] 옛고을의 정성담은 영주 신선한 한돈</p>
+										</div>
+										<div class="optionList">
+											<p class="text">불고기 2팩 + 우동사리 1팩 / 2개</p>
+											<p class="money">
+												<strong>20,000</strong>원
+											</p>
+										</div>
+									</div>
+								</div>
+								<!-- 배송비쪽과 버튼 그룹 위치 변경-->
+								<div class="stateBtn">
+									<strong>교환완료</strong>
+								</div>
+								<div class="delivery">
+									무료배송
+								</div>
+							</div>
+							<div class="myListBox">
+								<div class="list">
+									<p class="img"><!-- 품절시 클래스 end 추가-->
+										<span style="background-image: url('../static/images/sample/sample_product1.png');"></span>
+									</p>
+									<div class="textBox">
+										<div class="flex">
+											<p class="tit">[산지직송] 옛고을의 정성담은 영주 신선한 한돈</p>
+										</div>
+										<div class="optionList">
+											<p class="text">불고기 2팩 + 우동사리 1팩 / 2개</p>
+											<p class="money">
+												<strong>20,000</strong>원
+											</p>
+										</div>
+									</div>
+								</div>
+								<!-- 배송비쪽과 버튼 그룹 위치 변경-->
+								<div class="stateBtn">
+									<strong>구매확정</strong>
+									<div class="tc">
+										<a href="#" class="button line2 small">상품평</a>
+									</div>
+								</div>
+								<div class="delivery">
+									무료배송
+								</div>
+							</div>
+							<!-- //주문 -->
+						</div>
+						<!-- //2021-12-16 -->
+					</div>
+
+					<div class="pagingBox mt24">
+						<a href="#" class="btnPrev2">맨처음</a>
+						<a href="#" class="btnPrev1">이전</a>
+						<strong>1</strong>
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<a href="#">5</a>
+						<a href="#">6</a>
+						<a href="#">7</a>
+						<a href="#">8</a>
+						<a href="#">9</a>
+						<a href="#">10</a>
+						<a href="#" class="btnNext1">다음</a>
+						<a href="#" class="btnNext2">맨뒤로</a>
+					</div>
+
+
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<!-- //컨텐츠 영역 -->
+
+
+	<!-- 팝업 : 구매확정 -->
+	<div id="pop1" class="layerPopWrap">
+		<div class="bg"></div>
+		<div class="layerPopCont" tabindex="0">
+			<h1>구매확정</h1>
+			<div class="popCont">
+
+				<p class="fz22 bold tc">상품을 수령하셨나요?</p>
+				<p class="mt12 fz13 fc666 tc">
+					상품 수령 전 판매자의 요정/협의로 구매확정 하신 경우, <br />
+					상품 미수령에 대한 책임은 구매자에게 있습니다.
+				</p>
+				<p class="mt8 fz13 fcOrange tc">
+					구매확정 이후에는 반품/교환이 불가하므로 <br />
+					반드시 상품을 받으신 후 진행해주세요.
+				</p>
+
+				<p class="mt40 fz18 bold tc">해당 상품에 대해 구매확정 하시겠습니까?</p>
+
+				<div class="btnGroup mt80">
+					<a href="#" class="button line">취소</a>
+					<a href="#" class="button">구매확정하기</a>
+				</div>
+			</div>
+			<a href="#" class="btnClose btnPopClose">팝업닫기</a>
+		</div>
+	</div>
+	<!-- //팝업 : 구매확정 -->
+
+	<!-- 팝업 : 상품평 작성 -->
+	<div id="pop2" class="layerPopWrap">
+		<div class="bg"></div>
+		<div class="layerPopCont" tabindex="0">
+			<h1>상품평 작성</h1>
+			<div class="popCont">
+				<ul class="dotList mt0">
+					<li>작성하신 평가내용은 다른 분의 구매에 많은 도움이 됩니다.</li>
+					<li>해당 게시판의 목적과 관계 없는 글, 광고성, 욕설, 비방 등의 글은 예고 없이 삭제 됩니다.</li>
+				</ul>
+
+				<div class="productItem mt20">
+					<p class="img">
+						<span style="background-image: url('../static/images/sample/sample_product1.png');"></span>
+					</p>
+					<p class="text ellipsis2">[HACCP인증] 사골육수 함흥냉면 10인분(사골육수350g*10 + 함흥냉면2kg[HACCP인증] 사골육수 함흥냉면 10인분(사골육수350g*10 + 함흥냉면2kg[HACCP인증] 사골육수 함흥냉면 10인분(사골육수350g*10 + 함흥냉면2kg</p>
+				</div>
+
+				<hr class="line mt20" />
+
+				<div class="formBox mt24">
+					<p class="tit">구매옵션</p>
+					<div class="grayBox">간장 양념불고기 10인분: A, 3kg</div>
+					<div class="checkbox small mt8"><input type="checkbox" id="popCheck1" /><label for="popCheck1"><i></i>구매옵션 노출 선택</label></div>
+				</div>
+
+				<div class="formBox mt24">
+					<p class="tit">만족도 평가</p>
+					<div class="starIconBtnWrap">
+						<div class="starIconBtn">
+							<button>1점</button>
+							<button>2점</button>
+							<button>3점</button>
+							<button>4점</button>
+							<button>5점</button>
+						</div>
+						<p class="text"></p>
+					</div>
+				</div>
+
+				<div class="formBox mt24">
+					<label for="textarea" class="tit">상품평</label>
+					<div class="textarea type2"><textarea id="textarea" placeholder="소중한의견을 남겨주세요."></textarea></div>
+				</div>
+
+				<div class="formBox mt24">
+					<p class="tit">사진등록 (선택)</p>
+					<button class="button line btnPicture">사진 등록하기</button>
+					<p class="mt8 fz12 fc666 fw500">확장자 JPG, GIF, PNG / 용량 10M 이하</p>
+
+					<div class="pictureList">
+						<div class="img">
+							<span style="background-image:url('../static/images/sample/icon_category_fish.png');"></span>
+							<a href="#" class="btnClose">삭제</a>
+						</div>
+						<div class="img">
+							<span style="background-image:url('../static/images/sample/icon_category_fish.png');"></span>
+							<a href="#" class="btnClose">삭제</a>
+						</div>
+						<div class="img">
+							<span style="background-image:url('../static/images/sample/icon_category_fish.png');"></span>
+							<a href="#" class="btnClose">삭제</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="btnGroup mt32">
+					<a href="#" class="button line">취소</a>
+					<a href="#" class="button">확인</a>
+				</div>
+			</div>
+			<a href="#" class="btnClose btnPopClose">팝업닫기</a>
+		</div>
+	</div>
+	<!-- //팝업 : 상품평 작성 -->
+	
+	<!-- 하단 영역 -->
+	<footer id="footerWrap" data-include="../include/footer.html"></footer>
+	<!-- //하단 영역 -->
+	<script>
+	</script>
+</body>
+</html>

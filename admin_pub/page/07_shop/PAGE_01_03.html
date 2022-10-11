@@ -1,0 +1,439 @@
+<!DOCTYPE html> 
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>XANADU 시스템</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" href="../../static/css/common.css" media="all" />
+	<link rel="stylesheet" href="../../static/css/contents.css" media="all" />
+	<script src="../../static/js/plugins.js"></script>
+	<script src="../../static/js/ui_script.js"></script>
+	<!--[if lt IE 9]>
+		<script type="text/javascript">
+			document.createElement("header");
+			document.createElement("nav");
+			document.createElement("section");
+			document.createElement("article");
+			document.createElement("footer");
+		</script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- wrap -->
+	<div id="wrap" data-active="[7,1,3]">
+		<!-- header -->
+		<header id="header" data-include="../../include/header.html"></header>
+		<!-- //header -->	
+		
+		<!-- gnb -->
+		<aside class="left_menu"  data-include="../../include/leftMenu.html"></aside>
+		<!-- //left_menu -->
+
+		<!-- container -->
+		<div id="container">
+			<!-- contents -->
+			<section id="contents">
+				<h1 id="page_tit">전시카테고리 템플릿</h1>	
+				
+				<table class="table left_tbl view_tbl mt20">
+					<caption>전시카테고리 템플릿</caption>
+					<colgroup>
+						<col style="width:10%" />
+						<col style="width:40%" />
+						<col style="width:10%" />
+						<col />
+					</colgroup>
+					<tbody>
+						
+						<tr>
+							<th scope="row">기본유무</th>
+							<td>
+								<div class="flex">
+									<label>
+										<input name="radio1" class="radio" type="radio" checked="checked" />
+										<span class="lbl">전체</span>
+									</label>
+									<label>
+										<input name="radio1" class="radio" type="radio" />
+										<span class="lbl">Y</span>
+									</label>
+									<label>
+										<input name="radio1" class="radio" type="radio" />
+										<span class="lbl">N</span>
+									</label>
+								</div>
+							</td>
+
+							<th scope="row">서비스유형</th>
+							<td>
+								<div class="flex">
+									<label>
+										<input name="radio2" class="radio" type="radio" checked="checked" />
+										<span class="lbl">전체</span>
+									</label>
+									<label>
+										<input name="radio2" class="radio" type="radio" />
+										<span class="lbl">온누리</span>
+									</label>
+									<label>
+										<input name="radio2" class="radio" type="radio" />
+										<span class="lbl">기념일</span>
+									</label>
+									<label>
+										<input name="radio2" class="radio" type="radio" />
+										<span class="lbl">특판</span>
+									</label>
+									<label>
+										<input name="radio2" class="radio" type="radio" />
+										<span class="lbl">MRO</span>
+									</label>
+								</div>
+							</td>
+
+						</tr>
+						<tr>
+							<th scope="row">사용유무</th>
+							<td>
+								<div class="flex">
+									<label>
+										<input name="radio3" class="radio" type="radio" checked="checked"  />
+										<span class="lbl">전체</span>
+									</label>
+									<label>
+										<input name="radio3" class="radio" type="radio" />
+										<span class="lbl">Y</span>
+									</label>
+									<label>
+										<input name="radio3" class="radio" type="radio" />
+										<span class="lbl">N</span>
+									</label>
+								</div>
+							</td>
+
+							<th scope="row">전시카테고리<br />템플릿</th>
+							<td>
+								<input type="text" class="text w_50" />
+							</td>
+						</tr>
+						
+					</tbody>
+				</table>
+
+				<p class="t_right mt30">
+					<a href="#" class="button large w100"><i class="icon-cw"></i> 초기화</a>
+					<a href="#" class="button large w100 btn_blue"><i class="icon-search"></i> 조회</a>
+				</p>
+
+				<div class="flex mt30 align_center">
+					<p>
+						<strong class="mr10">◎ 템플릿목록</strong>
+					</p>
+					<a href="#" class="right button mla"><i class="icon-file-excel"></i> 엑셀 다운로드</a>
+					<button class="button" onclick="layerpopup('regi_popup');">등록</button>
+				</div>
+
+				<table class="table tbl_hover mt15">
+					<caption>테이블 제목</caption>
+					<colgroup>
+						<col />
+						<col />
+						<col />
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col" rowspan="2">전시템플릿코드</th>
+							<th scope="col" rowspan="2">서비스유형</th>
+							<th scope="col" rowspan="2">템플릿 명칭</th>
+							<th scope="col" rowspan="2">설명</th>
+							<th scope="col" rowspan="2">기본여부</th>
+							<th scope="col" rowspan="2">사용우무</th>
+							<th scope="col" rowspan="2">고객사<br />목록</th>
+							<th scope="col" rowspan="2">수정자</th>
+							<th scope="col" rowspan="2">수정일</th>
+							<th scope="col" rowspan="2">템플릿 수정</th>
+							<th scope="col" rowspan="2">템플릿 상세보기</th>
+
+						</tr>
+					</thead>
+					<tbody>
+						<!-- 항목 -->
+						<tr class="pointer" >
+							<td>11009888</td>
+							<td>온누리</td>
+							<td>선물하기 템플릿</td>
+							<td>선물하기 카테고리 적용</td>
+							<td>N</td>
+							<td>Y</td>
+							<td>
+								<a href="#client_list_popup" class="button layerPopOpen">보기</a>
+							</td>
+							<td>LeeSunSin</td>
+							<td>2021-09-02 13:33</td>
+							<td>
+								<a href="#modfy_popup" class="button layerPopOpen">수정</a>
+							</td>
+							<td>
+								<a href="#" class="button" onclick="javascript:location.href='PAGE_01_03_view.html'">상세</a>
+							</td>
+						</tr>
+						<!-- //항목 -->
+
+						<!-- 항목 -->
+						<tr class="pointer" >
+							<td>11009887</td>
+							<td>온누리</td>
+							<td>대전몰 테스트</td>
+							<td>대전몰 테스트</td>
+							<td>N</td>
+							<td>Y</td>
+							<td>
+								<a href="#client_list_popup" class="button layerPopOpen">보기</a>
+							</td>
+							<td>JangBoGo</td>
+							<td>2021-09-02 13:35</td>
+							<td>
+								<a href="#modfy_popup" class="button layerPopOpen">수정</a>
+							</td>
+							<td>
+								<a href="#" class="button" onclick="javascript:location.href='PAGE_01_03_view.html'">상세</a>
+							</td>
+						</tr>
+						<!-- //항목 -->
+					</tbody>
+				</table>
+
+				<div class="paging_box mt30">
+					<ul class="pagination mla mra">
+						<li class="disabled"><a href="#"><i class="icon-angle-double-left"></i></a></li>
+						<li class="disabled"><a href="#"><i class="icon-angle-left"></i></a></li>
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#"><i class="icon-angle-right"></i></a></li>
+						<li><a href="#"><i class="icon-angle-double-right"></i></a></li>
+					</ul>
+				</div>
+			</section>
+			<!-- //contents -->
+		</div>
+		<!-- //container -->
+	</div>
+	<!-- //wrap -->
+	<!-- footer -->
+	<header id="footer" data-include="../../include/footer.html"></header>
+	<!-- //footer -->
+	
+	
+	<!-- 고객사 목록 팝업 -->
+	<!-- layerPopOpen 클래스 적용 후 링크값은 id값으로 -->
+	<article id="client_list_popup" class="pop_layer">
+		<div class="pop_wrap">
+			<h1>템플릿 적용 고객사</h1>
+			<div class="mt30 t_center">
+				<p class="f16">선물하기 템플릿</p>
+			</div>
+			<div class="pop_cont">
+				<div class="t_right mb10">
+					<button class="button">새로고침</button>
+				</div>
+				<div class="scroll h300">
+					<table class="table left_tbl view_tbl">
+						<colgroup>
+							<col style="width:33.333%" />
+							<col style="width:33.333%"/>
+							<col style="width:33.333%"/>
+						</colgroup>
+						<tbody>
+							<tr>
+								<td>
+									<span class="lbl">지원카드몰</span>
+								</td>
+								<td>
+									<span class="lbl">교양악단</span>
+								</td>
+								<td>
+									<span class="lbl">교양악단</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<span class="lbl">고객사A</span>
+								</td>
+								<td>
+									<span class="lbl">고객사B</span>
+								</td>
+								<td>
+									<span class="lbl">고객사C</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<span class="lbl">고객사A</span>
+								</td>
+								<td>
+									<span class="lbl">고객사B</span>
+								</td>
+								<td>
+									<span class="lbl">고객사C</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<span class="lbl">고객사A</span>
+								</td>
+								<td>
+									<span class="lbl">고객사B</span>
+								</td>
+								<td>
+									<span class="lbl">고객사C</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<span class="lbl">고객사A</span>
+								</td>
+								<td>
+									<span class="lbl">고객사B</span>
+								</td>
+								<td>
+									<span class="lbl">고객사C</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<span class="lbl">고객사A</span>
+								</td>
+								<td>
+									<span class="lbl">고객사B</span>
+								</td>
+								<td>
+									<span class="lbl">고객사C</span>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="t_center mb30">
+				<a href="#" class="button large w120 pop_close">확인</a>
+			</div>
+			<!-- pop_close 닫는 클래스 -->
+			<a href="#" class="btn_close pop_close">닫기</a>
+		</div>
+	</article>
+	<!-- //고객사 목록 팝업 -->
+
+	<!-- 등록 팝업 -->
+	<!-- layerPopOpen 클래스 적용 후 링크값은 id값으로 -->
+	<article id="regi_popup" class="pop_layer">
+		<div class="pop_wrap">
+			<h1>전시 카테고리 템플릿 생성</h1>
+			<div class="pop_cont">
+				<table class="table left_tbl">
+					<colgroup>
+						<col style="width:30%" />
+						<col />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">서비스 유형</th>
+							<td colspan="3">
+								<div class="flex">
+									<label>
+										<input name="popup_radio1" class="radio" type="radio" checked="checked" />
+										<span class="lbl">온누리</span>
+									</label>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">템플릿 명칭</th>
+							<td colspan="3">
+								<input type="text" class="text w_100" />
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">설명</th>
+							<td colspan="3">
+								<input type="text" class="text w_100" />
+							</td>
+						</tr>	
+					</tbody>
+				</table>
+				<div class="t_center mt30">
+					<a href="#" class="button large btn_blue w120">생성</a>
+					<a href="#" class="button large w120 pop_close">취소</a>
+				</div>
+			</div>
+			<!-- pop_close 닫는 클래스 -->
+			<a href="#" class="btn_close pop_close">닫기</a>
+		</div>
+	</article>
+	<!-- //등록 팝업 -->
+	
+	<!-- 수정 팝업 -->
+	<!-- layerPopOpen 클래스 적용 후 링크값은 id값으로 -->
+	<article id="modfy_popup" class="pop_layer">
+		<div class="pop_wrap">
+			<h1>템플릿 수정</h1>
+			<div class="pop_cont">
+				<table class="table left_tbl">
+					<colgroup>
+						<col style="width:30%" />
+						<col />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">서비스 유형</th>
+							<td colspan="3">
+								온누리
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">템플릿 명칭</th>
+							<td colspan="3">
+								<input type="text" class="text w_100" value="그룹형 c" />
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">설명</th>
+							<td colspan="3">
+								<input type="text" class="text w_100" value="기본 유형" />
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">기본 유무</th>
+							<td colspan="3">
+								<div class="flex">
+									<label>
+										<input name="popup_radio3" class="radio" type="radio" checked="checked" />
+										<span class="lbl">Y</span>
+									</label>
+									<label>
+										<input name="popup_radio3" class="radio" type="radio" />
+										<span class="lbl">N</span>
+									</label>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="t_center mt30">
+					<a href="#" class="button large btn_blue w120">수정</a>
+					<a href="#" class="button large w120 pop_close">취소</a>
+				</div>
+			</div>
+			<!-- pop_close 닫는 클래스 -->
+			<a href="#" class="btn_close pop_close">닫기</a>
+		</div>
+	</article>
+	<!-- //수정 팝업 -->
+	
+	
+	
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html> 
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>NEXTID 시스템</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" href="../../static/css/common.css" media="all" />
+	<link rel="stylesheet" href="../../static/css/contents.css" media="all" />
+	<script src="../../static/js/plugins.js"></script>
+	<script src="../../static/js/ui_script.js"></script>
+	<!--[if lt IE 9]>
+		<script type="text/javascript">
+			document.createElement("header");
+			document.createElement("nav");
+			document.createElement("section");
+			document.createElement("article");
+			document.createElement("footer");
+		</script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- wrap -->
+	<div id="wrap" data-active="[0]">
+	<!-- div id="wrap" data-active="[0]" class="nonLnb" -->
+		<!-- header -->
+		<script src="../../include/header.js"></script>
+		<!-- //header -->	
+		
+		<!-- gnb -->
+		<script src="../../include/leftMenu.js"></script>
+		<!-- //left_menu -->
+
+		<!-- container -->
+		<div id="container">
+			<!-- contents -->
+			<section id="contents">
+				<h1 id="page_tit">업체휴일관리</h1>
+				<strong class="tableTitle">◎ 업체휴일관리</strong>
+				<table class="table left_tbl mt5">
+					<caption>카테고리기본정보</caption>
+					<colgroup>
+						<col style="width:15%" />
+						<col />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">선택</th>
+							<td>
+								<div class="flex">
+									<select title="옵션선택">
+										<option value="">2021년</option>
+									</select>
+									<select title="옵션선택">
+										<option value="">1월</option>
+									</select>
+									<a href="#nolink" class="button small">휴일등록</a>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table calendar mt20">
+					<caption>카테고리기본정보</caption>
+					<colgroup>
+						<col style="" />
+						<col style="width:14.2%" />
+						<col style="width:14.2%" />
+						<col style="width:14.2%" />
+						<col style="width:14.2%" />
+						<col style="width:14.2%" />
+						<col style="width:14.2%" />
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">일</th>
+							<th scope="col">월</th>
+							<th scope="col">화</th>
+							<th scope="col">수</th>
+							<th scope="col">목</th>
+							<th scope="col">금</th>
+							<th scope="col">토</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><i></i></td>
+							<td><i></i></td>
+							<td><i></i></td>
+							<td><i></i></td>
+							<td><i></i></td>
+							<td class="hd"><i>1</i>신정</td>
+							<td><i>2</i></td>
+						</tr>
+						<tr>
+							<td><i>3</i></td>
+							<td><i>4</i></td>
+							<td><i>5</i></td>
+							<td><i>6</i></td>
+							<td class="day"><i>7</i></td>
+							<td><i>8</i></td>
+							<td><i>9</i></td>
+						</tr>
+						<tr>
+							<td><i>10</i></td>
+							<td><i>11</i></td>
+							<td><i>12</i></td>
+							<td><i>13</i></td>
+							<td><i>14</i></td>
+							<td><i>15</i></td>
+							<td><i>16</i></td>
+						</tr>
+						<tr>
+							<td><i>17</i></td>
+							<td><i>18</i></td>
+							<td><i>19</i></td>
+							<td><i>20</i></td>
+							<td><i>21</i></td>
+							<td><i>22</i></td>
+							<td><i>23</i></td>
+						</tr>
+						<tr>
+							<td><i>24</i></td>
+							<td><i>25</i></td>
+							<td><i>26</i></td>
+							<td><i>27</i></td>
+							<td><i>28</i></td>
+							<td><i>29</i></td>
+							<td><i>30</i></td>
+						</tr>
+						<tr>
+							<td><i>31</i></td>
+							<td><i></i></td>
+							<td><i></i></td>
+							<td><i></i></td>
+							<td><i></i></td>
+							<td><i></i></td>
+							<td><i></i></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+			<!-- //contents -->
+		</div>
+		<!-- //container -->
+	</div>
+	<!-- //wrap -->
+	<!-- footer -->
+	<header id="footer" data-include="../../include/footer.html"></header>
+	<!-- //footer -->
+
+	<!-- pop_layer -->
+	<!-- layerPopOpen 클래스 적용 후 링크값은 id값으로 -->
+	<!-- 카테고리 -->
+	<article id="popup1" class="pop_layer">
+		<div class="pop_wrap">
+			<h1>카테고리 설정</h1>
+			<div class="pop_cont">
+				<table class="table view_tbl">
+					<colgroup>
+						<col />
+					</colgroup>
+					<thead>
+						<tr>
+							<th>카테고리 선택</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<div class="categoryBox">
+									<dl class="category">
+										<dt>대분류 카테고리</dt>
+										<dd></dd>
+									</dl>
+									<dl class="category">
+										<dt>중분류 카테고리</dt>
+										<dd></dd>
+									</dl>
+									<dl class="category">
+										<dt>소분류 카테고리</dt>
+										<dd></dd>
+									</dl>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="t_center mt30">
+					<a href="#" class="button large btn_blue">카테고리 선택/추가</a>
+				</div>
+			</div>
+			<!-- pop_close 닫는 클래스 -->
+			<a href="#" class="btn_close pop_close">닫기</a>
+		</div>
+	</article>
+	<!-- //pop_layer -->
+</body>
+</html>

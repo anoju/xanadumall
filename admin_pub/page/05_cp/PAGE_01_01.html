@@ -1,0 +1,203 @@
+<!DOCTYPE html> 
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>XANADU 시스템</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" href="../../static/css/common.css" media="all" />
+	<link rel="stylesheet" href="../../static/css/contents.css" media="all" />
+	<script src="../../static/js/plugins.js"></script>
+	<script src="../../static/js/ui_script.js"></script>
+	<!--[if lt IE 9]>
+		<script type="text/javascript">
+			document.createElement("header");
+			document.createElement("nav");
+			document.createElement("section");
+			document.createElement("article");
+			document.createElement("footer");
+		</script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- wrap -->
+	<div id="wrap" data-active="[5,1,1]">
+		<!-- header -->
+		<header id="header" data-include="../../include/header.html"></header>
+		<!-- //header -->	
+		
+		<!-- gnb -->
+		<aside class="left_menu"  data-include="../../include/leftMenu.html"></aside>
+		<!-- //left_menu -->
+
+		<!-- container -->
+		<div id="container">
+			<!-- contents -->
+			<section id="contents">
+				<h1 id="page_tit">CP공지사항</h1>	
+				
+				<table class="table left_tbl view_tbl mt20">
+					<caption>CP공지사항</caption>
+					<colgroup>
+						<col style="width:10%" />
+						<col style="width:40%" />
+						<col style="width:10%" />
+						<col />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">등록일</th>
+							<td>
+								<input class="datepicker" type="text" /> ~ <input class="datepicker" type="text" />
+							</td>
+							<th scope="row">공지종류</th>
+							<td>
+								<select title="옵션선택" class="w100">
+									<option value="" selected="selected">전체</option>
+									<option value="">정산공지</option>
+									<option value="">보안공지</option>
+									<option value="">중요공지</option>
+									<option value="">일반공지</option>
+								</select>
+							</td>
+						</tr>
+
+						<tr>
+							<th scope="row">검색</th>
+							<td colspan="3">
+								<div class="flex">
+									<select title="옵션선택" class="w100">
+										<option value="" selected="selected">전체</option>
+										<option value="">제목</option>
+										<option value="">작성자</option>
+									</select>
+									<input type="text" class="w_50" />
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<p class="t_right mt30">
+					<a href="#" class="button large w100"><i class="icon-cw"></i> 초기화</a>
+					<a href="#" class="button large w100 btn_blue"><i class="icon-search"></i> 조회</a>
+				</p>
+
+				<div class="flex mt30 align_center">
+					<p>
+						<strong class="mr10">전체 건수 : 1355 건</strong>
+					</p>
+				</div>
+
+				<table class="table tbl_hover mt15">
+					<caption>테이블 제목</caption>
+					<colgroup>
+						<col style="width:50px" />
+						<col />
+						<col />
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">번호</th>
+							<th scope="col">공지종류</th>
+							<th scope="col">제목</th>
+							<th scope="col">조회수</th>
+							<th scope="col">작성자</th>
+							<th scope="col">등록일</th>
+							<th scope="col">첨부파일</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- 항목 -->
+						<tr class="pointer" onclick="layerpopup('detail_popup');">
+							<td>1</td>
+							<td>중요공지</td>
+							<td>[공지] 상품 배송지 관련 중요 안내사항</td>
+							<td>135</td>
+							<td>김용호</td>
+							<td>2021-05-23 10:32:24</td>
+							<td>**(파일아이콘)</td>
+						</tr>
+						<!-- //항목 -->
+					</tbody>
+				</table>
+
+				<div class="paging_box mt30">
+					<ul class="pagination mla mra">
+						<li class="disabled"><a href="#"><i class="icon-angle-double-left"></i></a></li>
+						<li class="disabled"><a href="#"><i class="icon-angle-left"></i></a></li>
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#"><i class="icon-angle-right"></i></a></li>
+						<li><a href="#"><i class="icon-angle-double-right"></i></a></li>
+					</ul>
+				</div>
+			</section>
+			<!-- //contents -->
+		</div>
+		<!-- //container -->
+	</div>
+	<!-- //wrap -->
+	<!-- footer -->
+	<header id="footer" data-include="../../include/footer.html"></header>
+	<!-- //footer -->
+
+
+	<!-- 상세 팝업 -->
+	<!-- layerPopOpen 클래스 적용 후 링크값은 id값으로 -->
+	<article id="detail_popup" class="pop_layer">
+		<div class="pop_wrap">
+			<h1>공지사항 상세 팝업</h1>
+			<div class="pop_cont">
+				<table class="table left_tbl">
+					<colgroup>
+						<col style="width:20%;" />
+						<col style="width:30%;" />
+						<col style="width:20%;" />
+						<col />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">작성자</th>
+							<td>관리자</td>
+							<th scope="row">작성일</th>
+							<td>2021-08-15 15:32:11</td>
+						</tr>
+						<tr>
+							<th scope="row">첨부파일</th>
+							<td colspan="3">
+								<div class="flex">
+									<span class="pointer">Filename.pdf<i class="icon-folder-open-empty ml5"></i></span>
+								</div>
+								<div class="flex">
+									<span class="pointer">Filename.xlsx<i class="icon-folder-open-empty ml5"></i></span>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="4">
+								<div class="p10 scroll h200">
+									안녕하세요. 이제너두 입니다.<br/>
+									정산내역은 어드민 내에 ‘정산관리 -> 2021년도 확정내역 조회＇에서 확인 하실 수 있습니다.<br/>
+									감사합니다.
+								</div>
+							</td>
+						</tr>	
+					</tbody>
+				</table>
+				<div class="t_center mt30">
+					<a href="#" class="button large w120 pop_close">닫기</a>
+				</div>
+			</div>
+			<!-- pop_close 닫는 클래스 -->
+			<a href="#" class="btn_close pop_close">닫기</a>
+		</div>
+	</article>
+	<!-- //상세 팝업 -->
+
+</body>
+</html>

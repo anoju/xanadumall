@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>XANADU 시스템</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+<link rel="stylesheet" href="../../static/css/common.css" media="all" />
+<link rel="stylesheet" href="../../static/css/contents.css" media="all" />
+<script src="../../static/js/plugins.js"></script>
+<script src="../../static/js/ui_script.js"></script>
+<!--[if lt IE 9]>
+		<script type="text/javascript">
+			document.createElement("header");
+			document.createElement("nav");
+			document.createElement("section");
+			document.createElement("article");
+			document.createElement("footer");
+		</script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- wrap -->
+	<div id="wrap" data-active="[7,3,1]">
+		<!-- header -->
+		<header id="header" data-include="../../include/header.html"></header>
+		<!-- //header -->
+
+		<!-- gnb -->
+		<aside class="left_menu" data-include="../../include/leftMenu.html"></aside>
+		<!-- //left_menu -->
+
+		<!-- container -->
+		<div id="container">
+			<!-- contents -->
+			<section id="contents">
+				<h1 id="page_tit">기획전관리현황</h1>
+
+				<p>
+					<strong class="mr10">◎ 기획전 등록</strong>
+				</p>
+
+				<table class="table left_tbl view_tbl mt20">
+					<caption>기획전등록</caption>
+					<colgroup>
+						<col style="width:10%" />
+						<col style="width:10%" />
+						<col style="width:30%" />
+						<col style="width:10%" />
+						<col style="width:30%" />
+						<col style="width:10%" />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">서비스 유형*</th>
+							<td colspan="2">
+								<label> 
+									<input name="radio1" class="radio" type="radio" />
+										<span class="lbl">온누리</span>
+									</label> 
+									<label> <input name="radio1" class="radio" type="radio" />
+										<span class="lbl">기념일</span>
+									</label> 
+									<label> 
+										<input name="radio1" class="radio" type="radio" />
+										<span class="lbl">특판</span>
+									</label> 
+									<label> 
+										<input name="radio1" class="radio" type="radio" />
+										<span class="lbl">MRO</span>
+								</label>
+							</td>
+							<th scope="row">채널*</th>
+							<td colspan="2">
+								<label> 
+									<input name="radio2" class="radio" type="radio" checked="checked" /> 
+									<span class="lbl">PC</span>
+								</label> 
+								<label> 
+									<input name="radio2" class="radio" type="radio" />
+									<span class="lbl">PC</span>
+								</label> 
+								<label> 
+									<input name="radio2" class="radio" type="radio" />
+									<span class="lbl">PC+MOBILE</span>
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">기획전 유형*</th>
+							<td colspan="2">
+								<label> 
+									<input name="radio3" class="radio" type="radio" /> 
+									<span class="lbl">일반형</span>
+								</label> 
+								<label> 
+									<input name="radio3" class="radio" type="radio" />
+									<span class="lbl">통합형</span>
+								</label>
+							</td>
+							<th scope="row">기획전 코드</th>
+							<td colspan="2"><input type="text" class="text w_70" disabled="disabled" /></td>
+						</tr>
+						<tr>
+							<th>기획전명(메인)*</th>
+							<td colspan="5"><input type="text" class="w_70"> ※ 한글20자</td>
+						</tr>
+						<tr>
+							<th>기획전명(서브)*</th>
+							<td colspan="5"><input type="text" class="w_70"> ※ 한글20자</td>
+						</tr>
+						<tr>
+							<th>노출기간*</th>
+							<td colspan="5">
+								<div class="flex align_center">
+									<input class="datepicker" type="text" value="YYYY/MM/DD" /> ~ 
+									<input
+										class="datepicker" type="text" value="YYYY/MM/DD" >
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">진행상태*</th>
+							<td colspan="5">
+								<label> 
+									<input name="radio4" class="radio" type="radio" checked="checked" /> 
+									<span class="lbl">대기중</span>
+								</label> 
+								<label> 
+									<input name="radio4" class="radio" type="radio" />
+									<span class="lbl">진행중</span>
+								</label> 
+								<label> 
+									<input name="radio4" class="radio" type="radio" />
+									<span class="lbl">종료</span>
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">사용여부*</th>
+							<td colspan="5">
+								<label> 
+									<input name="radio5" class="radio" type="radio" /> 
+									<span class="lbl">Y</span>
+								</label>
+								<label> 
+									<input name="radio5" class="radio" type="radio" />
+									<span class="lbl">N</span>
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<th>기획전 URL</th>
+							<td colspan="5"><input type="text" class="text w_70" disabled="disabled" /></td>
+						</tr>
+						<tr>
+							<th scope="row" rowspan="3">라스트 썸네일*</th>
+							<th>PC Big(300*380)</th>
+							<td colspan="4">
+								<div class="fileBox">
+									<input type="text" class="w300" readonly="readonly"> 
+									<label for="uploadBtn1" class="button">찾아보기</label> 
+									<input type="file" id="uploadBtn1" class="uploadBtn" style="display: none;">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>PC small(280*180)</th>
+							<td colspan="4">
+								<div class="fileBox">
+									<input type="text" class="w300" readonly="readonly"> 
+									<label for="uploadBtn2" class="button">찾아보기</label> 
+									<input type="file" id="uploadBtn2" class="uploadBtn" style="display: none;">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>MOBILE(640*200)</th>
+							<td colspan="4">
+								<div class="fileBox">
+									<input type="text" class="w300" readonly="readonly"> 
+									<label for="uploadBtn3" class="button">찾아보기</label> 
+									<input type="file" id="uploadBtn3" class="uploadBtn" style="display: none;">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row" rowspan="4">상단 컨텐츠 영역*</th>
+							<th rowspan="2">PC</td>
+							<td colspan="4">
+								<label>
+									<input name="radio6" class="radio" type="radio" checked="checked" />
+									<span class="lbl">이미지</span>
+								</label>
+								<label>
+									<input name="radio6" class="radio" type="radio" />
+									<span class="lbl">HTML</span>
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="4" style="border-left: 1px solid #e3e3e3;">
+								<div class="fileBox">
+									<input type="text" class="w300" readonly="readonly" /> 
+									<label for="uploadBtn1" class="button">찾아보기</label> 
+									<input type="file" id="uploadBtn1" class="uploadBtn" style="display: none;">
+								</div>
+								<div class="htmlBox" style="display: none;">
+									<textarea class="w_100"></textarea>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th rowspan="2" style="border-left: 1px solid #e3e3e3;">MOBILE</td>
+							<td colspan="4">
+								<label>
+									<input name="radio7" class="radio" type="radio" checked="checked" />
+									<span class="lbl">이미지</span>
+								</label>
+								<label>
+									<input name="radio7" class="radio" type="radio" />
+									<span class="lbl">HTML</span>
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="4" style="border-left: 1px solid #e3e3e3;">
+								<div class="fileBox">
+									<input type="text" class="w300" readonly="readonly" /> 
+									<label for="uploadBtn2" class="button">찾아보기</label> 
+									<input type="file" id="uploadBtn2" class="uploadBtn" style="display: none;">
+								</div>
+								<div class="htmlBox" style="display: none;">
+									<textarea class="w_100"></textarea>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="mt10">
+					<button type="button" class="button" onclick="javascript:location.href='PAGE_03_01_view_02.html'">기획전 상세 관리</button>
+				</div>
+				
+			<!-- //contents -->
+		</div>
+		<!-- //container -->
+	</div>
+	<!-- //wrap -->
+	<!-- footer -->
+	<header id="footer" data-include="../../include/footer.html"></header>
+	<!-- //footer -->
+
+	<!-- 고객사 검색 팝업 -->
+	<article id="client_search_popup" class="pop_layer"
+		data-include="../../include/popup/clientSearchPop.html"></article>
+
+</body>
+</html>

@@ -1,0 +1,1298 @@
+<!DOCTYPE html> 
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>XANADU 시스템</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" href="../../static/css/common.css" media="all" />
+	<link rel="stylesheet" href="../../static/css/contents.css" media="all" />
+	<script src="../../static/js/plugins.js"></script>
+	<script src="../../static/js/ui_script.js"></script>
+	<!--[if lt IE 9]>
+		<script type="text/javascript">
+			document.createElement("header");
+			document.createElement("nav");
+			document.createElement("section");
+			document.createElement("article");
+			document.createElement("footer");
+		</script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- wrap -->
+	<div id="wrap" data-active="[2,1,1]">
+		<!-- header -->
+		<header id="header" data-include="../../include/header.html"></header>
+		<!-- //header -->	
+		
+		<!-- gnb -->
+		<aside class="left_menu"  data-include="../../include/leftMenu.html"></aside>
+		<!-- //left_menu -->
+
+		<!-- container -->
+		<div id="container">
+			<!-- contents -->
+			<section id="contents">
+				<h1 id="page_tit">주문현황상세</h1>	
+				
+				<div class="flex">
+					<strong class="tableTitle flex10">◎ 주문기본정보</strong>
+					<div class="flex01">
+						<a href="#nolink" class="button small btn_blue">전산관리자 주문정보 조회</a>
+					</div>
+				</div>
+				<table class="table left_tbl mt5">
+					<caption>주문기본정보</caption>
+					<colgroup>
+						<col style="width:10%" />
+						<col style="width:40%" />
+						<col style="width:10%" />
+						<col />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">복지관주문번호</th>
+							<td>012254111512</td>
+							<th scope="row">주문번호</th>
+							<td>012254111522</td>
+						</tr>
+						<tr>
+							<th scope="row">주문자명/아이디</th>
+							<td>홍길동 [2012554122]</td>
+							<th scope="row">주문완료일</th>
+							<td>2020-02-10 12:13:00</td>
+						</tr>
+						<tr>
+							<th scope="row">고객사</th>
+							<td>[pdkifkdk] 경찰청</td>
+							<th scope="row">서비스유형</th>
+							<td>온누리</td>
+						</tr>
+						<tr>
+							<th scope="row">채널구분</th>
+							<td>PC</td>
+							<th scope="row">고객구분</th>
+							<td>복지관</td>
+						</tr>
+						<tr>
+							<th scope="row">현금영수증 발행 여부</th>
+							<td colspan="3">자동발행 / 휴대전화번호 / 소득공제 / 010-0000-0000</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="flex mt20">
+					<strong class="tableTitle flex10">◎ 주문결제정보</strong>
+					<div class="flex01">
+						<button type="button" class="button small btn_blue" onClick="layerpopup('order_info_popup')">결제정보</button>
+						<button type="button" class="button small btn_blue" onClick="layerpopup('order_receipt_popup')">구매영수증</button>
+						<button type="button" class="button small btn_blue" onClick="layerpopup('refund_account_popup')">환불계좌관리</button>
+					</div>
+				</div>
+				<table class="table left_tbl mt5">
+					<caption>주문결제정보</caption>
+					<colgroup>
+						<col style="width:10%" />
+						<col style="width:40%" />
+						<col style="width:10%" />
+						<col />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">결제상태</th>
+							<td>결제완료</td>
+							<th scope="row">결제유형</th>
+							<td>결제형</td>
+						</tr>
+						<tr>
+							<th scope="row">총 결제금액</th>
+							<td>33,000</td>
+							<th scope="row">총 할인금액</th>
+							<td>0</td>
+						</tr>
+						<tr>
+							<th scope="row">총 상품금액</th>
+							<td>33,000</td>
+							<th scope="row">총 배송금액</th>
+							<td>0</td>
+						</tr>
+					</tbody>
+				</table>
+				<strong class="tableTitle">◎ 주문 결제 상세</strong>
+				<table class="table view_tbl">
+					<caption>주문 결제 상세</caption>
+					<colgroup>
+						<col style="width:15%" />
+						<col style="width:15%" />
+						<col style="width:15%" />
+						<col />
+						<col style="width:20%" />
+					</colgroup>
+					<thead>
+						<tr>
+							<th>결제휴형</th>
+							<th>구분</th>
+							<th>결제금액</th>
+							<th>유형별 상세 정보</th>
+							<th>비고</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>특별포인트</td>
+							<td>2020년 전통시장 특별포인트</td>
+							<td>22,000</td>
+							<td>2020-02-02 ~ 2020-02-30</td>
+							<td>소멸예정 : 0</td>
+						</tr>
+					</tbody>
+				</table>
+				<strong class="tableTitle">◎ 결제 History</strong>
+				<table class="table view_tbl">
+					<caption>결제 History</caption>
+					<colgroup>
+						<col style="width:20%" />
+						<col style="width:auto" />
+						<col style="width:15%" />
+						<col style="width:15%" />
+						<col style="width:20%" />
+						<col style="width:20%" />
+					</colgroup>
+					<thead>
+						<tr>
+							<th>틀별포인트</th>
+							<th></th>
+							<th></th>
+							<th></th>
+							<th>결제 일자</th>
+							<th>취소 일자</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>22,000</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>2020-02-02 22:12:00</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+				<strong class="tableTitle">◎ 주문 할인 정보</strong>
+				<table class="table view_tbl">
+					<caption>주문 할인 정보</caption>
+					<colgroup>
+						<col style="width:20%" />
+						<col />
+						<col style="width:20%" />
+						<col style="width:30%" />
+					</colgroup>
+					<thead>
+						<tr>
+							<th>쿠폰 번호</th>
+							<th>쿠폰 이름</th>
+							<th>할인 가격</th>
+							<th>유효 기간</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td colspan="4">할인 목록이 존재하지 않습니다.</td>
+						</tr>
+					</tbody>
+				</table>
+				<strong class="tableTitle">◎ 주문 상품 정보</strong>
+				<div class="tabBox btnTab">
+					<ul class="tabmenu leftTab tabMotion mt10">
+						<li><a href="#tabCon1">일반</a></li>
+					</ul>
+					<div class="posBox rm">
+						<button type="button" class="button small btn_blue" onClick="layerpopup('waybill_input_popup')">운송장번호 입력</button>
+						<button type="button" class="button small btn_blue" onClick="layerpopup('shipping_info_popup')">배송조회</button>
+						<button type="button" class="button small btn_blue" onClick="layerpopup('reApproval_info_popup')">주문취소 재승인(MD)</button>
+					</div>
+				</div>
+				<!-- 일반탭 -->
+				<div id="tabCon1" class="tab_cont ovfAuto">
+					<table class="table view_tbl">
+						<caption>주문 상품 정보</caption>
+						<colgroup>
+							<col style="" />
+							<col style="" />
+							<col style="" />
+							<col style="" />
+							<col style="" />
+							<col style="" />
+							<col style="" />
+							<col style="" />
+							<col style="" />
+							<col style="" />
+							<col style="" />
+							<col style="" />
+							<col style="" />
+							<col style="" />
+							<col style="" />
+							<col style="" />
+							<col style="" />
+							<col style="" />
+							<col style="" />
+							<col style="" />
+							<col style="" />
+							<col style="" />
+							<col style="" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th>선택</th>
+								<th>No</th>
+								<th>CSP코드/명<br>전화번호</th>
+								<th>상품코드</th>
+								<th>상품명</th>
+								<th>옵션명</th>
+								<th>프로모션</th>
+								<th>매입가</th>
+								<th>판매가</th>
+								<th>상품수량</th>
+								<th>적용쿠폰</th>
+								<th>상품별배송비<br>(배송비조건)</th>
+								<th>묶음배송여부</th>
+								<th>적용배송비<br>(도서산간)</th>
+								<th>결제금액</th>
+								<th>상품유형</th>
+								<th>취소불가</th>
+								<th>주문상태</th>
+								<th>배송상태</th>
+								<th></th>
+								<th></th>
+								<th></th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<input name="checkbox01" type="checkbox" class="checkbox">
+								</td>
+								<td>1</td>
+								<td>
+									<ul>
+										<li>76000032</li>
+										<li>별메마을</li>
+										<li>010-0000-0000</li>
+									</ul>
+								</td>
+								<td>10000000000</td>
+								<td>[대천김] 재래김 10봉 선물용(421)-2세트</td>
+								<td></td>
+								<td></td>
+								<td>19,000</td>
+								<td>22,000</td>
+								<td>1</td>
+								<td></td>
+								<td>
+									<ul>
+										<li>무료</li>
+										<li>-</li>
+									</ul>
+								</td>
+								<td>Y</td>
+								<td>
+									<ul>
+										<li>0</li>
+										<li>-</li>
+									</ul>
+								</td>
+								<td>22,000</td>
+								<td>일반상품</td>
+								<td></td>
+								<td>주문완료</td>
+								<td>배송준비중</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="flex mt20">
+					<strong class="tableTitle flex10">◎ 주문 배송 정보</strong>
+					<div class="flex01">
+						<button type="button" class="button small btn_blue" onClick="layerpopup('shipping_addr_chg_popup')">배송지 변경</button>
+					</div>
+				</div>
+				<table class="table view_tbl mt5">
+					<caption>주문 배송 정보</caption>
+					<colgroup>
+						<col style="" />
+						<col style="" />
+						<col style="" />
+						<col style="" />
+						<col style="" />
+						<col style="" />
+						<col style="" />
+						<col style="" />
+						<col style="" />
+						<col style="" />
+						<col style="" />
+						<col style="" />
+					</colgroup>
+					<thead>
+						<tr>
+							<th>선택</th>
+							<th>No</th>
+							<th>주문상태</th>
+							<th>배송수량</th>
+							<th>배송상태</th>
+							<th>배송업체<br>송장번호</th>
+							<th>받는분명</th>
+							<th>받는분 연락처</th>
+							<th>받는분 휴대폰</th>
+							<th>받는분 주소</th>
+							<th>배송시요청사항</th>
+							<th>발송정책</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<input name="checkbox01" type="checkbox" class="checkbox">
+							</td>
+							<td>1</td>
+							<td>주문완료</td>
+							<td>0</td>
+							<td>배송준비중</td>
+							<td>
+								<ul>
+									<li>-</li>
+									<li>-</li>
+								</ul>
+							</td>
+							<td>홍길동</td>
+							<td>-</td>
+							<td>010-0000-0000</td>
+							<td>
+								<ul>
+									<li>[00000]</li>
+									<li>경상북도 안동군 안동면 안동마을길 11</li>
+								</ul>
+							</td>
+							<td></td>
+							<td><a href="#nolink" class="link t_blue" title="">추가정보</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+			<!-- //contents -->
+		</div>
+		<!-- //container -->
+	</div>
+	<!-- //wrap -->
+	<!-- footer -->
+	<header id="footer" data-include="../../include/footer.html"></header>
+	<!-- //footer -->
+	
+	<!-- 결제정보 팝업 -->
+	<article id="order_info_popup" class="pop_layer">
+		<div class="pop_wrap">
+			<h1>결제상태</h1>
+			<div class="pop_cont mb10 w800">
+				<p class="mb10">
+					<strong class="mr10">◎ 결제상태조회</strong>
+				</p>
+				<table class="table left_tbl">
+					<colgroup>
+						<col style="width:20%;" />
+						<col style="width:30%;" />
+						<col style="width:20%;" />
+						<col />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">결제고래고유번호</th>	
+							<td>P10000000001</td>
+							<th scope="row">가맹점코드</th>
+							<td>ZP2005000011</td>
+						</tr>
+						<tr>
+							<th scope="row">결제상태값</th>
+							<td>결제완료</td>
+							<th scope="row">가맹점 주문번호</th>
+							<td>1000151707</td>
+						</tr>
+						<tr>
+							<th scope="row">가맹점 회원키</th>
+							<td>1000184512</td>
+							<th scope="row">전체결제금액</th>
+							<td>52600</td>
+						</tr>
+						<tr>
+							<th scope="row">비과세금액</th>
+							<td>0</td>
+							<th scope="row">부과세금액</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">전체취소금액</th>
+							<td></td>
+							<th scope="row">상품명</th>
+							<td>테스트상품 외 1개</td>
+						</tr>
+						<tr>
+							<th scope="row">상품수량</th>
+							<td>1</td>
+							<th scope="row">결제준비요청시각</th>
+							<td>20200901082947</td>
+						</tr>
+						<tr>
+							<th scope="row">결제승인시각</th>
+							<td>20200901083053596</td>
+							<th scope="row">결제취소시각</th>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		
+			<!-- pop_close 닫는 클래스 -->
+			<a href="#" class="btn_close pop_close">닫기</a>
+		</div>
+	</article>
+	
+	
+	<!-- 구매영수증 팝업 -->
+	<article id="order_receipt_popup" class="pop_layer">
+		<div class="pop_wrap">
+			<h1>구매영수증</h1>
+			<div class="pop_cont mb10 w1000 scroll h700">
+				<div class="mb20">
+					<p class="mr10">■ 구매영수증은 소득공제용 영수증 및 매입 세금계산서로 활용할 수 없으며, 결제가 완료되었음을 증명하는 용도로만 활용 가능합니다.</p>
+					<p class="mr10">■ 구매영수증은 선결제 배송비를 포함하여 실제 결제액에 대하여 발급됩니다.</p>
+				</div>
+				
+				<!-- 주문정보 -->
+				<div>
+					<p class="mb10">
+						<strong class="mr10">◎ 주문정보</strong>
+					</p>
+					<table class="table left_tbl">
+						<colgroup>
+							<col style="width:20%;" />
+							<col style="width:30%;" />
+							<col style="width:20%;" />
+							<col />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">주문자</th>	
+								<td>기업부설연구소</td>
+								<th scope="row">연락처</th>
+								<td>010-1234-5678</td>
+							</tr>
+							<tr>
+								<th scope="row">주문일</th>
+								<td>2020-09-01 08:30:53</td>
+								<th scope="row">주문번호</th>
+								<td>1000002224</td>
+							</tr>
+							<tr>
+								<th scope="row" rowspan="3">결제금액</th>
+								<td rowspan="3">750,000</td>
+								<th scope="row">포인트</th>
+								<td>250,000원</td>
+							</tr>
+							<tr>
+								<th scope="row">특별포인트</th>
+								<td>250,000원</td>
+							</tr>
+							<tr>
+								<th scope="row">신용카드</th>
+								<td>250,000원</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				
+				<!-- 구매상품 -->
+				<div class="mt20">
+					<p class="mb10">
+						<strong class="mr10">◎ 구매상품</strong>
+					</p>
+					<table class="table tbl_hover">
+						<colgroup>
+							<col style="width:50px" />
+							<col />
+							<col />
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">번호</th>
+								<th scope="col">상품명 및 옵션</th>
+								<th scope="col">수량</th>
+								<th scope="col">금액</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>송월타월 헤비무지 190g 4p 선물세트 색상랜덤</td>
+								<td>20</td>
+								<td>98,200</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>송월타월 헤비무지 190g 4p 선물세트 색상랜덤</td>
+								<td>2</td>
+								<td>50,200</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				
+				<!-- 판매자 정보 -->
+				<div class="mt20">
+					<p class="mb10">
+						<strong class="mr10">◎ 판매자 정보</strong>
+					</p>
+					<table class="table left_tbl">
+						<colgroup>
+							<col style="width:20%;" />
+							<col style="width:30%;" />
+							<col style="width:20%;" />
+							<col />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">상호명</th>	
+								<td>이제너두㈜</td>
+								<th scope="row">사업자등록번호</th>
+								<td>000-00-0000</td>
+							</tr>
+							<tr>
+								<th scope="row">소재지</th>
+								<td>서울시 구로구 디지털로 34길 43 (구로동) 코오롱 싸잉너스밸리 1차 14층</td>
+								<th scope="row">대표자</th>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				
+			</div>
+		
+			<!-- pop_close 닫는 클래스 -->
+			<a href="#" class="btn_close pop_close">닫기</a>
+		</div>
+	</article>
+	
+	<!-- 환불계좌관리 팝업 -->
+	<article id="refund_account_popup" class="pop_layer">
+		<div class="pop_wrap">
+			<h1>환불계좌관리</h1>
+			<div class="pop_cont mb10 w1000 scroll h700">
+				<div class="mb20">
+					<p class="mr10">■ 고객님께서 현금 결제한 주문을 취소하실 경우 수령하실 계좌입니다. 가입된 계좌로 현금결제 취소금애이 환불되오니 정확히 입력하시기 바랍니다.</p>
+					<p class="mr10">■ 환불을 위해 고객님의 은행명, 계좌번호, 예금주 명을 수집하고 있으며, 해당정보는 환불이외에 사용되지 않습니다.</p>
+					<p class="mr10">■ 해당 정보는 동의 철회)삭제)시 또는 수집일로 부터 1년 후 자동 파기됩니다.</p>
+					<p class="mr10">■ 환불계좌는 한국에서 개설한 은행 및 본인명의 계좌만 등록/변경 가능합니다.예금주명과 회원정보의 성명이 다른 경우는 등록/변경되지 않습니다.</p>
+				</div>
+				
+				<!-- 등록된 환불계좌 -->
+				<div>
+					<p class="mb10">
+						<strong class="mr10">◎ 등록된 환불계좌</strong>
+					</p>
+					<table class="table left_tbl">
+						<colgroup>
+							<col style="width:20%;" />
+							<col />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">예금주명</th>	
+								<td>홍길동</td>
+							</tr>
+							<tr>
+								<th scope="row">은행명</th>
+								<td>우리은행</td>
+							</tr>
+							<tr>
+								<th scope="row">계좌번호</th>
+								<td>1234567788</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				
+				<!-- 등록된 환불계좌 -->
+				<div class="mt20">
+					<p class="mb10">
+						<strong class="mr10">◎ 환불계좌 수정</strong>
+					</p>
+					<table class="table left_tbl">
+						<colgroup>
+							<col style="width:20%;" />
+							<col />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">예금주명</th>	
+								<td>홍길동</td>
+							</tr>
+							<tr>
+								<th scope="row">은행명</th>
+								<td>
+									<select class="w_50">
+										<option>선택</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">계좌번호</th>
+								<td><input type="text" class="w_50" /></td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="mt10 t_right">
+						<button type="button" class="button btn_black">저장</button>
+					</div>
+				</div>
+				
+				<!-- 환불계좌 수정 이력 -->
+				<div class="mt20">
+					<p class="mb10">
+						<strong class="mr10">◎ 환불계좌 수정 이력</strong>
+					</p>
+					<table class="table tbl_hover">
+						<colgroup>
+							<col />
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">수정일</th>
+								<th scope="col">예금주명</th>
+								<th scope="col">은행명</th>
+								<th scope="col">계좌번호</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>2020-04-01</td>
+								<td>홍길동</td>
+								<td>국민은행</td>
+								<td>1234567777</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				
+			</div>
+		
+			<!-- pop_close 닫는 클래스 -->
+			<a href="#" class="btn_close pop_close">닫기</a>
+		</div>
+	</article>
+	
+	<!-- 운송장번호 개별입력 팝업 -->
+	<article id="waybill_input_popup" class="pop_layer">
+		<div class="pop_wrap">
+			<h1>운송장번호 개별입력</h1>
+			<div class="pop_cont mb10 w800">
+				<p class="mb10">
+					<strong class="mr10">◎ 배송정보 개별입력</strong>
+				</p>
+				<table class="table left_tbl">
+					<colgroup>
+						<col style="width:20%;" />
+						<col />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">배송업체</th>	
+							<td>
+								<select class="w_50">
+									<option>배송업체 선택</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">송장번호</th>
+							<td>
+								<div class=flex>
+									<input type="text" class="w_70" />
+									<button type="button" class="button btn_black ml10">등록</button>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<div class="mt20">
+					<p class="mr10">■ 배송정보 개별입력 안내입니다.</p>
+					<p class="mr10 t_red">■ 운송장번호는 ‘-’를 제외한 숫자만 입력해주세요.</p>
+					<p class="mr10">■ 운송장번호가 없는 경우는 오늘 날짜를 입력해주세요.(업체직배송, 퀵서비스 등)</p>
+				</div>
+			</div>
+		
+			<!-- pop_close 닫는 클래스 -->
+			<a href="#" class="btn_close pop_close">닫기</a>
+		</div>
+	</article>
+	
+	<!-- 배송조회 팝업 -->
+	<article id="shipping_info_popup" class="pop_layer">
+		<div class="pop_wrap">
+			<h1>배송조회</h1>
+			<div class="pop_cont mb10 w800">
+			
+				<!-- 송장 정보 -->
+				<div>
+					<p class="mb10">
+						<strong class="mr10">◎ 송장 정보</strong>
+					</p>
+					<table class="table tbl_hover">
+						<colgroup>
+							<col />
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">송장정보</th>
+								<th scope="col">택배사</th>
+								<th scope="col">굿스플로 배송정보</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>415142286672</td>
+								<td>한진택배</td>
+								<td><a href="#" class="button btn_black">상세보기</a></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				
+				<!-- 판매자 정보 -->
+				<div class="mt20">
+					<p class="mb10">
+						<strong class="mr10">◎ 판매자 정보</strong>
+					</p>
+					<table class="table tbl_hover">
+						<colgroup>
+							<col />
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">판매자</th>
+								<th scope="col">대표번호</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>㈜티에스컴퍼니</td>
+								<td>1670-6519</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				
+				<div class="mt20">
+					<p class="mr10">※ 배송 문의사항은 판매자에게 확인해 주세요.</p>
+				</div>
+			
+			</div>
+		
+			<!-- pop_close 닫는 클래스 -->
+			<a href="#" class="btn_close pop_close">닫기</a>
+		</div>
+	</article>
+	
+	<!-- 배송지 변경 팝업 -->
+	<article id="shipping_addr_chg_popup" class="pop_layer">
+		<div class="pop_wrap">
+			<h1>배송지변경</h1>
+			<div class="pop_cont mb10 w1000 scroll h700">
+			
+				<!-- 배송지 변경 -->
+				<div>
+					<p class="mb10">
+						<strong class="mr10">◎ 배송지 변경</strong>
+					</p>
+					<table class="table left_tbl">
+						<colgroup>
+							<col style="width:20%;" />
+							<col />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">받는분명*</th>	
+								<td><input type="text" class="w_70" /></td>
+							</tr>
+							<tr>
+								<th scope="row">휴대폰*</th>
+								<td><input type="text" class="w_70" /></td>
+							</tr>
+							<tr>
+								<th scope="row">연락처(선택)</th>
+								<td><input type="text" class="w_70" /></td>
+							</tr>
+							<tr>
+								<th scope="row">주소*</th>
+								<td>
+									<div class="mb10">
+										<input type="text" value="" disabled="">
+										<button type="button" class="button btn_black" onclick="layerpopup('address_search_popup')">우편번호 검색</button> <br>
+									</div>
+									<div>
+										<input type="text" class="w400 mb5" value="" disabled="">
+										<input type="text" class="w400" value="" placeholder="나머지 주소를 입력바랍니다.">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">배송시 요청사항</th>
+								<td><input type="text" class="w_100" /></td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="mt10 t_right">
+						<button type="button" class="button btn_black ml10">저장</button>
+					</div>
+				</div>
+				
+				<!-- 배송지 변경 이력 -->
+				<div class="mt20">
+					<p class="mb10">
+						<strong class="mr10">◎ 배송지 변경 이력</strong>
+					</p>
+					<table class="table tbl_hover">
+						<colgroup>
+							<col />
+							<col style="width: 100px;" />
+							<col />
+							<col />
+							<col />
+							<col />
+							<col style="width: 80px;" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">변경일</th>
+								<th scope="col">배송지그룹<br/>배송지명</th>
+								<th scope="col">받는분명</th>
+								<th scope="col">휴대폰 연락처</th>
+								<th scope="col">주소</th>
+								<th scope="col">배송시 요청사항</th>
+								<th scope="col">변경자</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>2020-04-01 11:11:00</td>
+								<td>집<br/>우리집</td>
+								<td>온누리</td>
+								<td>010-1234-1234</td>
+								<td>[04419] 서울특별시 용산구 한남동 810, ***</td>
+								<td>스마일박스에 맡겨주세요.</td>
+								<td>김이슬</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			
+			</div>
+		
+			<!-- pop_close 닫는 클래스 -->
+			<a href="#" class="btn_close pop_close">닫기</a>
+		</div>
+	</article>
+	
+	<!-- 배송조회 팝업 -->
+	<article id="shipping_info_popup" class="pop_layer">
+		<div class="pop_wrap">
+			<h1>배송조회</h1>
+			<div class="pop_cont mb10 w800">
+			
+				<!-- 송장 정보 -->
+				<div>
+					<p class="mb10">
+						<strong class="mr10">◎ 송장 정보</strong>
+					</p>
+					<table class="table tbl_hover">
+						<colgroup>
+							<col />
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">송장정보</th>
+								<th scope="col">택배사</th>
+								<th scope="col">굿스플로 배송정보</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>415142286672</td>
+								<td>한진택배</td>
+								<td><a href="#" class="button btn_black">상세보기</a></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				
+				<!-- 판매자 정보 -->
+				<div class="mt20">
+					<p class="mb10">
+						<strong class="mr10">◎ 판매자 정보</strong>
+					</p>
+					<table class="table tbl_hover">
+						<colgroup>
+							<col />
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">판매자</th>
+								<th scope="col">대표번호</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>㈜티에스컴퍼니</td>
+								<td>1670-6519</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				
+				<div class="mt20">
+					<p class="mr10">※ 배송 문의사항은 판매자에게 확인해 주세요.</p>
+				</div>
+			
+			</div>
+		
+			<!-- pop_close 닫는 클래스 -->
+			<a href="#" class="btn_close pop_close">닫기</a>
+		</div>
+	</article>
+	
+	<!-- 주문취소 재승인(MD) 팝업 -->
+	<article id="reApproval_info_popup" class="pop_layer">
+		<div class="pop_wrap">
+			<h1>주문취소 재승인(MD) 팝업</h1>
+		
+			<div class="scroll h700">
+		
+				<!-- 주문 상품내역 -->
+				<div class="mt30 mb30 ml30 mr30">
+					<p class="mb10">
+						<strong class="mr10">◎ 주문내역</strong>
+					</p>
+					<table class="table tbl_hover">
+						<colgroup>
+							<col style="width:50px" />
+							<col />
+							<col />
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">묶음</th>
+								<th scope="col">순번</th>
+								<th scope="col">상품코드</th>
+								<th scope="col">상품명/옵션명</th>
+								<th scope="col">주문상태</th>
+								<th scope="col">변경주문상태</th>
+								<th scope="col">수량</th>
+								<th scope="col">잔여수량</th>
+								<th scope="col">상품가격</th>
+								<th scope="col">쿠폰모드<br/>프로모션코드</th>
+								<th scope="col">할인가</th>
+								<th scope="col">상품별배송비<br/>(배송비조건)<br>(제주산간)</th>
+								<th scope="col">적용배송비</th>
+								<th scope="col">변경배송비</th>
+								<th scope="col">결제금액</th>
+								<th scope="col">재결제금액</th>
+								<th scope="col">취소사유</th>
+								<th scope="col">상세사유</th>
+								<th scope="col">관리자메모</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td rowspan="3">1</td>
+								<td>1</td>
+								<td>100006461</td>
+								<td>호정가 넛츠 볶음땅콩 (500g 봉지) 견과류 슈퍼푸드</td>
+								<td>주문완료</td>
+								<td><select title="" class="w120"><option>1</option></select></td>
+								<td>1</td>
+								<td>1</td>
+								<td>5,700</td>
+								<td>ABC123X<br/>100016417</td>
+								<td></td>
+								<td>
+									<ul>
+										<li>3,500</li>
+										<li>(50,000원)</li>
+										<li>(3,000원)</li>
+									</ul>
+								</td>
+								<td>6,500</td>
+								<td></td>
+								<td>7,200</td>
+								<td></td>
+								<td><input type="text" class="w100" value="변경주문상태 취소인경우 활성화"/></td>
+								<td><input type="text" class="w100" value=""/></td>
+								<td><input type="text" class="w100" value=""/></td>
+							</tr>
+							<tr>
+								<!-- <td></td> -->
+								<td>2</td>
+								<td>100008609</td>
+								<td>호정가 찹쌀약과 1박스</td>
+								<td><!-- 주문완료 -->출고준비중</td>
+								<td><select title="" class="w120"><option>1</option></select></td>
+								<td>1</td>
+								<td>1</td>
+								<td>5,700</td>
+								<td>ABC123X<br/>100016417</td>
+								<td></td>
+								<td>
+									<ul>
+										<li>3,500</li>
+										<li>(50,000원)</li>
+										<li>(3,000원)</li>
+									</ul>
+								</td>
+								<td>6,500</td>
+								<td></td>
+								<td>7,200</td>
+								<td></td>
+								<td><input type="text" class="w100" disabled value=""/></td>
+								<td><input type="text" class="w100" disabled value=""/></td>
+								<td><input type="text" class="w100" disabled value=""/></td>
+							</tr>
+							<tr>
+								<!-- <td></td> -->
+								<td>3</td>
+								<td>100016417</td>
+								<td>오월도 천도복숭아 2Kg</td>
+								<td><!-- 주문완료 -->배송중</td>
+								<td><select title="" class="w120"><option>1</option></select></td>
+								<td>1</td>
+								<td>1</td>
+								<td>5,700</td>
+								<td>ABC123X<br/>100016417</td>
+								<td></td>
+								<td>
+									<ul>
+										<li>3,500</li>
+										<li>(50,000원)</li>
+										<li>(3,000원)</li>
+									</ul>
+								</td>
+								<td>6,500</td>
+								<td></td>
+								<td>7,200</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>4</td>
+								<td>100017087</td>
+								<td>싱싱 과자 모음</td>
+								<td><!-- 주문완료 -->품절취소</td>
+								<td><select title="" class="w120"><option>1</option></select></td>
+								<td>1</td>
+								<td>1</td>
+								<td>5,700</td>
+								<td>ABC123X<br/>100016417</td>
+								<td></td>
+								<td>
+									<ul>
+										<li>3,500</li>
+										<li>(50,000원)</li>
+										<li>(3,000원)</li>
+									</ul>
+								</td>
+								<td>6,500</td>
+								<td></td>
+								<td>7,200</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				
+				<!-- 결제 정보 -->
+				<div class="mt30 ml30 mr30">
+					<p class="mb10">
+						<strong class="mr10">◎ 결제 정보</strong>
+					</p>
+					<table class="table left_tbl">
+						<colgroup>
+							<col style="width:20%;" />
+							<col />
+							<col />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row" rowspan="2">주문결제정보</th>	
+								<th>총 결제금액</th>
+								<th>총 할인금액</th>
+								<th>총 상품금액</th>
+								<th>총 배송금액</th>
+							</tr>
+							<tr>
+								<td>148,000</td>
+								<td>17,000</td>
+								<td>158,500</td>
+								<td>3,500</td>
+							</tr>
+							<tr>
+								<th scope="row" rowspan="2">
+									변경 재결제정보<br/>
+									<a href="#nolink" class="button small btn_white">재결제금액 계산</a>
+								</th>	
+								<th>총 결제금액</th>
+								<th>총 할인금액</th>
+								<th>총 상품금액</th>
+								<th>총 배송금액</th>
+							</tr>
+							<tr>
+								<td class="t_red">92,600</td>
+								<td>17,000</td>
+								<td>102,600</td>
+								<td>7,000</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				
+				<!-- 재승인 결제 상세 -->
+				<div class="mt30 mb30 ml30 mr30">
+					<p class="mb10">
+						<strong class="mr10">◎ 주문 상품내역</strong>
+					</p>
+					<table class="table tbl_hover">
+						<!-- <colgroup>
+							<col />
+							<col />
+						</colgroup> -->
+						<thead>
+							<tr>
+								<th scope="col">결제유형</th>
+								<th scope="col">원결제금액</th>
+								<th scope="col">재결제금액</th>
+								<th scope="col">취소금액</th>
+								<th scope="col">소멸예정</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>총 재결제금액</th>
+								<th class="t_red">148,000</th>
+								<th>92,600</th>
+								<th>55,400</th>
+								<th></th>
+							</tr>
+							<tr>
+								<td>복지포인트 결제</td>
+								<td>50,000</td>
+								<td>
+									<input type="text" class="w90 t_right" value="0"/>
+									<a href="#nolink" class="button small btn_white">연산</a>
+								</td>
+								<td>50,000</td>
+								<td class="t_red">50,000</td>
+							</tr>
+							<tr>
+								<td>제로페이</td>
+								<td>50,000</td>
+								<td>
+									<input type="text" class="w90 t_right" value="44,600"/>
+									<a href="#nolink" class="button small btn_white">연산</a>
+								</td>
+								<td>5,400</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>신용카드</td>
+								<td>50,000</td>
+								<td>
+									<input type="text" class="w90 t_right" value="44,600"/>
+									<a href="#nolink" class="button small btn_white">연산</a>
+								</td>
+								<td>0</td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+		
+				<!-- 할인 정보 -->
+				<div class="mt30 mb30 ml30 mr30">
+					<p class="mb10">
+						<strong class="mr10">◎ 할인정보</strong>
+					</p>
+					<table class="table tbl_hover">
+						<colgroup>
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">상품코드</th>
+								<th scope="col">구분</th>
+								<th scope="col">코드</th>
+								<th scope="col">내용</th>
+								<th scope="col">할인가</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>100006461</td>
+								<td>쿠폰</td>
+								<td>ABC123X</td>
+								<td>(오픈기념)10000원 이상 할인쿠폰</td>
+								<td>2000</td>
+							</tr>
+							<tr>
+								<td>100008609</td>
+								<td>쿠폰</td>
+								<td>ABC456X</td>
+								<td>(오픈기념)20000원 이상 할인쿠폰</td>
+								<td>5000</td>
+							</tr>
+							<tr>
+								<td>100017087</td>
+								<td>쿠폰</td>
+								<td>ABC789X</td>
+								<td>(오픈기념)30000원 이상 할인쿠폰</td>
+								<td>10000</td>
+							</tr>
+							<tr>
+								<td>100016417</td>
+								<td>프로모션</td>
+								<td>10003123</td>
+								<td>프로모션!오늘만 에누리!</td>
+								<td>5000</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+		
+				<!-- pop_close 닫는 클래스 -->
+				<a href="#" class="btn_close pop_close">닫기</a>
+			
+				<div class="mt30 mb30" style="width:650px; text-align: center;">
+					<input class="button w100 btn_blue" type="button" value="재승인/상태변경">
+				</div>
+			</div>
+		</div>
+	</article>
+</body>
+</html>

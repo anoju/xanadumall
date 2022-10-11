@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<title>온누리장터</title>
+<script>window.MSInputMethodContext && document.documentMode && document.write('<script src="../static/js/ie11CustomProperties.js"><\/script>');</script>
+<!-- 반드시 나중에 절대경로로 바꿔주세요 -->
+<link href="../static/css/reset.css" rel="stylesheet" />
+<link href="../static/css/common.css" rel="stylesheet" />
+<link href="../static/css/contents.css" rel="stylesheet" />
+<!-- //반드시 나중에 절대경로로 바꿔주세요 -->
+<script type="text/javascript" src="../static/js/common.js"></script>
+<script type="text/javascript" src="../static/js/ui.js"></script>
+<!--[if lt IE 9]>
+    <script type="text/javascript">
+        document.createElement("header");
+        document.createElement("nav");
+        document.createElement("section");
+        document.createElement("article");
+        document.createElement("footer");
+    </script>
+<![endif]-->
+</head>
+<body>
+
+	<!-- 헤더영역 -->
+	<header id="headerWrap" data-include="../include/header.html"></header>
+	<!-- //헤더영역 -->
+
+	<!-- 컨텐츠 영역 -->          
+	<section id="container" data-title="고객센터">
+		<div class="section">
+			<div class="locationBar">
+				<span class="home">홈</span>
+				<span>고객센터</span>
+			</div>
+
+			<div class="customerWrap">
+				<!--  data-mypage-on="1" -->
+				<div class="leftGnb" data-include="./customerGnb.html" data-mypage-on="1"></div>
+				<div class="customerCont">
+
+					<h3 class="subH2 mt0 tl">공지사항</h3>
+
+					<div class="tableSearchBox">
+						<div class="selectBox small">
+							<select title="구분 전체">
+								<option value="">구분 전체</option>
+							</select>
+						</div>
+						<div class="inputBox small"><input type="text" /></div>
+						<button class="btnSearch">검색</button>
+					</div>
+
+					<div class="tableList mt20">
+						<table>
+							<colgroup>
+								<col style="width:100px;" />
+								<col />
+								<col style="width:120px;" />
+								<col style="width:100px;" />
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">번호</th>
+									<th scope="col">제목</th>
+									<th scope="col">작성일</th>
+									<th scope="col">조회</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><span class="icoNotice">공지</span></td>
+									<td class="pl0 tl"><a href="#" class="fc222">2021 대체 공휴일 고객센터 운영관련 안내</a></td>
+									<td>2022-01-01</td>
+									<td>123</td>
+								</tr>
+								<tr>
+									<td><span class="icoNotice">공지</span></td>
+									<td class="pl0 tl"><a href="#" class="fc222">2021 대체 공휴일 고객센터 운영관련 안내</a></td>
+									<td>2022-01-01</td>
+									<td>123</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td class="pl0 tl"><a href="#" class="fc222">2021 대체 공휴일 고객센터 운영관련 안내</a></td>
+									<td>2022-01-01</td>
+									<td>123</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td class="pl0 tl"><a href="#" class="fc222">2021 대체 공휴일 고객센터 운영관련 안내</a></td>
+									<td>2022-01-01</td>
+									<td>123</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td class="pl0 tl"><a href="#" class="fc222">2021 대체 공휴일 고객센터 운영관련 안내</a></td>
+									<td>2022-01-01</td>
+									<td>123</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="pagingBox mt24">
+						<a href="#" class="btnPrev2">맨처음</a>
+						<a href="#" class="btnPrev1">이전</a>
+						<strong>1</strong>
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<a href="#">5</a>
+						<a href="#">6</a>
+						<a href="#">7</a>
+						<a href="#">8</a>
+						<a href="#">9</a>
+						<a href="#">10</a>
+						<a href="#" class="btnNext1">다음</a>
+						<a href="#" class="btnNext2">맨뒤로</a>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<!-- //컨텐츠 영역 -->
+
+	<!-- 하단 영역 -->
+	<footer id="footerWrap" data-include="../include/footer.html"></footer>
+	<!-- //하단 영역 -->
+	<script>
+	</script>
+</body>
+</html>

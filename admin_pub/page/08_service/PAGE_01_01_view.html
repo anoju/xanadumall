@@ -1,0 +1,182 @@
+<!DOCTYPE html> 
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>XANADU 시스템</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" href="../../static/css/common.css" media="all" />
+	<link rel="stylesheet" href="../../static/css/contents.css" media="all" />
+	<script src="../../static/js/plugins.js"></script>
+	<script src="../../static/js/ui_script.js"></script>
+	<!--[if lt IE 9]>
+		<script type="text/javascript">
+			document.createElement("header");
+			document.createElement("nav");
+			document.createElement("section");
+			document.createElement("article");
+			document.createElement("footer");
+		</script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- wrap -->
+	<div id="wrap" data-active="[8,1,1]">
+		<!-- header -->
+		<header id="header" data-include="../../include/header.html"></header>
+		<!-- //header -->	
+		
+		<!-- gnb -->
+		<aside class="left_menu"  data-include="../../include/leftMenu.html"></aside>
+		<!-- //left_menu -->
+
+		<!-- container -->
+		<div id="container">
+			<!-- contents -->
+			<section id="contents">
+				<h1 id="page_tit">공지사항(고객용) 상세정보</h1>
+
+				<div class="flex">
+					<p>
+						<strong class="mr10">◎ 공지사항(고객용) 상세정보</strong>
+					</p>
+				</div>
+				
+				<table class="table left_tbl view_tbl mt20">
+					<caption>공지사항(고객용) 상세정보</caption>
+					<colgroup>
+						<col style="width:10%" />
+						<col style="width:40%" />
+						<col style="width:10%" />
+						<col />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">제목*</th>
+							<td> <input type="text" /> (최대100자) </td>
+						</tr>
+						<tr>
+							<th scope="row">시작일*</th>
+							<td>
+								<input class="datepicker" type="text" />
+							</td>
+							<th scope="row">종료일*</th>
+							<td>
+								<input class="datepicker" type="text" />
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">서비스유형*</th>
+							<td>
+								<select title="옵션선택" class="w120">
+									<option value="">전체</option>
+								</select>
+							</td>
+							<th scope="row">전시위치*</th>
+							<td>
+								<label>
+									<input name="radio1" class="radio" type="radio" checked="checked" />
+									<span class="lbl">웹</span>
+								</label>
+								<label>
+									<input name="radio1" class="radio" type="radio" />
+									<span class="lbl">모바일</span>
+								</label>
+								<label>
+									<input name="radio1" class="radio" type="radio" />
+									<span class="lbl">웹 + 모바일</span>
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">공지종류*</th>
+							<td>
+								<select title="옵션선택" class="w120">
+									<option value="">일반공지</option>
+								</select>	
+							</td>
+							<th scope="row">공개여부</th> 
+							<td>
+								<label>
+									<input name="radio2" class="radio" type="radio" checked="checked" />
+									<span class="lbl">공개</span>
+								</label>
+								<label>
+									<input name="radio2" class="radio" type="radio" />
+									<span class="lbl">비공개</span>
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<th>고객사 구분</th>
+							<td colspan="3">
+								<label>
+									<input name="radio3" class="radio" type="radio" checked="checked" />
+									<span class="lbl">일괄(전체)적용</span>
+								</label>
+								<label>
+									<input name="radio3" class="radio" type="radio" />
+									<span class="lbl">개별적용</span>
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">고객사</th>
+							<td colspan="3">
+								<input type="text" disabled />
+								<input type="text" />
+								<button type="button" class="button" onclick="layerpopup('client_search_popup');">검색</button>
+								<button type="button" class="button">적용</button>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">선택고객사</th>
+							<td colspan="3"></td>
+						</tr>
+						<tr>
+							<th scope="row">내용*</th>
+							<td colspan="3"></td>
+						</tr>
+						<tr>
+							<th scope="row">파일첨부</th>
+							<td colspan="3">
+								<input type="text" /> 
+								<button type="button" class="button">찾아보기</button>
+							</td>
+						</tr>
+						
+						<tr>
+							<th scope="row">등록자</th>
+							<td>담당자</td>
+							<th scope="row">등록일</th>
+							<td>2020-12-20 11:02:12</td>
+						</tr>
+						<tr>
+							<th scope="row">수정자</th>
+							<td>담당자</td>
+							<th scope="row">수정일</th>
+							<td>2020-12-20 11:02:12</td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<p class="t_center mt30">
+					<a href="#" class="button large w100 btn_black">저장</a>
+				</p>
+				
+			</section>
+			<!-- //contents -->
+		</div>
+		<!-- //container -->
+	</div>
+	<!-- //wrap -->
+	<!-- footer -->
+	<header id="footer" data-include="../../include/footer.html"></header>
+	<!-- //footer -->
+	
+	<!-- 고객사 검색 팝업 -->
+	<article id="client_search_popup" class="pop_layer" data-include="../../include/popup/clientSearchPop.html"></article>
+	
+</body>
+</html>

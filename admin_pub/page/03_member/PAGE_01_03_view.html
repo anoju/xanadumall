@@ -1,0 +1,243 @@
+<!DOCTYPE html> 
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>XANADU 시스템</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" href="../../static/css/common.css" media="all" />
+	<link rel="stylesheet" href="../../static/css/contents.css" media="all" />
+	<script src="../../static/js/plugins.js"></script>
+	<script src="../../static/js/ui_script.js"></script>
+	<!--[if lt IE 9]>
+		<script type="text/javascript">
+			document.createElement("header");
+			document.createElement("nav");
+			document.createElement("section");
+			document.createElement("article");
+			document.createElement("footer");
+		</script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- wrap -->
+	<div id="wrap" data-active="[3,1,1]">
+		<!-- header -->
+		<header id="header" data-include="../../include/header.html"></header>
+		<!-- //header -->	
+		
+		<!-- gnb -->
+		<aside class="left_menu"  data-include="../../include/leftMenu.html"></aside>
+		<!-- //left_menu -->
+
+		<!-- container -->
+		<div id="container">
+			<!-- contents -->
+			<section id="contents">
+				<h1 id="page_tit">B2C회원관리</h1>	
+				
+				<div class="flex mt30">
+					<p>
+						<strong class="mr10">◎ 회원 상세 정보</strong>
+					</p>
+					<input type="button" value="저장" class=" mla button small w70 btn_blue">
+				</div>
+				
+				<table class="table left_tbl view_tbl mt20">
+					<caption>주문정보</caption>
+					<colgroup>
+						<col style="width:10%" />
+						<col style="width:40%" />
+						<col style="width:10%" />
+						<col />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">아이디</th>
+							<td>tester1234</td>
+							<th scope="row">가입유형</th>
+							<td>
+								<select title="옵션선택">
+									<option value="">B2C(일반회원)</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">성명</th>
+							<td>김은행</td>
+							<th scope="row">주민등록번호</th>
+							<td>780128-1******</td>
+						</tr>
+						<tr>
+							<th scope="row">회원등급</th>
+							<td>실버</td>
+							<th scope="row">성별</th>
+							<td>여자</td>
+						</tr>
+						<tr>
+							<th scope="row">E-Mail</th>
+							<td><input type="text" value="a*****@naver.com" readonly> 수신설정 <input type="checkbox" checked="checked"> </td>
+							<th scope="row">생년월일</th> 
+							<td>
+								<input class="datepicker" type="text" value="1978-01-28"/>
+								<input type="radio" checked="checked"> 양력
+								<input type="radio" > 음력
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">핸드폰</th>
+							<td><input type="text" value="010-****-1234" readonly> 수신설정 <input type="checkbox"> </td>
+							<th scope="row">전화번호</th>
+							<td><input type="text" disabled></td>
+						</tr>
+						<tr>
+							<th scope="row">주소</th>
+							<td>
+								<label>
+									<input type="text" class="w_30" value="12345"> <input type="text" value="서울특별시 논현동"> 
+									<button onClick="layerpopup('address_search_popup')" class=" button small w100 btn_blue">우편번호 찾기</button>
+									
+									<br/>
+									<input type="text" value="">
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">본인인증수단</th>
+							<td>
+								휴대폰 인증
+							</td>
+							<th scope="row">가입채널</th>
+							<td>
+								<label>
+									<input name="radio3" type="radio" class="radio" checked="checked" />
+									<span class="lbl">PC</span>
+								</label>
+								<label>
+									<input name="radio3" type="radio" class="radio" />
+									<span class="lbl">MOBILE</span>
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">최근접속일</th>
+							<td>2020-12-07 ( 10:54:34 )</td>
+							<th scope="row">회원 가입일</th>
+							<td>2019-12-07</td>
+						</tr>
+						<tr>
+							<th scope="row">SMS 연동정보</th>
+							<td>
+								네이버 (해제 : 2019-12-07) <br/>
+								카카오 (등록 : 2019-12-07) <br/>
+								구글
+							</td>
+						</tr>
+						
+						<tr>
+							<th scope="row">메모</th>
+							<td colspan="3">
+								<textarea>
+								</textarea>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<ul class="tabmenu tabMotion mt30">
+					<li><a href="#tabCon1">적립금 내역</a></li>
+					<li><a href="#tabCon2">쿠폰 내역</a></li>
+					<li><a href="#tabCon3">구매 내역</a></li>
+				</ul>
+				<div class="flex f_right mt10 mr10 mb10" >
+					<select title="옵션선택">
+						<option value="">20개씩 보기</option>
+						<option value="">50개씩 보기</option>
+						<option value="">100개씩 보기</option>
+					</select>
+				</div>
+				<div>
+					<table class="table tbl_hover mt15">
+						<caption>테이블 제목</caption>
+						<colgroup>
+							<col style="width:50px" />
+							<col />
+							<col />
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col" rowspan="2">번호</th>
+								<th scope="col" rowspan="2">일자</th>
+								<th scope="col" rowspan="2">구분</th>
+								<th scope="col" rowspan="2">지급내역</th>
+								<th scope="col" rowspan="2">적립금 내역</th>
+								<th scope="col" rowspan="2">적립금 잔액</th>
+								<th scope="col" rowspan="2">주문번호</th>
+								<th scope="col" rowspan="2">주문순서</th>
+								<th scope="col" rowspan="2">적립 및 사용</th>
+							</tr>
+						</thead>
+						
+						<tbody onclick="layerpopup('B2C_Member_popup')">
+							<!-- 항목 -->
+							<tr>
+								<td>1</td>
+								<td>2021.05.27 15:15:15 </td>
+								<td>적립</td>
+								<td>상품구매</td>
+								<td>980</td>
+								<td>980</td>
+								<td>P1000000000002</td>
+								<td>1</td>
+								<td>적립금 적립</td>
+							</tr>
+							<!-- //항목 -->
+							<!-- 항목 -->
+							<tr>
+								<td>1</td>
+								<td>2021.05.27 15:15:15 </td>
+								<td>적립</td>
+								<td>상품구매</td>
+								<td>980</td>
+								<td>980</td>
+								<td>P1000000000002</td>
+								<td>1</td>
+								<td>적립금 적립</td>
+							</tr>
+							<!-- //항목 -->
+						</tbody>
+					</table>
+	
+					<div class="paging_box mt30">
+						<ul class="pagination mla mra">
+							<li class="disabled"><a href="#"><i class="icon-angle-double-left"></i></a></li>
+							<li class="disabled"><a href="#"><i class="icon-angle-left"></i></a></li>
+							<li class="active"><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li><a href="#"><i class="icon-angle-right"></i></a></li>
+							<li><a href="#"><i class="icon-angle-double-right"></i></a></li>
+						</ul>
+						<a href="#" class="right button"><i class="icon-file-excel"></i> 엑셀 다운로드</a>
+					</div>
+				</div>
+				
+				
+			</section>
+		</div>
+	</div>
+	<!-- footer -->
+	<header id="footer" data-include="../../include/footer.html"></header>
+	
+	<article id="address_search_popup" class="pop_layer" data-include="../../include/popup/adressSearchPop.html">
+	
+	</article>
+	
+	<article id="B2C_Member_popup" class="pop_layer" data-include="../../include/popup/dormancyMemberPop.html">
+	
+	</article>
+</body>
+</html>

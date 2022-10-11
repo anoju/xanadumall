@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<title>온누리장터</title>
+<script>window.MSInputMethodContext && document.documentMode && document.write('<script src="../static/js/ie11CustomProperties.js"><\/script>');</script>
+<!-- 반드시 나중에 절대경로로 바꿔주세요 -->
+<link href="../static/css/reset.css" rel="stylesheet" />
+<link href="../static/css/common.css" rel="stylesheet" />
+<link href="../static/css/contents.css" rel="stylesheet" />
+<!-- //반드시 나중에 절대경로로 바꿔주세요 -->
+<script type="text/javascript" src="../static/js/common.js"></script>
+<script type="text/javascript" src="../static/js/ui.js"></script>
+<!--[if lt IE 9]>
+    <script type="text/javascript">
+        document.createElement("header");
+        document.createElement("nav");
+        document.createElement("section");
+        document.createElement("article");
+        document.createElement("footer");
+    </script>
+<![endif]-->
+</head>
+<body>
+
+	<!-- 헤더영역 -->
+	<header id="headerWrap" data-include="../include/header.html"></header>
+	<!-- //헤더영역 -->
+
+	<!-- 컨텐츠 영역 -->          
+	<section id="container" data-title="입점신청서 작성">
+		<div class="section">
+			<div class="locationBar">
+				<span class="home">홈</span>
+				<span>입점신청서 작성</span>
+			</div>
+
+			<div class="loginWrap type2">
+				<h1>입점신청서 작성</h1>
+
+				<div class="formBox mt24">
+					<p class="tit">문의 구분<span class="impo">중요</span></p>
+					<div class="selectBox">
+						<select title="문의 구분">
+							<option value="">선택하세요</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="formBox mt24">
+					<label for="Text" class="tit">문의자명<span class="impo">중요</span></label>
+					<div class="inputBox"><input type="text" id="Text" placeholder="문의자명" /></div>
+				</div>
+
+				<div class="formBox mt24">
+					<p class="tit">휴대폰<span class="impo">중요</span></p>
+					<div class="phoneForm">
+						<div class="selectBox flex11">
+							<select title="선택">
+								<option value="">선택</option>
+							</select>
+						</div><span class="line">-</span>
+						<div class="inputBox flex11"><input type="text" /></div><span class="line">-</span>
+						<div class="inputBox flex11"><input type="text" /></div>
+					</div>
+				</div>
+
+				<div class="formBox mt24">
+					<p class="tit">이메일<span class="impo">중요</span></p>
+					<div class="emailForm">
+						<div class="inputBox"><input type="text" /></div>
+						<span class="line">@</span>
+						<div class="inputBox"><input type="text" /></div>
+						<div class="selectBox">
+							<select title="선택">
+								<option value="">선택</option>
+							</select>
+						</div>
+					</div>
+				</div>
+
+				<div class="formBox mt24">
+					<label for="Text2" class="tit">문의제목<span class="impo">중요</span></label>
+					<div class="inputBox"><input type="text" id="Text2" placeholder="문의자명" /></div>
+				</div>
+
+				<div class="formBox mt24">
+					<label for="Text3" class="tit mt15">문의내용</label>
+					<div class="textarea"><textarea id="Text3"></textarea></div>
+					<p class="text">이메일 및 SMS 수신동의 시, 온누리 전통시장에서 제공되는 다양한 할인 혜택과 이벤트 및 기획전 정보를 보다 빠르게 받아보실 수 있습니다.</p>
+				</div>
+
+				<div class="formBox mt24">
+					<label for="File" class="tit">문서첨부</label>
+					<div class="inputBox"><input type="file" id="File" placeholder="최대 5MB까지 첨부 가능합니다." /></div>
+				</div>
+				
+				<div class="btnGroup mt24">
+					<button class="button line large">취소</button>
+					<button class="button large">등록</button>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<!-- //컨텐츠 영역 -->
+	
+	<!-- 하단 영역 -->
+	<footer id="footerWrap" data-include="../include/footer.html"></footer>
+	<!-- //하단 영역 -->
+	<script>
+	</script>
+</body>
+</html>

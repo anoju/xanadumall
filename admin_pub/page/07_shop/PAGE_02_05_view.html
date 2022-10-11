@@ -1,0 +1,626 @@
+<!DOCTYPE html> 
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>XANADU 시스템</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" href="../../static/css/common.css" media="all" />
+	<link rel="stylesheet" href="../../static/css/contents.css" media="all" />
+	<script src="../../static/js/plugins.js"></script>
+	<script src="../../static/js/ui_script.js"></script>
+	<!--[if lt IE 9]>
+		<script type="text/javascript">
+			document.createElement("header");
+			document.createElement("nav");
+			document.createElement("section");
+			document.createElement("article");
+			document.createElement("footer");
+		</script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- wrap -->
+	<div id="wrap" data-active="[7,2,5]">
+		<!-- header -->
+		<header id="header" data-include="../../include/header.html"></header>
+		<!-- //header -->	
+		
+		<!-- gnb -->
+		<aside class="left_menu"  data-include="../../include/leftMenu.html"></aside>
+		<!-- //left_menu -->
+
+		<!-- container -->
+		<div id="container">
+			<!-- contents -->
+			<section id="contents">
+				<h1 id="page_tit">등록상품관리</h1>	
+				<div class="flex mt30">
+					<p>
+						<strong class="mr10">◎ 배너등록</strong>
+					</p>
+				</div>
+
+				<table class="table left_tbl view_tbl mt20">
+					<caption>등록상품관리</caption>
+					<colgroup>
+						<col style="width:10%" />
+						<col style="width:40%" />
+						<col style="width:10%" />
+						<col />
+					</colgroup>
+					
+					<tbody>
+				
+						<tr>
+							<th scope="row">서비스유형</th>
+							<td>
+								<label>
+									<input name="radio1" class="radio" type="radio" checked="checked" />
+									<span class="lbl">온누리</span>
+								</label>
+								<label>
+									<input name="radio1" class="radio" type="radio" />
+									<span class="lbl">기념일</span>
+								</label>
+								<label>
+									<input name="radio1" class="radio" type="radio" />
+									<span class="lbl">특판</span>
+								</label>
+								<label>
+									<input name="radio1" class="radio" type="radio" />
+									<span class="lbl">MRO</span>
+								</label>
+							</td>
+					
+							<th scope="row">카테고리명</th>
+							<td>
+								<div class="flex">
+									<select title="옵션선택">
+										<option value="">전체</option>
+										<option value="">수산</option>
+										<option value="">축산</option>
+										<option value="">가공식품</option>
+										<option value="">온통 수산물</option>
+										<option value="">온통 건강식품</option>
+										<option value="">울산 수산</option>
+									</select>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">배너노출개수</th>
+							<td>
+								<div class="flex">
+									<select title="옵션선택">
+										<option value="">1</option>
+										<option value="">2</option>
+										<option value="">3</option>
+										<option value="">4</option>
+										<option value="">5</option>
+										<option value="">6</option>
+										<option value="">7</option>
+										<option value="">8</option>
+										<option value="">9</option>
+										<option value="">10</option>
+									</select>
+								</div>
+							</td>
+							
+							<th scope="row">대표상품 노출개수</th>
+							<td>
+								<div class="flex">
+									<select title="옵션선택">
+									<option value="">2</option>
+										<option value="">3</option>
+										<option value="">4</option>
+										<option value="">5</option>
+										<option value="">6</option>
+										<option value="">7</option>
+										<option value="">8</option>
+										<option value="">9</option>
+										<option value="">10</option>
+									</select>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="mt30">
+					<div class="flex align_center">
+						<p>
+							<strong class="mr10">◎ 배너목록</strong>
+						</p>
+						<button type="button" class="button btn_black mla" onclick="layerpopup('banner_View_pop')">배너추가</button>
+					</div>
+
+					<table class="table tbl_hover mt15">
+						<caption>테이블 제목</caption>
+						<colgroup>
+							<col />
+							<col />
+							<col />
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col"><input type="checkbox"></th>
+								<th scope="col">배너명</th>
+								<th scope="col">배너구분</th>
+								<th scope="col">노출기간</th>
+								<th scope="col">링크타일</th>
+								<th scope="col">이미지</th>
+								<th scope="col">우선순위</th>
+							</tr>
+	
+						</thead>
+						<tbody>
+							<!-- 항목 -->
+							<tr >
+								<td><input type="checkbox"></td>
+								<td>환절기 건강푸드</td>
+								<td>공통배너</td>
+								<td>2020-01 - 2020-12-31</td>
+								<td>URL</td>
+								<td class="pointer" ><a href="#">이미지보기</a></td>
+								<td><input type="text" placeholder="0"></td>
+							</tr>
+							<tr >
+								<td><input type="checkbox"></td>
+								<td>환절기 건강푸드</td>
+								<td>header</td>
+								<td>2020-01 - 2020-12-31</td>
+								<td>카테고리</td>
+								<td class="pointer" ><a href="#">이미지보기</a></td>
+								<td><input type="text" placeholder="0"></td>
+							</tr>
+							<tr >
+								<td><input type="checkbox"></td>
+								<td>환절기 건강푸드</td>
+								<td>Top배너</td>
+								<td>2020-01 - 2020-12-31</td>
+								<td>이벤트</td>
+								<td class="pointer" ><a href="#">이미지보기</a></td>
+								<td><input type="text" placeholder="0"></td>
+							</tr>
+							<tr >
+								<td><input type="checkbox"></td>
+								<td>환절기 건강푸드</td>
+								<td>하단배너</td>
+								<td>2020-01 - 2020-12-31</td>
+								<td>기획전</td>
+								<td class="pointer" ><a href="#">이미지보기</a></td>
+								<td><input type="text" placeholder="0"></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td>환절기 건강푸드</td>
+								<td>Main 온누리</td>
+								<td>2020-01 - 2020-12-31</td>
+								<td>단독상품</td>
+								<td class="pointer" ><a href="#">이미지보기</a></td>
+								<td><input type="text" placeholder="0"></td>
+							</tr>
+							<!-- //항목 -->
+						</tbody>
+					</table>
+
+					<div class="mt10">
+						<button class="button btn_black t_left" type="button">선택삭제</button>
+					</div>
+	
+					<div class="paging_box mt30">
+						<ul class="pagination mla mra">
+							<li class="disabled"><a href="#"><i class="icon-angle-double-left"></i></a></li>
+							<li class="disabled"><a href="#"><i class="icon-angle-left"></i></a></li>
+							<li class="active"><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li><a href="#"><i class="icon-angle-right"></i></a></li>
+							<li><a href="#"><i class="icon-angle-double-right"></i></a></li>
+						</ul>
+					</div>
+				</div>
+
+				
+				<div class="mt50">
+					<div class="flex align_center">
+						<p>
+							<strong class="mr10">◎ 대표 상품 목록</strong>
+						</p>
+						<button type="button" class="button btn_black mla" onclick="layerpopup('goods_View_pop')">상품추가</button>
+					</div>
+
+					<table class="table tbl_hover mt15">
+						<caption>테이블 제목</caption>
+						<colgroup>
+							<col />
+							<col />
+							<col />
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col" rowspan="2" colspan="1"><input type="checkbox"></th>
+								<th scope="col" rowspan="2" colspan="1">상품코드</th>
+								<th scope="col" rowspan="2" colspan="1">상품명</th>
+								<th scope="col" rowspan="2" colspan="1">소속시장</th>
+								<th scope="col" rowspan="2" colspan="1">CSP 업체명</th>
+								<th scope="col" rowspan="1" colspan="2">상품가격(PC)</th>
+								<th scope="col" rowspan="2" colspan="1">재고</th>
+								<th scope="col" rowspan="2" colspan="1">우선순위</th>
+							</tr>
+							<tr>
+								<th scope="col" class="line">최대노출건수</th>
+								<th scope="col" class="line">유효등록배너</th>
+							</tr>
+	
+						</thead>
+						<tbody>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td>1234567890</td>
+								<td>[용무낭인 수제반찬]E20건새우 아욱국</td>
+								<td>목포종합수산시장</td>
+								<td>용문상인</td>
+								<td>20,000원</td>
+								<td>25,000원</td>
+								<td>50</td>
+								<td><input type="text" placeholder="0"></td>
+							</tr>
+								<tr>
+								<td><input type="checkbox"></td>
+								<td>1234567890</td>
+								<td>[용무낭인 수제반찬]E20건새우 아욱국</td>
+								<td>목포종합수산시장</td>
+								<td>용문상인</td>
+								<td>20,000원</td>
+								<td>25,000원</td>
+								<td>50</td>
+								<td><input type="text" placeholder="0"></td>
+							</tr>
+								<tr>
+								<td><input type="checkbox"></td>
+								<td>1234567890</td>
+								<td>[용무낭인 수제반찬]E20건새우 아욱국</td>
+								<td>목포종합수산시장</td>
+								<td>용문상인</td>
+								<td>20,000원</td>
+								<td>25,000원</td>
+								<td>50</td>
+								<td><input type="text" placeholder="0"></td>
+							</tr>
+								<tr>
+								<td><input type="checkbox"></td>
+								<td>1234567890</td>
+								<td>[용무낭인 수제반찬]E20건새우 아욱국</td>
+								<td>목포종합수산시장</td>
+								<td>용문상인</td>
+								<td>20,000원</td>
+								<td>25,000원</td>
+								<td>50</td>
+								<td><input type="text" placeholder="0"></td>
+							</tr>
+								<tr>
+								<td><input type="checkbox"></td>
+								<td>1234567890</td>
+								<td>[용무낭인 수제반찬]E20건새우 아욱국</td>
+								<td>목포종합수산시장</td>
+								<td>용문상인</td>
+								<td>20,000원</td>
+								<td>25,000원</td>
+								<td>50</td>
+								<td><input type="text" placeholder="0"></td>
+							</tr>
+						</tbody>
+					</table>
+
+					<div class="mt10">
+						<button class="button btn_black t_left" type="button">선택삭제</button>
+					</div>
+
+					<div class="paging_box mt30">
+						<ul class="pagination mla mra">
+							<li class="disabled"><a href="#"><i class="icon-angle-double-left"></i></a></li>
+							<li class="disabled"><a href="#"><i class="icon-angle-left"></i></a></li>
+							<li class="active"><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li><a href="#"><i class="icon-angle-right"></i></a></li>
+							<li><a href="#"><i class="icon-angle-double-right"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<!-- //contents -->
+		</div>
+		<!-- //container -->
+	</div>
+	<!-- //wrap -->
+	<!-- footer -->
+	<header id="footer" data-include="../../include/footer.html"></header>
+	<!-- //footer -->
+
+	<!-- 배너 조회 팝업 -->
+	<article id="banner_View_pop" class="pop_layer">
+		<div class="pop_wrap w1000">
+			<h1>배너 조회 팝업</h1>
+			<div class="pop_cont">
+				<p class="mb10">
+					<strong class="mr10">◎ 배너조회</strong>
+				</p>
+				<div class="t_right mb10">
+					<select>
+						<option>배너명</option>
+					</select>
+					<input type="text"  />
+					<button class="button btn_black" type="button">검색</button>
+				</div>
+				<table class="table tbl_hover">
+					<thead>
+						<tr>
+							<th scope="col">선택</th>
+							<th scope="col">서비스 유형</th>
+							<th scope="col">채널</th>
+							<th scope="col">이벤트 유형</th>
+							<th scope="col">노출기간</th>
+							<th scope="col">링크파일</th>
+							<th scope="col">이벤트명</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><input type="checkbox" /></td>
+							<td>온누리</td>
+							<td>공통배너</td>
+							<td><a href="#">테스트1234568789</a></td>
+							<td>2020-01-01~2020-12-31</td>
+							<td>URL</td>
+							<td><a href="#">이미지보기</a></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" /></td>
+							<td>온누리</td>
+							<td>Header</td>
+							<td><a href="#">테스트1234568789</a></td>
+							<td>2020-01-01~2020-12-31</td>
+							<td>카테고리</td>
+							<td><a href="#">이미지보기</a></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" /></td>
+							<td>MRO</td>
+							<td>Top배너</td>
+							<td><a href="#">테스트1234568789</a></td>
+							<td>2020-01-01~2020-12-31</td>
+							<td>이벤트</td>
+							<td><a href="#">이미지보기</a></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" /></td>
+							<td>특판</td>
+							<td>하단배너</td>
+							<td><a href="#">테스트1234568789</a></td>
+							<td>2020-01-01~2020-12-31</td>
+							<td>기획전</td>
+							<td><a href="#">이미지보기</a></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" /></td>
+							<td>기념일</td>
+							<td>Main온누리</td>
+							<td><a href="#">테스트1234568789</a></td>
+							<td>2020-01-01~2020-12-31</td>
+							<td>단독상품</td>
+							<td><a href="#">이미지보기</a></td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="paging_box mb30 mt30">
+					<ul class="pagination mla mra">
+						<li class="disabled"><a href="#"><i class="icon-angle-double-left"></i></a></li>
+						<li class="disabled"><a href="#"><i class="icon-angle-left"></i></a></li>
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#"><i class="icon-angle-right"></i></a></li>
+						<li><a href="#"><i class="icon-angle-double-right"></i></a></li>
+					</ul>
+				</div>
+				<div class="mt30 mb30 mla t_center">
+					<button type="button" class="button large w100 btn_black">적용</button>
+				</div>
+			</div>
+
+			<!-- pop_close 닫는 클래스 -->
+			<a href="#" class="btn_close pop_close">닫기</a>
+		</div>	
+	</article>
+
+	<!-- 상품 조회 팝업 -->
+	<article id="goods_View_pop" class="pop_layer">
+		<div class="pop_wrap w1000">
+			<h1>상품 조회 팝업</h1>
+			<div class="pop_cont">
+				<p class="mb10">
+					<strong class="mr10">◎ 상품 조회</strong>
+				</p>
+				<table class="table left_tbl view_tbl">
+					<colgroup>
+						<col style="width:20%" />
+						<col />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">전시 카테고리</th>
+							<td>
+								<select>
+									<option>선택하세요</option>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+								</select>
+								<select>
+									<option>선택하세요</option>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+								</select>
+								<select>
+									<option>선택하세요</option>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+								</select>
+							</td>					
+						</tr>
+						<tr>
+							<th>상품명/상품코드</th>
+							<td>
+								<select>
+										<option>상품명</option>
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+								</select>
+								<input type="text">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="t_right mt10 mb10">
+					<button class="button btn_black w120" type="button">검색</button>
+				</div>
+
+				<div class="scroll">
+					<table class="table tbl_hover">
+						<thead>
+							<tr>
+								<th scope="col"><input type="checkbox"></th>
+								<th scope="col">상품코드</th>
+								<th scope="col">이벤트명</th>
+								<th scope="col">판매상태</th>
+								<th scope="col">업체명</th>
+								<th scope="col">등록일</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td>123456789</td>
+								<td><a href="#">[용무낭인 수제반찬]E20건새우 아욱국</a></td>
+								<td>판매중</td>
+								<td>용문상인</td>
+								<td>2020-05-01</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td>123456789</td>
+								<td><a href="#">[용무낭인 수제반찬]E20건새우 아욱국</a></td>
+								<td>판매중</td>
+								<td>용문상인</td>
+								<td>2020-05-01</td>
+							</tr>	
+							<tr>
+								<td><input type="checkbox"></td>
+								<td>123456789</td>
+								<td><a href="#">[용무낭인 수제반찬]E20건새우 아욱국</a></td>
+								<td>판매중</td>
+								<td>용문상인</td>
+								<td>2020-05-01</td>
+							</tr>	
+						</tbody>
+					</table>
+				</div>
+
+				<div class="mt10">
+					<button class="button btn_black t_left" type="button">선택적용</button>
+				</div>
+
+				<div class="paging_box mb30">
+					<ul class="pagination mla mra">
+						<li class="disabled"><a href="#"><i class="icon-angle-double-left"></i></a></li>
+						<li class="disabled"><a href="#"><i class="icon-angle-left"></i></a></li>
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#"><i class="icon-angle-right"></i></a></li>
+						<li><a href="#"><i class="icon-angle-double-right"></i></a></li>
+					</ul>
+				</div>
+							
+				<p class="mb10">
+					<strong class="mr10">◎적용 상품 목록</strong>
+				</p>			
+					<table class="table view_tbl">
+						<tbody>
+						<tr>
+							<th scope="col"><input type="checkbox"></th>
+							<th scope="col">상품코드</th>
+							<th scope="col">이벤트명</th>
+							<th scope="col">판매상태</th>
+							<th scope="col">업체명</th>
+							<th scope="col">등록일</th>
+						</tr>
+						<tr>
+							<td><input type="checkbox"></td>
+							<td>123456789</td>
+							<td>[용무낭인 수제반찬]E20건새우 아욱국</td>
+							<td>판매중</td>
+							<td>용문상인</td>
+							<td>2020-05-01</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox"></td>
+							<td>123456789</td>
+							<td>[용무낭인 수제반찬]E20건새우 아욱국</td>
+							<td>판매중</td>
+							<td>용문상인</td>
+							<td>2020-05-01</td>
+						</tr>	
+						<tr>
+							<td><input type="checkbox"></td>
+							<td>123456789</td>
+							<td>[용무낭인 수제반찬]E20건새우 아욱국</td>
+							<td>판매중</td>
+							<td>용문상인</td>
+							<td>2020-05-01</td>
+						</tr>	
+						</tbody>
+					</table>
+					<div>
+						<button class="button btn_black t_left" type="button">선택삭제</button>
+					</div>	
+						<div class="paging_box mb30">
+								<ul class="pagination mla mra">
+									<li class="disabled"><a href="#"><i class="icon-angle-double-left"></i></a></li>
+									<li class="disabled"><a href="#"><i class="icon-angle-left"></i></a></li>
+									<li class="active"><a href="#">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">4</a></li>
+									<li><a href="#">5</a></li>
+									<li><a href="#"><i class="icon-angle-right"></i></a></li>
+									<li><a href="#"><i class="icon-angle-double-right"></i></a></li>
+								</ul>
+						</div>
+						<div class="mt30 mb30 mla t_center">
+							<button type="button" class="button large w100 btn_black">적용</button>
+						</div>
+			</div>
+
+			<!-- pop_close 닫는 클래스 -->
+			<a href="#" class="btn_close pop_close">닫기</a>
+		</div>	
+	</article>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html> 
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>NEXTID 시스템</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" href="../../static/css/common.css" media="all" />
+	<link rel="stylesheet" href="../../static/css/contents.css" media="all" />
+	<link href='../../static/js/lib/fullcalendar/lib/main.css' rel='stylesheet' />
+	<script src="../../static/js/plugins.js"></script>
+	<script src="../../static/js/ui_script.js"></script>
+	<script src='../../static/js/lib/fullcalendar/lib/main.js'></script>
+	<!--[if lt IE 9]>
+		<script type="text/javascript">
+			document.createElement("header");
+			document.createElement("nav");
+			document.createElement("section");
+			document.createElement("article");
+			document.createElement("footer");
+		</script>
+	<![endif]-->
+	<script>
+
+		document.addEventListener('DOMContentLoaded', function() {
+			var calendarEl = document.getElementById('calendar');
+
+			var calendar = new FullCalendar.Calendar(calendarEl, {
+				headerToolbar: {
+					left: 'prev,next today',
+					center: 'title',
+					right: 'dayGridMonth,timeGridWeek,timeGridDay,listMonth'
+				},
+				initialDate: '2020-09-12',
+				navLinks: true, // can click day/week names to navigate views
+				businessHours: true, // display business hours
+				editable: true,
+				selectable: true,
+				events: [
+					{
+						title: 'Business Lunch',
+						start: '2020-09-03T13:00:00',
+						constraint: 'businessHours'
+					},
+					{
+						title: 'Meeting',
+						start: '2020-09-13T11:00:00',
+						constraint: 'availableForMeeting', // defined below
+						color: '#257e4a'
+					},
+					{
+						title: 'Conference',
+						start: '2020-09-18',
+						end: '2020-09-20'
+					},
+					{
+						title: 'Party',
+						start: '2020-09-29T20:00:00'
+					},
+
+					// areas where "Meeting" must be dropped
+					{
+						groupId: 'availableForMeeting',
+						start: '2020-09-11T10:00:00',
+						end: '2020-09-11T16:00:00',
+						display: 'background'
+					},
+					{
+						groupId: 'availableForMeeting',
+						start: '2020-09-13T10:00:00',
+						end: '2020-09-13T16:00:00',
+						display: 'background'
+					},
+
+					// red areas where no events can be dropped
+					{
+						start: '2020-09-24',
+						end: '2020-09-28',
+						overlap: false,
+						display: 'background',
+						color: '#ff9f89'
+					},
+					{
+						start: '2020-09-06',
+						end: '2020-09-08',
+						overlap: false,
+						display: 'background',
+						color: '#ff9f89'
+					}
+				]
+			});
+
+			calendar.render();
+		});
+
+	</script>
+	<style type="text/css">
+		#calendar {
+			max-width: 1100px;
+			margin: 0 auto;
+		}
+
+	</style>
+</head>
+
+<body>
+	<!-- wrap -->
+	<div id="wrap" data-active="[0]">
+	<!-- div id="wrap" data-active="[0]" class="nonLnb" -->
+		<!-- header -->
+		<script src="../../include/header.js"></script>
+		<!-- //header -->	
+		
+		<!-- gnb -->
+		<script src="../../include/leftMenu.js"></script>
+		<!-- //left_menu -->
+
+		<!-- container -->
+		<div id="container">
+			<!-- contents -->
+			<section id="contents">
+				<h1 id="page_tit">업체휴일관리</h1>
+				<strong class="tableTitle">◎ 업체휴일관리</strong>
+				<table class="table left_tbl mt5">
+					<caption>카테고리기본정보</caption>
+					<colgroup>
+						<col style="width:15%" />
+						<col />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">선택</th>
+							<td>
+								<div class="flex">
+									<select title="옵션선택">
+										<option value="">2021년</option>
+									</select>
+									<select title="옵션선택">
+										<option value="">1월</option>
+									</select>
+									<a href="#nolink" class="button small">휴일등록</a>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div id='calendar'></div>
+			</section>
+			<!-- //contents -->
+		</div>
+		<!-- //container -->
+	</div>
+	<!-- //wrap -->
+	<!-- footer -->
+	<header id="footer" data-include="../../include/footer.html"></header>
+	<!-- //footer -->
+
+	<!-- pop_layer -->
+	<!-- layerPopOpen 클래스 적용 후 링크값은 id값으로 -->
+	<!-- 카테고리 -->
+	<article id="popup1" class="pop_layer">
+		<div class="pop_wrap">
+			<h1>카테고리 설정</h1>
+			<div class="pop_cont">
+				<table class="table view_tbl">
+					<colgroup>
+						<col />
+					</colgroup>
+					<thead>
+						<tr>
+							<th>카테고리 선택</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<div class="categoryBox">
+									<dl class="category">
+										<dt>대분류 카테고리</dt>
+										<dd></dd>
+									</dl>
+									<dl class="category">
+										<dt>중분류 카테고리</dt>
+										<dd></dd>
+									</dl>
+									<dl class="category">
+										<dt>소분류 카테고리</dt>
+										<dd></dd>
+									</dl>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="t_center mt30">
+					<a href="#" class="button large btn_blue">카테고리 선택/추가</a>
+				</div>
+			</div>
+			<!-- pop_close 닫는 클래스 -->
+			<a href="#" class="btn_close pop_close">닫기</a>
+		</div>
+	</article>
+	<!-- //pop_layer -->
+</body>
+</html>
